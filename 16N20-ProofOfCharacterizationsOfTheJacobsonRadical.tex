@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfCharacterizationsOfTheJacobsonRadical}
+\pmcreated{2013-03-22 12:48:56}
+\pmmodified{2013-03-22 12:48:56}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{proof of characterizations of the Jacobson radical}
+\pmrecord{31}{33137}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N20}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+First, note that by definition a left primitive ideal is the annihilator of an irreducible left $R$-module, so clearly characterization 1) is equivalent to the definition of the Jacobson radical.
+
+Next, we will prove cyclical containment.  Observe that 5) follows after the equivalence of 1) - 4) is established, since 4) is independent of the choice of left or right ideals.
+
+\begin{enumerate}
+\item [1) $\subset$ 2)] We know that every left primitive ideal is the
+      largest ideal contained in a maximal left ideal.  So the intersection
+      of all left primitive ideals will be contained in the intersection of all
+      maximal left ideals.
+\item [2) $\subset$ 3)] Let
+      $S=\{M : M \text{ a maximal left ideal of } R\}$ and take $r \in R$.
+      Let $t \in \cap_{M \in S} M$.  Then $rt \in \cap_{M \in S} M$.
+
+      Assume $1-rt$ is not left invertible; therefore there exists a maximal
+      left ideal $M_0$ of $R$ such that $R(1-rt) \subseteq M_0$.
+
+      Note then that $1-rt \in M_0$.  Also, by definition of $t$, we have
+      $rt \in M_0$.  Therefore $1 \in M_0$; this contradiction implies $1-rt$ is
+      left invertible.
+\item [3) $\subset$ 4)] We claim that 3) satisfies the condition of 4).
+
+      Let $K=\{t \in R : 1-rt \text{ is left invertible for all } r \in R \}$.
+
+      We shall first show that $K$ is an ideal.
+
+      Clearly if $t \in K$, then $rt \in K$.  
+      If $t_1,t_2 \in K$, then \[ 1-r(t_1+t_2)=(1-rt_1)-rt_2 \]
+      Now there exists $u_1$ such that $u_1(1-rt_1)=1$, hence
+      \[ u_1((1-rt_1)-rt_2)=1-u_1rt_2 \]
+      Similarly, there exists $u_2$ such that $u_2(1-u_1rt_2)=1$, therefore
+      \[ u_2u_1(1-r(t_1+t_2))=1 \]
+      Hence $t_1+t_2 \in K$.
+
+      Now if $t \in K, r \in R$, to show that $tr \in K$ it suffices to
+      show that $1-tr$ is left invertible.  Suppose $u(1-rt)=1$, hence
+      $u-urt=1$, then $tur-turtr=tr$.
+
+      So $(1+tur)(1-tr)=1+tur-tr-turtr=1$.
+
+      Therefore $K$ is an ideal.
+
+      Now let $v \in K$.  Then there exists $u$ such that $u(1-v)=1$, hence
+      $1-u=-uv \in K$, so $u=1-(1-u)$ is left invertible.
+
+      So there exists $w$ such that $wu=1$, hence $wu(1-v)=w$, then $1-v=w$.
+      Thus $(1-v)u=1$ and therefore $1-v$ is a unit.
+
+      Let $J$ be the largest ideal such that, for all $v \in J$, $1-v$ is a
+      unit.  We claim that $K \subseteq J$.
+
+      Suppose this were not true; in this case $K+J$ strictly contains $J$.
+      Consider $rx+sy \in K+J$ with $x \in K, y \in J$ and $r,s \in R$.
+      Now $1-(rx+sy)=(1-rx)-sy$, and since $rx \in K$, then $1-rx=u$ for some
+      unit $u \in R$.
+
+      So $1-(rx+sy)=u-sy=u(1-u^{-1}sy)$, and clearly $u^{-1}sy \in J$ since
+      $y \in J$.  Hence $1-u^{-1}sy$ is also a unit, and thus $1-(rx+sy)$ is
+      a unit.
+
+      Thus $1-v$ is a unit for all $v \in K+J$.  But this contradicts the
+      assumption that $J$ is the largest such ideal.  So we must have
+      $K \subseteq J$.
+\item [4) $\subset$ 1)] We must show that if $I$ is an ideal such that
+      for all $u \in I$, $1-u$ is a unit, then
+      $I \subset \operatorname{ann}({}_RM)$ for every irreducible left
+      $R$-module ${}_RM$.\\
+
+      Suppose this is not the case, so there exists ${}_RM$ such that
+      $I \not \subset \operatorname{ann}({}_RM)$.  Now we know that
+      $\operatorname{ann}({}_RM)$ is the largest ideal inside some maximal
+      left ideal $J$ of $R$.  Thus we must also have $I \not \subset J$,
+      or else this would contradict the maximality of
+      $\operatorname{ann}({}_RM)$ inside $J$.
+
+      But since $I \not \subset J$, then by maximality $I+J=R$, hence there
+      exist $u \in I$ and $v \in J$ such that $u+v=1$.  Then $v=1-u$, so
+      $v$ is a unit and $J=R$.  But since $J$ is a proper left ideal, this
+      is a contradiction.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

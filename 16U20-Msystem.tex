@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Msystem}
+\pmcreated{2013-03-22 17:29:09}
+\pmmodified{2013-03-22 17:29:09}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{$m$-system}
+\pmrecord{11}{39873}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U20}
+\pmclassification{msc}{13B30}
+\pmsynonym{m-system}{Msystem}
+\pmrelated{MultiplicativelyClosed}
+\pmrelated{NSystem}
+\pmrelated{PrimeIdeal}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+\PMlinkescapeword{closed subset}
+
+Let $R$ be a ring.  A subset $S$ of $R$ is called an $m$-{\em system} if 
+\begin{itemize}
+\item $S\ne \varnothing$, and
+\item for every two elements $x,\,y\in S$, there is an element $r\in R$ such that $xry\in S$.
+\end{itemize}
+
+$m$-Systems are a generalization of multiplicatively closet subsets in a ring.  Indeed, every multiplicatively closed subset of $R$ is an $m$-system: any $x,y\in S$, then $xy\in S$, hence $xyy \in S$.  However, the converse is not true.  For example, the set $$\lbrace r^n\mid r\in R \mbox{ and } n \mbox{ is an odd positive integer}\rbrace$$ is an $m$-system, but not multiplicatively closed in general (unless, for example, if $r=1$).
+
+\textbf{Remarks}.  $m$-Systems and prime ideals of a ring are intimately related.  Two basic relationships between the two notions are
+\begin{enumerate}
+\item An ideal $P$ in a ring $R$ is a prime ideal iff $R-P$ is an $m$-system.
+\begin{proof}  $P$ is prime iff $xRy\subseteq P$ implies $x$ or $y\in P$, iff $x,y\in R-P$ implies that there is $r\in R$ with $xry\notin P$ iff $R-P$ is an $m$-system.
+\end{proof}
+\item Given an $m$-system $S$ of $R$ and an ideal $I$ with $I\cap S=\varnothing$.  Then there exists a prime ideal $P\subseteq R$ with the property that $P$ contains $I$ and $P\cap S = \varnothing$, and $P$ is the largest among all ideals with this property. 
+\begin{proof}  Let $\mathcal{C}$ be the collection of all ideals containing $I$ and disjoint from $S$.  First, $I\in \mathcal{C}$.  Second, any chain $K$ of ideals in $\mathcal{C}$, its union $\bigcup K$ is also in $\mathcal{C}$.  So Zorn's lemma applies.  Let $P$ be a maximal element in $\mathcal{C}$.  We want to show that $P$ is prime.  Suppose otherwise.  In other words, $aRb\subseteq P$ with $a,b\notin P$.  Then $\langle P,a\rangle$ and $\langle P,b\rangle$ both have non-empty intersections with $S$. Let $$c=p+fag \in \langle P,a\rangle \cap S\quad \mbox{ and }\quad d=q+hbk \in \langle P,b\rangle \cap S,$$ where $p,q\in P$ and $f,g,h,k\in R$. Then there is $r\in R$ such that $crd\in S$. But this implies that $$crd = (p+fag)r(q+hbk)= p(rq+rhbk)+(fagr)q+f\big(a(grh)b\big)k \in P$$ as well, contradicting $P\cap S=\varnothing$.  Therefore, $P$ is prime.
+\end{proof}
+\end{enumerate}
+$m$-Systems are also used to define the non-commutative version of the radical of an ideal of a ring.
+%%%%%
+%%%%%
+\end{document}

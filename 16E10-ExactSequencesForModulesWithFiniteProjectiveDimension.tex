@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExactSequencesForModulesWithFiniteProjectiveDimension}
+\pmcreated{2013-03-22 19:04:55}
+\pmmodified{2013-03-22 19:04:55}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{exact sequences for modules with finite projective dimension}
+\pmrecord{4}{41970}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E10}
+\pmclassification{msc}{18G20}
+\pmclassification{msc}{18G10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Proposition.} Let $R$ be a ring and $M$ be a (left) $R$-module, such that $\mbox{proj dim}(M)=n<\infty$. If
+$$0\rightarrow K\rightarrow P_{n}\rightarrow\cdots\rightarrow P_{0}\rightarrow M\rightarrow 0$$
+is an exact sequence of $R$-modules, such that each $P_{i}$ is projective, then $K$ is projective.
+
+\textit{Proof.} Since $\mbox{proj dim}(M)=n<\infty$, then there exists exact sequence of $R$-modules
+$$0\rightarrow P'_{n}\rightarrow\cdots\rightarrow P'_{0}\rightarrow M\rightarrow 0,$$
+Note that sequences
+$$P_{n}\rightarrow\cdots\rightarrow P_{0}\rightarrow M\rightarrow 0;$$
+$$P'_{n}\rightarrow\cdots\rightarrow P_{0}\rightarrow M\rightarrow 0,$$
+are projective resolutions of $M$. Let $\delta:P_{n}\rightarrow P_{n-1}$ and $\beta:P'_{n}\rightarrow P'_{n-1}$ be maps take from these resolutions. Then generalized Schanuel's lemma implies that $\mathrm{ker}\delta$ and $\mathrm{ker}\beta$ are projectively equivalent. But $\mathrm{ker}\delta\simeq K$ and $\mathrm{ker}\beta=0$. This means, that there are projective modules $P,Q$ such that
+$$K\oplus P\simeq Q.$$
+Therefore $K$ is a direct summand of a free module (since $Q$ is), which completes the proof. $\square$
+%%%%%
+%%%%%
+\end{document}

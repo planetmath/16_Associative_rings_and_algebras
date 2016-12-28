@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConstructionOfAnInjectiveResolution}
+\pmcreated{2013-03-22 17:11:02}
+\pmmodified{2013-03-22 17:11:02}
+\pmowner{guffin}{12505}
+\pmmodifier{guffin}{12505}
+\pmtitle{construction of an injective resolution}
+\pmrecord{5}{39500}
+\pmprivacy{1}
+\pmauthor{guffin}{12505}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The category of modules has enough injectives.
+Let $M$ be a module, and let $I^0$ be an injective module such that 
+
+\[
+0  \longrightarrow M \longrightarrow I^0
+\]
+
+is exact.  Then, let $M_0$ be the image of $M$ in $I^0$, and construct the factor module $I^0\slash M^0$.  Then, since the category of modules has enough injectives, we can find a module $I^1$ such that 
+
+\[
+0 \longrightarrow I^0 \slash M^0 \stackrel{\phi_0}{\longrightarrow} I^1
+\]
+
+is exact.  $\phi_0$ induces a homomorphism $\phi \!:\! I^0 \longrightarrow I^1$, whose kernel is $M^0$.  We thus have an exact sequence
+
+\[
+0 \longrightarrow M \longrightarrow I^0 \longrightarrow I^1.
+\]
+
+One can continue this process to construct injective modules $I^n$ for any $n\in \mathbb Z$ (the resolution may terminate: $I^m = 0$ for some $N\in \mathbb Z$ with all $m > N$). 
+%%%%%
+%%%%%
+\end{document}

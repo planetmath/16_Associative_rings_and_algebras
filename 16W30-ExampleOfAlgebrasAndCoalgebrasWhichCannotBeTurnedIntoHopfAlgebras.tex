@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfAlgebrasAndCoalgebrasWhichCannotBeTurnedIntoHopfAlgebras}
+\pmcreated{2013-03-22 18:58:45}
+\pmmodified{2013-03-22 18:58:45}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{example of algebras and coalgebras which cannot be turned into Hopf algebras}
+\pmrecord{4}{41843}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $H=\mathbb{M}_{n}(k)$ be a matrix algebra over a field $k$ with standard multiplication and assume that $n>1$. Assume that $H$ can be turned into a Hopf algebra. In particular, there is $\varepsilon:H\to k$ such that $\varepsilon$ is a morphism of algebras. It can be shown that matrix algebra is simple, i.e. if $I\subseteq H$ is a two-sided ideal, then $I=0$ or $I=H$. Thus we have that $\mathrm{ker}\varepsilon=0$ (because $\varepsilon(1)=1$). Contradiction, because $\mathrm{dim}_{k}H>1=\mathrm{dim}_{k}k$.
+
+Now consider $H=\mathbb{M}^{c}(n,k)$ a vector space of all $n\times n$ matrices over $k$. We introduce coalgebra structure on $H$. Let $E_{ij}$ be a matrix in $H$ with $1$ in $(i,j)$ place and $0$ everywhere else. Of course $\{E_{ij}\}$ forms a basis of $H$ and it is sufficient to define comultiplication and counit on it. Define
+$$\Delta(E_{ij})=\sum_{p=1}^{n} E_{ip}\otimes E_{pj};$$
+$$\varepsilon(E_{ij})=\delta_{ij},$$
+where $\delta_{ij}$ denotes Kronecker delta. It can be easily checked, that $\big(\mathbb{M}^c(n,k),\Delta,\varepsilon\big)$ is a coalgebra known as the matrix coalgebra. Also, is well known that the dual algebra $\mathbb{M}^c(n,k)^*$ is isomorphic to the standard matrix algebra.
+
+Now assume that matrix coalgebra $H=\mathbb{M}^c(n,k)$ (where $n>1$) can be turned into a Hopf algebra. Since $H$ is finite dimensional, then we can take dual Hopf algebra $H^*$. But the underlaying algebra structure of $H^*$ is isomorphic to a matrix algebra (as we remarked earlier), which we've already shown to be impossible. Thus matrix coalgebra cannot be turned into a Hopf algebra.
+%%%%%
+%%%%%
+\end{document}

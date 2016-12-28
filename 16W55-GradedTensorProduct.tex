@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GradedTensorProduct}
+\pmcreated{2013-03-22 12:45:44}
+\pmmodified{2013-03-22 12:45:44}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{graded tensor product}
+\pmrecord{8}{33070}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W55}
+\pmrelated{TensorProduct}
+\pmdefines{super tensor product}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+If $A$ and $B$ are $\mathbb{Z}$-graded algebras, we define the \emph{graded tensor product} (or \emph{super tensor product}) $A \otimes_{su} B$ to be the ordinary tensor product as graded modules, but with multiplication - called the {\em super product} - defined by
+$$(a \otimes b)(a' \otimes b') = (-1)^{(\text{deg \ } b)(\text{deg \ } a')}aa' \otimes bb'$$
+where $a,a',b,b'$ are homogeneous. The super tensor product of $A$ and $B$ is itself a graded algebra, as we grade the super tensor product of $A$ and $B$ as follows:
+
+$$ (A \otimes_{su} B)^n = \coprod_{p,q \text{ : } p + q = n} A^p \otimes B^q $$
+%%%%%
+%%%%%
+\end{document}

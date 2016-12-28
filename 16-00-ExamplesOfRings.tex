@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExamplesOfRings}
+\pmcreated{2013-03-22 15:00:42}
+\pmmodified{2013-03-22 15:00:42}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{examples of rings}
+\pmrecord{42}{36718}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{13-00}
+\pmrelated{CommutativeRing}
+\pmrelated{Ring}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\newcommand{\sQ}[0]{\mathbb{Q}}
+\newcommand{\sH}[0]{\mathbb{H}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+\DeclareMathOperator{\End}{End}
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Rings in this article are assumed to have a commutative addition
+with negatives and an associative multiplication.  However, it
+is not generally assumed that all rings included here are unital.
+
+\subsubsection*{Examples of commutative rings}
+
+\begin{enumerate}
+\item the zero ring,
+\item the ring of integers $\sZ$,
+\item the ring of even integers $2\sZ$ (a ring without identity), or more generally, $n\sZ$ for any integer $n$,
+\item the \PMlinkname{integers modulo $n$}{MathbbZ_n}, $\sZ/n\sZ$,
+\item the ring of integers $\mathcal{O}_K$ of a number field $K$,
+\item the \PMlinkname{$p$-integral rational numbers}{PAdicValuation} (where $p$ is a prime number),
+\item other rings of rational numbers
+\item the \PMlinkname{$p$-adic integers}{PAdicIntegers} $\sZ_p$ and the $p$-adic numbers $\sQ_p$,
+\item the rational numbers $\sQ$, 
+\item the real numbers $\sR$, 
+\item rings and fields of algebraic numbers,
+\item the complex numbers $\sC$,
+\item The set $2^{A}$ of all subsets of a set $A$ is a ring.  The addition is the symmetric difference ``$\triangle$'' and the multiplication the set operation intersection ``$\cap$''.  Its additive identity is the empty set $\varnothing$, and its multiplicative identity is the set $A$.  This is an example of a Boolean ring.
+\end{enumerate}
+
+\subsubsection*{Examples of non-commutative rings}
+\begin{enumerate}
+\item the quaternions, $\sH$, also known as the Hamiltonions.  This is a finite dimensional division ring 
+over the real numbers, but noncommutative.  
+\item the set of square matrices $M_n(R)$, with $n>1$,
+\item the set of triangular matrices (upper or lower, but not both in the same set), 
+\item \PMlinkname{strict triangular matrices}{StrictUpperTriangularMatrix} (same condition as above),
+\item Klein 4-ring,
+\item Let $A$ be an abelian group.  Then the set of group endomorphisms $f:A\to A$ forms a ring $\End A$, 
+with addition defined elementwise ($(f+g)(a)=f(a)+g(a)$) and multiplication the functional composition.  
+It is the ring of operators over $A$.
+
+By contrast, the set of all functions $\{f:A\to A\}$ are closed to addition and composition, however,
+there are generally functions $f$ such that $f\circ(g+h)\neq f\circ g+f\circ g$ and so this set
+forms only a near ring.
+\end{enumerate}
+
+
+
+\subsubsection*{Change of rings (rings generated from other rings)}
+Let $R$ be a ring.
+\begin{enumerate}
+\item If $I$ is an ideal of $R$, then the quotient $R/I$ is a ring, called a quotient ring.
+\item $R[x]$ is the polynomial ring over $R$ in one indeterminate $x$ (or alternatively, one can think that $R[x]$ is any transcendental extension ring of $R$, such as $\mathbb{Z}[\pi]$ is over $\mathbb{Z}$),
+\item $R(x)$ is the field of rational functions in $x$,
+\item $R[[x]]$ is the ring of formal power series in $x$,
+\item $R((x))$ is the ring of formal Laurent series in $x$,
+\item $M_{n\times n}(R)$ is the $n\times n$ matrix ring over $R$.
+\item A special case of Example 6 under the section on non-commutative rings is the ring of endomorphisms over a ring $R$.
+\item For any group $G$, the group ring $R[G]$ is the set of formal sums of elements of $G$ with coefficients in $R$. 
+\item For any non-empty set $M$ and a ring $R$, the set $R^M$ of all functions from $M$ to $R$ may be made a ring\, $(R^M,\,+,\,\cdot)$\, by setting for such functions $f$ and $g$
+$$(f\!+\!g)(x) := f(x)+g(x), \,\,\, (fg)(x) := f(x)g(x)\,\,\, \forall x\in M.$$
+This ring is the often denoted $\bigoplus_{M} R$.  For instance, if $M=\{1,2\}$, then $R^M\cong R\oplus R$.
+
+\item If $R$ is commutative, the ring of fractions $S^{-1}R$ where $S$ is a multiplicative subset of $R$ not containing 0.
+\item Let $S,T$ be subrings of $R$.  Then
+$$\begin{pmatrix} S&R \\ 0&T \end{pmatrix}:=\Big\lbrace \begin{pmatrix} s&r \\ 0&t \end{pmatrix}\mid r\in R, s\in S, t\in T \Big\rbrace$$
+with the usual matrix addition and multiplication is a ring.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

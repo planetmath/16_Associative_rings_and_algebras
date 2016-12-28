@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NicholszoellerTheorem}
+\pmcreated{2013-03-22 18:58:34}
+\pmmodified{2013-03-22 18:58:34}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{nichols-zoeller theorem}
+\pmrecord{6}{41839}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $H$ be a Hopf algebra over a field $k$ with an antipode $S$. We will say that $K\subseteq H$ is a \textit{Hopf subalgebra} if $K$ is both subalgebra and subcoalgebra of underlaying algebra and coalgebra structures of $H$, and additionaly $S(K)\subseteq K$. In particular a Hopf subalgebra $K\subseteq H$ is an algebra over $k$, so $H$ may be regarded as a $K$-module.
+
+\textbf{The Nichols-Zoeller Theorem.} If $K\subseteq H$ is a Hopf subalgebra of a Hopf algebra $H$, then $H$ is free as a $K$-module. In particular, if $H$ is finite dimensional, then $\mathrm{dim}_{k}K$ divides $\mathrm{dim}_{k}H$.
+
+\textbf{Remark 1.} This theorem shows that Hopf algebras are very similar to groups, because this is a Hopf analogue of the Lagrange Theorem.
+
+\textbf{Remark 2.} Generally this theorem does not need to hold if $H$ is only an algebra. For example, consider $H=\mathbb{M}_{n}(k)$ the matrix algebra, where $n\geq 2$ and let $T\subseteq H$ be the upper triangular matrix subalgebra. It is well known that $\mathrm{dim}_{k}H=n^2$ and $\mathrm{dim}_{k}T=\frac{n(n+1)}{2}$. Of course $\frac{n(n+1)}{2}$ does not divide $n^2$ for $n\geq 2$. Thus the Nichols-Zoeller Theorem does not hold for algebras.
+%%%%%
+%%%%%
+\end{document}

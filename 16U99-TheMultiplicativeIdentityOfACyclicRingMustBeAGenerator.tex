@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheMultiplicativeIdentityOfACyclicRingMustBeAGenerator}
+\pmcreated{2013-03-22 15:56:59}
+\pmmodified{2013-03-22 15:56:59}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{the multiplicative identity of a cyclic ring must be a generator}
+\pmrecord{16}{37961}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U99}
+\pmclassification{msc}{13F10}
+\pmclassification{msc}{13A99}
+\pmrelated{CyclicRing3}
+\pmrelated{CriterionForCyclicRingsToBePrincipalIdealRings}
+\pmrelated{CyclicRingsOfBehaviorOne}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\begin{thm*}
+Let $R$ be a cyclic ring with multiplicative identity $u$.  Then $u$ \PMlinkname{generates}{Generator} the additive group of $R$.
+\end{thm*}
+
+\begin{proof}
+Let $k$ be the behavior of $R$.  Then there exists a \PMlinkname{generator}{Generator} $r$ of the additive group of $R$ such that $r^2=kr$.  Let $a \in \mathbb{Z}$ with $u=ar$.  Then $r=ur=(ar)r=ar^2=a(kr)=(ak)r$.  If $R$ is infinite, then $ak=1$, causing $a=k=1$ since $k$ is a nonnegative integer.  If $R$ is finite, then $ak \equiv 1 \operatorname{mod} |R|$.  Thus, $\gcd(k,|R|)=1$.  Since $k$ divides $|R|$, $k=1$.  Therefore, $a \equiv 1 \operatorname{mod} |R|$.  In either case, $u=r$.
+\end{proof}
+
+Note that it was also proven that, if a cyclic ring has a multiplicative identity, then it has behavior one.  Its converse is also true.  See \PMlinkname{this theorem}{CyclicRingsOfBehaviorOne} for more details.
+%%%%%
+%%%%%
+\end{document}

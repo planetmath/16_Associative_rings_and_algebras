@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AllBasesForAVectorSpaceHaveTheSameCardinality}
+\pmcreated{2013-03-22 18:06:51}
+\pmmodified{2013-03-22 18:06:51}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{all bases for a vector space have the same cardinality}
+\pmrecord{6}{40660}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+\pmclassification{msc}{13C05}
+\pmclassification{msc}{15A03}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+In this entry, we want to show the following property of bases for a vector space:
+
+\begin{thm} All bases for a vector space $V$ have the same cardinality. \end{thm}
+
+Let $B$ be a basis for $V$ ($B$ exists, see \PMlinkname{this link}{ZornsLemmaAndBasesForVectorSpaces}).  If $B$ is infinite, then all bases for $V$ have the same cardinality as that of $B$ (\PMlinkname{proof}{CardinalitiesOfBasesForModules}).  So all we really need to show is where $V$ has a finite basis.
+
+Before proving this important property, we want to prove something that is almost as important:
+
+\begin{lem} If $A$ and $B$ are subsets of a vector space $V$ such that $A$ is linearly independent and $B$ spans $V$, then $|A|\le |B|$. \end{lem}
+\begin{proof}
+If $A$ is finite and $B$ is infinite, then we are done.  Suppose now that $A$ is infinite.  Since $A$ is linearly independent, there is a superset $C$ of $A$ that is a basis for $V$.  Since $A$ is infinite, so is $C$, and therefore all bases for $V$ are infinite, and have the same cardinality as that of $C$.  Since $B$ spans $V$, there is a subset $D$ of $B$ that is a basis for $V$.  As a result, we have $|A|\le |C|=|D|\le |B|$.
+
+Now, we suppose that $A$ and $B$ are both finite.  The case where $A=\varnothing$ is clear.  So assume $A\ne \varnothing$.  As $B$ spans $V$, $B\ne \varnothing$.  Let $A=\lbrace a_1,\ldots, a_n\rbrace$ and $$B=\lbrace b_1,\ldots, b_m \rbrace$$ and assume $m<n$.  So $a_i\ne 0$ for all $i=1,\ldots, n$.  Since $B$ spans $V$, $a_1$ can be expressed as a linear combination of elements of $B$.  In this expression, at least one of the coefficients (in the field $k$) can not be $0$ (or else $a_1=0$).  Rename the elements if possible, so that $b_1$ has a non-zero coefficient in the expression of $a_1$.  This means that $b_1$ can be written as a linear combination of $a$ and the remaining $b$'s.  Set $$B_1=\lbrace a_1, b_2,\ldots, b_m\rbrace.$$  As every element in $V$ is a linear combination of elements of $B$, it is therefore a linear combination of elements of $B_1$.  Thus, $B_1$ spans $V$.  Next, express $a_2$ as a linear combination of elements in $B_1$.  In this expression, if the only non-zero coefficient is in front of $a_1$, then $a_1$ and $a_2$ would be linearly dependent, a contradiction!  Therefore, there must be a non-zero coefficient in front of one of the $b$'s, and after some renaming once more, we have that $b_2$ is the one with a non-zero coefficient.     Therefore, $b_2$, likewise, can be expressed as a linear combination of $a_1,a_2$ and the remaining $b$'s.  It is easy to see that $$B_2=\lbrace a_1, a_2, b_3, \ldots, b_m\rbrace$$ spans $V$ as well.  Continue this process until all of the $b$'s have been replaced, which is possible since $m<n$.  We have finally arrived at the set $$B_m = \lbrace a_1, \ldots, a_m\rbrace$$ which is a proper subset of $A$.  In addition, $B_m$ spans $V$.  But this would imply that $A$ is linearly dependent, a contradiction.
+\end{proof}
+
+Now we can complete the proof of theorem 1.
+\begin{proof}  Suppose $A$ and $B$ are bases for $V$.  We apply the lemma.  Then $|A|\le |B|$ since $A$ is linearly independent and $B$ spans $V$.  Similarly, $|B|\le |A|$ since $B$ is linearly independent and $A$ spans $V$.  An application of Schroeder-Bernstein theorem completes the proof.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

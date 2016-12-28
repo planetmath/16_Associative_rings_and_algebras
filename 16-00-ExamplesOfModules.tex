@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExamplesOfModules}
+\pmcreated{2013-03-22 14:36:28}
+\pmmodified{2013-03-22 14:36:28}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{examples of modules}
+\pmrecord{16}{36180}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{20-00}
+\pmclassification{msc}{13-00}
+%\pmkeywords{modules}
+%\pmkeywords{rings}
+%\pmkeywords{identity element}
+%\pmkeywords{Yetter-Drinfel'd module}
+\pmrelated{QuantumDouble}
+\pmrelated{Module}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+This entry is a \PMlinkescapetext{collection} of examples of modules over rings.  Unless otherwise specified in the example, $M$ will be a module over a ring $R$.
+
+\begin{itemize}
+\item Any abelian group is a module over the ring of integers, with action defined by $n\cdot g$ for $g\in G$ given by $n\cdot g=\sum_{i=1}^n g$.
+\item If $R$ is a subring of a ring $S$, then $S$ is an $R$-module, with action given by multiplication in $S$.
+\item If $R$ is any ring, then any (left) ideal $I$ of $R$ is a (left) $R$-module, with action given by the multiplication in $R$.
+\item Let $R=\mathbb{Z}$ and let $E = \{2k \mid k \in \mathbb{Z}\}$. Then $E$ is a module over the ring $\mathbb{Z}$ of integers. Further, define the sets $B = E \times E$ and $C = E \times \{0\}$ and $D = \{0\} \times  E$. Then $B$, $C$, and $D$ are modules over $\mathbb{Z} \times  \mathbb{Z}$, with action given by $a \cdot x = 
+(a \cdot x_1, a \cdot x_2)$ if $x = (x_1,x_2)$ even if the product is redefined as $a \cdot x_1 = 0$ and $a \cdot x_2 = 0$, but now the identity element is $(1,1)$. However by our new product definition $a \cdot x = (a \cdot x_1, a \cdot x_2) = (0,0)$ even if $a = (1,1)$, the ring identity element originally  In the more general definition of module which does not require an identity element $\bf{1}$ in the ring and does not require ${\bf 1} \cdot m = m$ for all $m \in M$, we observe that ${\bf 1} \cdot m \neq m$  in this example just constructed.  (one of the purposes of this comment is to show that all modules need not be unital ones).
+\item \PMlinkname{Yetter-Drinfel'd module.}{QuantumDouble}
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

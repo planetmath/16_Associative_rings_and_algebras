@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdealIncludedInUnionOfPrimeIdeals}
+\pmcreated{2013-03-22 16:53:14}
+\pmmodified{2013-03-22 16:53:14}
+\pmowner{polarbear}{3475}
+\pmmodifier{polarbear}{3475}
+\pmtitle{ideal included in union of prime ideals}
+\pmrecord{10}{39142}
+\pmprivacy{1}
+\pmauthor{polarbear}{3475}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D99}
+\pmclassification{msc}{13C99}
+\pmsynonym{prime avoidance lemma}{IdealIncludedInUnionOfPrimeIdeals}
+\pmrelated{IdealsContainedInAUnionOfIdeals}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+% define commands here
+
+\begin{document}
+ In the following $R$ is a commutative ring with unity.
+\begin{proposition} Let $I$ be an ideal of the ring $R$ and $P_1, P_2, ... ,P_n$ be prime ideals of $R$. If $I\not\subseteq P_i$, for all $i$, then $I \not\subseteq \cup P_i$.\end{proposition}\begin{proof} We will prove by induction on $n$. For $n=1$ the proof is trivial. Assume now that the result is true for $n-1$. That implies the existence, for each $i$, of an element $s_i$ such that $s_i\in I$ and $s_i \not\in \bigcup_{j\ne i}P_j$. If for some $i$, $s_i\not\in P_i$ then we are done. Thus, we may consider only the case $s_i \in P_i$, for all $i$.\newline
+ Let $a_i = r_1...r_{i-1}r_{i+1}...r_n$. Since $P_i$ is prime then $a_i\not\in P_i$, for all $i$. Moreover, for $j \ne i$, the element $a_i \in P_j$. Consider the element $a = \sum a_j \in I$. Since $a_i = a - \sum_{i\ne j} a_j$ and $\sum_{i\ne j} a_j\;\in P_i$, it follows that $a \not\in P_i$, otherwise $a_i\in P_i$, contradiction. The existence of the element $a$ proves the proposition.\end{proof}
+\begin{corollary} Let $I$ be an ideal of the ring $R$ and $P_1,P_2,...,P_n$ be prime ideals of $R$. If $I \subseteq \cup P_i$, then $I\subseteq P_i$, for some $i$.\end{corollary}    
+%%%%%
+%%%%%
+\end{document}

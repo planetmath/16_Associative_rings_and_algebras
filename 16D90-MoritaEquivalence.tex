@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MoritaEquivalence}
+\pmcreated{2013-03-22 16:38:49}
+\pmmodified{2013-03-22 16:38:49}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Morita equivalence}
+\pmrecord{6}{38851}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D90}
+\pmdefines{Morita equivalent}
+\pmdefines{Morita invariance}
+\pmdefines{Morita invariant}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+Let $R$ be a ring.  Write $\mathcal{M}_R$ for the category of right modules over $R$.  Two rings $R$ and $S$ are said to be \emph{Morita equivalent} if $\mathcal{M}_R$ and $\mathcal{M}_S$ are \PMlinkname{equivalent as categories}{EquivalenceOfCategories}.  What this means is: we have two functors
+$$F:\mathcal{M}_R\to \mathcal{M}_S\qquad\mbox{ and }\qquad G:\mathcal{M}_S\to \mathcal{M}_R$$
+such that for any right $R$-module $M$ and any right $S$-module $N$, we have
+$$GF(M)\cong_R M\qquad\mbox{ and }\qquad FG(N)\cong_S N,$$
+where $A \cong_R B$ means that there is an $R$-module isomorphism between $A$ and $B$.
+
+\textbf{Example}.  Any ring $R$ with $1$ is Morita equivalent to any matrix ring $M_n(R)$ over it.
+\begin{proof}
+Assume $n>1$.  For convenience, we will also say a module to mean a right module.  
+
+Let $M$ be an $R$-module.  Set $F(M)=\lbrace (m_1,\ldots, m_n)\mid m_i\in M\rbrace$.  Then $F(M)$ becomes a module over $M_n(R)$ if we adopt the standard matrix multiplication $mA$, where $m\in F(M)$ and $A\in M_n(R)$.  If $f: M_1\to M_2$ is an $R$-module homomorphism.  Set $F(f):F(M_1)\to F(M_2)$ by $F(f)(m_1,\ldots,m_n)=(f(m_1),\ldots,f(m_n))\in F(M_2)$.  Then $F$ is a covariant functor by inspection.
+
+Next, let $N$ be an $M_n(R)$-module.  Write $e(r)$ as the $n\times n$ matrix whose cell $(1,1)$ is $r\in R$ and $0$ everywhere else.  For simplicity we write $e:=e(1)$.  Note that $e$ is an idempotent in $M_n(R)$: $e=ee$, and $e$ commutes with $e(r)$ for any $r\in R$: $ee(r)=e(r)e$.
+
+Set $G(N)=\lbrace se\mid s\in N \rbrace$.  For any $r\in R$, define $se\cdot r:= see(r)=se(r)e$.  Since $se(r)\in N$, this multiplication turns $G(N)$ into an $R$-module.  If $g:N_1\to N_2$ is an $M_n(R)$-module homomorphism, define $G(g): G(N_1)\to G(N_2)$ by $G(g)(se)=g(s)e$.  If $N_1\stackrel{g}{\longrightarrow} N_2\stackrel{h}{\longrightarrow} N_3$ are $M_n(R)$-module homomorphisms, then 
+$$
+G(h\circ g)(se)=(h\circ g)(s)e=h(g(s))e = G(h)[g(s)e]=G(h)[G(g)se]=G(h)\circ G(g)(se)
+$$
+so that $G$ is a covariant functor.
+
+If $M$ is any $R$-module, then $GF(M)=\lbrace (m_1,\ldots,m_n)e\mid m\in M \rbrace = \lbrace (m_1,0,\ldots,0)^T\mid m\in M \rbrace \cong M$, where $m^T$ stands for the transpose of the row vector $m\in M$ into a column vector.
+
+On the other hand, if $N$ is any $M_n(R)$-module, then $FG(N)=\lbrace (s_1e, \ldots, s_ne)\mid s_i\in N\rbrace$.  Before proving that $FG(N)\cong N$, let's do some preliminary work.
+
+Denote $e_{ii}$ by the $n\times n$ matrix whose cell $(i,i)$ is 1 and $0$ everywhere else.  Then each $e_{ii}$ is idempotent, $e_{ii}e_{jj}=0$ for $i\ne j$, and $e_{11}+\cdots + e_{nn}=1$.  From this, we see that $N=N_1\oplus \cdots \oplus N_n$, where $N_i=Ne_{ii}$, and $N_i\cong N_j$ as $M_n(R)$-modules.  Since $N_1=Ne$ has an $R$-module structure as we had shown earlier, $N_i$ are all $R$-modules.  Let $\pi_i:N\to N_i$ be the projection map, $\psi_i: N_i\to N$ be the embedding of $N_i$ into $N$, and $\phi_{ij}:N_i\to N_j$ be the isomorphism from $N_i$ to $N_j$ given by $\phi_{ij}(se_{ii})=se_{jj}$.  All these are $M_n(R)$-module homomorphisms since $e_{ii}A=Ae_{ii}$.
+
+Now, take any $s\in N$, then $s \mapsto (\pi_1(s),\ldots,\pi_n(s)) \mapsto (\phi_{11}\pi_1(s),\ldots,\phi_{n1}\pi_n(s)) \in FG(N)$ is a homomorphism $\alpha: N\to FG(N)$.  Conversely, $(s_1e,\ldots,s_n e)\mapsto (\phi_{11}(s_1e),\ldots, \phi_{1n}(s_ne)) \mapsto \psi_1(\phi_{11}(s_1e))+\cdots + \psi_n(\phi_{1n}(s_ne)) \in N$ is also a homomorphism $\beta: FG(N)\to N$.  By inspection, $\alpha$ and $\beta$ are inverses of each other, and hence $FG(N)\cong N$.
+\end{proof}
+
+\textbf{Remark}.  A property $P$ in the class of all rings is said to be \emph{Morita invariant} if, whenever $R$ has property $P$ and $S$ is Morita equivalent to $R$, then $S$ has property $P$ as well.  By the example above, it is clear that commutativity is not a Morita invariant property.
+%%%%%
+%%%%%
+\end{document}

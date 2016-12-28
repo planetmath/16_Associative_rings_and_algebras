@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExactSequence}
+\pmcreated{2013-03-22 12:09:27}
+\pmmodified{2013-03-22 12:09:27}
+\pmowner{antizeus}{11}
+\pmmodifier{antizeus}{11}
+\pmtitle{exact sequence}
+\pmrecord{7}{31354}
+\pmprivacy{1}
+\pmauthor{antizeus}{11}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmrelated{ExactSequence2}
+\pmrelated{CategoricalSequence}
+\pmrelated{HomologicalComplexOfTopologicalVectorSpaces}
+\pmrelated{CategoricalDiagramsAsFunctors}
+\pmrelated{SpinGroup}
+\pmrelated{AlternativeDefinitionOfAnAbelianCategory}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+If we have two homomorphisms $f : A \to B$ and $g : B \to C$
+in some category of modules,
+then we say that $f$ and $g$ are {\it exact} at $B$
+if the image of $f$ is equal to the kernel of $g$.
+
+A sequence of homomorphisms
+$$
+  \cdots \rightarrow
+  A_{n+1} \buildrel {f_{n+1}} \over \longrightarrow
+  A_n \buildrel {f_n} \over \longrightarrow
+  A_{n-1} \rightarrow
+  \cdots
+$$
+is said to be {\it exact} if each pair
+of adjacent homomorphisms $(f_{n+1}, f_n)$ is exact -- 
+in other words if ${\rm im} f_{n+1} = {\rm ker} f_n$ for all $n$.
+
+Compare this to the notion of a chain complex.
+
+\textbf{Remark}.  The notion of exact sequences can be generalized to any abelian category $\mathcal{A}$, where $A_i$ and $f_i$ above are objects and morphisms in $\mathcal{A}$.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

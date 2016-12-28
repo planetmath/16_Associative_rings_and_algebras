@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InternalDirectSumOfIdeals}
+\pmcreated{2013-03-22 14:49:32}
+\pmmodified{2013-03-22 14:49:32}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{internal direct sum of ideals}
+\pmrecord{7}{36489}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmclassification{msc}{11N80}
+\pmclassification{msc}{13A15}
+\pmdefines{internal direct sum of ideals}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+Let $R$ be a ring and $\mathfrak{a}_1$, $\mathfrak{a}_2$, \ldots, $\mathfrak{a}_n$ its ideals (left, right or two-sided). \,We say that $R$ is the {\em internal direct sum} of these ideals, denoted by
+  $$R =  \mathfrak{a}_1\oplus\mathfrak{a}_2\oplus\cdots\oplus\mathfrak{a}_n,$$
+if both of the following conditions are true:
+$$R = \mathfrak{a}_1+\mathfrak{a}_2+\cdots+\mathfrak{a}_n,$$
+$$\mathfrak{a}_i\cap\sum_{j\neq i}\mathfrak{a}_j = \{0\}\quad\forall i.$$
+
+\begin{thmplain}
+ \, If  $\mathfrak{a}_1$, $\mathfrak{a}_2$, \ldots, $\mathfrak{a}_n$ are ideals of the ring $R$, then the following two statements are equivalent:
+\begin{itemize}
+\item $R = \mathfrak{a}_1\oplus\mathfrak{a}_2\oplus\cdots\oplus\mathfrak{a}_n$.
+\item Every element $r$ of $R$ has a unique expression\\    
+$r = a_1\!+\!a_2\!+\cdots+\!a_n$ \,\,with \,$a_i\in\mathfrak{a}_i\,\,\,\forall i$.
+\end{itemize}
+\end{thmplain}
+%%%%%
+%%%%%
+\end{document}

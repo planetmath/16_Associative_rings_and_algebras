@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GradedAlgebra}
+\pmcreated{2013-03-22 12:45:47}
+\pmmodified{2013-03-22 12:45:47}
+\pmowner{mhale}{572}
+\pmmodifier{mhale}{572}
+\pmtitle{graded algebra}
+\pmrecord{8}{33071}
+\pmprivacy{1}
+\pmauthor{mhale}{572}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W50}
+\pmrelated{GradedModule}
+\pmrelated{SuperAlgebra}
+\pmrelated{LieSuperalgebra}
+\pmrelated{LieSuperalgebra3}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+An algebra $A$ over a graded ring $B$ is \emph{graded} if it is itself a graded ring and a graded module over $B$ such that
+$$A^p \cdot A^q \subseteq A^{p+q}$$
+where $A^i$, $i \in \mathbb{N}$, are submodules of $A$.
+More generally, one can replace $\mathbb{N}$ by a monoid or semigroup $G$.
+In which case, $A$ is called a $G$-graded algebra.
+A graded algebra then is the same thing as an $\mathbb{N}$-graded algebra.
+
+Examples of graded algebras include the polynomial ring $k[X]$ being an $\mathbb{N}$-graded $k$-algebra, and the exterior algebra.
+%%%%%
+%%%%%
+\end{document}

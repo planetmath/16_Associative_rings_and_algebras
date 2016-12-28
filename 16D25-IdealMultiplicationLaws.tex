@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdealMultiplicationLaws}
+\pmcreated{2014-05-11 17:05:52}
+\pmmodified{2014-05-11 17:05:52}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{ideal multiplication laws}
+\pmrecord{16}{37711}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmsynonym{laws of ideal product}{IdealMultiplicationLaws}
+%\pmkeywords{ideal product}
+%\pmkeywords{ideal multiplication}
+\pmrelated{DivisibilityInRings}
+\pmrelated{ProductOfLeftAndRightIdeal}
+\pmrelated{InvertibilityOfRegularlyGeneratedIdeal}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The \PMlinkname{multiplication}{ProductOfIdeals} of the (two-sided) ideals of any ring $R$ has following properties:
+\begin{enumerate}
+\item $(0)\mathfrak{a = a}(0) = (0)$
+\item $\mathfrak{(ab)c = a(bc)}$
+\item $\mathfrak{a(b+c) = ab+ac, \quad (a+b)c = ac+bc}$
+\item If $R$ has a unity, then\, $R\mathfrak{a} = \mathfrak{a}R = \mathfrak{a}$
+\item If $R$ is commutative, then\, $\mathfrak{ab = ba}$
+\item $\mathfrak{ab \subseteq a\cap b}$
+\item $\mathfrak{a(b\cap c) \subseteq ab\cap ac}$
+\item $\mathfrak{a\subseteq b\quad\Rightarrow\quad ac\subseteq bc}$\end{enumerate}
+
+
+\textbf{Remark.}\, The properties 1, 2, 3, 4 together with the properties
+$$\mathfrak{(a+b)+c = a+(b+c),\qquad a+b = b+a,\qquad a}+(0) = \mathfrak{a}$$
+of the ideal addition make the set $A$ of all ideals of $R$ to a semiring\, $(A,\,+,\,\cdot)$.\, It is not a ring, since no non-zero ideal of $R$ has the \PMlinkname{additive inverse}{Ring}.
+
+\begin{thebibliography}{9}
+\bibitem{Larsen & McCarthy} {\sc M. Larsen \& P. McCarthy}: {\it Multiplicative theory of ideals}.\, Academic Press, New York (1971).
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

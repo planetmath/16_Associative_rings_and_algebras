@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GoldieRing}
+\pmcreated{2013-03-22 14:04:10}
+\pmmodified{2013-03-22 14:04:10}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{Goldie ring}
+\pmrecord{6}{35427}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16P60}
+\pmsynonym{Goldie}{GoldieRing}
+\pmrelated{UniformDimension}
+\pmdefines{left Goldie}
+\pmdefines{right Goldie}
+\pmdefines{left Goldie ring}
+\pmdefines{right Goldie ring}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\DeclareMathOperator{\rann}{r.ann}
+\begin{document}
+Let $R$ be a ring.  If the set of annihilators
+$\{ \rann(x) \mid x \in R\}$
+satisifies the ascending chain condition, then
+$R$ is said to satisfy the \emph{ascending chain condition on right annihilators}.
+
+A ring $R$ is called a \emph{right Goldie ring} if it satisfies the ascending chain condition on right annihilators and $R_R$ is a module of finite rank.
+
+\emph{Left Goldie ring} is defined similarly.  If the context makes it clear on which side the ring operates, then such a ring is simply called a \emph{Goldie ring}.
+
+A right Noetherian ring is right Goldie.
+%%%%%
+%%%%%
+\end{document}

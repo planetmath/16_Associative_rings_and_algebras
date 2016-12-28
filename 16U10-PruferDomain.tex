@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PruferDomain}
+\pmcreated{2013-03-22 13:47:34}
+\pmmodified{2013-03-22 13:47:34}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Pr\"ufer domain}
+\pmrecord{8}{34507}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U10}
+%\pmkeywords{valuation domain}
+%\pmkeywords{Pr\"ufer}
+%\pmkeywords{Noetherian}
+\pmrelated{ValuationDomain}
+\pmrelated{DedekindDomain}
+\pmrelated{PruferRing}
+\pmrelated{InvertibleIdealsInSemiLocalRings}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+A commutative integral domain $R$ is a \emph{Pr\"ufer domain} if every finitely generated nonzero ideal $I$ of $R$ is invertible.
+
+Let $R_I$ denote the localization of $R$ at $R\backslash I$.  Then the following statements are equivalent:
+\begin{itemize}
+\item i)  $R$ is a Pr\"ufer domain.
+\item ii)  For every prime ideal $P$ in $R$, $R_P$ is a valuation domain.
+\item iii)  For every maximal ideal $M$ in $R$, $R_M$ is a valuation domain.
+\end{itemize}
+
+A Pr\"ufer domain is a Dedekind domain if and only if it is Noetherian.
+
+If $R$ is a Pr\"ufer domain with quotient field $K$, then any domain $S$ such that $R\subset S\subset K$ is Pr\"ufer.
+
+\begin{thebibliography}{9}
+\bibitem{Hungerford} Thomas W. Hungerford.  Algebra.  Springer-Verlag, 1974.  New York, NY.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

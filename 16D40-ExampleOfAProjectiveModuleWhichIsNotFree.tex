@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfAProjectiveModuleWhichIsNotFree}
+\pmcreated{2013-03-22 18:49:55}
+\pmmodified{2013-03-22 18:49:55}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{example of a projective module which is not free}
+\pmrecord{6}{41636}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $R_1$ and $R_2$ be two nontrivial, unital rings and let $R=R_1\oplus R_2$. Furthermore let $\pi_i:R\to R_i$ be a projection for $i=1,2$. Note that in this case both $R_1$ and $R_2$ are (left) modules over $R$ via
+$$\cdot:R\times R_i\to R_i;$$
+$$(r,s)\cdot x = \pi_i(r,s)x,$$
+where on the right side we have the multiplication in a ring $R_i$.
+
+\textbf{Proposition.} Both $R_1$ and $R_2$ are projective $R$-modules, but neither $R_1$ nor $R_2$ is free.
+
+\textit{Proof.} Obviously $R_1\oplus R_2$ is isomorphic (as a $R$-modules) with $R$ thus both $R_1$ and $R_2$ are projective as a direct summands of a free module.
+
+Assume now that $R_1$ is free, i.e. there exists $\mathcal{B}=\{e_i\}_{i\in I}\subseteq R_1$ which is a basis. Take any $i_0\in I$. Both $R_1$ and $R_2$ are nontrivial and thus $1\neq 0$ in both $R_1$ and $R_2$. Therefore $(1,0)\neq (1,1)$ in $R$, but $$(1,1)\cdot e_{i_0}=\pi_1(1,1)e_{i_0}=1 e_{i_0}=\pi_1(1,0) e_{i_0}=(1,0)\cdot e_{i_0}.$$
+This situation is impossible in free modules (linear combination is uniquely determined by scalars). Contradiction. Analogously we prove that $R_2$ is not free. $\square$
+%%%%%
+%%%%%
+\end{document}

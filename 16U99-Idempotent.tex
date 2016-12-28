@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Idempotent}
+\pmcreated{2013-03-22 13:07:27}
+\pmmodified{2013-03-22 13:07:27}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{idempotent}
+\pmrecord{11}{33558}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U99}
+\pmclassification{msc}{20M99}
+\pmsynonym{idempotent element}{Idempotent}
+\pmrelated{Semilattice}
+\pmrelated{Idempotency}
+\pmdefines{orthogonal idempotents}
+\pmdefines{complete set of orthogonal idempotents}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\isom}{\cong}
+\begin{document}
+\PMlinkescapeword{complete}
+
+An element $x$ of a ring is called an \emph{idempotent element}, or simply an \emph{idempotent} if $x^2 = x$.
+
+The set of idempotents of a ring can be partially ordered by putting $e \le f$ iff $e = ef = fe$.
+
+The element $0$ is a minimum element in this partial order.  If the ring has an identity element, $1$, then $1$ is a maximum element in this partial order.
+
+Since the above definitions refer only to the multiplicative structure of the ring, they also hold for semigroups (with the proviso, of course, that a semigroup may have neither a zero element nor an identity element).  In the special case of a semilattice, this partial order is the same as the one described in the entry for semilattice.
+
+If a ring has an identity, then $1 - e$ is always an idempotent whenever $e$ is an idempotent, and $e(1-e) = (1-e)e = 0$.
+
+In a ring with an identity, two idempotents $e$ and $f$ are called a \emph{pair of orthogonal idempotents} if $e + f = 1$, and $ef = fe = 0$.  Obviously, this is just a fancy way of saying that $f = 1 - e$.
+
+More generally, a set $\{e_1, e_2, \dots, e_n\}$ of idempotents is called a \emph{complete set of orthogonal idempotents} if $e_i e_j = e_j e_i = 0$ whenever $i \neq j$ and if $1 = e_1 + e_2 + \dots + e_n$.
+
+If $\{e_1, e_2, \dots, e_n\}$ is a complete set of orthogonal idempotents,
+and in addition each $e_i$ is in the centre of $R$, then each $Re_i$ is a subring, and $$R \isom Re_1 \times Re_2 \times \dots \times Re_n.$$
+
+Conversely, whenever $R_1 \times R_2 \times \dots \times R_n$ is a direct
+product of rings with identities, write $e_i$ for the element of the product
+corresponding to the identity element of $R_i$.  Then $\{e_1, e_2, \dots, e_n\}$ is a complete set of central orthogonal idempotents of the product ring.
+
+When a complete set of orthogonal idempotents is not central, there is a more complicated \PMlinkescapetext{decomposition}: see the entry on the Peirce decomposition for the details.
+%%%%%
+%%%%%
+\end{document}

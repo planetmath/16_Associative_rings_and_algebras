@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubdirectlyIrreducibleRing}
+\pmcreated{2013-03-22 14:19:13}
+\pmmodified{2013-03-22 14:19:13}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{subdirectly irreducible ring}
+\pmrecord{10}{35787}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D70}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{subdirectly irreducible}
+
+A ring $R$ is said to be {\em subdirectly irreducible} if every subdirect product \PMlinkescapetext{representation} of $R$ is trivial.  
+
+Equivalently, a ring $R$ is {\em subdirectly irreducible} iff the intersection of \emph{all} non-zero ideals of $R$ is non-zero.
+\begin{proof}  Let $\lbrace I_i\rbrace$ be the set of all non-zero ideals of $R$.
+
+$(\Rightarrow)$.  Suppose first that $R$ is subdirectly irreducible.  If $\bigcap I_i=0$, then $R$ is a subdirect product of $R_i:=R/I_i$, for $\epsilon: R\to \prod R_i$ given by $\epsilon(r)(i)=r+I_i$ is injective.  If $\epsilon(r)=0$, then $r\in I_i$ for all $i$, or $r\in \bigcap I_i=0$, or $r=0$.  But then $R\to \prod R_i\to R_i$ given by $r\mapsto r+I_i$ is not an isomorphism for any $i$, contradicting the fact that $R$ is subdirectly irreducible.  Therefore, $\bigcap I_i\ne 0$.
+
+$(\Leftarrow)$.  Suppose next that $\bigcap I_i\ne 0$.  Let $R$ be a subdirect product of some $R_i$, and let $J_i:=\ker(R\to \prod R_i\to R_i)$.  Each $J_i$ is an ideal of $R$.  Let $J=\bigcap J_i$.  If $R\to \prod R_i\to R_i$ is not an isomorphism (therefore not injective), $J_i$ is non-zero.  This means that if $R$ is not subdirectly irreducible, $J\ne 0$.  But $J\subseteq \ker(R\to \prod R_i)$, contradicting the subdirect irreducibility of $R$.  As a result, some $J_i=0$, or $R\to \prod R_i \to R_i$ is an isomorphism.
+\end{proof}
+
+As an application of the above equivalence, we have that a simple ring is subdirectly irreducible.  In addition, a commutative subdirectly irreducible reduced ring is a field.  To see this, let $\lbrace I_i\rbrace$ be the set of all non-zero ideals of a commutative subdirectly irreducible reduced ring $R$, and let $I=\bigcap I_i$.  So $I\ne 0$ by subdirect irreducibility.  Pick $0\ne s\in I$.  Then $s^2R\subseteq sR\subseteq I$.  So $s^2R=sR$ since $I$ is minimal.  This means $s=s^2t$, or $1=st\in sR=I$, which means $I=R$.  Now, let any $0\ne r\in R$, then $R=I\subseteq rR$, so $1=pr$ for some $p\in R$, which means $R$ is a field.
+%%%%%
+%%%%%
+\end{document}

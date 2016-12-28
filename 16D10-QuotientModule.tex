@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuotientModule}
+\pmcreated{2013-03-22 14:01:18}
+\pmmodified{2013-03-22 14:01:18}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{quotient module}
+\pmrecord{9}{34966}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmdefines{quotient vector space}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+Let $M$ be a module over a ring $R$, and let $S$ be a submodule of $M$.
+The \emph{quotient module} $M/S$ is the quotient group $M/S$ with
+scalar multiplication defined by $\lambda(x+S)=\lambda x+S$ for all
+$\lambda\in R$ and all $x\in M$.  
+
+This is a well defined operation. Indeed, if $x+S = x'+S$ then for
+some $s\in S$ we have $x'=x+s$ and therefore
+\begin{align*}
+  \lambda x' &= \lambda(x+s)\\
+                &= \lambda x+\lambda s
+\end{align*}
+so that $\lambda x' + S = \lambda x + \lambda s + S = \lambda x + S$,
+since $\lambda s \in S$. 
+
+In the special case that $R$ is a field this construction defines
+the \emph{quotient vector space} of a vector space by a vector subspace.
+%%%%%
+%%%%%
+\end{document}

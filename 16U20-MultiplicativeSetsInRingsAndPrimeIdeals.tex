@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MultiplicativeSetsInRingsAndPrimeIdeals}
+\pmcreated{2013-03-22 19:03:58}
+\pmmodified{2013-03-22 19:03:58}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{multiplicative sets in rings and prime ideals}
+\pmrecord{5}{41950}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U20}
+\pmclassification{msc}{13B30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Proposition.} Let $R$ be a commutative ring, $S\subseteq R$ a mutliplicative subset of $R$ such that $0\not\in S$. Then there exists prime ideal $P\subseteq R$ such that $P\cap S=\emptyset$.
+
+\textit{Proof.} Consider the family $\mathcal{A}=\{I\subseteq R\ |\ I\mbox{ is an ideal and }I\cap S=\emptyset\}$. Of course $\mathcal{A}\neq\emptyset$, because the zero ideal $0\in\mathcal{A}$. We will show, that $\mathcal{A}$ is inductive (i.e. satisfies Zorn's Lemma's assumptions) with respect to inclusion.
+
+Let $\{I_k\}_{k\in K}$ be a chain in $\mathcal{A}$ (i.e. for any $a,b\in K$ either $I_a\subseteq I_b$ or $I_b\subseteq I_a$). Consider $I=\bigcup_{k\in K}I_{k}$. Obviously $I$ is an ideal. Furthermore, if $x\in I\cap S$, then there is $k\in K$ such that $x\in I_k\cap S=\emptyset$. Thus $I\cap S=\emptyset$, so $I\in\mathcal{A}$. Lastely each $I_k\subseteq I$, which completes this part of proof.
+
+By Zorn's Lemma there is a maximal element $P\in\mathcal{A}$. We will show that this ideal is prime. Let $x,y\in R$ be such that $xy\in P$. Assume that neither $x\not\in P$ nor $y\not\in P$. Then $P\subset P+(x)$ and $P\subset P+(y)$ and these inclusions are proper. Therefore both $P+(x)$ and $P+(y)$ do not belong to $\mathcal{A}$ (because $P$ is maximal). This implies that there exist $a\in (P+(x))\cap S$ and $b\in (P+(y))\cap S$. Thus
+$$a=m_1+r_1x\in S;\ \ \ \ b=m_2+r_2y\in S;$$
+where $m_1,m_2\in P$ and $r_1,r_2\in R$. Note that $ab\in S$. We calculate
+$$ab=(m_1+r_1x)(m_2+r_2y)=m_1m_2+m_2r_1x+m_1r_2y+xyr_1r_2.$$
+Of course $m_1m_2, m_2r_1x, m_1r_2y\in P$, because $m_1,m_2\in P$ and $xyr_1r_2\in P$ by our assumption that $xy\in P$. This shows, that $ab\in P$. But $ab\in S$ and $P\in\mathcal{A}$. Contradiction. $\square$
+
+\textbf{Corollary.} Let $R$ be a commutative ring, $I$ an ideal in $R$ and $S\subseteq R$ a multiplicative subset such that $I\cap S=\emptyset$. Then there exists prime ideal $P$ in $R$ such that $I\subseteq P$ and $P\cap S=\emptyset$.
+
+\textit{Proof.} Let $\pi:R\to R/I$ be the projection. Then $\pi(S)\subseteq R/I$ is a multiplicative subset in $R/I$ such that $0+I\not\in\pi(S)$ (because $I\cap S=\emptyset$). Thus, by proposition, there exists a prime ideal $P$ in $R/I$ such that $P\cap\pi(S)=\emptyset$. Of course the preimage of a prime ideal is again a prime ideal. Furthermore $I\subseteq\pi^{-1}(P)$. Finaly $\pi^{-1}(P)\cap S=\emptyset$, because $P\cap\pi(S)=\emptyset$. This completes the proof.
+%%%%%
+%%%%%
+\end{document}

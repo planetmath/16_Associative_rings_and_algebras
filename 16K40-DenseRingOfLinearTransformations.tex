@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DenseRingOfLinearTransformations}
+\pmcreated{2013-03-22 15:38:46}
+\pmmodified{2013-03-22 15:38:46}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{dense ring of linear transformations}
+\pmrecord{10}{37578}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16K40}
+\pmsynonym{dense ring}{DenseRingOfLinearTransformations}
+\pmrelated{SchursLemma}
+\pmdefines{Jacobson Density Theorem}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% define commands here
+\begin{document}
+Let $D$ be a division ring and $V$ a vector space over $D$.  Let $R$ be a subring of the ring of endomorphisms (linear transformations) $\operatorname{End}_D(V)$ of $V$.  Then $R$ is said to be a \emph{dense ring of linear transformations} (over $D$) if we are given 
+\begin{enumerate}
+\item any positive integer $n$, 
+\item any set $\lbrace v_1,\ldots,v_n\rbrace$ of linearly independent vectors in $V$, and 
+\item any set $\lbrace w_i,\ldots,w_n\rbrace$ of arbitrary vectors in $V$,
+\end{enumerate}
+then there exists an element $f\in R$ such that
+$$f(v_i)=w_i\quad\mbox{ for }i=1,\ldots,n.$$
+
+Note that the linear independence of the $v_i$'s is essential in insuring the existence of a linear transformation $f$.  Otherwise, suppose $0=\sum d_iv_i$ where $d_1\neq 0$.  Pick $w_i$'s so that they are linearly independent.  Then $0=f(\sum d_iv_i)=\sum d_if(v_i)=\sum d_iw_i$, contradicting the linear independence of the $w_i$'s.
+
+The notion of ``dense'' comes from topology: if $V$ is given the discrete topology and $\operatorname{End}_D(V)$ the compact-open topology, then $R$ is dense in $\operatorname{End}_D(V)$ iff $R$ is a dense ring of linear transformations of $V$.
+
+\begin{proof} First, assume that $R$ is a dense ring of linear transformations of $V$.  Recall that the compact-open topology on $\operatorname{End}_D(V)$ has subbasis of the form $B(K,U):=\lbrace f\mid f(K)\subseteq U\rbrace$, where $U$ is open and $K$ is compact in $V$.  Since $V$ is discrete, $K$ is finite.  Now, pick a point $g\in \operatorname{End}_D(V)$ and let $$B=\bigcup_{\alpha\in I}\bigcap_{i=1}^{n(\alpha)}B(K_{i\alpha},U_{i\alpha})$$ be a neighborhood of $g$, $I$ some index set.  Then for some $\alpha\in I$, $g\in \bigcap B(K_{i\alpha},U_{i\alpha})$.  This means that $g(K_{i\alpha})\subseteq U_{i\alpha}$ for all $i=1,\ldots,n(\alpha)$.  Since each $K_{i\alpha}$ is finite, so is $K:=\bigcup K_{i\alpha}$.  After some re-indexing, let $\lbrace v_1,\ldots, v_n\rbrace$ be a maximal linearly independent subset of $K$.  Set $w_j=g(v_j)$, $j=1,\ldots,n$.  By assumption, there is an $f\in R$ such that $f(v_j)=w_j$, for all $j$.  For any $v\in K$, $v$ is a linear combination of the $v_j$'s: $v=\sum d_jv_j$, $d_j\in D$.  Then $f(v)=\sum d_jf(v_j)=\sum d_jg(_j)=g(v)\in U_{i\alpha}$ for some $i$.  This shows that $f(K_{i\alpha})\subseteq U_{i\alpha}$ and we have $f\in \bigcap B(K_{i\alpha},U_{i\alpha})\subseteq B$.
+
+Conversely, assume that the ring $R$ is a dense subset of the space $\operatorname{End}_D(V)$.  Let $v_1,\ldots,v_n$ be linearly independent, and $w_1,\ldots,w_n$ be arbitrary vectors in $V$.  Let $W$ be the subspace spanned by the $v_i$'s.  Because the $v_i$'s are linearly independent, there exists a linear transformation $g$ such that $g(v_i)=w_i$ and $g(v)=0$ for $v\notin W$.  Let $K_i=\lbrace v_i\rbrace$ and $U_i=\lbrace w_i\rbrace$.  Then the $K_i$'s are compact and the $U_i$'s are open in the discrete space $V$.  Clearly $g\in\lbrace h\mid h(v_i)=w_i\rbrace=B(K_i,U_i)$ for each $i=1,\ldots,n$.  So $g$ lies in the neighborhood $B=\cap B(K_i,U_i)\subseteq \operatorname{End}_D(V)$.  Since $R$ is dense in $\operatorname{End}_D(V)$, there is an $f\in R\cap B$.  This implies that $f(v_i)=w_i$ for all $i$.
+\end{proof}
+
+\textbf{Remarks.}
+\begin{itemize}
+\item If $V$ is finite dimensional over $D$, then any dense ring of linear transformations $R=\operatorname{End}_D(V)$.  This can be easily observed by using the second half of the proof above.  Take a basis $v_1,\ldots,v_n$ of $V$ and any set of $n$ vectors $w_1,\ldots,w_n$ in $V$.  Let $g$ be the linear transformation that maps $v_i$ to $w_i$.  The above proof shows that there is an $f\in R$ such that $f$ agrees with $g$ on the basis elements.  But then they must agree on all of $V$ as a result, which is precisely the statement that $g=f\in R$.
+\item It can be shown that a ring $R$ is a primitive ring iff it is isomorphic to a dense ring of linear transformations of a vector space over a division ring.  This is known as the \emph{\PMlinkescapetext{Jacobson Density Theorem}}.  It is a generalization of the special case of the Wedderburn-Artin Theorem when the ring in question is a simple Artinian ring.  In the general case, the finite chain condition is dropped.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

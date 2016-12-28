@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NewVectorSpacesFromOldOnes}
+\pmcreated{2013-03-22 15:31:08}
+\pmmodified{2013-03-22 15:31:08}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{new vector spaces from old ones}
+\pmrecord{16}{37388}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{20-00}
+\pmclassification{msc}{15-00}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+This entry list methods that give new vector spaces from old ones.
+
+\begin{enumerate}
+\item Changing the field (complexification, etc.)
+\item vector subspace
+\item Quotient vector space
+\item direct product of vectors spaces
+\item Cartesian product of vector spaces
+\item \PMlinkname{Tensor product of vector spaces}{TensorProductClassical}
+\item The space of linear maps from one vector space to another, also denoted by $\operatorname{Hom}_k(V,W)$, or simply $\operatorname{Hom}(V,W)$, where $V$ and $W$ are vector spaces over the field $k$
+\item The space of endomorphisms of a vector space.  Using the notation above, this is the space $\operatorname{Hom}_k(V,V)=\operatorname{End}(V)$
+\item \PMlinkname{dual vector space}{DualSpace}, and bi-dual vector space.  Using the notation above, this is the space $\operatorname{Hom}(V,k)$, or simply $V^*$.
+\item The annihilator of a subspace is a subspace of the dual vector space
+\item Wedge product of vector spaces
+\item A field $k$ is a vector space over itself.  Consider a set $B$ and the set $V$ of all functions from $B$ to $k$.  Then $V$ has a natural vector space structure.  If $B$ is finite, then $V$ can be viewed as a vector space having $B$ as a basis.
+\end{enumerate}
+
+\subsubsection*{Vector spaces involving a linear map}
+
+Suppose $L\colon\thinspace V\to W$ is a linear map.
+
+\begin{enumerate}
+\item The kernel of $L$ is a subspace of $V$.
+\item The image of $L$ is a subspace of $W$.
+\item The cokernel of $L$ is a quotient space of $W$. 
+\end{enumerate}
+
+\subsubsection*{Topological vector spaces}
+
+Suppose $V$ is topological vector space.
+\begin{enumerate}
+\item If $W$ is a subspace of $V$ then its closure $\overline{W}$ is also a subspace of $V$.
+\item If $V$ is a metric vector space then its completion $\widetilde{V}$ is also a (metric) vector space.
+\item The direct integral of Hilbert spaces provides a new Hilbert space.
+\end{enumerate}
+
+\subsubsection*{Spaces of structures and subspaces of the tensor algebra of a vector space}
+
+There are also certain spaces of interesting structures on a vector
+space that at least in the case of finite dimension correspond to
+certain subspaces of the tensor algebra of the vector space.  These
+spaces include:
+
+\begin{enumerate}
+\item The space of Euclidean inner products.
+\item The space of Hermitian inner products.
+\item the space of symplectic structures.
+\item vector bundles
+\item space of connections
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

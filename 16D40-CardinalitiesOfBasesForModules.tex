@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CardinalitiesOfBasesForModules}
+\pmcreated{2013-03-22 18:06:33}
+\pmmodified{2013-03-22 18:06:33}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{cardinalities of bases for modules}
+\pmrecord{9}{40654}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+\pmclassification{msc}{13C05}
+\pmclassification{msc}{15A03}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Let $R$ be a ring and $M$ a left module over $R$.
+
+\begin{prop}
+If $M$ has a finite basis, then all bases for $M$ are finite.
+\end{prop}
+\begin{proof}
+Suppose $A=\lbrace a_1,\ldots, a_n\rbrace$ is a finite basis for $M$, and $B$ is another basis for $M$.  Each element in $A$ can be expressed as a finite linear combination of elements in $B$.  Since $A$ is finite, only a finite number of elements in $B$ are needed to express elements of $A$.  Let $C=\lbrace b_1,\ldots,b_m\rbrace$ be this finite subset (of $B$).  $C$ is linearly independent because $B$ is.  If $C\ne B$, pick $b\in B-C$.  Then $b$ is expressible as a linear combination of elements of $A$, and subsequently a linear combination of elements of $C$.  This means that $b=r_1b_1+\cdots +r_mb_m$, or $0=-b+r_1b_1+\cdots r_mb_m$, contradicting the linear independence of $C$.
+\end{proof}
+
+\begin{prop}
+If $M$ has an infinite basis, then all bases for $M$ have the same cardinality.
+\end{prop}
+\begin{proof}
+Suppose $A$ be a basis for $M$ with $|A| \ge \aleph_0$, the smallest infinite cardinal, and $B$ is another basis for $M$.  We want to show that $|B|=|A|$.  First, notice that $|B|\ge \aleph_0$ by the previous proposition.  Each element $a\in A$ can be expressed as a \emph{finite} linear combination of elements of $B$, so let $B_a$ be the collection of these elements.  Now, $B_a$ is uniquely determined by $a$, as $B$ is a basis.  Also, $B_a$ is finite.  Let $$B'=\bigcup_{a\in A} B_a.$$  Since $A$ spans $M$, so does $B'$.  If $B'\ne B$, pick $b\in B-B'$, so that $b$ is a linear combination of elements of $B'$.  Moving $b$ to the other side of the expression and we have expressed $0$ as a non-trivial linear combination of elements of $B$, contradicting the linear independence of $B$.  Therefore $B'=B$.  This means $$|B|= \left|\bigcup_{a\in A} B_a\right| \le \aleph_0 |A| = |A|.$$
+Similarly, every element in $B$ is expressible as a finite linear combination of elements in $A$, and using the same argument as above, $$|A|\le \aleph_0 |B| \le |B|.$$  By Schroeder-Bernstein theorem, the two inequalities can be combined to form the equality $|A|=|B|$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

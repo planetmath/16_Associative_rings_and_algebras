@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FiniteDimensionalModulesOverAlgebra}
+\pmcreated{2013-03-22 19:16:35}
+\pmmodified{2013-03-22 19:16:35}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{finite dimensional modules over algebra}
+\pmrecord{4}{42208}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+\pmclassification{msc}{20C99}
+\pmclassification{msc}{13B99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Assume that $k$ is a field, $A$ is a $k$-algebra and $M$ is a $A$-module over $k$. In particular $M$ is a $A$-module and a vector space over $k$, thus we may speak about $M$ being finitely generated as $A$-module and finite dimensional as a vector space. These two concepts are related as follows:
+
+\textbf{Proposition.} Assume that $A$ and $M$ are both unital and additionaly $A$ is finite dimensional. Then $M$ is finite dimensional vector space if and only if $M$ is finitely generated $A$-module.
+
+\textit{Proof.} ,,$\Rightarrow$'' Of course if $M$ is finite dimensional, then there exists basis 
+$$\{x_1,\ldots,x_n\}\subset M.$$
+Thus every element of $M$ can be (uniquely) expressed in the form
+$$\sum_{i=1}^{n}\lambda_i\cdot x_i$$
+which is equal to 
+$$\sum_{i=1}^{n}(\lambda_i\cdot 1)\cdot x_i$$
+since $M$ and $A$ are unital. This completes this implication, because $\lambda_i\cdot 1\in A$ for all $i$.
+
+,,$\Leftarrow$'' Assume that $M$ is finitely generated $A$-module. In particular there is a subset 
+$$\{x_1,\ldots,x_n\}\subset M$$
+such that every element of $M$ is of the form
+$$\sum_{i=1}^{n}a_i\cdot x_i$$
+with all $a_i\in A$. Let $m\in M$ be with the decomposition as above. Now $A$ is finite dimensional, so there is a subset 
+$$\{y_1,\ldots,y_t\}\subset A$$
+which is a $k$-basis of $A$. In particular for each $i$ we have
+$$a_i=\sum_{j=1}^{t}\lambda_{ij}\cdot y_j$$
+with $\lambda_{ij}\in k$. Thus we obtain
+$$m=\sum_{i=1}^{n}a_i\cdot x_i = \sum_{i=1}^{n}\big(\sum_{j=1}^{t}\lambda_{ij}\cdot y_j\big)\cdot x_i=$$
+$$=\sum_{i=1}^{n}\sum_{j=1}^{t}\lambda_{ij}\cdot(y_j\cdot x_i)$$
+which shows, that all $y_j\cdot x_i\in M$ together make a set of generators of $M$ over $k$ (note that $y_j$ and $x_i$ are independent on $m$). Since it is finite, then $M$ is finite dimensional and the proof is complete. $\square$
+%%%%%
+%%%%%
+\end{document}

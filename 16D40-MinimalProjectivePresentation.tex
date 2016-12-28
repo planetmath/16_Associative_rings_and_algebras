@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MinimalProjectivePresentation}
+\pmcreated{2013-03-22 19:18:00}
+\pmmodified{2013-03-22 19:18:00}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{minimal projective presentation}
+\pmrecord{4}{42235}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $R$ be a ring and $M$ a (right) module over $R$. A short exact sequence of modules
+$$\xymatrix{
+P_1\ar[r]^{p_1} & P_0\ar[r]^{p_0} & M\ar[r] & 0
+}$$
+is called a \textbf{minimal projective presentation} of $M$ if both $p_0:P_0\to M$ and $p_1:P_1\to\mathrm{ker}p_0$ are projective covers.
+
+Minimal projective presenetations are unique in the following sense: if
+$$\xymatrix{
+P_1\ar[r]^{p_1} & P_0\ar[r]^{p_0} & M\ar[r] & 0 \\
+P'_1\ar[r]^{p'_1} & P'_0\ar[r]^{p'_0} & M\ar[r] & 0 \\
+}$$
+are both minimal projective presentations of $M$, then this diagram can be completed to the following commutative one:
+$$\xymatrix{
+P_1\ar[r]^{p_1}\ar[d]^{a} & P_0\ar[r]^{p_0}\ar[d]^{b} & M\ar[r]\ar[d]^{=} & 0 \\
+P'_1\ar[r]^{p'_1} & P'_0\ar[r]^{p'_0} & M\ar[r] & 0 \\
+}$$
+were both $a,b$ are isomorphisms.
+
+It can be shown, that if $R$ is a finite-dimensional algebra over a field $k$, then every finitely generated $R$-module $M$ admits minimal projective presentation (indeed, $R$ is \PMlinkname{semiperfect}{PerfectAndSemiperfectRings} in this case). 
+%%%%%
+%%%%%
+\end{document}

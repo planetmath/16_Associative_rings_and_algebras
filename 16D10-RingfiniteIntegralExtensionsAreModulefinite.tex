@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RingfiniteIntegralExtensionsAreModulefinite}
+\pmcreated{2013-03-22 17:01:28}
+\pmmodified{2013-03-22 17:01:28}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{ring-finite integral extensions are module-finite}
+\pmrecord{6}{39310}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmclassification{msc}{13C05}
+\pmclassification{msc}{13B02}
+\pmrelated{ModuleFiniteExtensionsAreIntegral}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\ol}{\overline}
+\newcommand{\Leg}[2]{\left(\frac{#1}{#2}\right)}
+\renewcommand{\frak}[1]{\mathfrak{#1}}
+%
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+% define commands here
+
+\begin{document}
+\textbf{Theorem} If $B$ is a subring of $A$ and $u_1,\ldots,u_s\in A$ are integral over $B$, then $B[u_1,\ldots,u_s]$ is module-finite over $B$.
+
+\textbf{Proof.}
+If $s=1$ then $u^n+b_1 u^{n-1}+\cdots+b_n=0$, so $\{1,u,\ldots,u^{n-1}\}$ spans $B[u]$ over $B$.
+
+If $s>1$, use induction on $B\subset B[u_1]\subset B[u_1,u_2]\subset\ldots\subset B[u_1,\ldots,u_s]$ and multiply the spanning sets together.
+
+%%%%%
+%%%%%
+\end{document}

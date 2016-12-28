@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FunctorialityOfTheBurnsideRing}
+\pmcreated{2013-03-22 18:08:06}
+\pmmodified{2013-03-22 18:08:06}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{functoriality of the Burnside ring}
+\pmrecord{5}{40687}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+We wish to show how the Burnside ring $\Omega$ can be turned into a contravariant functor from the category of finite groups into the category of commutative, unital rings.\\ \\
+Let $G$ and $H$ be finite groups. We already know how $\Omega$ acts on objects of the category of finite groups. Assume that $f:G\rightarrow H$ is a group homomorphism. Furthermore let $X$ be a $H$-set. Then $X$ can be naturally equiped with a $G$-set structure via function:
+$$(g,x)\longmapsto f(g)x.$$
+The set $X$ equiped with this group action will be denoted by $X_{f}$.\\ \\
+Therefore a group homomorphism $f:G\rightarrow H$ induces a ring homomorphism $$\Omega(f):\Omega(H)\rightarrow\Omega(G)$$ such that $$\Omega(f)([X]-[Y])=[X_{f}]-[Y_{f}].$$ One can easily check that this turns $\Omega$ into a contravariant functor.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GradedModule}
+\pmcreated{2013-03-22 11:45:05}
+\pmmodified{2013-03-22 11:45:05}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{graded module}
+\pmrecord{18}{30193}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W50}
+\pmclassification{msc}{74R99}
+\pmsynonym{graded homomorphism}{GradedModule}
+\pmsynonym{homogeneous submodule}{GradedModule}
+%\pmkeywords{commutative algebra algebraic geometry}
+\pmrelated{GradedAlgebra}
+\pmdefines{graded module homomorphism}
+\pmdefines{homogeneous of degree}
+\pmdefines{graded submodule}
+\pmdefines{grading}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+It is a well-known fact that a polynomial (over, say, $\mathbb{Z}$) can be written as a sum of monomials in a unique way.  A monomial is a special kind of a polynomial.  Unlike polynomials, the monomials can be partitioned so that the sum of any two monomial within a partition, and the product of any two monomials, are again monomials.  As one may have guessed, one would partition the monomials by their degree.  The above notion can be generalized, and the general notion is that of a graded ring (and a graded module).
+
+\subsubsection*{Definition}
+
+Let $R = R_0 \oplus R_1 \oplus \cdots$ be a graded ring.  A module $M$ over $R$ is said to be a \emph{graded module} if 
+$$M = M_0 \oplus M_1 \oplus \cdots$$
+where $M_i$ are abelian subgroups of $M$, such that $R_i M_j \subseteq M_{i+j}$ for all $i,j$.  An element of $M$ is said to be \emph{homogeneous of degree} $i$ if it is in $M_i$.  The set of $M_i$ is called a \emph{grading} of $M$.
+
+Whenever we speak of a graded module, the module is always assumed to be over a graded ring.  As any ring $R$ is trivially a graded ring (where $R_i=R$ if $i=0$ and $R_i=0$ otherwise), every module $M$ is trivially a graded module with $M_i=M$ if $i=0$ and $M_i=0$ otherwise.  However, it is customary to regard a graded module (or a graded ring) non-trivially.
+
+If $R$ is a graded ring, then clearly it is a graded module over itself, by setting $M_i=R_i$ ($M=R$ in this case).  Furthermore, if $M$ is graded over $R$, then so is $Mz$ for any indeterminate $z$.
+
+\textbf{Example}.  To see a concrete example of a graded module, let us first construct a graded ring.  For convenience, take any ring $R$, the polynomial ring $S=R[x]$  is a graded ring, as $$S=S_0\oplus S_1 \oplus S_2 \oplus \cdots \oplus S_n \oplus \cdots,$$ with $S_i:=Rx^i$.  Then $S_iS_j=(Rx^m)(Rx^n)\subseteq Rx^{m+n}=S_{i+j}$.
+
+Therefore, $S$ is a graded module over $S$.  Similarly, the submodules $Sx^i$ of $S$ are also graded over $S$.
+
+It is possible for a module over a graded ring to be graded in more than one way.  Let $S$ be defined as in the example above.  Then $S[y]$ is graded over $S$.  One way to grade $S[y]$ is the following:
+$$S[y]=\bigoplus_{k=0}^{\infty} A_k,\quad\textrm{ where }A_k=R[y]x^k,$$
+since $S_pA_q=(Rx^p)(R[y]x^q)\subseteq R[y]x^{p+q}=A_{p+q}$.  Another way to grade $S[y]$ is:
+$$S[y]=\bigoplus_{k=0}^{\infty} B_k,\quad\textrm{ where }B_k=\sum_{i+j=k}Rx^iy^j,$$
+since $$S_pB_q=(Rx^p)(\sum_{i+j=q}Rx^iy^j)=\sum_{i+j=q}Rx^{i+p}y^j\subseteq \sum_{i+j=p+q}Rx^iy^j=B_{p+q}.$$
+
+\subsubsection*{Graded homomorphisms and graded submodules}
+
+Let $M,N$ be graded modules over a (graded) ring $R$.  A module homomorphism $f:M\to N$ is said to be \emph{graded} if $f(M_i)\subseteq N_i$.  $f$ is a \emph{graded isomorphism} if it is a graded module homomorphism and an isomorphism.  If $f$ is a graded isomorphism $M\to N$, then 
+\begin{enumerate}
+\item $f(M_i)=N_i$.  Suppose $a\in N_i$ and $f(b)=a$.  Write $b=\sum b_j$ where $b_j\in M_i$, and $b_j=0$ for all but finitely many $j$.  Then each $f(b_j)\in N_j$.  Since $N_j\cap N_i=0$ if $i\ne j$, $f(b_j)=0$ if $j\ne i$.  Therefore $b=b_i\in N_i$.
+\item $f^{-1}$ is graded.  If $a\in f^{-1}(N_i)$, then $f(a)\in N_i=f(M_i)$ by the previous fact.  Then $f(a)=f(c)$ for some $c\in M_i$, so $a=c\in M_i$ since $f$ is one-to-one.
+\end{enumerate}
+Suppose a graded module $M$ has two gradings: $M=\oplus A_i=\oplus B_i$.  The two gradings on $M$ are said to be \emph{isomorphic} if there is a graded isomorphism $f$ on $M$ with $f(A_j)=B_j$.  In the example above, we see that the two gradings of $S[j]$ are non-isomorphic.
+
+Let $N$ be a submodule of a graded module $M$ (over $R$).  We can turn $N$ into a graded module by defining $N_i=N\cap M_i$.  Of course, $N$ may already be a graded module in the first place.  But the two gradings on $N$ may not be isomorphic.  A submodule $N$ of a graded module $M$ (over $R$) is said to be a \emph{graded submodule} of $M$ if its grading is defined by $N_i=N\cap M_i$.  If $N$ is a graded submodule of $M$, then the injection $N\mapsto M$ is a graded homomorphism.
+
+\subsubsection*{Generalization}
+
+The above definition can be generalized, and the generalization comes from the subscripts.  The set of subscripts in the definition above is just the set of all non-negative integers (sometimes denoted $\mathbb{N}$) with a binary operation $+$.  It is reasonable to extend the set of subscripts from $\mathbb{N}$ to an arbitrary set $S$ with a binary operation $*$.  Normally, we require that $*$ is associative so that $S$ is a semigroup.  An $R$-module $M$ is said to be $S$-graded if $$M=\bigoplus_{s\in S}M_s\textrm{ such that }R_sM_t\subseteq M_{s*t}.$$
+Examples of $S$-graded modules are mainly found in modules over a semigroup ring $R[S]$.
+
+\textbf{Remark}.  Graded modules, and in general the concept of grading in algebra, are an essential tool in the study of homological algebraic aspect of rings.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

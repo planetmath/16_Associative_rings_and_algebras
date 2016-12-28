@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Ring}
+\pmcreated{2013-03-22 11:48:40}
+\pmmodified{2013-03-22 11:48:40}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{ring}
+\pmrecord{19}{30354}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{20-00}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{81P10}
+\pmclassification{msc}{81P05}
+\pmclassification{msc}{81P99}
+\pmrelated{ExampleOfRings}
+\pmrelated{Subring}
+\pmrelated{Semiring}
+\pmrelated{Group}
+\pmrelated{Associates}
+\pmdefines{multiplicative identity}
+\pmdefines{multiplicative inverse}
+\pmdefines{ring with unity}
+\pmdefines{unit}
+\pmdefines{ring addition}
+\pmdefines{ring multiplication}
+\pmdefines{ring sum}
+\pmdefines{ring product}
+\pmdefines{unital ring}
+\pmdefines{unitary ring}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+A \emph{ring} is a set $R$ together with two binary operations, denoted $+: R \times R \longrightarrow R$ and $\cdot: R \times R \longrightarrow R$, such that
+\begin{enumerate}
+\item $(a+b)+c = a+(b+c)$ and $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ for all $a,b,c \in R$ (associative law)
+\item $a+b = b+a$ for all $a,b \in R$ (commutative law)
+\item There exists an element $0 \in R$ such that $a+0 = a$ for all $a \in R$ (additive identity)
+\item For all $a \in R$, there exists $b \in R$ such that $a+b = 0$ (additive inverse)
+\item $a\cdot(b+c) = (a \cdot b) + (a \cdot c)$ and $(a+b) \cdot c = (a \cdot c) + (b \cdot c)$ for all $a,b,c \in R$ (distributive law)
+\end{enumerate}
+Equivalently, a ring is an abelian group $(R,+)$ together with a second binary operation $\cdot$ such that $\cdot$ is associative and distributes over $+$. Additive inverses are unique, and one can define \emph{subtraction} in any ring using the formula $a-b := a + (-b)$ where $-b$ is the additive inverse of $b$.
+
+We say $R$ has a \emph{multiplicative identity} if there exists an element $1 \in R$ such that $a \cdot 1 = 1 \cdot a = a$ for all $a \in R$. Alternatively, one may say that $R$ is a \emph{ring with unity}, a \emph{unital ring}, or a \emph{unitary ring}. Oftentimes an author will adopt the convention that all rings have a multiplicative identity. If $R$ does have a multiplicative identity, then a \emph{multiplicative inverse} of an element $a \in R$ is an element $b \in R$ such that $a \cdot b = b \cdot a = 1$. An element of $R$ that has a multiplicative inverse is called a \emph{unit} of $R$.
+
+A ring $R$ is \emph{commutative} if $a \cdot b = b \cdot a$ for all $a,b \in R$.
+
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

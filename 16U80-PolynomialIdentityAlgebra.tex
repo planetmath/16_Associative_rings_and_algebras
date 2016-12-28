@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PolynomialIdentityAlgebra}
+\pmcreated{2013-03-22 14:20:38}
+\pmmodified{2013-03-22 14:20:38}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{polynomial identity algebra}
+\pmrecord{11}{35816}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U80}
+\pmclassification{msc}{16R10}
+\pmsynonym{PI-algebra}{PolynomialIdentityAlgebra}
+\pmsynonym{algebra with polynomial identity}{PolynomialIdentityAlgebra}
+\pmdefines{Hall identity}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $R$ be a commutative ring with 1.  Let $X$ be a countable set of \emph{variables}, and let $R \langle X \rangle$ denote the free associative algebra over $R$.  If $X$ is finite, we can also write $R \langle X \rangle$ as $R \langle x_1, \ldots\, x_n \rangle$, where the $x_i's \in X$.  Because of the freeness condition on the algebra, the variables are non-commuting among themselves.  However, the variables do commute with elements of $R$.  A typical element $f$ of $R\langle X\rangle$ is a polynomial over $R$ in $n$ (finite) non-commuting variables of $X$.
+
+\textbf{Definition}.  Let $A$ be a $R$-algebra and $f=f(x_1,\ldots,x_n)\in R\langle X\rangle$.  For any $a_1,\ldots,a_n\in A$, $f(a_1,\ldots,a_n)\in A$ is called an \emph{evaluation of $f$ at $n$-tuple $(a_1,\ldots,a_n)$}. If the evaluation vanishes (=0) for all $n$-tuples of $\Pi_{i=1}^{n}A$, then $f$ is called a \emph{polynomial identity for} $A$.
+
+A polynomial $f\in R\langle X\rangle$ is \emph{proper}, or \emph{monic}, if, in the homogeneous component of the highest degree in $f$, one of its monomials has coefficient = 1.
+
+\textbf{Definition}.  An algebra $A$ over a commutative ring $R$ is said to be a \emph{polynomial identity algebra over} $R$, or a PI-\emph{algebra} over $R$, if there is a proper polynomial $f \in R \langle x_1, \ldots, x_n \rangle$, such that $f$ is a polynomial identity for $A$.  A \emph{polynomial identity ring}, or PI-\emph{ring}, $R$ is a polynomial identity $\mathbb{Z}$-algebra.
+
+\textbf{Examples}
+\begin{enumerate}
+\item
+A commutative ring is a PI-ring, satisfying the polynomial $[x,y]=xy-yx$.
+\item
+A finite field (with $q$ elements) is a PI-ring, satisfying $x^q-x$.
+\item
+The ring $T$ of upper triangular $n \times n$ matrices over a field is a PI-ring.  This is true because for any $a, b\in T$, $ab-ba$ is strictly upper triangular (zeros along the diagonal).  Any product of $n$ strictly upper triangular matrices in $T$ is 0.  Therefore, $T$ satisfies $[x_1,y_1][x_2,y_2]\cdots [x_n,y_n]$.
+\item
+The ring $S$ of $2\times2$ matrices over a field is a PI-ring.  One can show that $S$ satisfies $[[x_1,x_2]^2,x_3]$.  This identity is called the \emph{Hall identity}.
+\item
+A subring of a PI-ring is a PI-ring.  A homomorphic image of a PI-ring is a PI-ring.
+\item
+One can show that a ring $R$ with polynomial identity $x^n-x$ is commutative.  Thus, one sees that $x^n-x$ and $xy-yx$, although very different (one is homogeneous of degree 2 in 2 variables, the other one is not even homogeneous, in one variable of degree n), are both polynomial identities for $R$.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

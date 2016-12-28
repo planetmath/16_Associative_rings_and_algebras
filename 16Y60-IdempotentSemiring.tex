@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdempotentSemiring}
+\pmcreated{2013-03-22 15:52:12}
+\pmmodified{2013-03-22 15:52:12}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{idempotent semiring}
+\pmrecord{8}{37866}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16Y60}
+\pmsynonym{i-semiring}{IdempotentSemiring}
+\pmsynonym{dioid}{IdempotentSemiring}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% define commands here
+\begin{document}
+A semiring $S$ is called an \emph{idempotent semiring}, or \emph{i-semiring} for short, if, addition $+$ is an idempotent binary operation:
+$$a+a=a,\qquad\mbox{ for all }a\in S.$$
+
+\textbf{Some properties of an i-semiring $S$}.
+\begin{enumerate}
+\item If we define a binary relation $\le$ on $S$ by 
+$$a\le b\qquad\mbox{ iff }\qquad a+b=b$$
+then $\le$ becomes a partial order on $S$.  Indeed, for $a+a=a$ implies $a\le a$; if $a\le b$ and $b\le a$, then $b=a+b=a$; and finally, if $a\le b$ and $b\le c$, then $a+c=a+(b+c)=(a+b)+c=b+c=c$ so $a\le c$.
+\item $0\le a$ for any $a\in S$, because $0+a=a$.
+\item Define $a\vee b$ as the supremum of $a$ and $b$ (with respect to $\le$).  Then $a\vee b$ exists and $$a\vee b=a+b.$$ To see this, we have $a+(a+b)=(a+a)+b=a+b$, so $a\le a+b$.  Similarly $b\le a+b$.  If $a\le c$ and $b\le c$, then $(a+b)+c=a+(b+c)=a+c=c$.  So $a+b\le c$.
+\item Collecting all the information above, we see that $(S,+)$ is an upper semilattice with $+$ as the join operation on $S$ and $0$ the bottom element.
+\item Additon and multiplication respect partial ordering: suppose $a\le b$, then for any $c\in S$, $(c+a)+(c+b)=(c+c)+(a+b)=c+b$, hence $c+a\le c+b$; also, $cb=c(a+b)=ca+cb$ implies $ca\le cb$.
+\end{enumerate}
+
+\textbf{Remark}.  $S$ in general is not a lattice, and $1$ is not the top element of $S$.
+
+The main example of an i-semiring is a Kleene algebra used in the theory of computations.
+%%%%%
+%%%%%
+\end{document}

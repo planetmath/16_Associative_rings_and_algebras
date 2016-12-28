@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LocalRing}
+\pmcreated{2013-03-22 12:37:44}
+\pmmodified{2013-03-22 12:37:44}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{local ring}
+\pmrecord{13}{32891}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16L99}
+\pmclassification{msc}{13H99}
+\pmclassification{msc}{16L30}
+\pmrelated{DiscreteValuationRing}
+\pmrelated{LocallyRingedSpace}
+\pmrelated{SemiLocalRing}
+\pmdefines{local ring homomorphism}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{name}
+\PMlinkescapeword{maximal}
+\PMlinkescapeword{ideal}
+\PMlinkescapeword{natural}
+\PMlinkescapeword{homomorphism}
+\PMlinkescapeword{residue field}
+\PMlinkescapeword{powers}
+\PMlinkescapeword{ring}
+\PMlinkescapeword{rings}
+\PMlinkescapeword{ring's}
+\PMlinkescapeword{non-invertible}
+\PMlinkescapeword{simple}
+\PMlinkescapeword{lemma}
+
+\subsection*{Commutative case}
+
+A commutative ring with multiplicative identity is called {\em local} if it has exactly one maximal ideal.
+This is the case if and only if $1\not=0$ and the sum of any two non-\PMlinkname{units}{unit} in the ring is again a non-unit; the unique maximal ideal consists precisely of the non-units.
+
+The name comes from the fact that these rings are important in the study of the local behavior of \PMlinkname{varieties}{variety} and manifolds: the ring of function germs at a point is always local. (The reason is simple: a germ $f$ is invertible in the ring of germs at $x$ if and only if $f(x)\not=0$, which implies that the sum of two non-invertible elements is again non-invertible.)
+This is also why schemes, the generalizations of varieties, are defined as certain locally ringed spaces. Other examples of local rings include:
+\begin{itemize}
+\item All fields are local. The unique maximal ideal is $(0)$.
+\item Rings of formal power series over a field are local, even in several variables. The unique maximal ideal consists of those \PMlinkescapetext{power series} without \PMlinkescapetext{constant term}.
+\item if $R$ is a commutative ring with multiplicative identity, and $\mathfrak{p}$ is a prime ideal in $R$, then the localization of $R$ at $\mathfrak{p}$, written as $R_{\mathfrak{p}}$, is always local. The unique maximal ideal in this ring is $\mathfrak{p}R_{\mathfrak{p}}$.
+\item All discrete valuation rings are local.
+\end{itemize}
+
+A local ring $R$ with maximal ideal $\mathfrak{m}$ is also written as $(R,\mathfrak{m})$.
+
+Every local ring $(R,\mathfrak{m})$ is a topological ring in a natural way, taking the powers of $\mathfrak{m}$ as a neighborhood base of 0. 
+
+Given two local rings $(R,\mathfrak{m})$ and $(S,\mathfrak{n})$, a \emph{local ring homomorphism} from $R$ to $S$ is a ring homomorphism $f:R\to S$ (respecting the multiplicative identities) with $f(\mathfrak{m})\subseteq\mathfrak{n}$. These are precisely the ring homomorphisms that are continuous with respect to the given topologies on $R$ and $S$.
+
+The {\em residue field} of the local ring $(R,\mathfrak{m})$ is the field $R/\mathfrak{m}$.
+
+\subsection*{General case}
+
+One also considers non-commutative local rings. A \PMlinkname{ring}{ring} with multiplicative identity is called \emph{local} if it has a unique maximal left ideal. In that case, the ring also has a unique maximal right ideal, and the two \PMlinkescapetext{ideals} coincide with the ring's Jacobson radical, which in this case consists precisely of the non-units in the ring.
+
+A ring $R$ is local if and only if the following condition holds: we have $1\not=0$, and whenever $x\in R$ is not invertible, then $1-x$ is invertible.
+
+All skew fields are local rings. More interesting examples are given by endomorphism rings: a finite-length module over some ring is indecomposable if and only if its endomorphism ring is local, a consequence of Fitting's lemma.
+%%%%%
+%%%%%
+\end{document}

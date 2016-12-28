@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClassicalRingOfQuotients}
+\pmcreated{2013-03-22 14:03:01}
+\pmmodified{2013-03-22 14:03:01}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{classical ring of quotients}
+\pmrecord{5}{35402}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U20}
+\pmclassification{msc}{16S90}
+\pmsynonym{left classical ring of quotients}{ClassicalRingOfQuotients}
+\pmsynonym{right classical ring of quotients}{ClassicalRingOfQuotients}
+\pmrelated{OreCondition}
+\pmrelated{ExtensionByLocalization}
+\pmrelated{FiniteRingHasNoProperOverrings}
+\pmdefines{regular}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $R$ be a ring.  An element of $R$ is called \emph{regular} if it is not a right zero divisor or a left zero divisor in $R$.
+
+A ring $Q \supset R$ is a \emph{left classical ring of quotients} for $R$
+(resp. \emph{right classical ring of quotients} for $R$) if it satisifies:
+\begin{itemize}
+\item every regular element of $R$ is invertible in $Q$
+\item every element of $Q$ can be written in the form $x^{-1}y$ (resp. $yx^{-1}$) with $x, y \in R$
+and $x$ regular.
+\end{itemize}
+
+If a ring $R$ has a left or right classical ring of quotients, then it is unique up to isomorphism.
+
+If $R$ is a commutative integral domain, then the left and right classical rings of quotients always exist -- they are the field of fractions of $R$.
+
+For non-commutative rings, necessary and sufficient conditions are given by Ore's Theorem.
+
+Note that the goal here is to construct a ring which is not too different from $R$, but in which more elements are invertible.  The first condition says which elements we want to be invertible.  The second condition says that $Q$ should \PMlinkescapetext{contain} just enough extra elements to make the regular elements invertible.
+
+Such rings are called classical rings of quotients, because there are other rings of quotients.  These all attempt to enlarge $R$ somehow to make more elements invertible (or sometimes to make ideals invertible).
+
+Finally, note that a ring of quotients is not the same as a quotient ring.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OrthogonalIdempotentsOfTheGroupRing}
+\pmcreated{2013-03-22 14:12:42}
+\pmmodified{2013-03-22 14:12:42}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{orthogonal idempotents of the group ring}
+\pmrecord{9}{35646}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S34}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $G$ be a finite abelian group, let $L$ be any field containing the $|G|$-th roots of unity, and let $\hat{G}$ denote the character group of $G$ with values in $L$.  For any character $\chi\in \hat{G}$, we define $\varepsilon_\chi$, the corresponding \emph{orthogonal idempotent of the group ring} $L[G]$, by
+\begin{align*}
+\varepsilon_\chi=\frac{1}{|G|}\sum_{g\in G} \chi(g)g^{-1}.
+\end{align*}
+
+The following equalities hold:
+\begin{itemize}
+\item $\varepsilon_\chi^2=\varepsilon_\chi$ for all $\chi$
+\item $\varepsilon_\chi\varepsilon_\psi=0$ for any $\chi\neq\psi$
+\item $\sum_{\chi\in\hat{G}}\varepsilon_\chi=1$
+\item $\varepsilon_\chi\cdot g=\chi(g)\varepsilon_\chi$
+\end{itemize}
+
+These orthogonal idempotents are used to decompose modules over $L[G]$:  If $M$ is such a module, then $M=\oplus_\chi (\varepsilon_\chi M)$.
+%%%%%
+%%%%%
+\end{document}

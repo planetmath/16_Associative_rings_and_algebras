@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZeroRing}
+\pmcreated{2013-03-22 13:30:19}
+\pmmodified{2013-03-22 13:30:19}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{zero ring}
+\pmrecord{26}{34086}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U99}
+\pmclassification{msc}{13M05}
+\pmclassification{msc}{13A99}
+\pmrelated{ZeroVectorSpace}
+\pmrelated{Unity}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A ring is a {\sl zero ring\/} if the product of any two elements is the additive identity (or zero).
+
+Zero rings are commutative under multiplication.  For if $Z$ is a zero ring, 
+$0_Z$ is its additive identity, and $x,y \in Z$, then $xy=0_Z=yx.$
+
+Every zero ring is a nilpotent ring.  For if $Z$ is a zero ring, then $Z^2=\{0_Z\}$.
+
+Since every subring of a ring must contain its zero element, every subring of a ring is an ideal, and a zero ring has no prime ideals.
+
+The simplest zero ring is ${\mathbb Z}_1=\{0\}$.  Up to \PMlinkname{isomorphism}{RingIsomorphism}, this is the only zero ring that has a multiplicative identity.
+
+Zero rings exist in \PMlinkescapetext{abundance}.  They can be constructed from any ring.  If $R$ is a ring, then
+
+$$\left\{ \left. \left( \begin{array}{cc}
+r & -r \\
+r & -r \end{array} \right) \right| r \in R \right\}$$
+
+considered as a subring of ${\mathbf M}_{2\operatorname{x}2}(R)$ (with standard matrix addition and multiplication) is a zero ring.  Moreover, the cardinality of this subset of ${\mathbf M}_{2\operatorname{x}2}(R)$ is the same as that of $R$.
+
+Moreover, zero rings can be constructed from any abelian group.  If $G$ is a group with identity $e_G$, it can be made into a zero ring by declaring its addition to be its group operation and defining its multiplication by $a \cdot b=e_G$ for any $a,b \in G$.
+
+Every finite zero ring can be written as a direct product of cyclic rings, which must also be zero rings themselves.  This follows from the \PMlinkname{fundamental theorem of finite abelian groups}{FundamentalTheoremOfFinitelyGeneratedAbelianGroups}.  Thus, if $p_1, \ldots , p_m$ are distinct primes, $a_1, \ldots , a_m$ are positive integers, and $\displaystyle n= \prod_{j=1}^m {p_j}^{a_j}$, then the number of zero rings of \PMlinkname{order}{Order} $n$ is $\displaystyle \prod_{j=1}^m p(a_j)$, where $p$ denotes the \PMlinkname{partition function}{PartitionFunction2}.
+%%%%%
+%%%%%
+\end{document}

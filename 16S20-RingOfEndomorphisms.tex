@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RingOfEndomorphisms}
+\pmcreated{2013-03-22 14:04:26}
+\pmmodified{2013-03-22 14:04:26}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{ring of endomorphisms}
+\pmrecord{8}{35432}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S20}
+\pmclassification{msc}{16W20}
+\pmsynonym{endomorphism ring}{RingOfEndomorphisms}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{lemma}{Lemma}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\isom}{\cong}
+\begin{document}
+\PMlinkescapeword{lemma}
+\PMlinkescapeword{order}
+\PMlinkescapeword{maps}
+\PMlinkescapeword{natural}
+\PMlinkescapeword{notation}
+
+Let $R$ be a ring and let $M$ be a right $R$-module.
+
+An \emph{endomorphism} of $M$ is a $R$-module homomorphism from $M$ to itself.
+We shall write endomorphisms on the left,
+so that $f : M \to M$ maps $x \mapsto f(x)$.
+If $f,g : M \to M$ are two endomorphisms, we can add them:
+$$ f+g : x \mapsto f(x) + g(x) $$
+and multiply them
+$$ fg : x \mapsto f(g(x)) $$
+With these operations, the set of endomorphisms of $M$ becomes a ring, which we call
+the \emph{ring of endomorphisms of $M$}, written $\End_R(M)$.
+
+Instead of writing endomorphisms as functions, it is often convenient
+to write them multiplicatively: we simply write the application of the
+endomorphism $f$ as $x \mapsto fx$.  Then the fact that each $f$ is an $R$-module homomorphism can be expressed as:
+$$f(xr) = (fx)r$$
+for all $x \in M$ and $r \in R$ and $f \in \End_R(M)$.
+With this notation, it is clear that $M$ becomes an $\End_R(M)$-$R$-bimodule.
+
+Now, let $N$ be a left $R$-module.  We can construct the ring $\End_R(N)$ in the same way.
+There is a complication, however, if we still think of endomorphism as functions written
+on the left.  In order to make $M$ into a bimodule, we need to define an action of
+$\End_R(N)$ on the right of $N$: say
+$$ x\cdot f = f(x) $$
+But then we have a problem with the multiplication:
+$$ x \cdot fg = fg(x) = f(g(x)) $$
+but $$(x \cdot f) \cdot g = f(x) \cdot g = g(f(x))!$$
+In order to make this work, we need to reverse the order of composition
+when we define multiplication in the ring $\End_R(N)$ when it acts on the right.
+
+There are essentially two different ways to go from here.  One is to define the multiplication
+in $\End_R(N)$ the other way, which is most natural if we write the endomorphisms as functions
+on the right.  This is the approach taken in many older books.
+
+The other is to leave the
+multiplication in $\End_R(N)$ the way it is, but to use the opposite ring to define the bimodule.
+This is the approach that is generally taken in more recent works.  Using this approach,
+we conclude that $N$ is a $R$-$\End_R(N)^{\text{op}}$-bimodule.   We will adopt this convention
+for the lemma below.
+
+Considering $R$ as a right and a left module over itself,
+we can construct the two endomorphism rings $\End_R(R_R)$ and $\End_R({}_RR)$.
+
+\begin{lemma}
+Let $R$ be a ring with an identity element.
+Then $R \isom \End_R(R_R)$ and $R \isom \End_R({}_RR)^{\text{op}}$.
+\end{lemma}
+
+\begin{proof}
+Define $\rho_r \in \End_R({}_RR)$ by $x \mapsto xr$.
+
+A calculation shows that $\rho_{rs} = \rho_s \rho_r$ (functions written on the left)
+from which it is easily seen that the map $\theta : r \mapsto \rho_r$ is a ring
+homomorphism from $R$ to $\End_R({}_RR)^{\text{op}}$.
+
+We must show that this is an isomorphism.
+
+If $\rho_r = 0$, then $r = 1r = \rho_r(1) = 0$.  So $\theta$ is injective.
+
+Let $f$ be an arbitrary element of $\End_R({}_RR)$, and let $r = f(1)$.
+Then for any $x \in R$, $f(x) = f(x1) = xf(1) = xr = \rho_r(x)$, so
+$f = \rho_r = \theta(r)$.
+
+The proof of the other isomorphism is similar.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

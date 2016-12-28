@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StandardIdentity}
+\pmcreated{2013-03-22 14:21:10}
+\pmmodified{2013-03-22 14:21:10}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{standard identity}
+\pmrecord{7}{35830}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16R10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $R$ be a commutative ring and $X$ be a set of non-commuting variables over $R$.  The \emph{standard identity of degree} $n$ in $R\langle X \rangle$, denoted by $[x_1,\ldots\,x_n]$, is the polynomial $$\sum_{\pi} \operatorname{sign}(\pi)x_{\pi(1)}\cdots x_{\pi(n)},\mbox{ where }\pi \in S_n.$$
+
+\textbf{Remarks:}
+\begin{itemize}
+\item
+A ring $R$ satisfying the standard identity of degree 2 (i.e., $[R,R]=0$) is commutative.  In this sense, algebras satisfying a standard identity is a generalization of the class of commutative algebras.
+\item
+Two immediate properties of $[x_1,\ldots\,x_n]$ are that it is \emph{multilinear} over $R$, and it is \emph{alternating}, in the sense that $[r_1,\ldots\,r_n]=0$ whenever two of the $r_i's$ are equal.  Because of these two properties, one can show that an n-dimensional algebra $R$ over a field $k$ is a PI-algebra, satisfying the standard identity of degree $n+1$.  As a corollary, $\mathbb{M}_n(k)$, the $n\times n$ matrix ring over a field $k$, is a PI-algebra satisfying the standard identity of degree $n^2+1$.  In fact, Amitsur and Levitski have shown that $\mathbb{M}_n(k)$ actually satisfies the standard identity of degree $2n$.
+\end{itemize}
+
+\begin{thebibliography}{7}
+\bibitem{amitsur} S. A. Amitsur and J. Levitski, {\em Minimal identities for algebras}, Proc. Amer. Math. Soc., 1 (1950) 449-463.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

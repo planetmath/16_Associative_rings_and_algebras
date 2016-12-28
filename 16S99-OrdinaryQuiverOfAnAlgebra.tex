@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OrdinaryQuiverOfAnAlgebra}
+\pmcreated{2013-03-22 19:17:41}
+\pmmodified{2013-03-22 19:17:41}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{ordinary quiver of an algebra}
+\pmrecord{4}{42229}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+\pmclassification{msc}{20C99}
+\pmclassification{msc}{13B99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $k$ be a field and $A$ an algebra over $k$.
+
+Denote by $\mathrm{rad}A$ the (Jacobson) radical of $A$ and $\mathrm{rad}^2A=(\mathrm{rad}A)^2$ a square of radical.
+
+Since $A$ is finite-dimensional, then we have a \PMlinkname{complete set of primitive orthogonal idempotents}{CompleteSetOfPrimitiveOrthogonalIdempotents} $E=\{e_1,\ldots,e_n\}$.
+
+\textbf{Definition.} The \textbf{ordinary quiver} of a finite-dimensional algebra $A$ is defined as follows:
+\begin{enumerate}
+\item The set of vertices is equal to $Q_0=\{1,\ldots,n\}$ which is in bijective correspondence with $E$.
+\item If $a,b\in Q_0$, then the number of arrows from $a$ to $b$ is equal to the dimension of the $k$-vector space
+$$e_a\big(\mathrm{rad}A/\mathrm{rad}^2A\big)e_b.$$
+\end{enumerate}
+
+It can be shown that the ordinary quiver is well-defined, i.e. it is independent on the choice of a complete set of primitve orthogonal idempotents. Also finite dimension of $A$ implies, then the ordinary quiver is finite.
+%%%%%
+%%%%%
+\end{document}

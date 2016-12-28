@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{JacobsonRadical}
+\pmcreated{2013-03-22 12:36:11}
+\pmmodified{2013-03-22 12:36:11}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{Jacobson radical}
+\pmrecord{19}{32856}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N20}
+\pmrelated{Annihilator}
+\pmrelated{RadicalOfAnIdeal}
+\pmrelated{SimpleModule}
+\pmrelated{Nilradical}
+\pmrelated{RadicalTheory}
+\pmrelated{QuasiRegularity}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\em Jacobson radical} $J(R)$ of a unital ring $R$ is the intersection
+of the annihilators of \PMlinkname{simple}{SimpleModule} left $R$-modules.
+
+The following are alternative characterizations of the Jacobson radical $J(R)$:
+\begin{enumerate}
+\item The intersection of all left primitive ideals.
+\item The intersection of all maximal left ideals.
+\item The set of all $t \in R$ such that for all $r \in R$, $1-rt$ is
+      left invertible (i.e. there exists $u$ such that $u(1-rt)=1$).
+\item The largest ideal $I$ such that for all $v \in I$, $1-v$ is a
+      unit in $R$.
+\item (1) - (3) with ``left'' replaced by ``right'' and $rt$ replaced by $tr$.
+\end{enumerate}
+
+If $R$ is commutative and finitely generated, then 
+\[
+  J(R)=\{x \in R \mid x^n=0 \hbox{ for some } n \in \mathbb{N} \}
+   = \operatorname{Nil}(R).
+\]
+
+The Jacobson radical can also be defined for non-unital rings.
+To do this, we first define a binary operation $\circ$ on the ring $R$
+by $x\circ y=x+y-xy$ for all $x,y\in R$.
+Then $(R,\circ)$ is a monoid,
+and the Jacobson radical is defined to be the largest ideal $I$ of $R$
+such that $(I,\circ)$ is a group.
+If $R$ is unital, this is equivalent to the definitions given earlier.
+%%%%%
+%%%%%
+\end{document}

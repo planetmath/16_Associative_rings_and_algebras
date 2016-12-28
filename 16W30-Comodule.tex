@@ -1,0 +1,136 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Comodule}
+\pmcreated{2013-03-22 13:26:17}
+\pmmodified{2013-03-22 13:26:17}
+\pmowner{mhale}{572}
+\pmmodifier{mhale}{572}
+\pmtitle{comodule}
+\pmrecord{8}{33999}
+\pmprivacy{1}
+\pmauthor{mhale}{572}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+\pmsynonym{corepresentation}{Comodule}
+\pmdefines{coaction}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% making logically defined graphics
+\usepackage[all]{xy}
+
+% my maths package
+
+\newcommand*{\Nset}{\mathbb{N}}
+\newcommand*{\Zset}{\mathbb{Z}}
+\newcommand*{\Qset}{\mathbb{Q}}
+\newcommand*{\Rset}{\mathbb{R}}
+\newcommand*{\Cset}{\mathbb{C}}
+\newcommand*{\Hset}{\mathbb{H}}
+\newcommand*{\Oset}{\mathbb{O}}
+\newcommand*{\Bset}{\mathbb{B}}
+\newcommand*{\Kset}{\mathbb{K}}
+\newcommand*{\Sset}{\mathbb{S}}
+\newcommand*{\Tset}{\mathbb{T}}
+\newcommand*{\GLgrp}{\mathrm{GL}}
+\newcommand*{\SLgrp}{\mathrm{SL}}
+\newcommand*{\Ogrp}{\mathrm{O}}
+\newcommand*{\SOgrp}{\mathrm{SO}}
+\newcommand*{\Ugrp}{\mathrm{U}}
+\newcommand*{\SUgrp}{\mathrm{SU}}
+\newcommand*{\e}{\mathop{\mathrm{e}}\nolimits}
+\newcommand*{\im}{\mathord{\mathrm{i}}}
+\newcommand*{\identity}{\mathord{\mathrm{1\!\!\!\:I}}}
+\newcommand*{\tr}{\mathop{\mathrm{tr}}}
+\newcommand*{\Tr}{\mathop{\mathrm{Tr}}}
+\renewcommand*{\d}{\mathrm{d}}
+\newcommand*{\deriv}[2]{\frac{\d #1}{\d #2}}
+\newcommand*{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand*{\fderiv}[2]{\frac{\delta #1}{\delta #2}}
+
+% my noncommutative geometry package
+
+\newcommand*{\algebra}[1][A]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbert}[1][H]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbmod}[1][E]{\mathord{\mathcal{#1}}}
+\newcommand*{\Matrix}[2]{\mathord{\mathrm{M}_{#1}(#2)}}
+\newcommand*{\dixmier}{\mathop{\mathrm{Tr}_\omega}}
+\newcommand*{\Res}{\mathop{\mathrm{Res}}}
+\newcommand*{\Wres}{\mathop{\mathrm{Wres}}}
+\newcommand*{\Aut}{\mathop{\mathrm{Aut}}\nolimits}
+\newcommand*{\Inn}{\mathop{\mathrm{Inn}}\nolimits}
+\newcommand*{\Out}{\mathop{\mathrm{Out}}\nolimits}
+\newcommand*{\Diff}{\mathop{\mathrm{Diff}}\nolimits}
+\newcommand*{\Ker}{\mathop{\mathrm{Ker}}\nolimits}
+\newcommand*{\Coker}{\mathop{\mathrm{Coker}}\nolimits}
+\newcommand*{\Img}{\mathop{\mathrm{Im}}\nolimits}
+\newcommand*{\End}{\mathop{\mathrm{End}}\nolimits}
+\newcommand*{\spin}{\mathop{\mathrm{spin}}\nolimits}
+\newcommand*{\Ind}{\mathop{\mathrm{Ind}}\nolimits}
+\newcommand*{\KK}{\mathit{KK}}
+\newcommand*{\HH}{\mathit{HH}}
+\newcommand*{\HC}{\mathit{HC}}
+\newcommand*{\ch}{\mathop{\mathrm{ch}}\nolimits}
+
+% my category theory package
+
+\newcommand*{\mathcat}[1]{\mathord{\mathbf{#1}}}
+\newcommand*{\id}{\mathrm{id}}
+\newcommand*{\op}{\mathrm{op}}
+\newcommand*{\boxprod}{\mathbin{\square}}
+
+% my environments
+
+\newtheoremstyle{inlinedefn}{}{0pt}{}{}{\bfseries}{.}{0.5em}{}
+\theoremstyle{inlinedefn}
+\newtheorem{definition}{Definition}
+
+\newtheoremstyle{break}{\baselineskip}{\baselineskip}{\itshape}{}{\bfseries}{}{\newline}{}
+\theoremstyle{break}
+\newtheorem{example}{Example}
+
+% misc commands
+
+\newcommand*{\defn}[1]{\textbf{#1}}
+\begin{document}
+Let $(A,\Delta,\varepsilon)$ be a coalgebra.
+A \textbf{right $A$-comodule} is a vector space $V$ with a linear map
+$t\colon V \to V\otimes A$, called the \defn{right coaction}, satisfying
+\begin{equation}
+(t\otimes\id) \circ t = (\id\otimes\Delta) \circ t, \qquad
+(\id\otimes\varepsilon) \circ t = \id.
+\end{equation}
+An $A$-comodule is also referred to as a corepresentation of $A$.
+
+In \PMlinkescapetext{terms} of commutative diagrams:
+\[\begin{xy}
+\xymatrix@R=20pt@C=20pt{
+& *+<10pt>\txt{$V$} \ar_{t}[dl] \ar^{t}[dr] & \\
+*+<10pt>\txt{$V\otimes A$} \ar_{t\otimes\id}[dr] & & *+<10pt>\txt{$V\otimes A$} \ar^{\id\otimes\Delta}[dl] \\
+& *+<10pt>\txt{$V\otimes A\otimes A$} &
+}\end{xy}\]
+\[\begin{xy}
+\xymatrix@R=20pt@C=20pt{
+*+<10pt>\txt{$V$} \ar^{\id}[dd] \ar^{t}[dr] & \\
+& *+<10pt>\txt{$V\otimes A$} \ar^{\id\otimes\varepsilon}[dl] \\
+*+<10pt>\txt{$V$} &
+}\end{xy}\]
+
+Let $V$ and $W$ be two right $A$-comodules.
+Then $V\oplus W$ is also a right $A$-comodule.
+If $A$ is a bialgebra then $V\otimes W$ is a right $A$-comodule as well
+(make use of the multiplication map $A\otimes A \to A$).
+
+A comodule map is a linear map $f\colon V \to W$
+such that $t_W\circ f = (f\circ\id)\circ t_V$.
+%%%%%
+%%%%%
+\end{document}

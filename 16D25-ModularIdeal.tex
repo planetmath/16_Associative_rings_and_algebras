@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ModularIdeal}
+\pmcreated{2013-03-22 17:31:47}
+\pmmodified{2013-03-22 17:31:47}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{modular ideal}
+\pmrecord{7}{39926}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Let $R$ be a ring.  A left ideal $I$ of $R$ is said to be \emph{modular} if there is an $e\in R$ such that $re-r\in I$ for all $r\in R$.  In other words, $e$ acts as a right identity element modulo $I$: $$re\equiv r\pmod I.$$
+A right modular ideal is defined similarly, with $e$ be a left identity modulo $I$.  
+
+\textbf{Remark}.  If an ideal $I$ is modular both as a left ideal as well as a right ideal in $R$, then $R/I$ is a unital ring.  Furthermore, every (left, right, two-sided) ideal in a unital ring is modular, implying that the notion of modular ideals is only interesting in rings without $1$.
+
+\begin{thebibliography}{8}
+\bibitem{pc} P. M. Cohn, {\em Further Algebra and Applications}, Springer (2003).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

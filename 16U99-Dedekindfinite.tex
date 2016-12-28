@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Dedekindfinite}
+\pmcreated{2013-03-22 14:18:23}
+\pmmodified{2013-03-22 14:18:23}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Dedekind-finite}
+\pmrecord{10}{35766}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U99}
+\pmsynonym{von Neumann-finite}{Dedekindfinite}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A ring $R$ is \emph{Dedekind-finite} if for $a, b \in R$, whenever $ab=1$ implies $ba=1$.
+
+Of course, every commutative ring is Dedekind-finite.  Therefore, the theory of Dedekind finiteness is trivial in this case.  Some other examples are 
+\begin{enumerate}
+\item any ring of endomorphisms over a finite dimensional vector space (over a field)
+\item any division ring
+\item any ring of matrices over a division ring
+\item finite direct product of Dedekind-finite rings
+\item by the last three examples, any semi-simple ring is Dedekind-finite.
+\item any ring $R$ with the property that there is a natural number $n$ such that $x^n=0$ for every nilpotent element $x\in R$
+\end{enumerate}
+
+The finite dimensionality in the first example can not be extended to the infinite case.  Lam in \cite{lam} gave an example of a ring that is not Dedekind-finite arising out of the ring of endomorphisms over an infinite dimensional vector space (over a field).
+
+\begin{thebibliography}{8}
+\bibitem{lam} T. Y. Lam, {\em A First Course in Noncommutative Rings}, Springer-Verlag, New York (1991).
+\bibitem{lam1} T. Y. Lam, {\em Lectures on Modules and Rings}, Springer-Verlag, New York (1999).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LyingOverTheorem}
+\pmcreated{2013-03-22 19:15:42}
+\pmmodified{2013-03-22 19:15:42}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Lying-Over Theorem}
+\pmrecord{6}{42191}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D99}
+\pmclassification{msc}{13C99}
+\pmdefines{lie over}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+Let $\mathfrak{o}$ be a subring of a commutative ring $\mathfrak{O}$ with nonzero unity and integral over 
+$\mathfrak{o}$.\, If $\mathfrak{a}$ is an ideal of $\mathfrak{o}$ and $\mathfrak{A}$ an ideal of $\mathfrak{O}$ such that
+$$\mathfrak{A\cap o \;=\; a},$$
+then $\mathfrak{A}$ is said to \emph{lie over} $\mathfrak{a}$.\\
+
+
+\textbf{Theorem.}\, If $\mathfrak{p}$ is a prime ideal of a ring $\mathfrak{o}$ which is a subring of a commutative ring $\mathfrak{O}$ with nonzero unity and integral over $\mathfrak{o}$, then there exists a prime ideal $\mathfrak{P}$ of 
+$\mathfrak{O}$ lying over $\mathfrak{p}$.\, If the prime ideals $\mathfrak{P}$ and $\mathfrak{Q}$ both lie over 
+$\mathfrak{p}$ and\, $\mathfrak{P \,\subseteq\, Q}$,\, then\, $\mathfrak{P \,=\, Q}$.
+
+
+
+\begin{thebibliography}{8}
+\bibitem{LM}{\sc M. Larsen \& P. McCarthy}: {\em Multiplicative theory of ideals}.\, Academic Press, New York (1971).
+\bibitem{J}{\sc P. Jaffard}: {\em Les syst\`emes d'id\'eaux}.\, Dunod, Paris (1960).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

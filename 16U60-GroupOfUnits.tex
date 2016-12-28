@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GroupOfUnits}
+\pmcreated{2013-03-22 14:41:32}
+\pmmodified{2013-03-22 14:41:32}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{group of units}
+\pmrecord{24}{36301}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U60}
+\pmclassification{msc}{13A05}
+\pmsynonym{unit group}{GroupOfUnits}
+\pmrelated{CommutativeRing}
+\pmrelated{DivisibilityInRings}
+\pmrelated{NonZeroDivisorsOfFiniteRing}
+\pmrelated{PrimeResidueClass}
+\pmdefines{group of units of ring}
+\pmdefines{multiplicative group of field}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\begin{thmplain}
+ \, The set $E$ of units of a ring $R$ forms a group with respect to ring multiplication. 
+\end{thmplain}
+
+{\em Proof.}\, If $u$ and $v$ are two units, then there are the elements $r$ and $s$ of $R$ such that\, $ru = ur = 1$\, and\, $sv = vs = 1$.\, Then we get that\,$(sr)(uv) = s(r(uv)) = s((ru)v) = s(1v) = sv = 1$,\, similarly\, $(uv)(sr) = 1$.\, Thus also $uv$ is a unit, which means that $E$ is closed under multiplication.\, Because\, $1 \in E$\, and along with $u$ also its inverse $r$ belongs to $E$, the set $E$ is a group.\\
+
+\textbf{Corollary.}\, In a commutative ring, a ring product is a unit iff all \PMlinkescapetext{factors} are units.\\
+
+The group $E$ of the units of the ring $R$ is called the {\it group of units of the ring}.\, If $R$ is a field, $E$ is said to be the {\it multiplicative group of the field}.\\
+
+
+\textbf{Examples}
+\begin{enumerate}
+ \item When\, $R = \mathbb{Z}$, then\, $E = \{1,\,-1\}$.
+ \item When\, $R = \mathbb{Z}[i]$,\, the ring of Gaussian integers, then\, 
+$E = \{1,\,i,\,-1,\,-i\}$.
+ \item When\, $R = \mathbb{Z}[\sqrt{3}]$, \PMlinkname{then}{UnitsOfQuadraticFields}\, 
+$E = \{\pm(2\!+\!\sqrt{3})^n\,\vdots\,\,\, n\in\mathbb{Z}\}$.
+ \item When\, $R = K[X]$\, where $K$ is a field, then\, $E = K\!\smallsetminus\!\{0\}$.
+ \item When\, 
+$R = \{0\!+\!\mathbb{Z},\,1\!+\!\mathbb{Z},\,\ldots,\, 
+ m\!-\!1\!+\!\mathbb{Z}\}$\, is the residue class ring modulo $m$, then\, $E$ consists of the prime classes modulo $m$, i.e. the residue classes $l\!+\!\mathbb{Z}$ satisfying\, $\gcd(l, m) = 1$.
+\end{enumerate}
+
+%%%%%
+%%%%%
+\end{document}

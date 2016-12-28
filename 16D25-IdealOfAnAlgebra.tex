@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdealOfAnAlgebra}
+\pmcreated{2013-03-22 18:09:00}
+\pmmodified{2013-03-22 18:09:00}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{ideal of an algebra}
+\pmrecord{6}{40706}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmsynonym{left ideal of an algebra}{IdealOfAnAlgebra}
+\pmsynonym{right ideal of an algebra}{IdealOfAnAlgebra}
+\pmsynonym{two-sided ideal of an algebra}{IdealOfAnAlgebra}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapephrase{left ideal}
+\PMlinkescapephrase{right ideal}
+\PMlinkescapephrase{two-sided ideal}
+
+
+Let $A$ be an algebra over a ring $R$.
+
+{\bf Definition -} A \emph{left ideal} of $A$ is a subalgebra $I \subseteq A$ such that $ax \in I$ whenever $a \in A$ and $ x \in I$.
+
+Equivalently, a left ideal of $A$ is a subset $I \subset A$ such that
+\begin{enumerate}
+\item $x - y \in I$, for all $x, y \in I$.
+\item $rx \in I$, for all $r \in R$ and $x \in I$.
+\item $ax \in I$, for all $a \in A$ and $x \in I$
+\end{enumerate}
+
+Similarly one can define a \emph{right ideal} by replacing condition 3 by: $xa \in I$ whenever $a \in A$ and $x \in I$.
+
+A \emph{two-sided ideal} of $A$ is a left ideal which is also a right ideal. Usually the word "\PMlinkescapetext{ideal}" by itself means two-sided ideal. Of course, all these notions coincide when $A$ is commutative.
+
+\subsubsection{Remark}
+
+Since an algebra is also a ring, one might think of borrowing the definition of ideal from ring \PMlinkescapetext{theory}. The problem is that condition 2 would not be in general satisfied (unless the algebra is unital).
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{VonNeumannRegular}
+\pmcreated{2013-03-22 12:56:18}
+\pmmodified{2013-03-22 12:56:18}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{von Neumann regular}
+\pmrecord{13}{33295}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E50}
+\pmdefines{von Neumann regular ring}
+\pmdefines{regular ring}
+\pmdefines{pseudoinverse}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\def\sse{\subseteq}
+\def\bigtimes{\mathop{\mbox{\Huge $\times$}}}
+\def\impl{\Rightarrow}
+\begin{document}
+An element $a$ of a ring $R$ is said to be \emph{von Neumann regular} if there
+exists $b\in R$ such that $aba=a$. Such an element $b$ is known as a \emph{\PMlinkescapetext{pseudoinverse}} of $a$.  
+
+For example, any unit in a ring is von Neumann regular.  Also, any idempotent element is von Neumann regular.  For a non-unit, non-idempotent von Nuemann regular element, take $M_2(\mathbb{R})$, the ring of $2\times 2$ matrices over $\mathbb{R}$.  Then  
+\begin{center}
+$\begin{pmatrix}
+2 & 0 \\
+0 & 0
+\end{pmatrix}=
+\begin{pmatrix}
+2 & 0 \\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+\frac{1}{2} & 0 \\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+2 & 0 \\
+0 & 0
+\end{pmatrix}$
+\end{center}
+is von Neumann regular.  In fact, we can replace $2$ with any non-zero $r\in \mathbb{R}$ and the resulting matrix is also von Neumann regular.  There are several ways to generalize this example.  One way is take a central idempotent $e$ in any ring $R$, and any $rs=f$ with $ef=e$.  Then $re$ is von Neumann regular, with $s,se$ and $sf$ all as pseudoinverses.  In another generalization, we have two rings $R,S$ where $R$ is an algebra over $S$.  Take any idempotent $e\in R$, and any invertible element $s\in S$ such that $s$ commutes with $e$.  Then $se$ is von Neumann regular.
+
+A ring $R$ is said to be a \emph{von Neumann regular ring} (or simply
+a \emph{regular ring}, if the \PMlinkescapetext{meaning} is clear from context)
+if every element of $R$ is von Neumann regular.
+
+For example, any division ring is von Neumann regular, and so is any ring of matrices over a division ring.  In general, any semisimple ring is von Neumann regular.
+
+\textbf{Remark}.  Note that \emph{regular ring} in the sense of von Neumann should not be confused with \emph{regular ring} in the sense of \PMlinkescapetext{commutative algebra}, which is a Noetherian ring whose localization at every prime ideal is a regular local ring.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HollowMatrixRings}
+\pmcreated{2013-03-22 17:42:21}
+\pmmodified{2013-03-22 17:42:21}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{hollow matrix rings}
+\pmrecord{10}{40148}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16P20}
+\pmclassification{msc}{16W10}
+\pmrelated{InvolutaryRing}
+\pmrelated{Artinian}
+\pmrelated{Noetherian2}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+\newtheorem{claim}[thm]{Claim}
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+\section{Definition}
+
+\begin{defn}
+Suppose that $R\subseteq S$ are both rings.  The \emph{hollow matrix ring} of $(R,S)$ 
+is the ring of matrices:
+\begin{equation*}
+\begin{bmatrix} S & S \\ 0 & R\end{bmatrix} :=\left\{
+\begin{bmatrix} s & t \\ 0 & r\end{bmatrix} : s,t\in S, r\in R\right\}.
+\end{equation*}
+\end{defn}
+It is easy to check that this forms a ring under the usual matrix addition and
+multiplication.
+This definition is slightly simplified from the obvious higher dimensional examples
+and the transpose of these matrices will also qualify as a hollow matrix ring.
+
+The hollow matrix rings are highly counter-intuitive despite their simple definition.
+In particular, they can be used to prove that in general a ring's left ideal
+structure need not relate to its right ideal structure.  We highlight a few
+examples of this.
+
+
+\section{Left/Right Artinian and Noetherian}
+
+We specialize to an example with the fields $\mathbb{Q}$ and $\mathbb{R}$, though
+the same argument can be made in much more general settings.
+\begin{equation}
+  R := \begin{bmatrix} \mathbb{R} & \mathbb{R}\\ 0 & \mathbb{Q}\end{bmatrix}
+     = \left\{\begin{bmatrix} a & b \\ 0 & c\end{bmatrix} : a,b\in \mathbb{R}, c\in\mathbb{Q}\right\}.
+\end{equation}
+
+\begin{claim}
+ $R$ is left Artinian and left Noetherian.  
+\end{claim}
+\begin{proof}
+Let $I$ be a left ideal of $R$ and suppose
+that $r:=\begin{bmatrix} x & y \\ 0 & z\end{bmatrix}\in I$ for some
+$x,y\in\mathbb{R}$ and $z\in\mathbb{Q}$.
+
+Suppose that $z\neq 0$.  Hence, $s_q:=\begin{bmatrix} 0 & 0 \\ 0 & q/z\end{bmatrix}\in R$
+for each $q\in\mathbb{Q}$ 
+and so $s_qr=\begin{bmatrix} 0 & 0 \\ 0 & q\end{bmatrix}\in I$ for all $q\in\mathbb{Q}$.  In particular,
+$\begin{bmatrix} x & y \\ 0 & 0 \end{bmatrix}=r-s_{1}r\in I$.  So in all cases it follows that 
+$\begin{bmatrix} x & y\\ 0 & 0 \end{bmatrix} \in I$.  So now we take 
+$r=\begin{bmatrix} x & y \\ 0 & 0 \end{bmatrix}$ and assume that $I$ does not contain any $r$ with $z\neq 0$.  
+By observing matrix multiplication it follows that $I$ is now a left $\mathbb{R}$-vector space, and so any
+chain of left $R$-modules is a chain of subspaces.  As $\dim_{\mathbb{R}} I\leq 2$,
+it follows that such chains are finite.
+
+Hence, there can be no infinite descending chain of distinct left ideals
+and so $R$ is left Artinian and Noetherian.
+\end{proof}
+
+\begin{claim}
+$R$ is not right Artinian nor right Noetherian.
+\end{claim}
+\begin{proof}
+Using $\pi$ (the usual $3.14\dots$), or any other transcendental number, we define
+\begin{equation}
+   I_n := \begin{bmatrix} 0 & \mathbb{Q}[\pi;n] \\ 0 & 0 \end{bmatrix},
+\end{equation}
+where 
+\begin{equation}
+   \mathbb{Q}[\pi;n] := \{ q(\pi)\pi^{n} : q(x)\in\mathbb{Q}[x]\}.
+\end{equation}
+Since $\mathbb{Q}[\pi;n]$ properly contains $\mathbb{Q}[\pi;n+1]$ for all
+$n\in\mathbb{Z}$, it follows that $\{I_n:n\in\mathbb{Z}\}$ is an infinite proper 
+ascending and descending chain of right ideals.  Therefore, $R$ is neither right Artinian
+nor right Noetherian.
+\end{proof}
+
+
+\begin{coro}
+$R$ does not have a ring anti-isomorphism.  Thus $R$ is not an 
+involutory ring.
+\end{coro}
+\begin{proof}
+If $R$ is a ring with an anti-isomorphism, then the set of left ideals
+is mapped to the set of right ideals, bijectively and order preserving.
+This is not possible with $R$.
+\end{proof}
+
+%%%%%
+%%%%%
+\end{document}

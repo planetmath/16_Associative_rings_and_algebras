@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ModuleHomomorphism}
+\pmcreated{2013-03-22 19:22:54}
+\pmmodified{2013-03-22 19:22:54}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{module homomorphism}
+\pmrecord{8}{42336}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D20}
+\pmclassification{msc}{15-00}
+\pmclassification{msc}{13C10}
+\pmclassification{msc}{16D10}
+\pmdefines{bimodule homomorphism}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+
+\begin{document}
+Let $R$ be a ring and $M,N$ left modules over $R$.  A function $f:M\to N$ is said to be a \emph{left module homomorphism} (over $R$) if 
+\begin{enumerate}
+\item $f$ is additive: $f(u+v)=f(u)+f(v)$, and
+\item $f$ preserves left scalar multiplication: $f(rv)=rf(v)$, for any $r\in R$.
+\end{enumerate}
+If $M,N$ are right $R$-modules, then $f:M\to N$ is a \emph{right module homomorphism} provided that $f$ is additive and preserves right scalar multiplication: $f(vr)=f(v)r$ for any $r\in R$.  If $R$ is commutative, any left module homomorphism $f$ is a right module homomorphism, and vice versa, and we simply call $f$ a \emph{module homomorphism}$.
+
+For example, any group homomorphism between abelian groups is a module homomorphism (over $\mathbb{Z}$) and vice versa, as any abelian group is a $\mathbb{Z}$-module (and vice versa).
+
+If $R,S$ are rings, and $M,N$ are $(R,S)$-bimodules, then a function $f:M\to N$ is a \emph{bimodule homomorphism} if $f$ is a left $R$-module homomorphism from left $R$-module $M$ to left $R$-module $N$, and a right $S$-module homomorphism from right $S$-module $M$ to right $S$-module $N$.
+
+Any group homomorphism between two abelian groups is a $(\mathbb{Z},\mathbb{Z})$-bimodule homomorphism.  Also, any left $R$-module homomorphism is an $(R,\mathbb{Z})$-bimodule homomorphism, and any right $S$-module homomorphism is a $(\mathbb{Z},S)$-bimodule homomorphism.  The converses are also true in all three cases.
+
+%%%%%
+%%%%%
+\end{document}

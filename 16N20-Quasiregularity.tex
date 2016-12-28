@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Quasiregularity}
+\pmcreated{2013-03-22 13:12:59}
+\pmmodified{2013-03-22 13:12:59}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{quasi-regularity}
+\pmrecord{8}{33681}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N20}
+\pmsynonym{quasi regular}{Quasiregularity}
+\pmsynonym{quasi regularity}{Quasiregularity}
+\pmrelated{JacobsonRadical}
+\pmrelated{RegularIdeal}
+\pmrelated{HomotopesAndIsotopesOfAlgebras}
+\pmdefines{quasi-regular}
+\pmdefines{right quasi-regular}
+\pmdefines{left quasi-regular}
+\pmdefines{quasi-inverse}
+\pmdefines{quasi-regular ideal}
+\pmdefines{quasi-regular ring}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{lemma}{Lemma}
+\begin{document}
+\PMlinkescapeword{terms}
+
+An element $x$ of a ring is called \emph{right quasi-regular} [resp. \emph{left quasi-regular}] if there
+is an element $y$ in the ring such that $x + y + xy = 0$ [resp. $x + y + yx = 0$].
+
+For calculations with quasi-regularity, it is useful to introduce the operation $*$ defined:
+$$ x * y = x + y + xy .$$
+Thus $x$ is right quasi-regular if there is an element $y$ such that $x * y = 0$.
+The operation $*$ is easily demonstrated to be associative, and $x * 0 = 0 * x = x$ for all $x$.
+
+An element $x$ is called \emph{quasi-regular} if it is both left and right quasi-regular.
+In this case, there are elements $y$ and $z$ such that $x + y + xy = 0 = x + z + zx$
+(equivalently, $x * y = z * x = 0$).
+A calculation shows that
+$$y = 0 * y = (z * x) * y = z * (x * y) = z.$$
+So $y = z$ is a unique element, depending on $x$, called the \emph{quasi-inverse} of $x$.
+
+An ideal (one- or two-sided) of a ring is called \emph{quasi-regular} if each of its elements is quasi-regular.  Similarly, a ring is called \emph{quasi-regular} if each of its elements is quasi-regular (such rings cannot have an identity element).
+
+\begin{lemma}
+Let $A$ be an ideal (one- or two-sided) in a ring $R$.
+If each element of $A$ is right quasi-regular, then $A$ is a quasi-regular ideal.
+\end{lemma}
+
+This lemma means that there is no extra generality gained in defining terms such as right quasi-regular left ideal, etc.
+
+Quasi-regularity is important because it provides elementary characterizations of the Jacobson radical
+for rings without an identity element:
+\begin{itemize}
+\item The Jacobson radical of a ring is the sum of all quasi-regular left (or right) ideals.
+\item The Jacobson radical of a ring is the largest quasi-regular ideal of the ring.
+\end{itemize}
+
+For rings with an identity element, note that $x$ is [right, left] quasi-regular if and only if $1 + x$ is [right, left]
+invertible in the ring.
+%%%%%
+%%%%%
+\end{document}

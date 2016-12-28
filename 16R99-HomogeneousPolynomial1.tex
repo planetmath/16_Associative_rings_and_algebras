@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HomogeneousPolynomial1}
+\pmcreated{2013-03-22 14:53:42}
+\pmmodified{2013-03-22 14:53:42}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{homogeneous polynomial}
+\pmrecord{17}{36577}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16R99}
+\pmclassification{msc}{13B25}
+\pmclassification{msc}{16S36}
+\pmclassification{msc}{11E76}
+\pmsynonym{polynomial form}{HomogeneousPolynomial1}
+\pmrelated{HomogeneousIdeal}
+\pmrelated{HomogeneousFunction}
+\pmrelated{HomogeneousEquation}
+\pmdefines{homogeneous component}
+\pmdefines{cubic form}
+\pmdefines{linear form}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{homogeneous}
+\PMlinkescapeword{degree}
+
+Let $R$ be an associative ring.  A (multivariate) polynomial $f$ over $R$ is said to be \emph{homogeneous of degree} $r$ if it is expressible as an $R$-\PMlinkname{linear combination}{LinearCombination} of monomials of degree $r$: 
+$$f(x_1,\ldots,x_n)=\sum_{i=1}^{m}a_i{x_1}^{r_{i1}}\cdots{x_n}^{r_{in}},$$ 
+where $r=r_{i1}+\cdots+r_{in}$ for all $i\in\lbrace 1,\ldots,m\rbrace$ and $a_i\in R$.  
+
+A general homogeneous polynomial is also known sometimes as a \emph{polynomial form}.  A homogeneous polynomial of degree 1 is called a \emph{linear form}; a homogeneous polynomial of degree 2 is called a \emph{quadratic form}; and a homogeneous polynomial of degree 3 is called a \emph{cubic form}.
+
+\textbf{Remarks}. 
+\begin{enumerate} 
+\item If $f$ is a homogeneous polynomial over a ring $R$ with $\operatorname{deg}(f)=r$, then $f(tx_1,\ldots,tx_n)=t^rf(x_1,\ldots,x_n)$.  In fact, a homogeneous function that is also a polynomial is a homogeneous polynomial.
+\item Every polynomial $f$ over $R$ can be expressed uniquely as a finite sum of homogeneous polynomials.  
+The homogeneous polynomials that make up the polynomial $f$ are called the \emph{homogeneous components} of $f$. 
+\item If $f$ and $g$ are homogeneous polynomials of degree $r$ and $s$ over a domain $R$, then $fg$ is homogeneous of degree $r+s$.  From this, one sees that given a domain $R$, the ring $R[\boldsymbol{X}]$ is a graded ring, where $\boldsymbol{X}$ is a finite set of indeterminates.  The condition that $R$ does not have any zero divisors is essential here.  As a counterexample, in $\mathbb{Z}_6[x,y]$, if $f(x,y)=2x+4y$ and $g(x,y)=3x+3y$, then $f(x,y)g(x,y)=0$.
+\end{enumerate} 
+
+\textbf{Examples} 
+\begin{itemize} 
+\item $f(x,y) = x^2+xy+yx+y^2$ is a homogeneous polynomial of degree 2.  Notice the middle two monomials could be combined into the monomial 2xy if the variables are allowed to commute with one another.
+\item $f(x) = x^3+1$ is not a homogeneous polynomial. 
+\item $f(x,y,z) = x^3+xyz+zyz+3xy^2+x^2-xy+y^2+zy+z^2+xz+y+2x+6$ is a polynomial that is the sum of four homogeneous 
+polynomials: $x^3+xyz+zyz+3xy^2$ (with degree 3), $x^2-xy+y^2+zy+z^2+xz$ (degree = 2), $y+2x$ (degree = 1) and 
+$6$ (deg = 0). 
+\item Every symmetric polynomial can be written as a sum of symmetric homogeneous polynomials.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

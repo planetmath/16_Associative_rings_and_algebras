@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FaaDiBrunosFormula}
+\pmcreated{2013-03-22 16:38:57}
+\pmmodified{2013-03-22 16:38:57}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{Fa\`a di Bruno's formula}
+\pmrecord{5}{38853}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+\pmsynonym{Faa di Bruno's formula}{FaaDiBrunosFormula}
+\pmsynonym{Fa\`a di Bruno formula}{FaaDiBrunosFormula}
+\pmsynonym{Faa di Bruno formula}{FaaDiBrunosFormula}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Fa\`a di Bruno's formula} is a generalization of the chain rule
+to higher order derivatives which expresses the derivative of a 
+composition of functions as a series of products of derivatives:
+
+$${d^n \over dx^n} f(g(x))=\sum_{\sum_{k=0}^n k m_k = n} \frac{n!}{m_1!\,m_2!\,m_3!\,\cdots 1!^{m_1}\,2!^{m_2}\,3!^{m_3}\,\cdots} f^{(m_1 + \cdots + m_n)}(g(x)) \prod_{j\,:\,m_j\neq 0}\left(g^{(j)}(x)\right)^{m_j}$$
+
+This formula was discovered by Francesco Fa\`a di Bruno in the 1850s and can
+be proved by induction on the order of the derivative.
+
+\begin{thebibliography}{1}
+\bibitem{} Fa\`a di Bruno, C. F.. ``Sullo sviluppo delle funzione.'' {\it Ann. di 
+Scienze Matem. et Fisiche di Tortoloni} {\bf 6} (1855): 479-480
+\bibitem{} Fa\`a di Bruno, C. F.. ``Note sur un nouvelle formule de calcul diff\'erentiel.'' {\it Quart. J. Math.} {\bf 1} (1857): 359-360
+\bibitem{} H. Figueroa \& J. M. Gracia-Bond\'ia, ``Combinatorial Hopf Algebras in Quantum Field Theory I'' {\it Rev. Math. Phys.} {\bf 17} (2005): 881 - 975
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FittingsLemma}
+\pmcreated{2013-03-22 17:29:26}
+\pmmodified{2013-03-22 17:29:26}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Fitting's lemma}
+\pmrecord{9}{39878}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmclassification{msc}{16S50}
+\pmclassification{msc}{13C15}
+\pmsynonym{Fitting lemma}{FittingsLemma}
+\pmsynonym{Fitting decomposition theorem}{FittingsLemma}
+\pmdefines{Fitting's decomposition theorem}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+\PMlinkescapeword{decomposition}
+\PMlinkescapeword{theorem}
+\PMlinkescapeword{lemma}
+
+\begin{thm}[Fitting Decomposition Theorem]  Let $R$ be a ring, and $M$ a finite-length module over $R$.  Then for any $\phi \in \operatorname{End}(M)$, the endomorphism ring of $M$, there is a positive integer $n$ such that $$M=\ker(\phi^n)\oplus \operatorname{im}(\phi^n).$$ \end{thm}
+\begin{proof}
+Given $\phi\in \operatorname{End}(M)$, it is clear that $\ker(\phi^i)\subseteq \ker(\phi^{i+1})$ and $\operatorname{im}(\phi^i)\supseteq \operatorname{im}(\phi^{i+1})$ for any positive integer $i$.  Therefore, we have an ascending chain of submodules $$\ker(\phi)\subseteq \cdots \subseteq \ker(\phi^i)\subseteq \ker(\phi^{i+1}) \subseteq \cdots,$$ and a descending chain of submodules $$\operatorname{im}(\phi)\supseteq \cdots \supseteq \operatorname{im}(\phi^i)\supseteq \operatorname{im}(\phi^{i+1}) \supseteq \cdots.$$
+Both chains must be finite, since $M$ has finite length.  Therefore, we can find a positive integer $n$ such that 
+\begin{displaymath}
+\left\{
+\begin{array}{l}
+\ker(\phi^n)=\ker(\phi^{n+1})=\cdots, \mbox{ and}  \\
+\operatorname{im}(\phi^n)= \operatorname{im}(\phi^{n+1}) =\cdots.
+\end{array}
+\right.
+\end{displaymath}
+If $u\in M$, then $\phi^n(u)\in \operatorname{im}(\phi^n)=\operatorname{im}(\phi^{2n})$.  Therefore, $\phi^n(u)=\phi^{2n}(v)$ for some $v\in M$.  Write $u=(u-\phi^n(v))+\phi^n(v)$.  Applying the $\phi^n$ to the first term, we get $\phi^n(u-\phi^n(v))=\phi^n(u)-\phi^{2n}(v)=0$, so it is in $\ker(\phi^n)$.  The second term is clearly in $\operatorname{im}(\phi^n)$.  So $$M=\ker(\phi^n)+\operatorname{im}(\phi^n).$$  Furthermore, if $u\in \ker(\phi^n)\cap \operatorname{im}(\phi^n)$, then $u=\phi^n(v)$ for some $v\in M$.  Since $\phi^{2n}(v)=\phi^n(u)=0$, $v\in \ker(\phi^{2n})=\ker(\phi^n)$.  Therefore, $u=\phi^n(v)=0$.  This shows that we can replace $+$ in the equation above by $\oplus$, proving the theorem.
+\end{proof}
+
+Stated differently, the theorem says that, given an endomorphism $\phi$ on $M$, $M$ can be decomposed into two submodules $M_1$ and $M_2$, such that $\phi$ restricted to $M_1$ is nilpotent, and $\phi$ restricted to $M_2$ is an isomorphism.
+
+A direct consequence of this decomposition property is the famous Fitting Lemma:
+
+\begin{cor}[Fitting Lemma] In the theorem above, $\phi$ is either nilpotent ($\phi^n=0$ for some $n$) or an automorphism iff $M$ is indecomposable.  \end{cor}
+\begin{proof}
+Suppose first that $M$ is indecomposable.  Then either $\ker(\phi^n)=0$ or $\operatorname{im}(\phi^n)=0$.  If $n=1$, then the lemma is proved.  Suppose $n>1$.  In the former case, any $u\in M$ is the image of some $v$ under $\phi^n$, so $u=\phi(\phi^{n-1}(v))$ and therefore $\phi$ is onto.  If $\phi(u)=0$, then $\phi^n(u)=\phi^{n-1}(\phi(u))=0$, so $u=0$.  This means $u$ is an automorphism.  In the latter case, $\phi^n(u)=0$ for any $u\in M$, so $\phi$ is nilpotent.
+
+Now suppose $M$ is not indecomposable.  Then writing $M=M_1\oplus M_2$, where $M_1$ and $M_2$ as proper submodules of $M$, we can define $\phi\in \operatorname{End}(M)$ such that $\phi$ is the identity on $M_1$ and $0$ on $M_2$ ($\phi$ is a projection of $M$ onto $M_1$).  Since both $M_1$ and $M_2$ are proper, $\phi$ is neither an automorphism nor nilpotent.
+\end{proof}
+
+\textbf{Remark}.  Another way of stating Fitting Lemma is to say that $\operatorname{End}(M)$ is a local ring iff the finite-length module $M$ is indecomposable.  The (unique) maximal ideal in $\operatorname{End}(M)$ consists of all nilpotent endomorphisms (and its complement consists of, of course, the automorphisms).
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,233 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DivisionAlgebra}
+\pmcreated{2013-03-22 16:52:03}
+\pmmodified{2013-03-22 16:52:03}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{division algebra}
+\pmrecord{6}{39117}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16K99}
+\pmrelated{octonion}
+\pmrelated{Octonion}
+\pmdefines{division algebra}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{enumerate}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+Let $K$ be a unital ring and $A$ a $K$-algebra.  Defining ``division''
+requires special considerations when the algebras are non-associative
+so we introduce the definition in stages.
+
+\section{Associative division algebras}
+
+If $A$ is an 
+associative algebra then we say $A$ is a \emph{division algebra}
+if
+\begin{enumerate}[(i)]
+\item $A$ is unital with identity $1$.  So for all $a\in A$,
+\[a1=1a=a.\]
+\item Also every non-zero element of $A$ has an inverse.  That is
+$a\in A$, $a\neq 0$, then there exists a $b\in A$ such that
+\[ab=1=ba.\]
+We denote $b$ by $a^{-1}$ and we may prove $a^{-1}$ is unique to $a$.
+\end{enumerate}
+
+The standard examples of associative division algebras are fields, which
+are commutative, and the non-split quaternion algebra: $\alpha,\beta\in K$,
+\[\left(\frac{\alpha,\beta}{K}\right)=\left\{
+a_1 1+a_2 i+a_3 j+a_4 k : i^2=\alpha 1, j^2=\beta 1, k^2=-\alpha \beta 1, ij=k=-ji.\right\}\]
+where $x^2-\alpha$ and $x^2-\beta$ are irreducible over $K$.
+
+\section{Non-associative division algebras}
+
+For non-associative algebras $A$, the notion of an inverse is not immediate.
+We use $x.y$ for the product of $x,y\in A$.
+
+\textbf{Invertible as endomorphisms:}  Let $a\in A$.  Then define $L_a:x\mapsto a.x$
+and $R_a:x\mapsto x.a$.  As the product of $A$ is distributive, both $L_a$ an $R_a$
+are additive endomorphisms of $A$.  If $L_a$ is invertible then we may call $a$
+``left invertible'' and similarly, when $R_a$ is invertible we may call $a$
+``right invertible'' and ``invertible'' if both $L_a$ and $R_a$ are invertible.
+
+In this model of invertible, $A$ is a \emph{division algebra} if, and only if,
+for each non-zero $a\in A$, both $L_a$ and $R_a$ invertible.
+Equivalently: the equations $a.x=b$ and $y.a=b$ have unique solutions
+for nonzero $a,b\in A$.  However, $x$ and $y$ need not be equal.
+
+A common method to produce non-associative division algebras of this sort is
+through Schur's Lemma.  
+
+\textbf{Invertible in the product:}
+In some instances, the notion of invertible via endomorphisms is not 
+sufficient.  Instead, assume $A$ has an identity, that is, an element $1\in A$ such
+that for all $a\in A$,
+\[1.a=a=a.1.\]
+
+Next if $a\in A$, we say $a$ is \emph{invertible} if there exists a $b\in A$
+such that 
+\begin{equation}\label{eq:inv}
+a.b=1=b.a
+\end{equation}
+and furthermore that for all $x\in A$,
+\begin{equation}\label{eq:inv-non-a}
+b.(a.x)=x=(x.a).b.
+\end{equation}
+Evidently (\ref{eq:inv}) can be inferred from (\ref{eq:inv-non-a}).
+This added assumption substitutes for the need of associativity in the
+proofs of uniqueness of inverses and in solving equations with non-associative
+products.  
+
+\begin{prop}
+If $A$ is a finite dimensional algebra over a field, then
+invertible in this sense forces both $L_a$ and $R_a$ to be invertible as well.
+\end{prop}
+\begin{proof}
+Let $x\in A$.  Then $xL_1=1.x=x=b.(a.x)=x L_a L_b$.  So $L_1=L_a L_b$.  As
+$L_1$ is the identity map, $L_a$ is injective and $L_b$ is surjective.
+As $A$ is finite dimensional, injective and surjective endomorphisms are
+bijective.
+\end{proof}
+
+
+In this model, a non-associative algebra is a division algebra $A$ if it is
+unital and every non-zero element is invertible.
+
+\section{Alternative division algebras}
+
+The standard examples of non-associative division algebras are actually 
+alternative alegbras, specfically, the composition algebras of fields,
+non-split quaternions and non-split octonions -- only the latter are
+actually not associative.  Invertible in the octonions is interpreted
+in the second stronger form.
+
+\begin{thm}[Bruck-Klienfeld]
+Every alternative division algebra is either associative or a non-split
+octonion.
+\end{thm}
+
+This result is usually followed by two useful results which serve to omit
+the need to consider non-associative examples.
+
+\begin{thm}[Artin-Zorn, Wedderburn]
+A finite alternative division algebra is associative and commutative, so 
+it is a finite field.
+\end{thm}
+
+\begin{thm}
+An alternative division algebra over an algebraically closed field is
+the field itself.
+\end{thm}
+
+%%%%%
+%%%%%
+\end{document}

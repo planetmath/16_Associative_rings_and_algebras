@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CommutativityTheoremsOnRings}
+\pmcreated{2013-03-22 17:54:55}
+\pmmodified{2013-03-22 17:54:55}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{commutativity theorems on rings}
+\pmrecord{12}{40410}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16B99}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Since Wedderburn proved his celebrated theorem that any finite division ring is commutative, the interest in studying properties on a ring that would render the ring commutative dramatically increased.  Below is a list of some of the so-called ``commutativity theorems'' on a ring, showing how much one can generalize the result that Wedderburn first obtained.  In the list below, $R$ is assumed to be unital ring.
+
+\begin{thm} In each of the cases below, $R$ is commutative:
+\begin{enumerate}
+\item (Wedderburn's theorem)  $R$ is a finite division ring.
+\item (Jacobson) If for every element $a\in R$, there is a positive integer $n>1$ (depending on $a$), such that $a^n=a$.
+\item (Jacobson-Herstein)  For every $a,b\in R$, if there is a positive integer $n>1$ (depending on $a,b$) such that $$(ab-ba)^n=ab-ba.$$
+\item (Herstein) If there is an integer $n>1$ such that for every element $a\in R$ such that $a^n-a\in Z(R)$, the center of $R$.
+\item (Herstein) If for every $a\in R$, there is a polynomial $p\in \mathbb{Z}[X]$ ($p$ depending on $a$) such that $a^2p(a)-a\in Z(R)$.
+\item (Herstein) If for every $a,b\in R$, such that there is an integer $n>1$ (depending on $a,b$) with $$(a^n-a)b=b(a^n-a).$$
+\end{enumerate}
+\end{thm}
+
+Some of the commutativity problems can be derived fairly easily, such as the following examples:
+\begin{thm}  If $R$ is a ring with $1$ such that $(ab)^2=a^2b^2$ for all $a,b\in R$, then $R$ is commutative.
+\end{thm}
+\begin{proof}
+Let $a, b \in R$.  From the assumption, we have $((a+1)b)^2=(a+1)^2b^2$.  Expanding the LHS, we get $(ab)^2+(ab)b+
+b(ab)+b^2$.  Expanding the RHS, we get $a^2b^2+2ab^2+b^2$.  Equating both sides and eliminating common terms, we have
+\begin{equation}
+bab=ab^2
+\end{equation}
+Similarly, from $(a(b+1))^2=a^2(b+1)^2$, we expand the equations and get $$(ab)^2+(ab)a+a(ab)+a^2=a^2b^2+2a^2b+a^2.$$
+Hence
+\begin{equation}
+aba=a^2b
+\end{equation}
+Finally, expanding out $((a+1)(b+1))^2=(a+1)^2(b+1)^2$ and eliminating
+common terms, keeping in mind Equations (1) and (2) from above, we get $ab=ba$.
+\end{proof}
+
+\newtheorem{cor}[thm]{Corollary}
+\begin{cor} If each element of a ring $R$ is idempotent, then $R$ is commutative.
+\end{cor}
+\begin{proof}
+If $R$ contains $1$, then we can apply Theorem 2: for $(st)^2=st=s^2t^2$ for any $s,t\in R$.  Otherwise, we do the following trick: first $2s = (2s)^2 = 4s^2 = 4s$, so that $2s=0$ for all $s\in R$.  Next, $s+t = (s+t)^2 = s^2 + st + ts + t^2 = s+st+ts+t$, so $0=st+ts$, which implies $st=st+(st+ts)=2st + ts=ts$, and the result follows.
+
+\textit{The corollary also follows directly from part 2 of Theorem 1.}
+\end{proof}
+
+\begin{thebibliography}{8}
+\bibitem{ih} I. N. Herstein, \emph{Noncommutative Rings}, The Mathematical Association of America (1968).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

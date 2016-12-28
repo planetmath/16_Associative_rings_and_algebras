@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Coalgebra}
+\pmcreated{2013-03-22 13:06:02}
+\pmmodified{2013-03-22 13:06:02}
+\pmowner{mhale}{572}
+\pmmodifier{mhale}{572}
+\pmtitle{coalgebra}
+\pmrecord{12}{33522}
+\pmprivacy{1}
+\pmauthor{mhale}{572}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+\pmdefines{comultiplication}
+\pmdefines{counit}
+\pmdefines{coassociative}
+\pmdefines{cocommutative}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% making logically defined graphics
+\usepackage[all]{xy}
+
+% my maths package
+
+\newcommand*{\Nset}{\mathbb{N}}
+\newcommand*{\Zset}{\mathbb{Z}}
+\newcommand*{\Qset}{\mathbb{Q}}
+\newcommand*{\Rset}{\mathbb{R}}
+\newcommand*{\Cset}{\mathbb{C}}
+\newcommand*{\Hset}{\mathbb{H}}
+\newcommand*{\Oset}{\mathbb{O}}
+\newcommand*{\Bset}{\mathbb{B}}
+\newcommand*{\Kset}{\mathbb{K}}
+\newcommand*{\Sset}{\mathbb{S}}
+\newcommand*{\Tset}{\mathbb{T}}
+\newcommand*{\GLgrp}{\mathrm{GL}}
+\newcommand*{\SLgrp}{\mathrm{SL}}
+\newcommand*{\Ogrp}{\mathrm{O}}
+\newcommand*{\SOgrp}{\mathrm{SO}}
+\newcommand*{\Ugrp}{\mathrm{U}}
+\newcommand*{\SUgrp}{\mathrm{SU}}
+\newcommand*{\e}{\mathop{\mathrm{e}}\nolimits}
+\newcommand*{\im}{\mathord{\mathrm{i}}}
+\newcommand*{\identity}{\mathord{\mathrm{1\!\!\!\:I}}}
+\newcommand*{\tr}{\mathop{\mathrm{tr}}}
+\newcommand*{\Tr}{\mathop{\mathrm{Tr}}}
+\renewcommand*{\d}{\mathrm{d}}
+\newcommand*{\deriv}[2]{\frac{\d #1}{\d #2}}
+\newcommand*{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand*{\fderiv}[2]{\frac{\delta #1}{\delta #2}}
+
+% my noncommutative geometry package
+
+\newcommand*{\algebra}[1][A]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbert}[1][H]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbmod}[1][E]{\mathord{\mathcal{#1}}}
+\newcommand*{\Matrix}[2]{\mathord{\mathrm{M}_{#1}(#2)}}
+\newcommand*{\dixmier}{\mathop{\mathrm{Tr}_\omega}}
+\newcommand*{\Res}{\mathop{\mathrm{Res}}}
+\newcommand*{\Wres}{\mathop{\mathrm{Wres}}}
+\newcommand*{\Aut}{\mathop{\mathrm{Aut}}\nolimits}
+\newcommand*{\Inn}{\mathop{\mathrm{Inn}}\nolimits}
+\newcommand*{\Out}{\mathop{\mathrm{Out}}\nolimits}
+\newcommand*{\Diff}{\mathop{\mathrm{Diff}}\nolimits}
+\newcommand*{\Ker}{\mathop{\mathrm{Ker}}\nolimits}
+\newcommand*{\Coker}{\mathop{\mathrm{Coker}}\nolimits}
+\newcommand*{\Img}{\mathop{\mathrm{Im}}\nolimits}
+\newcommand*{\End}{\mathop{\mathrm{End}}\nolimits}
+\newcommand*{\spin}{\mathop{\mathrm{spin}}\nolimits}
+\newcommand*{\Ind}{\mathop{\mathrm{Ind}}\nolimits}
+\newcommand*{\KK}{\mathit{KK}}
+\newcommand*{\HH}{\mathit{HH}}
+\newcommand*{\HC}{\mathit{HC}}
+\newcommand*{\ch}{\mathop{\mathrm{ch}}\nolimits}
+
+% my category theory package
+
+\newcommand*{\mathcat}[1]{\mathord{\mathbf{#1}}}
+\newcommand*{\id}{\mathrm{id}}
+\newcommand*{\op}{\mathrm{op}}
+\newcommand*{\boxprod}{\mathbin{\square}}
+
+% my environments
+
+\newtheoremstyle{inlinedefn}{}{0pt}{}{}{\bfseries}{.}{0.5em}{}
+\theoremstyle{inlinedefn}
+\newtheorem{definition}{Definition}
+
+\newtheoremstyle{break}{\baselineskip}{\baselineskip}{\itshape}{}{\bfseries}{}{\newline}{}
+\theoremstyle{break}
+\newtheorem{example}{Example}
+
+% misc commands
+
+\newcommand*{\defn}[1]{\textbf{#1}}
+\begin{document}
+A \textbf{coalgebra} is a vector space $A$ over a field $\Kset$ with a $\Kset$-linear map $\Delta\colon A \to A\otimes A$,
+called the \textbf{comultiplication},
+and a (non-zero) $\Kset$-linear map $\varepsilon\colon A \to \Kset$,
+called the \textbf{counit}, such that
+\begin{eqnarray*}
+(\Delta\otimes\id)\circ\Delta & = & (\id\otimes\Delta)\circ\Delta \quad\mbox{(coassociativity)}, \\
+(\varepsilon\otimes\id)\circ\Delta & = \id = & (\id\otimes\varepsilon)\circ\Delta.
+\end{eqnarray*}
+
+In \PMlinkescapetext{terms} of commutative diagrams:
+\[\begin{xy}
+\xymatrix@R=20pt@C=20pt{
+& *+<10pt>\txt{$A$} \ar_{\Delta}[dl] \ar^{\Delta}[dr] & \\
+*+<10pt>\txt{$A\otimes A$} \ar_{\Delta\otimes\id}[dr] & & *+<10pt>\txt{$A\otimes A$} \ar^{\id\otimes\Delta}[dl] \\
+& *+<10pt>\txt{$A\otimes A\otimes A$} &
+}\end{xy}\]
+\[\begin{xy}
+\xymatrix@R=20pt@C=20pt{
+& *+<10pt>\txt{$A$} \ar_{\Delta}[dl] \ar^{\id}[dd] \ar^{\Delta}[dr] & \\
+*+<10pt>\txt{$A\otimes A$} \ar_{\varepsilon\otimes\id}[dr] & & *+<10pt>\txt{$A\otimes A$} \ar^{\id\otimes\varepsilon}[dl] \\
+& *+<10pt>\txt{$A$} &
+}\end{xy}\]
+
+Let $\sigma\colon A\otimes A \to A\otimes A$ be the flip map $\sigma(a\otimes b) = b\otimes a$.
+A coalgebra is said to be \textbf{cocommutative} if $\sigma\circ\Delta = \Delta$.
+
+Let $A$ and $B$ be two coalgebras over a field $\Kset$.
+A coalgebra homomorphism is a $\Kset$-linear map $f\colon A \to B$
+such that $\Delta_B\circ f = (f\otimes f)\circ\Delta_A$
+and $\varepsilon_B\circ f = \varepsilon_A$.
+
+\begin{example}[Coalgebra of a set]
+Let $S$ be a set.
+The free vector space $\Kset S$, with basis given by the elements of $S$, is a coalgebra with comultiplication $\Delta(s) = s \otimes s$
+and counit $\varepsilon(s) = 1$.
+\end{example}
+%%%%%
+%%%%%
+\end{document}

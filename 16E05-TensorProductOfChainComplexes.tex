@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TensorProductOfChainComplexes}
+\pmcreated{2013-03-22 16:13:21}
+\pmmodified{2013-03-22 16:13:21}
+\pmowner{Mazzu}{14365}
+\pmmodifier{Mazzu}{14365}
+\pmtitle{tensor product of chain complexes}
+\pmrecord{13}{38321}
+\pmprivacy{1}
+\pmauthor{Mazzu}{14365}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E05}
+\pmclassification{msc}{18G35}
+%\pmkeywords{chain complex}
+\pmdefines{tensor product of chain complexes}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{tensor product}
+
+\newcommand{\cbra}[1]{\left( #1 \right)}
+\newcommand{\qbra}[1]{\left[ #1 \right]}
+\newcommand{\gbra}[1]{\left\{ #1 \right\}}
+\newcommand{\abra}[1]{\left\langle #1 \right\rangle}
+
+\newcommand{\pa}[1]{\partial_{#1}}
+\newcommand{\pap}[1]{\partial_{#1} '}
+\newcommand{\papp}[1]{\partial_{#1} ''}
+
+
+Let $ C'=\gbra{C_n',\pap n}$ and $C''=\gbra{C_n'',\papp n}$ be two chain complexes of $R$-modules, where $R$ is a commutative ring with unity. Their \emph{tensor product} $C'\otimes_R C''=\gbra{(C'\otimes_R C'')_n,\pa n}$ is the chain complex defined by
+$$ (C'\otimes_R C'')_n = \bigoplus_{i+j=n}(C_i'\otimes_R C_j''), $$
+$$ \pa n(t'_i\otimes_R s''_j) = \pap i(t'_i)\otimes_R s''_j + (-1)^i\, t'_i\otimes_R \papp j(s''_j),\ \ \ \forall t'_i\in C_i',\ s''_j\in C_j'',\ (i+j=n),$$
+where $C_i'\otimes_R C_j''$ denotes the \PMlinkname{tensor product}{TensorProduct} of $R$-modules $C_i'$ and $C_j''$.
+
+Indeed, this defines a chain complex, because  for each $t'_i\otimes_R s''_j\in C_i'\otimes_R C_j''\subseteq (C'\otimes_R C'')_{i+j}$ we have
+$$\pa{i+j-1} \pa {i+j}(t'_i\otimes_R s''_j) = \pa{i+j-1}\cbra{ \pap i(t'_i)\otimes_R s''_j + (-1)^i\, t'_i\otimes_R \papp j(s''_j) }= $$
+$$ = (-1)^{i-1}\, \pap i(t'_i)\otimes_R \papp j(s''_j)+(-1)^i \pap i(t'_i)\otimes_R \papp j(s''_j)=0, $$
+thus $C'\otimes_R C''$ is a chain complex.
+%%%%%
+%%%%%
+\end{document}

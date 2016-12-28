@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfModularLaw}
+\pmcreated{2013-03-22 12:50:45}
+\pmmodified{2013-03-22 12:50:45}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{proof of modular law}
+\pmrecord{8}{33174}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmrelated{FirstIsomorphismTheorem}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+First we show $C+(B \cap A) \subseteq B \cap (C+A)$:\\
+Note that $C \subseteq B, B \cap A \subseteq B$, and therefore $C + (B \cap A) \subseteq B$.\\
+Further, $C \subseteq C+A$, $B \cap A \subseteq C+A$, thus
+$C+(B \cap A) \subseteq C+A$.\\
+
+Next we show $B \cap (C+A) \subseteq C+(B \cap A)$:\\
+Let $b \in B \cap (C+A)$.  Then $b=c+a$ for some $c \in C$ and $a \in A$.
+Hence $a=b-c$, and so $a \in B$ since $b \in B$ and $c \in C \subseteq B$.\\
+Hence $a \in B \cap A$, so $b = c+a \in C+(B \cap A)$.
+%%%%%
+%%%%%
+\end{document}

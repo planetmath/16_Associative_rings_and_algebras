@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SurjectiveHomomorphismBetweenUnitaryRings}
+\pmcreated{2013-03-22 19:10:22}
+\pmmodified{2013-03-22 19:10:22}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{surjective homomorphism between unitary rings}
+\pmrecord{6}{42080}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16B99}
+\pmclassification{msc}{13B10}
+\pmrelated{IsomorphismSwappingZeroAndUnity}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\, Let $f$ be a surjective homomorphism from a unitary ring $R$ to another unitary ring $R\,'$.\, Then
+\begin{itemize}
+\item $f(1) \;=\; 1',$
+\item $f(a^{-1}) \;=\; (f(a))^{-1}$\; for all elements $a$ belonging to the group of units of $R$.
+\end{itemize}
+
+
+
+\emph{Proof.}\, $1^\circ$.\, In a ring, the \PMlinkescapetext{multiplicative} identity element is unique, whence it suffices to show that $f(1)$ has the properties required for the unity of the ring $R\,'$.\, When $a'$ is an arbitrary element of this ring, there is by the surjectivity an element $a$ of $R$ such that\, $f(a) = a'$.\, Thus we have
+$$f(1)a' \;=\; f(1)f(a) \;=\; f(1a) \;=\; f(a) \;=\; a', \quad 
+  a'f(1) \;=\; f(a)f(1) \;=\; f(a1) \;=\; f(a) \;=\; a'.$$
+$2^\circ$.\, Let $a$ be a unit of $R$.\, Then
+$$f(a)f(a^{-1}) \;=\; f(aa^{-1}) \;=\; f(1) \;=\; 1', \quad f(a^{-1})f(a) \;=\; f(a^{-1}a) \;=\; f(1) \;=\; 1',$$
+whence $f(a^{-1})$ is a multiplicative inverse of $f(a)$.
+
+%%%%%
+%%%%%
+\end{document}

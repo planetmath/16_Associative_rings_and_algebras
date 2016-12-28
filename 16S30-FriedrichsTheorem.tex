@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FriedrichsTheorem}
+\pmcreated{2013-03-22 16:51:16}
+\pmmodified{2013-03-22 16:51:16}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{Friedrichs' theorem}
+\pmrecord{6}{39101}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S30}
+\pmclassification{msc}{17B35}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+Fix a commutative unital ring $K$ of characteristic 0.  Let $X$ be a finite
+set and $K\langle X\rangle$ the free associative algebra on $X$.  Then define
+the map $\delta:K\langle X\rangle\rightarrow K\langle X\rangle\otimes K\langle X\rangle$ by $x\mapsto x\otimes 1+1\otimes x$.
+
+\begin{thm}[Friedrichs]\cite[Thm V.9]{Jacobson}
+An element $a\in K\langle X\rangle$ is a Lie element if and only if
+$a\delta=a\otimes 1+1\otimes a$.
+\end{thm}
+
+The term Lie element applies only when an element is taken from the universal
+enveloping algebra of a Lie algebra.  Here the Lie algebra in question is
+the free Lie algebra on $X$, $FL\langle X\rangle$ whose universal enveloping 
+algebra is $K\langle X\rangle$ by a theorem of Witt.
+
+This characterization of Lie elements is a primary means in modern proofs
+of the Baker-Campbell-Hausdorff formula.
+
+\bibliographystyle{amsplain}
+\begin{thebibliography}{10}
+\bibitem{Jacobson}
+Nathan Jacobson \emph{Lie Algebras}, Interscience Publishers, New York, 1962.
+
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

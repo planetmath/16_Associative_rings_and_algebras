@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Nearring}
+\pmcreated{2013-03-22 13:25:12}
+\pmmodified{2013-03-22 13:25:12}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{near-ring}
+\pmrecord{22}{33968}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16Y30}
+\pmsynonym{near ring}{Nearring}
+\pmsynonym{nearring}{Nearring}
+\pmrelated{Ring}
+\pmdefines{commutative near-ring}
+\pmdefines{commutative near ring}
+\pmdefines{commutative nearring}
+\pmdefines{distributative near-ring}
+\pmdefines{distributative near ring}
+\pmdefines{distributative nearring}
+\pmdefines{near field}
+\pmdefines{nearfield}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\PMlinkescapeword{addition}
+\PMlinkescapeword{additive}
+\PMlinkescapeword{commutative}
+\PMlinkescapeword{identity}
+\PMlinkescapeword{inverse}
+\PMlinkescapeword{natural}
+\PMlinkescapeword{side}
+
+\section*{Definitions}
+
+A \emph{near-ring} is a \PMlinkname{set}{Set} $N$ together with two binary operations, denoted $+\colon N \times N \to N$ and $\cdot\colon N \times N \to N$, such that
+\begin{enumerate}
+\item $(a+b)+c = a+(b+c)$ and $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ for all $a,b,c \in N$ (associativity of both operations)
+\item There exists an element $0 \in N$ such that $a+0 = 0+a = a$ for all $a \in N$ (additive identity)
+\item For all $a \in N$, there exists $b \in N$ such that $a+b = b+a = 0$ (additive inverse)
+\item $(a+b) \cdot c = (a \cdot c) + (b \cdot c)$ for all $a,b,c \in N$ (right distributive law)
+\end{enumerate}
+
+Note that the axioms of a near-ring differ from those of a ring in that they do not require addition to be \PMlinkname{commutative}{Commutative}, and only require distributivity on one side.
+
+A \emph{near-field} is a near-ring $N$
+such that $(N\setminus\{0\},\cdot)$ is a group.
+
+\section*{Notes}
+
+Every element $a$ in a near-ring has a unique additive inverse, denoted $-a$.
+
+We say $N$ has an {\em identity element} if there exists an element $1 \in N$ such that $a \cdot 1 = 1 \cdot a = a$ for all $a \in N$.
+We say $N$ is {\em distributive} if $a\cdot(b+c) = (a \cdot b) + (a \cdot c)$ holds for all $a,b,c \in N$.
+We say $N$ is {\em commutative} if $a \cdot b = b \cdot a$ for all $a,b \in N$.
+
+Every commutative near-ring is distributive.
+Every distributive near-ring with an identity element is a unital ring
+(see the \PMlinkname{attached proof}{ConditionOnANearRingToBeARing}).
+
+\section*{Example}
+
+A natural example of a near-ring is the following. Let $(G,+)$ be a group (not necessarily \PMlinkname{abelian}{AbelianGroup2}), and let $M$ be the set of all functions from $G$ to $G$. For two functions $f$ and $g$ in $M$ define $f+g\in M$ by $(f+g)(x)=f(x)+g(x)$ for all $x\in G$. Then $(M,+,\circ)$ is a near-ring with identity, where $\circ$ denotes composition of functions.
+
+\begin{thebibliography}{9}
+\bibitem{pilz}
+ G\"unter Pilz,
+ {\it Near-Rings},
+ North-Holland, 1983.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

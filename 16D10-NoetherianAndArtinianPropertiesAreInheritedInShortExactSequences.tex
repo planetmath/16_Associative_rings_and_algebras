@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NoetherianAndArtinianPropertiesAreInheritedInShortExactSequences}
+\pmcreated{2013-03-22 19:11:52}
+\pmmodified{2013-03-22 19:11:52}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{Noetherian and Artinian properties are inherited in short exact sequences}
+\pmrecord{5}{42111}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BZ}{\mathbb{Z}}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\DeclareMathOperator{\im}{im}
+\begin{document}
+\PMlinkescapeword{similar}
+\begin{thm} Let $M, M', M''$ be $A$-modules and $0\to M'\overset{\iota}\to M\overset{\pi}\to M''\to 0$ a short exact sequence. Then
+\begin{enumerate}
+\item $M$ is Noetherian if and only if $M'$ and $M''$ are Noetherian;
+\item $M$ is Artinian if and only if $M'$ and $M''$ are Artinian.
+\end{enumerate}
+\end{thm}
+
+For $\Leftarrow$, we will need a lemma that essentially says that a submodule of $M$ is uniquely determined by its image in $M''$ and its intersection with $M'$:
+\begin{lem} In the situation of the theorem, if $N_1, N_2\subset M$ are submodules with $N_1\subset N_2$, $\pi(N_1) = \pi(N_2)$, and $N_1\cap\iota(M') = N_2\cap\iota(M')$, then $N_1 = N_2$.
+\end{lem}
+\begin{proof} The proof is essentially a diagram chase.
+Choose $x\in N_2$. Then $\pi(x) = \pi(x')$ for some $x'\in N_1$, and thus $\pi(x-x')=0$, so that $x-x'\in\im\iota$, and $x-x'\in N_2$ since $N_1\subset N_2$. Hence $x-x'\in N_2\cap \iota(M') = N_1\cap\iota(M')\subset N_1$. Since $x'\in N_1$, it follows that $x\in N_1$ so that $N_1=N_2$.
+\end{proof}
+
+\begin{proof}
+($\Rightarrow$): If $M$ is Noetherian (Artinian), then any ascending (descending) chain of submodules of $M'$ (or of $M''$) gives rise to a similar sequence in $M$, which must therefore terminate. So the original chain terminates as well.
+\newline
+($\Leftarrow$): Assume first that $M', M''$ are Noetherian, and choose any ascending chain $M_1\subset M_2\subset\dots$ of submodules of $M$. Then the ascending chain $\pi(M_1)\subset\pi(M_2)\subset\dots$ and the ascending chain $M_1\cap\iota(M')\subset M_2\cap\iota(M')\subset\dots$ both stabilize since $M'$ and $M''$ are Noetherian. We can choose $n$ large enough so that both chains stabilize at $n$. Then for $N\ge n$, we have (by the lemma) that $M_N = M_n$ since $\pi(M_N) = \pi(M_n)$ and $M_N\cap\iota(M') = M_n\cap\iota(M')$. Thus $M$ is Noetherian. For the case where $M$ is Artinian, an identical proof applies, replacing ascending chains by descending chains.
+\end{proof}
+\begin{thebibliography}{10}
+\bibitem{bib:am}
+M.F.~Atiyah, I.G.~MacDonald, \emph{Introduction to Commutative Algebra}, Addison-Wesley 1969.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

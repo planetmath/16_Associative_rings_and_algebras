@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ReflexiveModule}
+\pmcreated{2013-03-22 19:22:38}
+\pmmodified{2013-03-22 19:22:38}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{reflexive module}
+\pmrecord{9}{42331}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D90}
+\pmclassification{msc}{16D80}
+\pmdefines{torsionless}
+\pmdefines{reflexive}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+
+\begin{document}
+Let $R$ be a ring, and $M$ a right $R$-module.  Then its dual, $M^*$, is given by $\hom(M,R)$, and has the structure of a left module over $R$.  The dual of that, $M^{**}$, is in turn a right $R$-module.  Fix any $m\in M$.  Then for any $f\in M^*$, the mapping $$f \mapsto f(m)$$ is a left $R$-module homomorphism from $M^*$ to $R$.  In other words, the mapping is an element of $M^{**}$.  We call this mapping $\hat{m}$, since it only depends on $m$.  For any $m\in M$, the mapping $$m\mapsto \hat{m}$$ is a then a right $R$-module homomorphism from $M$ to $M^{**}$.  Let us call it $\theta$.
+
+\textbf{Definition}.  Let $R$, $M$, and $\theta$ be given as above.  If $\theta$ is injective, we say that $M$ is \emph{torsionless}.  If $\theta$ is in addition an isomorphism, we say that $M$ is \emph{reflexive}.  A torsionless module is sometimes referred to as being semi-reflexive.
+
+An obvious example of a reflexive module is any vector space over a field (similarly, a right vector space over a division ring).
+
+Some of the properties of torsionless and reflexive modules are
+\begin{itemize}
+\item any free module is torsionless.
+\item any direct sum of torsionless modules is torsionless; any submodule of a torsionless module is torsionless.
+\item based on the two properties above, any projective module is torsionless.
+\item $R$ is reflexive.
+\item any finite direct sum of reflexive modules is reflexive; any direct summand of a reflexive module is reflexive.
+\item based on the two immediately preceding properties, any finitely generated projective module is reflexive.
+\end{itemize}
+
+%%%%%
+%%%%%
+\end{document}

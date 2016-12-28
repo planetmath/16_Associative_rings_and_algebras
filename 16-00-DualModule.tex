@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DualModule}
+\pmcreated{2013-03-22 16:00:26}
+\pmmodified{2013-03-22 16:00:26}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{dual module}
+\pmrecord{10}{38037}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmrelated{Unimodular}
+\pmdefines{linear functional}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $R$ be a ring and $M$ be a left \PMlinkid{$R$-module}{365}. The {\it dual module} of $M$ is
+the right \PMlinkid{$R$-module}{365} consisting of all module homomorphisms  from $M$ into $R$.
+
+
+
+It is denoted by $M^\ast$. The elements of $M^\ast$ are called {\it linear functionals}.
+
+The action of $R$ on $M^\ast$ is given by $(fr)(m) = (f(m))r$ for
+$f \in M^\ast$, $m \in M$, and $r \in R$.
+
+If $R$ is commutative, then every \PMlinkescapetext{$R$-module} $M$ is an \PMlinkid{$(R,R)$-bimodule}{987} with $rm = mr$ for all $r \in R$ and $m \in M$. Hence, it makes sense to ask whether $M$ and $M^\ast$ are isomorphic. Suppose that 
+$b: M \times M \to R$ is a bilinear form. Then it is easy to check that for a fixed
+$m \in M$, the function $b(m, -): M \to R$ is a module homomorphism,
+so is an element of $M^\ast$. Then we have a  module homomorphism from $M$
+to $M^\ast$ given by $m \mapsto b(m,-)$. 
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GroupAction}
+\pmcreated{2013-03-22 12:12:17}
+\pmmodified{2013-03-22 12:12:17}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{group action}
+\pmrecord{10}{31516}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W22}
+\pmclassification{msc}{20M30}
+\pmrelated{Group}
+\pmdefines{effective}
+\pmdefines{effective group action}
+\pmdefines{faithful}
+\pmdefines{faithful group action}
+\pmdefines{transitive}
+\pmdefines{transitive group action}
+\pmdefines{left action}
+\pmdefines{right action}
+\pmdefines{faithfully}
+\pmdefines{action}
+\pmdefines{act on}
+\pmdefines{acts on}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $G$ be a group and let $X$ be a set. A left {\em group action} is a function $\cdot: G \times X \longrightarrow X$ such that:
+\begin{enumerate}
+\item $1_G \cdot x = x$ for all $x \in X$
+\item $(g_1 g_2)\cdot x = g_1 \cdot (g_2 \cdot x)$ for all $g_1, g_2 \in G$ and $x \in X$
+\end{enumerate}
+
+A right {\em group action} is a function $\cdot: X \times G \longrightarrow X$ such that:
+\begin{enumerate}
+\item $x \cdot 1_G = x$ for all $x \in X$
+\item $x \cdot (g_1 g_2) = (x \cdot g_1) \cdot g_2$ for all $g_1, g_2 \in G$ and $x \in X$
+\end{enumerate}
+
+There is a correspondence between left actions and right actions, given by associating the right action $x \cdot g$ with the left action $g \cdot x := x \cdot g^{-1}$. In many (but not all) contexts, it is useful to identify right actions with their corresponding left actions, and speak only of left actions.
+
+{\bf Special types of group actions}
+
+A left action is said to be {\em effective}, or {\em faithful}, if the function $x \mapsto g \cdot x$ is the identity function on $X$ only when $g = 1_G$.
+
+A left action is said to be {\em transitive} if, for every $x_1,x_2 \in X$, there exists a group element $g \in G$ such that $g \cdot x_1 = x_2$.
+
+A left action is {\em free} if, for every $x \in X$, the only element of $G$ that stabilizes $x$ is the identity; that is, $g \cdot x = x$ implies $g = 1_G$.
+
+Faithful, transitive, and free right actions are defined similarly.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

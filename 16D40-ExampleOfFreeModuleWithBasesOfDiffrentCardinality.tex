@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfFreeModuleWithBasesOfDiffrentCardinality}
+\pmcreated{2013-03-22 18:07:18}
+\pmmodified{2013-03-22 18:07:18}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{example of free module with bases of diffrent cardinality}
+\pmrecord{13}{40670}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+\pmrelated{IBN}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $k$ be a field and $V$ be an infinite dimensional vector space over $k$. Let $\{e_i\}_{i\in I}$ be its basis. Denote by $R=\mathrm{End}(V)$ the ring of endomorphisms of $V$ with standard addition and composition as a multiplication.\\ \\
+Let $J$ be any set such that $|J|\leq |I|$. \\ \\ 
+\textbf{Proposition.} $R$ and $\prod_{j\in J}R$ are isomorphic as a $R$-modules.\\ \\ 
+\textit{Proof.} Let $\alpha:I\rightarrow J\times I$ be a bijection (it exists since $|I|\geq |J|$ and $I$ is infinite) and denote by $\pi_1:J\times I\rightarrow J$ and $\pi_2:J\times I\rightarrow I$ the projections. Moreover let $\delta_1=\pi_1 \circ \alpha$ and $\delta_2=\pi_2 \circ \alpha$. 
+
+Recall that $\prod_{j\in J}R = \{f:J\to R\}$ (with obvious $R$-module structure) and define a map $\phi:\prod_{j\in J}R\rightarrow R$ by defining the endomorphism $\phi(f)\in R$ for $f\in\prod_{j\in J}R$ as follows:
+$$\phi(f)(e_i)=f(\delta_1 (i))(e_{\delta_2 (i)}).$$ $ $ \\ 
+We will show that $\phi$ is an isomorphism. It is easy to see that $\phi$ is a $R$-module homomorphism. Therefore it is enough to show that $\phi$ is injective and surjective.
+
+$1)$ Recall that $\phi$ is injective if and only if $\mathrm{ker}(\phi)=0$. So assume that $\phi(f)=0$ for $f\in\prod_{j\in J}R$. Note that $f=0$ if and only if $f(j)=0$ for all $j\in J$ and this is if and only if $f(j)(e_{i})=0$ for all $j\in J$ and $i\in I$. So take any $(j,i)\in J\times I$. Then (since $\alpha$ is bijective) there exists $i_0\in I$ such that $\alpha(i_0)=(j,i)$. It follows that $\delta_1 (i_0)=j$ and $\delta_2 (i_0)=i$. Thus we have
+$$0=\phi(f)(e_{i_{0}})=f(\delta_1 (i_0))(e_{\delta_2 (i_0)})=f(j)(e_i).$$
+Since $j$ and $i$ were arbitrary, then $f=0$ which completes this part.
+
+$2)$ We wish to show that $\phi$ is onto, so take any $h\in R$. Define $f\in\prod_{j\in J} R$ by the following formula:
+$$f(j)(e_i)=h(e_{\alpha^{-1}(j,i)}).$$
+It is easy to see that $\phi(f)=h$. $\square$ \\ \\
+\textbf{Corollary.} For any two numbers $n,m\in\mathbb{N}$ there exists a ring $R$ and a free module $M$ such that $M$ has two bases with cardinality $n,m$ respectively.\\ \\
+\textit{Proof.} It follows from the proposition, that for $R=\mathrm{End}(V)$ we have $$R^{n}\simeq R\simeq R^{m}.$$ For finite set $J$ module $\prod_{j\in J} R$ is free with basis consisting $|J|$ elements (product is the same as direct sum). Therefore (due to existence of previous isomorphisms) $R$-module $R$ has two bases, one of cardinality $n$ and second of cardinality $m$. $\square$
+%%%%%
+%%%%%
+\end{document}

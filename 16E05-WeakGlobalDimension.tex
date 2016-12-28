@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WeakGlobalDimension}
+\pmcreated{2013-03-22 19:18:42}
+\pmmodified{2013-03-22 19:18:42}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{weak global dimension}
+\pmrecord{4}{42249}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $R$ be a ring. The \textbf{(right) weak global dimension} of $R$ is defined as
+$$\mathrm{w.gl.dim}R=\mathrm{sup}\{\mathrm{wd}_RM\ |\ M\mbox{ is a right module}\}.$$
+
+Unlike global dimension of $R$ the definition of the weak global dimension is left/right symmetric. This follows from the fact that for every left module $M$ and right module $N$ there is an isomorphism
+$$\mathrm{Tor}_n^R(M,N)\simeq\mathrm{Tor}_n^R(N,M).$$
+Thus we simply say that $R$ has the weak global dimension. Note that this does not hold for Ext functors, so (generally) the definition of global dimension is not left/right symmetric.
+
+The following proposition is a simple consequence of the fact that every projective module is flat:
+
+\textbf{Proposition.} For any ring $R$ we have
+$$\mathrm{w.gl.dim}R\leqslant\mathrm{min}\ \{\ \mathrm{l.gl.dim}R,\ \mathrm{r.gl.dim}R\ \},$$
+where $\mathrm{l.gl.dim}$ and $\mathrm{r.gl.dim}$ denote the left global dimension and right global dimension respectively.
+%%%%%
+%%%%%
+\end{document}

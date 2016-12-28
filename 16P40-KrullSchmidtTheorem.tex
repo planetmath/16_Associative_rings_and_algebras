@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KrullSchmidtTheorem}
+\pmcreated{2013-03-22 15:24:00}
+\pmmodified{2013-03-22 15:24:00}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Krull-Schmidt theorem}
+\pmrecord{24}{37238}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16P40}
+\pmclassification{msc}{16P20}
+\pmclassification{msc}{16D70}
+\pmclassification{msc}{20E34}
+\pmclassification{msc}{20-00}
+\pmsynonym{Krull-Remak-Schmidt theorem}{KrullSchmidtTheorem}
+\pmrelated{IndecomposableGroup}
+\pmdefines{ascending chain condition}
+\pmdefines{descending chain condition}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{chain}
+\PMlinkescapeword{algebra}
+
+A group $G$ is said to satisfy the \emph{ascending chain condition} (or ACC) on normal subgroups if there is no infinite ascending proper chain
+$G_1 \subsetneq G_2 \subsetneq G_3 \cdots$ with each $G_i$ a normal subgroup of $G$.
+
+Similarly, $G$ is said to satisfy the \emph{descending chain condition} (or DCC) on normal subgroups if there is no infinite descending proper chain of normal subgroups of $G$.
+
+One can show that if a nontrivial group satisfies either the ACC or the DCC on normal subgroups, then that group can be expressed as the internal direct product of finitely many indecomposable subgroups. If \emph{both} the ACC and DCC are satisfied, the Krull-Schmidt theorem guarantees that this ``decomposition into indecomposables" is essentially unique. (Note that every finite group satisfies both the ACC and DCC on normal subgroups.)
+
+{\bf Krull-Schmidt theorem:} Let $G$ be a nontrivial group satisfying both the ACC and DCC on its normal subgroups. Suppose $G=G_1\times\cdots\times G_n$ and $G=H_1\times\cdots\times H_m$ (internal direct products) where each $G_i$ and $H_i$ is indecomposable. Then $n=m$ and, after reindexing, $G_i\cong H_i$ for each $i$. Moreover, for all $k<n$, $G=G_1\times\cdots\times G_k\times H_{k+1}\times\cdots\times H_n$.
+
+For proof, see Hungerford's \emph{Algebra}.
+
+Noetherian [resp. artinian] modules satisfy the ACC [resp. DCC] on submodules. Indeed the Krull-Schmidt theorem also appears in the context of module theory. (Sometimes, as in Lang's \emph{Algebra}, this result is called the Krull-Remak-Schmidt theorem.) 
+
+{\bf Krull-Schmidt theorem (for modules):} A nonzero module that is both noetherian and artinian can be expressed as the direct sum of finitely many indecomposable modules. These indecomposable summands are uniquely determined up to isomorphism and permutation.
+
+
+
+{\bf References.}
+\begin{itemize}
+\item Hungerford, T., \emph{Algebra}. New York: Springer, 1974.
+\item Lang, S., \emph{Algebra}. (3d ed.), New York: Springer, 2002.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

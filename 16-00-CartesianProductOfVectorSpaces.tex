@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CartesianProductOfVectorSpaces}
+\pmcreated{2013-03-22 15:16:06}
+\pmmodified{2013-03-22 15:16:06}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{Cartesian product of vector spaces}
+\pmrecord{8}{37055}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{20-00}
+\pmclassification{msc}{15-00}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Suppose $V_1,\ldots, V_N$ are vector spaces over a field $\F$.
+Then the Cartesian product $V_1\times \cdots \times V_N$ is a vector space
+when addition and scalar multiplication is  defined as follows
+\begin{eqnarray*}
+   (u_1,\ldots, u_N) +    (v_1,\ldots, v_N) &=&    (u_1+v_1,\ldots, u_N+v_N), \\
+   k (u_1,\ldots, u_N) &=& (k u_1,\ldots, k u_N)
+\end{eqnarray*}
+for $u_i, v_i \in V_i$, $k\in \F$.
+
+For example, the vector space structure of $\R^n$ if defined as above.
+
+\subsubsection*{Properties}
+\begin{enumerate}
+\item If $V_i$ are vector spaces and $W_i\subset V_i$ are subspaces,
+    then $W_1\times \cdots \times W_N$ is a vector subspace of 
+    $V_1\times \cdots \times V_N$.
+\item The dimension of $V_1\times \cdots \times V_N$ is 
+    $\dim V_1+ \cdots +\dim V_N$.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

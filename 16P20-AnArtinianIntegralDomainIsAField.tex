@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AnArtinianIntegralDomainIsAField}
+\pmcreated{2013-03-22 12:49:37}
+\pmmodified{2013-03-22 12:49:37}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{an Artinian integral domain is a field}
+\pmrecord{13}{33150}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16P20}
+\pmclassification{msc}{13G05}
+\pmrelated{AFiniteIntegralDomainIsAField}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\N}{\mathbb{N}}
+\begin{document}
+\PMlinkescapeword{multiplicative}
+
+Let $R$ be an integral domain, and assume that $R$ is Artinian.
+
+Let $a \in R$ with $a \neq 0$.
+Then $R \supseteq aR \supseteq a^2R \supseteq \cdots$.
+
+As $R$ is Artinian, there is some $n\in\N$ such that $a^nR=a^{n+1}R$.
+There exists $r \in R$ such that $a^n=a^{n+1}r$,
+that is, $a^n1=a^n(ar)$.
+But $a^n \neq 0$ (as $R$ is an integral domain), so we have $1=ar$.
+Thus $a$ is a unit.
+
+Therefore, every Artinian integral domain is a field.
+%%%%%
+%%%%%
+\end{document}

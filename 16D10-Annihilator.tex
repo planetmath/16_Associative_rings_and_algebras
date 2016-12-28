@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Annihilator}
+\pmcreated{2013-03-22 12:01:32}
+\pmmodified{2013-03-22 12:01:32}
+\pmowner{antizeus}{11}
+\pmmodifier{antizeus}{11}
+\pmtitle{annihilator}
+\pmrecord{8}{30996}
+\pmprivacy{1}
+\pmauthor{antizeus}{11}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmsynonym{left annihilator}{Annihilator}
+\pmsynonym{right annihilator}{Annihilator}
+\pmrelated{JacobsonRadical}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+Let $R$ be a ring, and suppose that $M$ is a left $R$-module and $N$ a right $R$-module.
+
+\subsubsection*{Annihilator of a Subset of a Module}
+
+\begin{enumerate}
+\item
+If $X$ is a subset of $M$, 
+then we define the {\it left annihilator} of $X$ in $R$:
+$${\rm l.ann}(X) = \{ r \in R \mid rx = 0 \text{ for all } x \in X \}.$$
+If $a,b\in {\rm l.ann}(X)$, then so are $a-b$ and $ra$ for all $r\in R$.  Therefore, ${\rm l.ann}(X)$ is a left ideal of $R$.
+\item
+If $Y$ is a subset of $N$, 
+then we define the {\it right annihilator} of $Y$ in $R$:
+$${\rm r.ann}(Y) = \{ r \in R \mid yr = 0 \text{ for all } y \in Y \}.$$
+Like above, it is easy to see that ${\rm r.ann}(Y)$ is a right ideal of $R$.
+\end{enumerate}
+
+\textbf{Remark}.  ${\rm l.ann}(X)$ and ${\rm r.ann}(Y)$ may also be written as ${\rm l.ann}_R(X)$ and ${\rm r.ann}_R(Y)$ respectively, if we want to emphasize $R$.
+
+\subsubsection*{Annihilator of a Subset of a Ring}
+
+\begin{enumerate}
+\item
+If $Z$ is a subset of $R$, 
+then we define the {\it right annihilator} of $Z$ in $M$:
+$${\rm r.ann}_M(Z) = \{ m \in M \mid zm = 0 \text{ for all } z \in Z \}.$$
+If $m,n\in {\rm r.ann}_M(Z)$, then so are $m-n$ and $rm$ for all $r\in R$.  Therefore, ${\rm r.ann}_M(Z)$ is a left $R$-submodule of $M$.
+\item
+If $Z$ is a subset of $R$, 
+then we define the {\it left annihilator} of $Z$ in $N$:
+$${\rm l.ann}_N(Z) = \{ n \in N \mid nz = 0 \text{ for all } z \in Z \}.$$
+Similarly, it can be easily seen that ${\rm l.ann}_N(Z)$ is a right $R$-submodule of $N$.
+\end{enumerate}
+%%%%%
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralizedMatrixRing}
+\pmcreated{2013-03-22 14:39:14}
+\pmmodified{2013-03-22 14:39:14}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{generalized matrix ring}
+\pmrecord{4}{36245}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S50}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $I$ be an indexing set.  A {\em ring of $I \times I$ generalized matrices}
+is a ring $R$ with a decompostion (as an additive group)
+$$R = \bigoplus_{i,j \in I} R_{ij}, $$
+such that $R_{ij} R_{kl} \subseteq R_{il}$ if $j = k$ and
+$R_{ij} R_{kl} = 0$ if $j \neq k$.
+
+If $I$ is finite, then we usually replace it by its cardinal $n$
+and speak of a ring of $n \times n$ generalized matrices with components
+$R_{ij}$ for $i \le i,j \le n$.
+
+If we arrange the components $R_{ij}$ as follows:
+
+\begin{displaymath}
+  \begin{pmatrix}
+    R_{11} & R_{12} & \dots & R_{1n} \\
+    R_{21} & R_{22} & \dots & R_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    R_{n1} & R_{n2} & \dots & R_{nn}
+  \end{pmatrix}
+\end{displaymath}
+
+and we write elements of $R$ in the same fashion, then the multiplication in $R$ follows
+the same pattern as ordinary matrix multiplication.
+
+Note that $R_{ij}$ is an $R_{ii}$-$R_{jj}$-bimodule,
+and the multiplication of elements induces homomorphisms
+$R_{ij} \otimes_{R_{jj}} R_{jk} \to R_{ik}$ for all $i, j, k$.
+
+Conversely, given a collection of rings $R_i$,
+and for each $i \neq j$ an $R_i$-$R_j$-bimodule $R_{ij}$,
+and for each $i, j,  k$ with $i \neq j$ and $j \neq k$
+a homomorphism $R_{ij} \otimes_{R_{j}} R_{jk} \to R_{ik}$,
+we can construct a generalized matrix ring structure on
+$$R = \bigoplus_{i,j} R_{ij},$$
+where we take $R_{ii} = R_i$.
+%%%%%
+%%%%%
+\end{document}

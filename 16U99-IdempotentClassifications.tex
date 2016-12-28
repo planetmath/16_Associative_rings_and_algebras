@@ -1,0 +1,200 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdempotentClassifications}
+\pmcreated{2013-03-22 16:48:43}
+\pmmodified{2013-03-22 16:48:43}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{idempotent classifications}
+\pmrecord{9}{39046}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U99}
+\pmclassification{msc}{20M99}
+%\pmkeywords{primitive idempotent}
+\pmdefines{division idempotent}
+\pmdefines{local idempotent}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{enumerate}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+An a unital ring $R$, an idempotent $e\in R$ is called a \emph{division idempotent}
+if $eRe=\{ere:r\in R\}$, with the product of $R$, forms a division ring.
+If instead $eRe$ is a local ring -- here this means a ring with a unique maximal
+ideal $\mathfrak{m}$ where $eRe/\mathfrak{m}$ a division ring -- then 
+$e$ is called a \emph{local idempotent}.
+
+\begin{lemma}
+Any integral domain $R$ has only the trivial idempotents $0$ and $1$.  In particular, every division ring has only trivial idempotents.
+\end{lemma}
+\begin{proof}
+Suppose $e\in R$ with $e\neq 0$ and $e^2=e=1e$.  Then by cancellation $e=1$.
+\end{proof}
+
+The integers are an integral domain which is not a division ring and they
+serve as a counter-example to many conjectures about idempotents of general
+rings as we will explore below.  However, the first important result is to
+show the hierarchy of idempotents.
+
+\begin{thm}
+Every local ring $R$ has only trivial idempotents $0$ and $1$.
+\end{thm}
+\begin{proof}
+Let $\mathfrak{m}$ be the unique maximal ideal of $R$.  Then $\mathfrak{m}$
+is the Jacobson radical of $R$.  Now suppose $e\in \mathfrak{m}$ is an 
+idempotent.  Then $1-e$ must be left invertible (following the
+\PMlinkname{element characterization of Jacobson radicals}{JacobsonRadical}).  So there exists some 
+$u\in R$ such that $1=u(1-e)$.  However, this produces
+\[e=u(1-e)e=u(e-e^2)=u(e-e)=0.\]
+Thus every non-trivial idempotent $e\in R$ lies outside $\mathfrak{m}$.
+As $R/\mathfrak{m}$ is a division ring, the only idempotents are $0$ and $1$.
+Thus if $e\in R$, $e\neq 0$ is an idempotent then it projects to an
+idempotent of $R/\mathfrak{m}$ and as $e\notin \mathfrak{m}$ it follows
+$e$ projects onto $1$ so that $e=1+z$ for some $z\in\mathfrak{m}$.  As 
+$e^2=e$ we find $0=z+z^2$ (often called an anti-idempotent).  Once again 
+as $z\in\mathfrak{m}$ we know there exists a $u\in R$ such that $1=u(1+z)$
+and $z=u(1+z)z=u(z+z^2)=0$ so indeed $e=1$.
+\end{proof}
+
+\begin{coro}
+Every division idempotent is a local idempotent, and every local idempotent
+is a primitive idempotent.
+\end{coro}
+
+\begin{ex}
+Let $R$ be a unital ring.  Then in $M_n(R)$ the standard idempotents 
+are the matrices
+\[E_{ii}=\begin{bmatrix} 
+0 & \\
+  & \ddots & \\
+  &        & 1 \\
+  &        &   & \ddots\\
+  &        &    &       & 0
+\end{bmatrix},\qquad 1\leq i\leq n.\]
+\begin{enumerate}[(i)]
+\item If $R$ has only trivial idempotents (i.e.: $0$ and $1$) then each
+$E_{ii}$ is a primitive idempotent of $M_n(R)$.
+\item If $R$ is a local ring then each $E_{ii}$ is a local idempotent.
+\item If $R$ is a division ring then each $E_{ii}$ is a division idempotent.
+\end{enumerate}
+When $R=\mathbb{R}\oplus\mathbb{R}$ then (i) is not satisfied and consequently
+neither are (ii) and (iii).  When $R=\mathbb{Z}$ then (i) is satisfied but not
+(ii) nor (iii).  When $R=\mathbb{R}[[x]]$ -- the formal power series
+ring over $\mathbb{R}$ -- then (i) and (ii) are satisfied but not (iii).
+Finally when $R=\mathbb{R}$ then all three are satisfied.
+\end{ex}
+
+
+A consequence of the Wedderburn-Artin theorems classifies all Artinian simple 
+rings as matrix rings over a division ring.  Thus the primitive idempotents of an Artinian ring are all local idempotents.  Without the Artinian assumption this may fail as we have already seen with $\mathbb{Z}$.
+
+
+%%%%%
+%%%%%
+\end{document}

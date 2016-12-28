@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NestedIdealsInVonNeumannRegularRing}
+\pmcreated{2013-03-22 14:48:24}
+\pmmodified{2013-03-22 14:48:24}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{nested ideals in von Neumann regular ring}
+\pmrecord{12}{36463}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E50}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\begin{thmplain}
+\,\, Let $\mathfrak{a}$ be an ideal of the von Neumann regular ring $R$. \,Then $\mathfrak{a}$ itself is a von Neumann regular ring and any ideal $\mathfrak{b}$ of $\mathfrak{a}$ is likewise an ideal of $R$.
+\end{thmplain}
+
+\begin{proof} \,If \,$a\in \mathfrak{a}$, then \,$asa = a$\, for some \,$s\in R$. \,Setting \,$t = sas$\, we see that $t$ belongs to the ideal $\mathfrak{a}$ and \PMlinkescapetext{satisfies}
+        $$ata = a(sas)a = (asa)sa = asa = a.$$
+Secondly, we have to show that whenever \,$b\in\mathfrak{b} \subseteq \mathfrak{a}$\, and \,$r\in R$, then both $br$ and $rb$ lie in $\mathfrak{b}$. \,Now, \,$br\in \mathfrak{a}$\, because $\mathfrak{a}$ is an ideal of $R$. \,Thus there is an element $x$ in $\mathfrak{a}$ satisfying \,$brxbr = br$. \,Since $rxbr$ belongs to  $\mathfrak{a}$ and $\mathfrak{b}$ is assumed to be an ideal of $\mathfrak{a}$, we conclude that the product \,$b\cdot rxbr$\, must lie in $\mathfrak{b}$, i.e. \,$br\in\mathfrak{b}$. \,Similarly it can be shown that \,$rb\in\mathfrak{b}$.
+\end{proof}
+
+\begin{thebibliography}{9}
+\bibitem{Burton} David M. Burton: {\em A first course in rings and ideals}. \,Addison-Wesley. \,Reading, Massachusetts (1970).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

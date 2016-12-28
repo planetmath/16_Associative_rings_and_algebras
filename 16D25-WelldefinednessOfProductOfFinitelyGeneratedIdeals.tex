@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WelldefinednessOfProductOfFinitelyGeneratedIdeals}
+\pmcreated{2013-03-22 19:12:56}
+\pmmodified{2013-03-22 19:12:56}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{well-definedness of product of finitely generated ideals}
+\pmrecord{6}{42135}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmrelated{WellDefined}
+\pmrelated{ProductOfIdeals}
+\pmrelated{ProductOfFinitelyGeneratedIdeals}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+Ler $R$ be of a commutative ring with nonzero unity.\, If
+\begin{align}
+\mathfrak{a} \;=\; (a_1,\,\ldots,\,a_m) \;=\; (\alpha_1,\,\ldots,\,\alpha_\mu)
+\end{align}
+and
+\begin{align}
+\mathfrak{b} \;=\; (b_1,\,\ldots,\,b_n) \;=\, (\beta_1,\,\ldots,\,\beta_\nu)
+\end{align}
+are two finitely generated ideals of $R$, both with two \PMlinkescapetext{generating systems}, then the ideals
+$$\mathfrak{c} \;:=\; (a_1b_1,\,\ldots,\,a_ib_j,\,\ldots,\,a_mb_n)$$
+and
+$$\mathfrak{d} \;:=\; (\alpha_1\beta_1,\,\ldots,\,\alpha_i\beta_j,\,\ldots,\,\alpha_\mu\beta_\nu)$$
+are equal.\\
+
+
+\emph{Proof.}\, By (1) and (2), for every $i,\,j$, there are elements $r_{ik},\,s_{jl}$ of $R$ such that
+\begin{align}
+a_i \;=\; r_{i1}\alpha_1\!+\ldots+r_{i\mu}\alpha_\mu, \quad b_j \;=\; s_{j1}\beta_1\!+\ldots+s_{j\nu}\beta_\nu.
+\end{align}
+Multiplying the equations (3) we see that
+$$a_ib_j \;=\; 
+(r_{i1}s_{j1})(\alpha_1\beta_1)\!+\!(r_{i2}s_{j1})(\alpha_2\beta_1)\!+\ldots+\!(r_{i\mu}s_{j\nu})(\alpha_\mu\beta_\nu),$$
+whence the generators $a_ib_j$ of $\mathfrak{c}$ belong to $\mathfrak{d}$ and consecuently\, 
+$\mathfrak{c} \subseteq \mathfrak{d}$.\, The reverse containment is seen similarly.
+
+%%%%%
+%%%%%
+\end{document}

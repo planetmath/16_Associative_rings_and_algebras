@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CharacteristicOfFiniteRing}
+\pmcreated{2013-03-22 19:10:19}
+\pmmodified{2013-03-22 19:10:19}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{characteristic of finite ring}
+\pmrecord{7}{42079}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16B99}
+%\pmkeywords{characteristic of ring}
+%\pmkeywords{order of ring}
+\pmrelated{Multiple}
+\pmrelated{IdealOfElementsWithFiniteOrder}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{characteristic}
+
+The \PMlinkname{characteristic}{Characteristic} of the residue class ring $\mathbb{Z}/m\mathbb{Z}$, which contains $m$ elements, is $m$, too.\, More generally, one has the
+
+
+\textbf{Theorem.}\, The characteristic of a finite ring divides the number of the elements of the ring.\\
+
+\emph{Proof.}\,Let $n$ be the characteristic of the ring $R$ with $m$ elements.\, Since $m$ is the \PMlinkname{order}{OrderGroup} of the group 
+\,$(R,\,+)$,\, the Lagrange's theorem implies that
+$$ma \;=\; 0 \quad \forall a \in R.$$
+Let\, $m = qn\!+\!r$\, where\, $0 \leqq r < n$.\, Because
+$$ra \;=\; (m\!-\!qn)a \;=\; ma\!-\!q(na) \;=\; 0\!-\!0 \;=\; 0 \quad \forall a \in R$$
+and $n$ is the least positive integer $\nu$ making all\, $\nu a = 0$,\, the number $r$ must vanish.\, Therefore,\, 
+$m \,=\, qn$,\, i.e.\, $n \mid m$.\\
+
+
+\textbf{Remark.}\, A ring $R$, the polynomial ring $R[X]$ and the ring $R[[X]]$ of formal power series have always the same characteristic.
+
+%%%%%
+%%%%%
+\end{document}

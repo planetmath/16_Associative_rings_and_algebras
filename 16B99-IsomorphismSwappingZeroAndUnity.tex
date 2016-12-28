@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IsomorphismSwappingZeroAndUnity}
+\pmcreated{2013-03-22 19:17:16}
+\pmmodified{2013-03-22 19:17:16}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{isomorphism swapping zero and unity}
+\pmrecord{7}{42221}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16B99}
+\pmclassification{msc}{20A05}
+\pmclassification{msc}{16S50}
+%\pmkeywords{isomorphism}
+%\pmkeywords{zero}
+%\pmkeywords{unity}
+\pmrelated{RingHomomorphism}
+\pmrelated{EpimorphismBetweenUnitaryRings}
+\pmrelated{Null}
+\pmrelated{TranslationAutomorphismOfAPolynomialRing}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+Let\, $(R,\,+,\,\cdot)$\, be a ring with unity 1.\, Define two new binary operations of $R$ as follows:
+\begin{align}
+a\!\oplus\!b \;=:\; a\!+\!b\!-\!1, \qquad a\odot\!b \;=:\; a\!+\!b\!-\!a\!\cdot\!b
+\end{align}
+
+Then we see that
+\begin{align}
+a\!\oplus\!1 \;=\; a \;=\; 1\!\oplus\!a, \qquad a\!\odot\!0 \;=\; a \;=\; 0\!\odot\!a.
+\end{align}
+
+But moreover, the algebraic system \,$(R,\,\oplus,\,\odot)$\, is a unitary ring, too, and isomorphic with the original ring.\\
+
+In fact, we may define the bijective mapping
+\begin{align}
+f\!:\; x \,\mapsto\, 1\!-\!x
+\end{align}
+from $R$ to $R$ and verify that it is homomorphic:
+$$f(a)\!\oplus\!f(b) \;=\; (1\!-\!a)\!\oplus\!(1\!-\!b) \;=\; (1\!-\!a)\!+\!(1\!-\!b)\!-\!1
+\;=\; 1\!-\!a\!-\!b   \;=\; f(a\!+\!b),$$
+$$f(a)\!\odot\!f(b) \;=\; (1\!-\!a)\!\odot\!(1\!-\!b) \;=\; 
+(1\!-\!a)\!+\!(1\!-\!b)\!-(1\!-\!a)\!\cdot\!(1\!-\!b) \;=\; 1\!-\!a\!\cdot\!b \;=\; f(a\!\cdot\!b)$$
+Thus\, $(R,\,\oplus,\,\odot)$\, as a \PMlinkname{homomorphic image}{HomomorphicImageOfGroup} of the ring\, $(R,\,+,\,\cdot)$\, is a ring, it's a question of two isomorphic rings.
+
+
+
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

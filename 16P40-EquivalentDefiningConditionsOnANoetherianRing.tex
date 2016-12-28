@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EquivalentDefiningConditionsOnANoetherianRing}
+\pmcreated{2013-03-22 18:04:27}
+\pmmodified{2013-03-22 18:04:27}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{equivalent defining conditions on a Noetherian ring}
+\pmrecord{6}{40608}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16P40}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Let $R$ be a ring.  Then the following are equivalent:
+\begin{enumerate}
+\item every left ideal of $R$ is finitely generated,
+\item the ascending chain condition on left ideals holds in $R$,
+\item every non-empty family of left ideals has a maximal element.
+\end{enumerate}
+\begin{proof}
+
+$(1\Rightarrow 2)$.  Let $I_1\subseteq I_2 \subseteq \cdots $ be an ascending chain of left ideals in $R$.  Let $I$ be the union of all $I_j$, $j=1,2,\ldots$. Then $I$ is a left ideal, and hence finitely generated, by, say, $a_1,\cdots a_n$.  Now each $a_i$ belongs to some $I_{\alpha_i}$.  Take the largest of these, say $I_{\alpha_k}$.  Then $a_i\in I_{\alpha_k}$ for all $i=1,\ldots, n$, and therefore $I\subseteq I_{\alpha_k}$.  But $I_{\alpha_k}\subseteq I$ by the definition of $I$,  the equality follows.
+
+$(2\Rightarrow 3)$.  Let $\mathcal{S}$ be a non-empty family of left ideals in $R$.  Since $\mathcal{S}$ is non-empty, take any left ideal $I_1\in \mathcal{S}$.  If $I_1$ is maximal, then we are done.  If not, $\mathcal{S}-\lbrace I_1\rbrace$ must be non-empty, such that pick $I_2$ from this collection so that $I_1\subseteq I_2$ (we can find such $I_2$, for otherwise $I_1$ would be maximal).  If $I_2$ is not maximal, pick $I_3$ from $\mathcal{S}-\lbrace I_1, I_2\rbrace$ such that $I_1\subseteq I_2\subseteq I_3$, and so on.  By assumption, this can not go on indefinitely.  So for some positive integer $n$, we have $I_n=I_m$ for all $m\ge n$, and $I_n$ is our desired maximal element.
+
+$(3\Rightarrow 1)$.  Let $I$ be a left ideal in $R$.  Let $\mathcal{S}$ be the family of all finitely generated ideals of $R$ contained in $I$.  $\mathcal{S}$ is non-empty since $(0)$ is in it.  By assumption $\mathcal{S}$ has a maximal element $J$.  If $J\ne I$, then take an element $a\in I-J$.  Then $\langle J,a\rangle$ is finitely generated and contained in $I$, so an element of $\mathcal{S}$, contradicting the maximality of $J$.  Hence $J=I$, in other words, $I$ is finitely generated.
+\end{proof}
+
+A ring satisfying any, and hence all three, of the above conditions is defined to be a left Noetherian ring.  A right Noetherian ring is similarly defined.
+%%%%%
+%%%%%
+\end{document}

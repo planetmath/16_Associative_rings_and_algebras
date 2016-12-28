@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ReducedRing}
+\pmcreated{2013-03-22 14:18:12}
+\pmmodified{2013-03-22 14:18:12}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{reduced ring}
+\pmrecord{17}{35762}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N60}
+\pmsynonym{nilpotent-free}{ReducedRing}
+%\pmkeywords{reduced}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{reduced}
+
+A ring $R$ is said to be a {\it reduced ring} if $R$ contains no non-zero nilpotent elements.  In other words, $r^2=0$ implies $r=0$ for any $r\in R$.
+
+Below are some examples of reduced rings.
+
+\begin{itemize}
+\item A reduced ring is semiprime.
+
+\item A ring is a \PMlinkname{domain}{CancellationRing} iff it is \PMlinkname{prime}{PrimeRing} and reduced.
+
+\item A commutative semiprime ring is reduced.  In particular, all integral domains and Boolean rings are reduced.
+
+\item Assume that $R$ is commutative, and let $A$ be the set of all nilpotent elements.  Then $A$ is an ideal of $R$, and that $R/A$ is reduced (for if $(r+A)^2=0$, then $r^2\in A$, so $r^2$, and consequently $r$, is nilpotent, or $r\in A$).
+
+\end{itemize}
+
+An example of a reduced ring with zero-divisors is $\mathbb{Z}^n$, with multiplication defined componentwise: $(a_1,\ldots,a_n)(b_1,\ldots,b_n):=(a_1b_1,\ldots, a_nb_n)$.  A ring of functions taking values in a reduced ring is also reduced.
+
+Some prototypical examples of rings that are not reduced are $\mathbb{Z}_8$, since $4^2=0$, as well as any matrix ring over any ring; as illustrated by the instance below
+
+$$
+\begin{pmatrix}
+0 & 1 \\
+0 & 0 
+\end{pmatrix}
+\begin{pmatrix}
+0 & 1 \\
+0 & 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+0 & 0 \\
+0 & 0
+\end{pmatrix}.
+$$
+%%%%%
+%%%%%
+\end{document}

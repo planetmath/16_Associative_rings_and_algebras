@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MatrixRing}
+\pmcreated{2013-03-22 15:54:18}
+\pmmodified{2013-03-22 15:54:18}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{matrix ring}
+\pmrecord{11}{37908}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S50}
+\pmdefines{matrix group}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% define commands here
+
+\begin{document}
+\subsection{Matrix Rings}
+A ring $R$ is said to be a \emph{matrix ring} if there is a ring $S$ and a positive integer $n$ such that $$R\cong M_n(S),$$ the ring of $n\times n$ matrices with entries as elements of $S$.  Usually, we simply identify $R$ with $M_n(S)$.
+
+Generally, one is interested to find out if a given ring $R$ is a matrix ring.  By setting $n=1$, we see that every ring is trivially a matrix ring.  Therefore, to exclude these trivial cases, we call a ring $R$ a \emph{trivial matrix ring} if there does not exist an $n>1$ such that $R\cong M_n(S)$.  Now the question becomes: is $R$ a non-trivial matrix ring?
+
+Actually, the requirement that $S$ be a ring in the above definition is redundent.  It is enough to define $S$ to be simply a set with two binary operations $+$ and $\cdot$.  Fix a positive integer $n\ge 1$, define the set of formal $n\times n$ matrices $M_n(S)$ with coefficients in $S$.  Addition and multiplication on $M_n(S)$ are defined as the usual matrix addition and multiplication, induced by $+$ and $\cdot$ of $S$ respectively.  By abuse of notation, we use $+$ and $\cdot$ to denote addition and multiplication on $M_n(S)$.  We have the following:
+
+\begin{enumerate}
+\item If $M_n(S)$ with $+$ is an abelian group, then so is $S$.
+\item If in addition, $M_n(S)$ with both $+$ and $\cdot$ is a ring, then so is $S$.
+\item If $M_n(S)$ is unital (has a multiplicative identity), then so is $S$.
+\end{enumerate}
+
+The first two assertions above are easily observed.  To see how the last one roughly works, assume $E$ is the multiplicative identity of $M_n(S)$.  Next define $U(a,i,j)$ to be the matrix whose $(i,j)$-cell is $a\in S$ and $0$ everywhere else.  Using cell entries $e_{st}$ from $E$, we solve the system of equations $$U(e_{st},i,j)E=U(e_{st},i,j)=EU(e_{st},i,j)$$ to conclude that $E$ takes the form of a diagonal matrix whose diagonal entries are all the same element $e\in S$.  Furthermore, this $e$ is an idempotent.  From this, it is easy to derive that $e$ is in fact a multiplicative identity of $S$ (multiply an element of the form $U(a,1,1)$, where $a$ is an arbitrary element in $S$).  The converse of all three assertions are clearly true too.
+
+\textbf{Remarks}.  
+\begin{itemize}
+\item It can be shown that if $R$ is a unital ring having a finite doubly-indexed set $T=\lbrace e_{ij} \mid 1\le i,j\le n\rbrace$ such that 
+\begin{enumerate}
+\item $e_{ij}e_{k\ell}=\delta_{jk}e_{i\ell}$ where $\delta_{jk}$ denotes the Kronecker delta, and 
+\item $\sum e_{ij}=1$,
+\end{enumerate} 
+then $R$ is a matrix ring.  In fact, $R\cong M_n(S)$, where $S$ is the centralizer of $T$.
+\item A unital matrix ring $R=M_n(S)$ is isomorphic to the ring of endomorphisms of the free module $S^n$.  If $S$ has IBN, then $M_n(S)\cong M_m(S)$ implies that $n=m$.  It can also be shown that $S$ has IBN iff $R$ does.
+\item Any ring $S$ is Morita equivalent to the matrix ring $M_n(S)$ for any positive integer $n$.
+\end{itemize}
+\subsection{Matrix Groups}
+Suppose $R=M_n(S)$ is unital.  $U(R)$, the group of units of $R$, being isomorphic to the group of automorphisms of $S^n$, is called the \emph{general linear group} of $S^n$.  A \emph{matrix group} is a subgroup of $U(R)$ for some matrix ring $R$.  If $S$ is a field, in particular, the field of real numbers or complex numbers, matrix groups are sometimes also called classical groups, as they were studied as far back as the 1800's under the name groups of tranformations, before the formal concept of a group was introduced.
+%%%%%
+%%%%%
+\end{document}

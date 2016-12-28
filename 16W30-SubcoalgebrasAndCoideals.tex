@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubcoalgebrasAndCoideals}
+\pmcreated{2013-03-22 18:49:19}
+\pmmodified{2013-03-22 18:49:19}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{subcoalgebras and coideals}
+\pmrecord{4}{41624}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $(C,\Delta,\varepsilon)$ be a coalgebra over a field $k$.
+
+\textbf{Definition.} Vector subspace $D\subseteq C$ is called \textit{subcoalgebra} iff $\Delta(D)\subseteq D\otimes D$.
+
+\textbf{Definition.} Vector subspace $I\subseteq C$ is is called \textit{coideal} iff $\Delta(I)\subseteq I\otimes C + C\otimes I$ and $\varepsilon(I)=0$.
+
+One can show that if $D\subseteq C$ is a subcoalgebra, then $(D, \Delta_{| D}, \varepsilon_{| D})$ is also a coalgebra. On the other hand, if $I\subseteq C$ is a coideal, then we can cannoicaly introduce a coalgebra structure on the quotient space $C/I$. More precisely, if $x\in C$ and $\Delta(x)=\sum a_i\otimes b_i$, then we define
+$$\Delta':C/I\to (C/I)\otimes (C/I);$$
+$$\Delta'(x+I)=\sum (a_i+I)\otimes (b_i+I)$$
+and $\varepsilon':C/I\to k$ as $\varepsilon'(x+I)=\varepsilon(x)$. One can show that these two maps are well defined and $(C/I,\Delta',\varepsilon')$ is a coalgebra.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FaithfullyFlat}
+\pmcreated{2013-03-22 14:35:55}
+\pmmodified{2013-03-22 14:35:55}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{faithfully flat}
+\pmrecord{5}{36167}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $A$ be a commutative ring.  Then $M$ if \emph{faithfully flat} if for any $A$-modules $P, Q$, and $R$, we have
+\begin{align*}
+0\ra P\ra Q\ra R\ra 0
+\end{align*}
+is exact if and only if the $M$-tensored sequence
+\begin{align*}
+0\ra M\otimes_A P\ra M\otimes_A Q\ra M\otimes_A R\ra 0
+\end{align*}
+is exact.  (Note that the ``if and only if'' clause makes this stronger than the definition of flatness).
+
+Equivalently, an $A$-module $M$ is faithfully flat iff $M$ is flat and the functor $-\otimes_A M$ is a faithful functor (and hence the name).
+%%%%%
+%%%%%
+\end{document}

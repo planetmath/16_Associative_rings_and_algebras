@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompositionSeries}
+\pmcreated{2013-03-22 14:04:13}
+\pmmodified{2013-03-22 14:04:13}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{composition series}
+\pmrecord{6}{35428}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $R$ be a ring and let $M$ be a (right or left) $R$-module.
+A series of submodules
+$$M = M_0 \supset M_1 \supset M_2 \supset \dots \supset M_n = 0$$
+in which each quotient $M_i/M_{i+1}$ is simple is called a composition series for $M$.
+
+A module need not have a composition series.  For example, the ring of integers, $\mathbb{Z}$, considered as a module over itself, does not have a composition series.
+
+A necessary and sufficient condition for a module to have a composition series is that it is both Noetherian and Artinian.
+
+If a module does have a composition series, then all composition series are the same length.
+This length (the number $n$ above) is called the \emph{composition length} of the module.
+
+If $R$ is a semisimple Artinian ring, then $R_R$ and ${}_RR$ always have composition series.
+%%%%%
+%%%%%
+\end{document}

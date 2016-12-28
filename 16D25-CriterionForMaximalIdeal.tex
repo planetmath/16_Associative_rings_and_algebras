@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CriterionForMaximalIdeal}
+\pmcreated{2013-03-22 19:10:40}
+\pmmodified{2013-03-22 19:10:40}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{criterion for maximal ideal}
+\pmrecord{6}{42085}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmclassification{msc}{13A15}
+%\pmkeywords{ring}
+%\pmkeywords{unitary}
+%\pmkeywords{maximality}
+\pmrelated{MaximalIdealIsPrime}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{maximal}
+
+\textbf{Theorem.}\, In a commutative ring $R$ with non-zero unity, an ideal $\mathfrak{m}$ 
+is maximal if and only if
+\begin{align}
+\forall a \in R\!\smallsetminus\!\mathfrak{m} \;\; \exists r \in R \quad\mbox{such that}\;\; 
+1\!+\!ar \;\in\; \mathfrak{m}.
+\end{align}
+
+
+
+\emph{Proof.}\, $1^\circ$.\, Let first $\mathfrak{m}$ be a maximal ideal of $R$ and\, 
+$a \in R\!\smallsetminus\!\mathfrak{m}$.\, Because\, $\mathfrak{m}\!+\!(a) = R$,\, there exist some elements\, 
+$m \in \mathfrak{m}$\, and\, $-r \in R$\, such that\, $m\!-\!ar = 1$.\, Consequently,\, $1\!+\!ar = m \in \mathfrak{m}$.\\
+$2^\circ$.\, Assume secondly that the ideal $\mathfrak{m}$ satisfies the condition (1).\, Now there must be a maximal ideal $\mathfrak{m}'$ of $R$ such that
+$$\mathfrak{m} \;\subseteq\; \mathfrak{m}' \;\subset\; R.$$
+Let us make the antithesis that $\mathfrak{m}'\!\smallsetminus\!\mathfrak{m}$ is non-empty.\, Choose an element
+$$a \;\in\; \mathfrak{m}'\!\smallsetminus\!\mathfrak{m} \;\subset\; R\!\smallsetminus\!\mathfrak{m}.$$
+By our assumption, we can choose another element $r$ of $R$ such that
+$$s \;=\; 1\!+\!ar \;\in\; \mathfrak{m} \;\subset\; \mathfrak{m}'.$$
+Then we have
+$$1 \;=\; s\!-\!ar \;\in\; \mathfrak{m}'\!+\!\mathfrak{m}' \;=\; \mathfrak{m}'$$
+which is impossible since with 1 the ideal $\mathfrak{m}'$ would contain the whole $R$.\, Thus the antithesis is wrong and\, $\mathfrak{m} = \mathfrak{m}'$\, is maximal.
+
+%%%%%
+%%%%%
+\end{document}

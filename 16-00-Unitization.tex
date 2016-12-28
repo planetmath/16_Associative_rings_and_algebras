@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Unitization}
+\pmcreated{2013-03-22 14:47:36}
+\pmmodified{2013-03-22 14:47:36}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{unitization}
+\pmrecord{9}{36445}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{20-00}
+\pmsynonym{minimal unitization}{Unitization}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\def\A{\bf A}
+\def\R{\bf R}
+\begin{document}
+The operation of unitization allows one to add a unity element to an algebra.  Because of this construction, one can regard any algebra as a subalgebra of an algebra with unity.  If the algebra already has a unity, the operation creates a larger algebra in which the old unity is no longer the unity.
+
+Let $\A$ be an algebra over a ring $\R$ with unity $1$.  Then, as a module, the unitization of $\A$ is the direct sum of $\R$ and $\A$:
+\[
+\A^+ = \R \oplus \A
+\]
+The product operation is defined as follows:
+\[
+(x, a) \cdot (y, b) = (xy, ab + xb + ya)
+\]
+The unity of $\A^+$ is $(1,0)$.
+
+It is also possible to unitize any ring using this construction if one regards the ring as an algebra over the ring of \PMlinkname{integers}{Integer}.  (See the entry every ring is an integer algebra for details.)  It is worth noting, 
+however, that the result of unitizing a ring this way will always be a ring whose unity has zero characteristic.  If one
+has a ring of finite characteristic $k$, one can instead regard it as an algebra over $\mathbb{Z}_k$ and unitize
+accordingly to obtain a ring of characteristic $k$.
+
+The construction described above is often  called ``minimal unitization''. It is in fact minimal, in the sense that 
+every other unitization contains this unitization as a subalgebra.
+%%%%%
+%%%%%
+\end{document}

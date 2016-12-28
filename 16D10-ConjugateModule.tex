@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConjugateModule}
+\pmcreated{2013-03-22 11:49:47}
+\pmmodified{2013-03-22 11:49:47}
+\pmowner{antizeus}{11}
+\pmmodifier{antizeus}{11}
+\pmtitle{conjugate module}
+\pmrecord{9}{30377}
+\pmprivacy{1}
+\pmauthor{antizeus}{11}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmclassification{msc}{41A45}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+If $M$ is a right module over a ring $R$,
+and $\alpha$ is an endomorphism of $R$,
+we define the {\it conjugate module} $M^\alpha$ 
+to be the right $R$-module
+whose underlying set is $\{ m^\alpha \mid m \in M \}$,
+with abelian group structure identical to that of $M$
+(i.e. $(m-n)^\alpha = m^\alpha - n^\alpha$),
+and scalar multiplication given by
+${m^\alpha} \cdot r = (m \cdot \alpha(r))^\alpha$
+for all $m$ in $M$ and $r$ in $R$. 
+
+In other words, if $\phi: R \to {\rm End}_{\Bbb Z}(M)$
+is the ring homomorphism that describes 
+the right module action of $R$ upon $M$,
+then $\phi \alpha$ describes
+the right module action of $R$ upon $M^\alpha$.
+
+
+If $N$ is a left $R$-module, we define ${^\alpha N}$ similarly,
+with $r \cdot {^\alpha n} = {^\alpha(\alpha(r) \cdot n)}$.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

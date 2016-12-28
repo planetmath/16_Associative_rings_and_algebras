@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ACharacterizationOfTheRadicalOfAnIdeal}
+\pmcreated{2013-03-22 18:04:50}
+\pmmodified{2013-03-22 18:04:50}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{a characterization of the radical of an ideal}
+\pmrecord{7}{40617}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N40}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{14A05}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+\begin{prop} Let $I$ be an ideal in a ring $R$, and $\sqrt{I}$ be its radical.  Then $\sqrt{I}$ is the intersection of all prime ideals containing $I$. \end{prop}
+
+\begin{proof}  Suppose $x\in \sqrt{I}$, and $P$ is a prime ideal containing $I$.  Then $R-P$ is an \PMlinkname{$m$-system}{MSystem}.  If $x\in R-P$, then $(R-P)\cap I\ne \varnothing$, contradicting the assumption that $I\subseteq P$.  Therefore $x\notin R-P$.  In other words, $x\in P$, and we have one of the inclusions.
+
+Conversely, suppose $x\notin \sqrt{I}$.  Then there is an $m$-system $S$ containing $x$ such that $S\cap I=\varnothing$.  Enlarge $I$ to a prime ideal $P$ disjoint from $S$, so that $x\notin P$ (we can do this; for a proof, see the second remark in \PMlinkname{this entry}{MSystem}).  By contrapositivity, we have the other inclusion.
+\end{proof}
+
+\textbf{Remark}.  This shows that every prime ideal is a radical ideal: for $\sqrt{P}$ is the intersection of all prime ideals containing $P$, and if $P$ is itself prime, then $P=\sqrt{P}$.
+%%%%%
+%%%%%
+\end{document}

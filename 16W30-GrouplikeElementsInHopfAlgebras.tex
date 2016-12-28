@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GrouplikeElementsInHopfAlgebras}
+\pmcreated{2013-03-22 18:58:39}
+\pmmodified{2013-03-22 18:58:39}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{grouplike elements in Hopf algebras}
+\pmrecord{5}{41841}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Recall, that if $k$ is a field and $G$ is a group, then the group algebra $kG$ can be turned into a Hopf algebra, by defining comultiplication $\Delta(g)=g\otimes g$, counit $\varepsilon(g)=1$ and antipode $S(g)=g^{-1}$.
+
+Now let $H$ be a Hopf algebra over a field $k$, with identity $1$, comultiplication $\Delta$, counit $\varepsilon$ and antipode $S$. Recall that element $g\in H$ is called grouplike iff $g\neq 0$ and $\Delta(g)=g\otimes g$. The set of all grouplike elements $G(H)$ is nonempty, because $1\in G(H)$. Also, since comultiplication is an algebra morphism, then $G(H)$ is multiplicative, i.e. if $g,h\in G(H)$, then $gh\in G(H)$. Furthermore, it can be shown that for any $g\in G(H)$ we have $S(g)\in G(H)$ and $S(g)g=gS(g)=1$. Thus $G(H)$ is a group under multiplication inherited from $H$.
+
+It is easy to see, that the vector subspace spanned by $G(H)$ is a Hopf subalgebra of $H$ isomorphic to $kG(H)$. It can be shown that $G(H)$ is always linearly independent, so if $H$ is finite dimensional, then $G(H)$ is a finite group. Also, if $H$ is finite dimensional, then it follows from the Nichols-Zoeller Theorem, that the order of $G(H)$ divides $\mathrm{dim}_{k}H$. 
+
+From these observations it follows that if $\mathrm{dim}_{k}H=p$ is a prime number, then $G(H)$ is either trivial or the order of $G(H)$ is equal to $p$ (i.e. $G(H)$ is cyclic of order $p$). The second case implies that $H$ is isomorphic to $k\mathbb{Z}_{p}$ and it can be shown that the first case cannot occur.
+%%%%%
+%%%%%
+\end{document}

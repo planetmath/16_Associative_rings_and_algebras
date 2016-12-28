@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BrauerGroup}
+\pmcreated{2013-03-22 11:49:31}
+\pmmodified{2013-03-22 11:49:31}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{Brauer group}
+\pmrecord{13}{30372}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16K50}
+\pmdefines{opposite algebra}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\begin{document}
+\section{Algebraic view}
+
+Let $K$ be a field. The {\em Brauer group} $\operatorname{Br}(K)$ of $K$ is the set of all equivalence classes of central simple algebras over $K$, where two central simple algebras $A$ and $B$ are equivalent if there exists a division ring $D$ over $K$ and natural numbers $n,m$ such that $A$ (resp. $B$) is isomorphic to the ring of $n \times n$ (resp. $m \times m$) matrices with coefficients in $D$.
+
+The group operation in $\operatorname{Br}(K)$ is given by tensor product: for any two central simple algebras $A,B$ over $K$, their
+product in $\operatorname{Br}(K)$ is the central simple algebra $A \otimes_K B$. The identity element in $\operatorname{Br}(K)$ is the class of $K$ itself, and the inverse of a central simple algebra $A$ is
+the {\em opposite algebra} $A^{\operatorname{opp}}$ defined by reversing
+the order of the multiplication operation of $A$.
+
+\section{Cohomological view}
+
+The Brauer group of $K$ is naturally isomorphic to the second Galois cohomology group 
+$H^2({\operatorname{Gal}}(K^{\operatorname{sep}}/K),
+(K^{\operatorname{sep}})^{\times})$.
+See \PMlinkexternal{http://www.math.harvard.edu/~elkies/M250.01/index.html}{http://www.math.harvard.edu/~elkies/M250.01/index.html} Theorem 12 and succeeding remarks.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

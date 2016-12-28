@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConceptsInLinearAlgebra}
+\pmcreated{2013-03-22 14:13:30}
+\pmmodified{2013-03-22 14:13:30}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{concepts in linear algebra}
+\pmrecord{13}{35663}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{20-00}
+\pmclassification{msc}{15-00}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+\begin{document}
+\PMlinkescapeword{simple}
+The aim of this entry is to present a list of the key
+objects and operators used in linear algebra. Each entry in the
+list links (or will link in the future) to the corresponding PlanetMath
+entry where the object is presented in greater detail. For convenience, 
+this list also presents the encouraged notation to use (at PlanetMath)
+for these objects. 
+%Where more than one notation is in common use, several options are listed; %PlanetMath authors are encouraged to use the first for consistency.
+
+Some of this notation is simply an example of more general notation, either notation in set theory or notation for functions.  Some notation is also standard from category theory.
+
+Suppose $V$ is a vector space over a field $K$.  Where the field $K$ is clear from context it is sometimes eliminated from the notation.  Let $L$ be a linear operator, or linear transformation, from $V$ to $W$, and $E$ be an endomorphism of $V$.
+\begin{itemize}
+\item $\mathscr{L}(V,W)$, the set of linear transformations between vector spaces $V$ and $W$ (also $\operatorname{Hom}_K(V,W)$),
+\item basis of a vector space and the matrix associated with the basis,
+\item $\dim_K V$, \PMlinkname{dimension}{Dimension2} of $V$,
+\item $\operatorname{span}\{e_1,\ldots,e_n\}$ vector space spanned by vectors $\{e_i\}$ (note that the list of vectors need not be finite). Some other notations are $(e_1,e_2,\ldots,e_n)$ or $\langle e_1,e_2,\ldots,e_n\rangle$ (do not confuse last one with similar inner product notation),
+\item $\det E$, determinant of a linear operator,
+\item $\operatorname{tr} E$, trace of a linear operator (also $\operatorname{trace} E$),
+\item $\operatorname{im} L$, image of a linear operator (also $\operatorname{img} L$ and $L(V)$),
+\item $\operatorname{ker} L$, kernel of a linear operator,
+\item for sets $A,B$ and  a point $x\in V$, the expressions $A+B$, $A-B$, $A+x$ 
+are the \PMlinkname{Minkowski sums}{MinkowskiSum2} (not especially if $A$ and $B$ are subspaces, then their sum is a subspace, but the result may not be a direct sum),
+\item $V^\ast$, dual space of a vector space $V$ (also $V^\vee$ or $\operatorname{Hom}_K(V,K)$), 
+\item $A^\ast$, adjoint operator of a linear operator,
+\item $V\oplus W$, direct sum of vector spaces $V$ and $W$ (both internal end external),
+\item $V\otimes_K W$, tensor product of $V$ and $W$, and
+\item $V\wedge W$, antisymmetrized tensor product (also called the wedge product),
+\item bilinear forms and quadratic forms
+\item generalizations of vector spaces over a field to vector spaces over a division ring to modules over a ring.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

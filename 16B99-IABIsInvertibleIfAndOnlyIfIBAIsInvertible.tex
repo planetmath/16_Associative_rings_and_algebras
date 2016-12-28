@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IABIsInvertibleIfAndOnlyIfIBAIsInvertible}
+\pmcreated{2013-03-22 14:44:43}
+\pmmodified{2013-03-22 14:44:43}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{I-AB is invertible if and only if I-BA is invertible}
+\pmrecord{16}{36383}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16B99}
+\pmclassification{msc}{15A04}
+\pmclassification{msc}{47A10}
+\pmrelated{TechniquesInMathematicalProofs}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{invertible}
+\PMlinkescapeword{inverse}
+
+In this entry $A$ and $B$ are endomorphisms of a vector space $V$. If $V$ is finite dimensional, we may choose a basis and regard $A$ and $B$ as square matrices of equal dimension.
+
+{\bf Theorem -} Let $A$ and $B$ be endomorphisms of a vector space $V$. We have that
+\begin{enumerate}
+\item $I-AB$ is \PMlinkname{invertible}{LinearIsomorphism} if and only if $I-BA$ is invertible, and moreover
+\item $I-AB$ is injective if and only if $I-BA$ is injective.
+\end{enumerate}
+
+{\bf Proof :}
+\begin{enumerate}
+\item Suppose that $I-AB$ is invertible. We shall prove that $B(I-AB)^{-1}A +I$ is the inverse of $I-BA$.
+ In fact
+\begin{eqnarray*}
+\Big(I-BA\Big)\Big(B(I-AB)^{-1}A +I\Big) &=& B(I-AB)^{-1}A + I - BAB(I-AB)^{-1}A - BA\\
+&=& B \Big((I-AB)^{-1} - AB(I-AB)^{-1}\Big)A + I - BA\\
+&=& B \Big((I-AB)(I-AB)^{-1}\Big)A + I -BA\\
+&=& BA + I - BA\\
+&=& I
+\end{eqnarray*}
+
+A similar computation shows that $\Big(B(I-AB)^{-1}A +I\Big)\Big(I-BA\Big) = I$, i.e. $I - BA$ is invertible.
+
+Exchanging the roles of $A$ and $B$ we can prove the "if" part. So $I-AB$ is invertible if and only if $I - BA$ is invertible.
+
+\item Let us first 
+recall that a linear map between vector spaces is
+invertible if and only if its kernel $\operatorname{ker}$
+is the zero vector (see \PMlinkname{this page}{KernelOfALinearTransformation}).
+
+Suppose $I - AB$ is not injective, i.e. there exists $u \neq 0$ such that $(I-AB)u=0$. Then
+\begin{displaymath}
+(I-BA)Bu = B(I-AB)u = 0
+\end{displaymath}
+
+i.e. $Bu \in \operatorname{ker}(I-BA)$. Notice that $Bu \neq 0$ because $u = ABu$ (by definition of $u$), so 
+$I-BA$ is also not injective.
+
+Similarly, if $I-BA$ is not injective then $I - AB$ is not injective. $\square$
+
+\end{enumerate}
+
+{\bf Remark -} It is known that for finite dimensional vector spaces a linear endomorphism is invertible if and only if it is injective. This does not remain true for infinite dimensional spaces, hence 1 and 2 are two different statements.
+
+\subsection{Comments}
+The result stated in 1 can be proven in a more general context --- If $A$ and $B$ are elements of a ring with unity, then $I-AB$ is invertible if and only if $I-BA$ is invertible. See the entry on techniques in mathematical proofs, in which this result is proven using several different techniques.
+
+This entry is based on \PMlinkexternal{this discussion on PM}{http://planetmath.org/?op=getmsg&id=5088}.
+%%%%%
+%%%%%
+\end{document}

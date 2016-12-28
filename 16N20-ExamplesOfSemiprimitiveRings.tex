@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExamplesOfSemiprimitiveRings}
+\pmcreated{2013-03-22 12:50:39}
+\pmmodified{2013-03-22 12:50:39}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{examples of semiprimitive rings}
+\pmrecord{12}{33172}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N20}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+{\large \bf Examples of semiprimitive rings:}\\
+
+{\bf The integers $\mathbb{Z}$:}\\
+Since $\mathbb{Z}$ is commutative, any left ideal is two-sided.  So the maximal left ideals of $\mathbb{Z}$ are the maximal ideals of $\mathbb{Z}$, which are the ideals $p\mathbb{Z}$ for $p$ prime.
+So $J(\mathbb{Z})= \bigcap_{p} p\mathbb{Z} = (0)$,
+as there are infinitely many primes.\\
+
+{\bf A matrix ring $M_n(D)$ over a division ring $D$:}\\
+The ring $M_n(D)$ is simple, so the only proper ideal is $(0)$.  Thus $J(M_n(D))=(0)$.\\
+
+{\bf A polynomial ring $R[x]$ over an integral domain $R$:}\\
+Take $a \in J(R[x])$ with $a \neq 0$.
+Then $ax \in J(R[x])$, since $J(R[x])$ is an ideal, and $\deg(ax) \geq 1$.
+By one of the alternate characterizations of the Jacobson radical,
+$1-ax$ is a unit.
+But $\deg(1-ax)=\max\{\deg(1), \deg(ax)\} \geq 1$.
+So $1-ax$ is not a unit, and by this contradiction we see that $J(R[x])=(0)$.
+%%%%%
+%%%%%
+\end{document}

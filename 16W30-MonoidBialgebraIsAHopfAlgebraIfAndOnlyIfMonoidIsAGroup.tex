@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MonoidBialgebraIsAHopfAlgebraIfAndOnlyIfMonoidIsAGroup}
+\pmcreated{2013-03-22 18:58:51}
+\pmmodified{2013-03-22 18:58:51}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{monoid bialgebra is a Hopf algebra if and only if monoid is a group}
+\pmrecord{4}{41845}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Assume that $H$ is a Hopf algebra with comultiplication $\Delta$, counit $\varepsilon$ and antipode $S$. It is well known, that if $c\in H$ and $\Delta(c)=\sum\limits_{i=1}^{n}a_i\otimes b_i$, then $\sum\limits_{i=1}^{n}S(a_i)b_i=\varepsilon(c)1=\sum\limits_{i=1}^{n}a_iS(b_i)$ (actualy, this condition defines the antipode), where on the left and right side we have multiplication in $H$.
+
+Now let $G$ be a monoid and $k$ a field. It is well known that $kG$ is a bialgebra (please, see parent object for details), but one may ask, when $kG$ is a Hopf algebra? We will try to answer this question.
+
+\textbf{Proposition.} A monoid bialgebra $kG$ is a Hopf algebra if and only if $G$ is a group.
+
+\textit{Proof.} ,,$\Leftarrow$'' If $G$ is a group, then define $S:kG\to kG$ by $S(g)=g^{-1}$. It is easy to check, that $S$ is the antipode, thus $kG$ is a Hopf algebra.
+
+,,$\Rightarrow$'' Assume that $kG$ is a Hopf algebra, i.e. we have the antipode $S:kG\to kG$. Then, for any $g\in G$ we have $S(g)g=gS(g)=1$ (because $\Delta(g)=g\otimes g$ and $\varepsilon(g)=1$). Here $1$ is the identity in both $G$ and $kG$. Of course $S(g)\in kG$, so
+$$S(g)=\sum_{h\in G}\lambda_h h.$$
+Thus we have 
+$$1=\big(\sum_{h\in G}\lambda_h h\big)g=\sum_{h\in G}\lambda_h hg.$$
+Of course $G$ is a basis, so this decomposition is unique. Therefore, there exists $g'\in G$ such that $\lambda_{g'}=1$ and $\lambda_{h'}=0$ for $h'\neq g'$. We obtain, that $1=g'g$, thus $g$ is left invertible. Since $g$ was arbitrary it implies that $g$ is invertible. Thus, we've shown that $G$ is a group. $\square$
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RingsWhoseEveryModuleIsFree}
+\pmcreated{2013-03-22 18:50:20}
+\pmmodified{2013-03-22 18:50:20}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{rings whose every module is free}
+\pmrecord{10}{41644}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Recall that if $R$ is a (nontrivial) ring and $M$ is a $R$-module, then (nonempty) subset $S\subseteq M$ is called linearly independent if for any $m_1,\ldots,m_n\in M$ and any $r_1,\cdots, r_n\in R$ the equality
+$$r_1\cdot m_1+\ldots +r_n\cdot m_n=0$$
+implies that $r_1=\ldots =r_n=0$. If $S\subseteq M$ is a linearly independent subset of generators of $M$, then $S$ is called a basis of $M$. Of course not every module has a basis (it even doesn't have to have linearly independent subsets). $R$-module is called free, if it has basis. In particular if $R$ is a field, then it is well known that every $R$-module is free. What about the converse?
+
+\textbf{Proposition.} Let $R$ be a unital ring. Then $R$ is a division ring if and only if every left $R$-module is free.
+
+\textit{Proof.} ,,$\Rightarrow$'' First assume that $R$ is a divison ring. Then obviously $R$ has only two (left) ideals, namely $0$ and $R$ (because every nontrivial ideal contains invertible element and thus it contains $1$, so it contains every element of $R$). Let $M$ be a $R$-module and $m\in M$ such that $m\neq 0$. Then we have homomorphism of $R$-modules $f:R\to M$ such that $f(r)=r\cdot m$. Note that $\mathrm{ker}(f)\neq R$ (because $f(1)\neq 0$) and thus $\mathrm{ker}(f)=0$ (because $\mathrm{ker}(f)$ is a left ideal). It is clear that this implies that $\{m\}$ is linearly independent subset of $M$. Now let $$\Lambda=\{P\subseteq M\ \big| \ P\mbox{ is linearly independent}\}.$$
+Therefore we proved that $\Lambda\neq\emptyset$. Note that $(\Lambda,\subseteq)$ is a poset (where ,,$\subseteq$'' denotes the inclusion) in which every chain is bounded. Thus we may apply Zorn's lemma. Let $P_0\in\Lambda$ be a maximal element in $\Lambda$. We will show that $P_0$ is a basis (i.e. $P_0$ generates $M$). Assume that $m\in M$ is such that $m\not\in P_0$. Then $P_0\cup\{m\}$ is linearly dependent (because $P_0$ is maximal) and thus there exist $m_1,\cdots,m_n\in M$ and $\lambda,\lambda_1,\cdots,\lambda_n\in R$ such that $\lambda\neq 0$ and 
+$$ \lambda\cdot m + \lambda_1 \cdot m_1+\cdots \lambda_n \cdot m_n = 0.$$
+Since $\lambda\neq 0$, then $\lambda$ is invertible in $R$ (because $R$ is a divison ring) and therefore
+$$m=(-\lambda^{-1}\lambda_1)\cdot m_1+\cdots +(-\lambda^{-1}\lambda_n)\cdot m_n.$$
+Thus $P_0$ generates $M$, so every $R$-module is free. This completes this implication.
+
+,,$\Leftarrow$'' Assume now that every left $R$-module is free. In particular every left $R$-module is projective, thus $R$ is semisimple and therefore $R$ is Noetherian. This implies that $R$ has invariant basis number. Let $I\subseteq R$ be a nontrivial left ideal. Thus $I$ is a $R$-module, so it is free and since all modules are projective (because they are free), then $I$ is direct summand of $R$. If $I$ is proper, then we have a decomposition of a $R$-module
+$$R\simeq I\oplus I',$$
+but rank of $R$ is $1$ and rank of $I\oplus I'$ is at least $2$. Contradiction, because $R$ has invariant basis number. Thus the only left ideals in $R$ are $0$ and $R$. Now let $x\in R$. Then $Rx=R$, so there exists $\beta\in R$ such that $$\beta x=1.$$
+Thus every element is left invertible. But then every element is invertible. Indeed, if $\beta x=1$ then there exist $\alpha\in R$ such that $\alpha\beta =1$ and thus
+$$1=\alpha\beta=\alpha(\beta x)\beta=(\alpha\beta)x\beta=x\beta,$$
+so $x$ is right invertible. Thus $R$ is a divison ring. $\square$
+
+
+\textbf{Remark.} Note that this proof can be dualized to the case of right modules and thus we obtained that a unital ring $R$ is a divison ring if and only if every right $R$-module is free.
+%%%%%
+%%%%%
+\end{document}

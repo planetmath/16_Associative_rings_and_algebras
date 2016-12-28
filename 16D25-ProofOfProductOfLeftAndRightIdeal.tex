@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfProductOfLeftAndRightIdeal}
+\pmcreated{2013-03-22 17:41:25}
+\pmmodified{2013-03-22 17:41:25}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{proof of product of left and right ideal}
+\pmrecord{6}{40131}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+
+\begin{document}
+\begin{thm} Let $ \mathfrak{a}$ and $ \mathfrak{b}$ be ideals of a ring $ R$. Denote by $ \mathfrak{ab}$ the subset of $ R$ formed by all finite sums of products $ ab$ with $ a \in \mathfrak{a}$ and $ b \in \mathfrak{b}$. Then if $ \mathfrak{a}$ is a left and $ \mathfrak{b}$ a right ideal, $ \mathfrak{ab}$ is a two-sided ideal of $ R$. If in addition both $ \mathfrak{a}$ and $ \mathfrak{b}$ are two-sided ideals, then $ \mathfrak{ab} \subseteq \mathfrak{a}\cap\mathfrak{b}$.
+\end{thm}
+
+\textbf{Proof.} 
+We must show that the difference of any two elements of $\mathfrak{ab}$ is in $\mathfrak{ab}$, and that $\mathfrak{ab}$ is closed under multiplication by $R$. But both of these operations are linear in $\mathfrak{ab}$; that is, if they hold for elements of the form $ab, a\in\mathfrak{a}, b\in\mathfrak{b}$, then they hold for the general element of $\mathfrak{ab}$. So we restrict our analysis to elements $ab$.
+
+Clearly if $a_1,a_2\in \mathfrak{a}, b_1,b_2\in\mathfrak{b}$, then $a_1b_1-a_2b_2\in\mathfrak{ab}$ by definition. 
+
+If $a\in\mathfrak{a}, b\in\mathfrak{b}, r\in R$, then
+\begin{gather*}
+r \cdot ab = (r\cdot a)b\in\mathfrak{ab} \text{ since } \mathfrak{a} \text{ is a left ideal} \\
+ab \cdot r = a(b\cdot r)\in\mathfrak{ab} \text{ since } \mathfrak{b} \text{ is a right ideal}
+\end{gather*}
+and thus $\mathfrak{ab}$ is a two-sided ideal. This proves the first statement.
+
+If $\mathfrak{a},\mathfrak{b}$ are two-sided ideals, then $ab\in\mathfrak{a}$ since $b\in R$; similarly, $ab\in\mathfrak{b}$. This proves the second statement.
+%%%%%
+%%%%%
+\end{document}

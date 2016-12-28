@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InfinitudeOfInverses}
+\pmcreated{2013-03-22 18:17:30}
+\pmmodified{2013-03-22 18:17:30}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{infinitude of inverses}
+\pmrecord{4}{40903}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U99}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\newcommand{\pwr}[3]{{#1}_{#2}^{\phantom{#2}#3}}
+\begin{document}
+\begin{prop} Let $R$ be a ring with 1.
+\begin{enumerate}
+\item
+If $a\in R$ has a right inverse but no left inverses, then $a$ has infinitely many right inverses.
+\item
+If $a\in R$ has more than one right inverse, then $a$ has infinitely many right inverses.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$$$$
+\begin{enumerate}
+\item
+Let $ab=1$.  Define $b_0=b, b_1=1-b_0a+b_0, \dots, b_{i+1}=1-b_ia+b_i, \ldots$ Then, by induction, we see that
+$ab_i = a-ab_{i-1}a+ab_{i-1}=a-a+1=1$.  Next we want to show that $b_i\neq b_j$ if $i\neq j$.  Suppose $i>j$ and
+$b_i=b_j$.  Again by induction, we have
+\begin{equation}
+b_j=b_i=1+(1-a)+\cdots+(1-a)^{i-j-1}+b_j(1-a)^{i-j}
+\end{equation}
+If we let $c=1+(1-a)+\cdots+(1-a)^{i-j-1}$ then $(1-a)c=c(1-a)=(1-a)+(1-a)^2+\cdots+(1-a)^{i-j}=c-1+(1-a)^{i-j}$.
+So Equation 3 can be rewritten as $c=b_j-b_j(1-a)^{i-j}=b_j(1-(1-a)^{i-j})=b_jca$.  Then $cb_j=b_jcab_j=b_jc$.
+Now, note that for $m\leq n$, $(1-a)^nb_j^m = (1-a)^{n-m}(b_j-1)^m$. This implies that
+\begin{eqnarray*}
+c\pwr{b}{j}{i-j-1} &=& \pwr{b}{j}{i-j-1}+(b_j-1)\pwr{b}{j}{i-j-2}+\cdots+(b_j-1)^{i-j-1} \\ &=& g(b_j)+(b_j-1)^{i-j-1}.
+\end{eqnarray*}
+On the other hand, we also have
+\begin{eqnarray*}
+c\pwr{b}{j}{i-j-1} &=& b_jc\pwr{b}{j}{i-j-2} \\ &=& b_j(\pwr{b}{j}{i-j-2}+(b_j-1)^{i-j-3}+
+\cdots+(1-a)(b_j-1)^{i-j-2}) \\ &=& g(b_j)+b_j(1-a)(b_j-1)^{i-j-2}.
+\end{eqnarray*}
+So combining the above two equations, we get $(b_j-1)^{i-j-1}=b_j(1-a)(b_j-1)^{i-j-2}$.  Let $d=
+(b_j-1)^{i-j-2}$, then $(b_j-1)d=b_j(1-a)d=b_jd-b_jad$.  Simplify, we have $d=b_jad$.  Expanding $d$, then
+\begin{eqnarray*}
+\pwr{b}{j}{i-j-2}+\cdots+(-1)^{i-j-2} &=& (b_ja)(\pwr{b}{j}{i-j-2}+\cdots+(-1)^{i-j-2}) \\
+&=& b_ja\pwr{b}{j}{i-j-2}+\cdots+b_ja(-1)^{i-j-2} \\ &=& \pwr{b}{j}{i-j-2}+\cdots+(-1)^{i-j-2}b_ja.
+\end{eqnarray*}
+Then $1=b_ja$ and we have reached a contradiction.
+\item
+For the next part, notice that if $b$ and $c$ are two distinct right inverses of $a$, then neither one of them
+can be a left inverse of $a$, for if, say, $ba=1$, then $c=(ba)c=b(ca)=b$.  So we can apply the same technique
+used in the previous portion of the problem.  Note that if $b_ja=1$, then
+$$1=b_ja=(1-b_{j-1}a+b_{j-1})a=a-b_{j-1}a^2+b_{j-1}a.$$  Multiply $b_{j-1}$ from the right, we have
+$$b_{j-1}=ab_{j-1}-b_{j-1}a^2b_{j-1}+b_{j-1}ab_{j-1}=1-b_{j-1}a+b_{j-1}$$
+Thus $b_{j-1}a=1$.  Keep going until we reach $ba=1$, again a contradiction.
+\end{enumerate}
+\end{proof}
+
+\textbf{Remark}.  The first part of the above proposition implies that a finite ring is Dedekind-finite.
+%%%%%
+%%%%%
+\end{document}

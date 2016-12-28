@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GrothendieckGroup}
+\pmcreated{2013-03-22 13:38:24}
+\pmmodified{2013-03-22 13:38:24}
+\pmowner{mhale}{572}
+\pmmodifier{mhale}{572}
+\pmtitle{Grothendieck group}
+\pmrecord{11}{34290}
+\pmprivacy{1}
+\pmauthor{mhale}{572}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E20}
+\pmclassification{msc}{13D15}
+\pmclassification{msc}{18F30}
+\pmsynonym{group completion}{GrothendieckGroup}
+\pmrelated{AlgebraicKTheory}
+\pmrelated{KTheory}
+\pmrelated{AlgebraicTopology}
+\pmrelated{GrothendieckCategory}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% my maths package
+
+\newcommand*{\Nset}{\mathbb{N}}
+\newcommand*{\Zset}{\mathbb{Z}}
+\newcommand*{\Qset}{\mathbb{Q}}
+\newcommand*{\Rset}{\mathbb{R}}
+\newcommand*{\Cset}{\mathbb{C}}
+\newcommand*{\Hset}{\mathbb{H}}
+\newcommand*{\Oset}{\mathbb{O}}
+\newcommand*{\Bset}{\mathbb{B}}
+\newcommand*{\Kset}{\mathbb{K}}
+\newcommand*{\Sset}{\mathbb{S}}
+\newcommand*{\Tset}{\mathbb{T}}
+\newcommand*{\GLgrp}{\mathrm{GL}}
+\newcommand*{\SLgrp}{\mathrm{SL}}
+\newcommand*{\Ogrp}{\mathrm{O}}
+\newcommand*{\SOgrp}{\mathrm{SO}}
+\newcommand*{\Ugrp}{\mathrm{U}}
+\newcommand*{\SUgrp}{\mathrm{SU}}
+\newcommand*{\e}{\mathop{\mathrm{e}}\nolimits}
+\newcommand*{\im}{\mathord{\mathrm{i}}}
+\newcommand*{\identity}{\mathord{\mathrm{1\!\!\!\:I}}}
+\newcommand*{\tr}{\mathop{\mathrm{tr}}}
+\newcommand*{\Tr}{\mathop{\mathrm{Tr}}}
+\renewcommand*{\d}{\mathrm{d}}
+\newcommand*{\deriv}[2]{\frac{\d #1}{\d #2}}
+\newcommand*{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand*{\fderiv}[2]{\frac{\delta #1}{\delta #2}}
+
+% my noncommutative geometry package
+
+\newcommand*{\algebra}[1][A]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbert}[1][H]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbmod}[1][E]{\mathord{\mathcal{#1}}}
+\newcommand*{\Matrix}[2]{\mathord{\mathrm{M}_{#1}(#2)}}
+\newcommand*{\dixmier}{\mathop{\mathrm{Tr}_\omega}}
+\newcommand*{\Res}{\mathop{\mathrm{Res}}}
+\newcommand*{\Wres}{\mathop{\mathrm{Wres}}}
+\newcommand*{\Aut}{\mathop{\mathrm{Aut}}\nolimits}
+\newcommand*{\Inn}{\mathop{\mathrm{Inn}}\nolimits}
+\newcommand*{\Out}{\mathop{\mathrm{Out}}\nolimits}
+\newcommand*{\Diff}{\mathop{\mathrm{Diff}}\nolimits}
+\newcommand*{\Ker}{\mathop{\mathrm{Ker}}\nolimits}
+\newcommand*{\Coker}{\mathop{\mathrm{Coker}}\nolimits}
+\newcommand*{\Img}{\mathop{\mathrm{Im}}\nolimits}
+\newcommand*{\End}{\mathop{\mathrm{End}}\nolimits}
+\newcommand*{\spin}{\mathop{\mathrm{spin}}\nolimits}
+\newcommand*{\Ind}{\mathop{\mathrm{Ind}}\nolimits}
+\newcommand*{\KK}{\mathit{KK}}
+\newcommand*{\HH}{\mathit{HH}}
+\newcommand*{\HC}{\mathit{HC}}
+\newcommand*{\ch}{\mathop{\mathrm{ch}}\nolimits}
+
+% my category theory package
+
+\newcommand*{\mathcat}[1]{\mathord{\mathbf{#1}}}
+\newcommand*{\id}{\mathrm{id}}
+\newcommand*{\op}{\mathrm{op}}
+\newcommand*{\boxprod}{\mathbin{\square}}
+
+% my environments
+
+\newtheoremstyle{inlinedefn}{}{0pt}{}{}{\bfseries}{.}{0.5em}{}
+\theoremstyle{inlinedefn}
+\newtheorem{definition}{Definition}
+
+\newtheoremstyle{break}{\baselineskip}{\baselineskip}{\itshape}{}{\bfseries}{}{\newline}{}
+\theoremstyle{break}
+\newtheorem{example}{Example}
+
+% misc commands
+
+\newcommand*{\defn}[1]{\textbf{#1}}
+\begin{document}
+Let $S$ be an abelian semigroup.
+The \textbf{Grothendieck group} of $S$ is $K(S) = S\times S/\mathord{\sim}$,
+where $\sim$ is the equivalence relation:
+$(s,t) \sim (u,v)$ if there exists $r \in S$ such that $s+v+r = t+u+r$.
+This is indeed an abelian group with zero element $(s,s)$ (any $s \in S$), inverse $-(s,t) = (t,s)$ and addition given by
+$(s,t)+(u,v) = (s+u, t+v)$.
+It is common to use the suggestive notation $t-s$ for $(t,s)$.
+
+The Grothendieck group construction is a functor from the category of abelian semigroups to the category of abelian groups.
+A morphism $f\colon S \to T$ induces a morphism $K(f)\colon K(S) \to K(T)$
+which sends an element $(s^+,s^-) \in K(S)$ to $(f(s^+),f(s^-)) \in K(T)$.
+
+\begin{example}
+Let $(\Nset,+)$ be the semigroup of natural numbers with composition given by addition.
+Then, $K(\Nset,+) = \Zset$.
+\end{example}
+
+\begin{example}
+Let $(\Zset-\lbrace 0 \rbrace,\times)$ be the semigroup of non-zero integers with composition given by multiplication.
+Then, $K(\Zset-\lbrace 0 \rbrace,\times) = (\Qset-\lbrace 0 \rbrace,\times)$.
+\end{example}
+
+\begin{example}
+Let $G$ be an abelian group, then $K(G) \cong G$ via the identification $(g,h) \leftrightarrow g-h$
+(or $(g,h) \leftrightarrow gh^{-1}$ if $G$ is multiplicative).
+\end{example}
+
+Let $C$ be a (essentially small) symmetric monoidal category.
+Its Grothendieck group is $K([C])$,
+i.e.\ the Grothendieck group of the isomorphism classes of objects of $C$.
+%%%%%
+%%%%%
+\end{document}

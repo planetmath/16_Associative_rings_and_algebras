@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProjectiveModule}
+\pmcreated{2013-03-22 12:09:42}
+\pmmodified{2013-03-22 12:09:42}
+\pmowner{antizeus}{11}
+\pmmodifier{antizeus}{11}
+\pmtitle{projective module}
+\pmrecord{7}{31365}
+\pmprivacy{1}
+\pmauthor{antizeus}{11}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+\pmrelated{InvertibleIdealsAreProjective}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+A module $P$ is {\it projective}
+if it satisfies the following equivalent conditions:
+
+(a) Every short exact sequence
+of the form $0 \to A \to B \to P \to 0$ 
+is \PMlinkname{split}{SplitShortExactSequence};
+
+(b) The functor ${\rm Hom}(P, -)$ 
+is \PMlinkname{exact}{ExactFunctor};
+
+(c) If $f : X \to Y$ is an epimorphism
+and there exists a homomorphism $g : P \to Y$,
+then there exists a homomorphism $h : P \to X$
+such that $fh = g$.
+$$
+\xymatrix{
+  &
+  P
+        \ar@{-->}[dl]_h
+        \ar[d]^g
+  \\
+  X
+        \ar[r]_f
+  &
+  Y
+        \ar[r]
+  &
+  0
+}
+$$
+
+(d) The module $P$ is a direct summand of a free module.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

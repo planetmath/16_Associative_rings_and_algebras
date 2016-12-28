@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZornsLemmaAndBasesForVectorSpaces}
+\pmcreated{2013-03-22 18:06:49}
+\pmmodified{2013-03-22 18:06:49}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Zorn's lemma and bases for vector spaces}
+\pmrecord{9}{40659}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+\pmclassification{msc}{13C05}
+\pmclassification{msc}{15A03}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+In this entry, we illustrate how Zorn's lemma can be applied in proving the existence of a basis for a vector space.  Let $V$ be a vector space over a field $k$.
+
+\begin{prop} Every linearly independent subset of $V$ can be extended to a basis for $V$. \end{prop}
+
+This has already been proved in \PMlinkname{this entry}{EveryVectorSpaceHasABasis}.  We reprove it here for completion.
+
+\begin{proof}
+Let $A$ be a linearly independent subset of $V$.  Let $\mathcal{S}$ be the collection of all linearly independent supersets of $A$.  First, $\mathcal{S}$ is non-empty since $A\in \mathcal{S}$.  In addition, if $A_1\subseteq A_2 \subseteq \cdots$ is a chain of linearly independent supersets of $A$, then their union is again a linearly independent superset of $A$ (for a proof of this, see \PMlinkname{here}{PropertiesOfLinearIndependence}).  So by Zorn's Lemma, $\mathcal{S}$ has a maximal element $B$.  Let $W=\operatorname{span}(B)$.  If $W\ne V$, pick $b\in V-W$.  If $0=rb+r_1b_1+\cdots +r_nb_n$, where $b_i\in B$, then $-rb=r_1b_1+\cdots +r_nb_n$, so that $-rb\in \operatorname{span}(B)=W$.  But $b\notin W$, so $b\ne 0$, which implies $r=0$.  Consequently $r_1=\cdots = r_n=0$ since $B$ is linearly independent.  As a result, $B\cup \lbrace b\rbrace$ is a linearly independent superset of $B$ in $\mathcal{S}$, contradicting the maximality of $B$ in $\mathcal{S}$.
+\end{proof}
+
+\begin{prop}  Every spanning set of $V$ has a subset that is a basis for $V$. \end{prop}
+\begin{proof}
+Let $A$ be a spanning set of $V$.  Let $\mathcal{S}$ be the collection of all linearly independent subsets of $A$.  $\mathcal{S}$ is non-empty as $\varnothing\in \mathcal{S}$.  Let $A_1\subseteq A_2\subseteq \cdots$ be a chain of linearly independent subsets of $A$.  Then the union of these sets is again a linearly independent subset of $A$.  Therefore, by Zorn's lemma, $\mathcal{S}$ has a maximal element $B$.  In other words, $B$ is a linearly independent subset $A$.  Let $W=\operatorname{span}(B)$.  Suppose $W\ne V$.  Since $A$ spans $V$, there is an element $b\in A$ not in $W$ (for otherwise the span of $A$ must lie in $W$, which would imply $W=V$).  Then, using the same argument as in the previous proposition, $B\cup\lbrace b\rbrace$ is linearly independent, which contradicts the maximality of $B$ in $\mathcal{S}$.  Therefore, $B$ spans $V$ and thus a basis for $V$.
+\end{proof}
+
+\begin{cor} Every vector space has a basis. \end{cor}
+\begin{proof} Either take $\varnothing$ to be the linearly independent subset of $V$ and apply proposition 1, or take $V$ to be the spanning subset of $V$ and apply proposition 2. \end{proof}
+
+\textbf{Remark}.  The two propositions above can be combined into one: If $A\subseteq C$ are two subsets of a vector space $V$ such that $A$ is linearly independent and $C$ spans $V$, then there exists a basis $B$ for $V$, with $A\subseteq B\subseteq C$.  The proof again relies on Zorn's Lemma and is left to the reader to try.
+%%%%%
+%%%%%
+\end{document}

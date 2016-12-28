@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AnnihilatorIsAnIdeal}
+\pmcreated{2013-03-22 12:50:27}
+\pmmodified{2013-03-22 12:50:27}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{annihilator is an ideal}
+\pmrecord{10}{33167}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmclassification{msc}{16D25}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\PMlinkescapeword{addition}
+\PMlinkescapeword{equivalent}
+\PMlinkescapeword{multiplication}
+\PMlinkescapeword{right}
+
+The right annihilator of a right $R$-module $M_R$ in $R$ is an ideal.
+
+{\bf Proof:}\\
+By the distributive law for modules, it is easy to see that $\operatorname{r.ann}(M_R)$ is closed under addition and right multiplication.
+Now take $x \in \operatorname{r.ann}(M_R)$ and $r \in R$.
+
+Take any $m \in M_R$.  Then $mr \in M_R$, but then $(mr)x = 0$ since $x \in \operatorname{r.ann}(M_R)$.  So $m(rx)=0$ and $rx \in \operatorname{r.ann}(M_R)$.
+
+An equivalent result holds for left annihilators.
+%%%%%
+%%%%%
+\end{document}

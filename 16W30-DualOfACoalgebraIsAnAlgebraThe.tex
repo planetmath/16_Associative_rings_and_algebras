@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DualOfACoalgebraIsAnAlgebraThe}
+\pmcreated{2013-03-22 16:34:20}
+\pmmodified{2013-03-22 16:34:20}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{dual of a coalgebra is an algebra, the}
+\pmrecord{8}{38762}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+%\pmkeywords{Dualities of al/gebras and coalgebras}
+%\pmkeywords{mirror or tangled duality vs. categorical}
+%\pmkeywords{arrow reversing duality and factorization}
+\pmrelated{GrassmanHopfAlgebrasAndTheirDualCoAlgebras}
+\pmrelated{DualityInMathematics}
+\pmrelated{QuantumGroups}
+\pmdefines{dualities of algebraic structures}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Hom}[3][]{\mathrm{Hom}_{#1}({#2},{#3})}
+
+\theoremstyle{definition}
+\newtheorem*{example*}{Example}
+\begin{document}
+\PMlinkescapeword{convolution}
+\PMlinkescapeword{product}
+\PMlinkescapeword{similar}
+
+Let $R$ be a commutative ring with unity.  Suppose we have a coassociative coalgebra $(C,\Delta)$ and an associative algebra $A$, both over $R$.  Since $C$ and $A$ are both $R$-modules, it follows that $\Hom[R]{C}{A}$ is also an $R$-module.  But in fact we can give it the structure of an associative $R$-algebra.  To do this, we use the convolution product.  Namely, given morphisms $f$ and $g$ in $\Hom[R]{C}{A}$, we define their product $fg$ by
+\[
+(fg)(x) = \sum_x f(x_{(1)})\cdot g(x_{(2)}),
+\]
+where we use the Sweedler notation 
+\[
+\Delta(x) = \sum_x x_{(1)}\otimes x_{(2)}
+\]
+for the comultiplication $\Delta$.  To see that the convolution product is associative, suppose $f$, $g$, and $h$ are in $\Hom[R]{C}{A}$.  By applying the coassociativity of $\Delta$, we may write
+\[
+((fg)h)(x) = \sum_x (f(x_{(1)})\cdot g(x_{(2)}))\cdot h(x_{(3)})
+\]
+and
+\[
+(f(gh))(x) = \sum_x f(x_{(1)})\cdot (g(x_{(2)}))\cdot h(x_{(3)}).
+\]
+Since $A$ has an associative product, it follows that $(fg)h=f(gh)$.
+
+In the foregoing, we have not assumed that $C$ is counitary or that $A$ is unitary.  If $C$ is counitary with counit $\varepsilon\colon C\to R$ and $A$ is unitary with identity $1\colon R\to A$, then their composition $1\circ\varepsilon\colon C\to A$ is the identity for the convolution product.
+
+\begin{example*}
+Let $C$ be a coassociative coalgebra over $R$.  Then $R$ itself is an associative $R$-algebra.  The algebra $\Hom[R]{C}{R}$ is called the \emph{algebra dual to the coalgebra $C$}.
+\end{example*}
+
+We have seen that any coalgebra dualizes to give an algebra.  One might expect that a similar construction could be performed on $\Hom[R]{A}{R}$ to give a coalgebra dual to $A$.  However, this is not the case.  Thus coalgebras (based on ``factoring'') are more fundamental than algebras (based on ``multiplying'').
+
+(The proof will be provided at a later stage).
+
+\textbf{Remark on Al/gebraic Duality}--{\em Mirror or tangled `duality' of algebras and `gebras':} \\
+An interesting twist to duality was provided in Fauser's publications on al/gebras
+where mirror or tangled `duality' has been defined for Grassman-Hopf al/gebras. Thus,
+an algebra not only has the usual reversed arrow dual coalgebra but a mirror (or tangled)
+gebra which is quite distinct from the coalgebra.
+
+\textbf{Note:}
+The dual of a quantum group is a Hopf algebra.   
+
+
+\begin{thebibliography}{99}
+\bibitem{NiSw}
+W.~Nichols and M.~Sweedler, {\it Hopf algebras and combinatorics}, in {\it Proceedings of the conference on umbral calculus and Hopf algebras}, ed. R.~Morris, AMS, 1982.
+
+\bibitem{Fauser2002}
+B. Fauser: \emph{A treatise on quantum Clifford Algebras}. Konstanz,
+Habilitationsschrift. \\ arXiv.math.QA/0202059 (2002).
+
+\bibitem{Fauser2004}
+B. Fauser: Grade Free product Formulae from Grassman--Hopf Gebras.
+Ch. 18 in R. Ablamowicz, Ed., \emph{Clifford Algebras: Applications to Mathematics, Physics and Engineering}, Birkh\"{a}user: Boston, Basel and Berlin, (2004).
+
+\bibitem{Fell}
+J. M. G. Fell.: The Dual Spaces of  C*--Algebras., \emph{Transactions of the American
+Mathematical Society}, \textbf{94}: 365--403 (1960).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

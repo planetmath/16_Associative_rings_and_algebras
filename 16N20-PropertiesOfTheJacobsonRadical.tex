@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PropertiesOfTheJacobsonRadical}
+\pmcreated{2013-03-22 12:49:43}
+\pmmodified{2013-03-22 12:49:43}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{properties of the Jacobson radical}
+\pmrecord{12}{33152}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N20}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+{\bf Theorem:}\\
+Let $R, T$ be rings and $\varphi : R \rightarrow T$ be a surjective homomorphism.  Then $\varphi(J(R)) \subseteq J(T)$.
+
+{\bf Proof:}\\
+We shall use the characterization of the Jacobson radical as the set of all $a \in R$ such that for all $r \in R$, $1-ra$ is left invertible.
+
+Let $a \in J(R), t \in T$.  We claim that $1-t\varphi(a)$ is left invertible:
+
+Since $\varphi$ is surjective, $t=\varphi(r)$ for some $r \in R$.  Since $a \in J(R)$, we know $1-ra$ is left invertible, so there exists $u \in R$ such that
+$u(1-ra)=1$.  Then we have
+\[ \varphi(u) \left(
+   \varphi(1)-\varphi(r)\varphi(a) \right)
+    = \varphi(u)\varphi(1-ra) = \varphi(1)=1 \]
+So $\varphi(a) \in J(T)$ as required.\\
+
+{\bf Theorem:}\\
+Let $R, T$ be rings.  Then $J(R \times T) \subseteq J(R) \times J(T)$.
+
+{\bf Proof:}\\
+Let $\pi_1 : R \times T \rightarrow R$ be a (surjective) projection.
+By the previous theorem, $\pi_1(J(R \times T)) \subseteq J(R)$.\\
+
+Similarly let $\pi_2 : R \times T \rightarrow T$ be a (surjective) projection.  We see that $\pi_2(J(R \times T)) \subseteq J(T)$.\\
+
+Now take $(a,b) \in J(R \times T)$.  Note that $a = \pi_1(a,b) \in J(R)$ and $b = \pi_2(a,b) \in J(T)$.  Hence $(a,b) \in J(R) \times J(T)$ as required.
+%%%%%
+%%%%%
+\end{document}

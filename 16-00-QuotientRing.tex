@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuotientRing}
+\pmcreated{2013-03-22 11:52:32}
+\pmmodified{2013-03-22 11:52:32}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{quotient ring}
+\pmrecord{18}{30470}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{81R12}
+\pmclassification{msc}{20C30}
+\pmclassification{msc}{81R10}
+\pmclassification{msc}{81R05}
+\pmclassification{msc}{20C32}
+\pmsynonym{difference ring}{QuotientRing}
+\pmsynonym{factor ring}{QuotientRing}
+\pmsynonym{residue-class ring}{QuotientRing}
+\pmrelated{NaturalHomomorphism}
+\pmrelated{QuotientRingModuloPrimeIdeal}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+{\bf Definition. }
+Let $R$ be a ring and let $I$ be a \PMlinkname{two-sided ideal}{Ideal} of $R$.
+To define the quotient ring $R/I$, let us first
+define an equivalence relation in $R$. We say that the elements $a,b\in R$
+are equivalent, written as $a\sim b$, if and only if $a-b\in I$.
+If $a$ is an element of $R$, we denote the corresponding equivalence
+class by $[a]$. Thus $[a]=[b]$ if and only if $a-b\in I$.
+The {\em quotient ring} of $R$ modulo $I$ is the set
+$R/I=\{[a]\, |\, a\in R\}$, with a ring structure defined as follows.
+If $[a],[b]$ are equivalence classes in $R/I$, then
+ \begin{itemize}
+ \item $[a]+[b] = [a+b]$,
+ \item $[a]\cdot [b]=[a\cdot b]$.
+ \end{itemize}
+Here $a$ and $b$ are some elements in $R$ that represent $[a]$ and $[b]$.
+By construction, every element in $R/I$ has such a representative in $R$.
+Moreover, since $I$ is closed under addition and multiplication, one can
+ verify that the ring structure in $R/I$ is well defined.
+
+A common notation is $a+I=[a]$ which is consistent with the notion of classes $[a]=aH\in G/H$ for a group $G$ and a normal subgroup $H$.
+
+\subsubsection*{Properties}
+\begin{enumerate}
+\item If $R$ is commutative, then $R/I$ is commutative.
+\item The mapping $R\to R/I$, $a\mapsto [a]$ is a homomorphism, and 
+is called the \PMlinkname{natural homomorphism}{NaturalHomomorphism}. 
+\end{enumerate}
+
+\subsubsection*{Examples}
+\begin{enumerate}
+\item For a ring $R$, we have $R/R=\{[0]\}$ and $R/\{0\}=R$.
+\item Let $R=\mathbb{Z}$, and let $I=2\mathbb{Z}$ be the set of even numbers.
+Then $R/I$ contains only two classes; one for  even numbers,
+and one for odd numbers. Actually this quotient ring is a field. It is the only field with two elements (up to isomorphy) and is also denoted by $\mathbb{F}_2$.
+\item One way to construct complex numbers is to consider the field $\mathbb{R}[T]/(T^2+1)$. This field can viewed as the set of all polynomials of degree $1$ with normal addition and $(a+bT)(c+dT)=ac-bd+(ad+bc)T$, which is like complex multiplication.
+\end{enumerate}
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AdditiveInverseOfTheZeroInARing}
+\pmcreated{2013-03-22 15:45:13}
+\pmmodified{2013-03-22 15:45:13}
+\pmowner{aplant}{12431}
+\pmmodifier{aplant}{12431}
+\pmtitle{additive inverse of the zero in a ring}
+\pmrecord{9}{37707}
+\pmprivacy{1}
+\pmauthor{aplant}{12431}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16B70}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+In any ring $R$, the additive identity is unique and usually denoted by $0$.  It is called the zero or {\em neutral element} of the ring and it satisfies the zero property under multiplication.  The additive inverse of the zero must be zero itself.  For suppose otherwise: that there is some nonzero $c \in R$ so that $0 + c = 0$.  For any element $a \in R$ we have $a + 0 = a$ since $0$ is the additive identity.  Now, because addition is associative we have
+\begin{eqnarray*}
+0 & = & a + 0 \\ 
+ & = & a + (0 + c) \\
+ & = & (a + 0) + c \\
+ & = & a + c.
+\end{eqnarray*}
+Since $a$ is any arbitrary element in the ring, this would imply that (nonzero) $c$ is an additive identity, contradicting the uniqueness of the additive identity.  And so our suppostition that $0$ has a nonzero inverse cannot be true.  So the additive inverse of the zero is zero itself.  We can write this as $-0 = 0$, where the $-$ sign means ``additive inverse".
+
+Yes, for sure, there are other ways to come to this result, and we encourage you to have a bit of fun describing your own reasons for why the additive inverse of the zero of the ring must be zero itself.
+
+For example, since $0$ is the neutral element of the ring this means that $0 + 0 = 0$.  From this it immediately follows that $-0 = 0$.
+%%%%%
+%%%%%
+\end{document}

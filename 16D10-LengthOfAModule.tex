@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LengthOfAModule}
+\pmcreated{2013-03-22 14:35:32}
+\pmmodified{2013-03-22 14:35:32}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{length of a module}
+\pmrecord{11}{36156}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmclassification{msc}{13C15}
+\pmsynonym{finite-length module}{LengthOfAModule}
+%\pmkeywords{length}
+\pmdefines{finite length}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $A$ be a ring and let $M$ be an $A$-module.  If there is a finite sequence of submodules of $M$
+\begin{align*}
+M=M_0\supset M_1\supset \cdots \supset M_n=0
+\end{align*}
+such that each quotient module $M_i/M_{i+1}$ is simple, then $n$ is necessarily unique by the \PMlinkname{Jordan-H\"older theorem}{JordanHolderDecomposition} for modules.  We define the above number $n$ to be the \emph{length} of $M$.  If such a finite sequence does not exist, then the length of $M$ is defined to be $\infty$.
+
+If $M$ has finite length, then $M$ satisfies both the ascending and descending chain conditions.
+
+A ring $A$ is said to have \emph{finite length} if there is an $A$-module whose length is finite.
+%%%%%
+%%%%%
+\end{document}

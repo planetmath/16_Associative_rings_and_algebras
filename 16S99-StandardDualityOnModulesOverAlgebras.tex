@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StandardDualityOnModulesOverAlgebras}
+\pmcreated{2013-12-11 15:25:39}
+\pmmodified{2013-12-11 15:25:39}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{standard duality on modules over algebras}
+\pmrecord{5}{42209}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+\pmclassification{msc}{20C99}
+\pmclassification{msc}{13B99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $k$ be a field and let $A$ be an associative unital algebra. Throughout we will assume that all $A$-modules over $k$ are unital. If $M$ is a right $A$-module, then the space of all linear mappings
+$$\mathrm{Hom}_{k}(M,k)$$
+can be equipped with a left $A$-module structure as follows: for any $f\in\mathrm{Hom}_{k}(M,k)$ and $a\in A$ put
+$$(af)(x)=f(xa).$$
+Note that action direction need to be reversed, because
+$$(abf)(x)=(bf)(xa)=f(xab).$$
+Analogously $\mathrm{Hom}_{k}(-,k)$ takes left $A$-modules to right $A$-modules. Also this action is compatible with functoriality of $\mathrm{Hom}_{k}(-,k)$, which means that it takes $A$-homomorphisms to $A$-homomorphisms. In particular we obtain a (contravariant) functor from category of left (right) $A$-modules to category of right (left) $A$-modules. Obviously $\mathrm{Hom}$ does not change the dimension of spaces, so we have well defined functors
+$$D:\mathrm{mod}A\to A\mathrm{mod}$$
+$$D:A\mathrm{mod}\to \mathrm{mod}A$$
+which are restrictions of $\mathrm{Hom}$ (here $\mathrm{mod}$ means finite dimensional modules left/right modules) and are known in literature as ,,standard dualities''.
+
+\textbf{Proposition.} Both $D$'s are quasi inverse dualities of categories.
+
+\textit{Proof.} Let $M$ be a finite dimensional $A$-module. We need to define a natural isomorphism between $M$ and $DD(M)$. Indeed, define
+$$\tau_M:M\to DD(M);$$
+$$\tau_M(m)(\alpha)=\alpha(m).$$
+We will show that each $\tau$ is an isomorphism.
+\begin{enumerate}
+\item First we will show that $\tau$ is a monomorphism. Assume that $\tau_M(m)=0$ for nonzero $m\in M$. This is if and only if $\alpha(m)=0$ for every linear mapping $\alpha:M\to k$. But $m$ is nonzero, so there is a basis of $M$ (as linear space) which contains $m$. In particular there is a linear mapping $f:M\to k$ such that $f(m)=1$. Contradiction. Thus $m=0$, which completes this part.
+\item $\tau$ is an epimorphism. Indeed, let $F:D(M)\to k$ be a linear mapping. We need to show, that there is $m\in M$ such that 
+$$F(\alpha)=\alpha(m)$$
+for any $\alpha\in D(M)$. Since $M$ is finite dimensional, then let $\{e_1,\ldots,e_n\}$ be a $k$-basis of $M$. Of course $\{e_1^*,\ldots,e_n^*\}$ is a basis of $D(M)$, where $e_i^*$ is given by $e_i^*(e_j)=1$ if $i=j$ and $e_i^*(e_j)=0$ otherwise. Define
+$$\lambda_i=F(e_i^*)$$
+and put
+$$m=\sum_{i=1}^n\lambda_i\cdot e_i.$$
+We leave it as a simple exercise, that $\tau(m)=F$.
+\end{enumerate}
+What remains is to prove, that $\tau$ is natural. Consider an $A$-homomorphism $f:X\to Y$. We need to show that the following diagram commutes:
+$$\xymatrix{
+X\ar[r]^f\ar[d]_{\tau_X} & Y\ar[d]^{\tau_Y}\\
+DD(X)\ar[r]^{DD(f)} & DD(Y)
+}$$
+Indeed, if $x\in X$, then let $F=\tau_X(x)$. We have that 
+$$DD(f)(F)=F\circ D(f)$$
+and evaluating this at $\alpha\in D(M)$ we have
+$$F(D(f)(\alpha))=F(\alpha\circ f)=(\alpha\circ f)(x)=\alpha(f(x)) = \tau_Y(f(x))(\alpha).$$
+In particular we obtain that
+$$DD(f)(\tau_X(x))=\tau_Y(f(x))$$
+which means that
+$$DD(f)\circ\tau_X=\tau_Y\circ f$$
+which completes the proof. $\square$
+%%%%%
+%%%%%
+\end{document}

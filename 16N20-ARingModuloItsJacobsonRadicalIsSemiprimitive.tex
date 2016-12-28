@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ARingModuloItsJacobsonRadicalIsSemiprimitive}
+\pmcreated{2013-03-22 12:49:34}
+\pmmodified{2013-03-22 12:49:34}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{a ring modulo its Jacobson radical is semiprimitive}
+\pmrecord{13}{33149}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N20}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\PMlinkescapeword{characterizations}
+
+Let $R$ be a ring.  Then $J(R/J(R))=(0)$.
+
+{\it Proof:}\\
+We will only prove this in the case where $R$ is a unital ring
+(although it is true without this assumption).
+
+Let $[u] \in J(R/J(R))$.
+By one of the characterizations of the Jacobson radical,
+$1-[r][u]$ is left invertible for all $r \in R$,
+so there exists $v \in R$ such that $[v](1-[r][u])=1$.
+
+Then $v(1-ru)=1-a$ for some $a \in J(R)$.
+There is a $w \in R$ such that $w(1-a)=1$,
+and we have $wv(1-ru)=1$.
+
+Since this holds for all $r \in R$,
+it follows that $u \in J(R)$, and therefore $[u]=0$.
+%%%%%
+%%%%%
+\end{document}

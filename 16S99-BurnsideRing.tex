@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BurnsideRing}
+\pmcreated{2013-03-22 18:08:02}
+\pmmodified{2013-03-22 18:08:02}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{Burnside ring}
+\pmrecord{10}{40685}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $G$ be a finite group. Recall that by $G$\textit{-set} we understand a pair $(X,\circ)$, where $X$ is a set and $\circ:G\times X\rightarrow X$ is a group action of $G$ on $X$. For short notation the pair notation will be omitted and $G$-sets will be simply denoted by capital letters.\\ \\
+Recall that for each subgroup $H\subseteq G$ we have canonical $G$-set $G/H=\{gH;\ g\in G\}$ where group action is defined as follows: for any $g,k\in G$ we have $(g,kH)\longmapsto gkH$.\\ \\
+Let $X$ and $Y$ be $G$-sets. Recall that by $G$\textit{-map} from $X$ to $Y$ we understand any function $F:X\rightarrow Y$ such that for any $g\in G$ and $x\in X$ we have $F(gx)=gF(x)$.\\ \\
+It is easy to see that family of all $G$-sets and $G$-maps forms a category (with standard comoposition). We shall denote this category by $G-\mathbb{S}$. Moreover, by $G-\mathbb{S}_{0}$ we shall denote full subcategory of $G-\mathbb{S}$ whose objects are all finite $G$-sets.\\ \\
+From $G$-sets $X$ and $Y$ one can construct another $G$-set in two interesting (from our point of view) ways, i.e. by taking disjoint union $X\sqcup Y$ with obvious group action and by taking product $X\times Y$ with group action as follows: $(g,(x,y))\longmapsto (gx,gy).$ Moreover it is clear that when $X$ and $Y$ are finite, so are $X\sqcup Y$ and $X\times Y$.\\ \\
+Consider a finite $G$-set $X$. Then there exist a natural number $n\in\mathbb{N}$, finite family $\{H_{i}\}_{i=1}^{n}$ of subgroups of $G$ and an isomorphism (in $G-\mathbb{S}_{0}$ category) $$X\simeq\coprod_{i=1}^{n} G/H_{i}.$$
+Therefore (since $G$ is finite) family of isomorphism classes of $G-\mathbb{S}_{0}$ forms a countable set.\\ \\
+Denote by $\Omega^{+}(G)=\{[X];\ X\in G-\mathbb{S}_{0}\}$ the set of isomorphism classes of category $G-\mathbb{S}_{0}$. Then one can turn $\Omega^{+}(G)$ into a semiring as follows: for any finite $G$-sets $X$ and $Y$ define
+$$[X]+[Y]=[X\sqcup Y];$$
+$$[X][Y]=[X\times Y].$$
+Note that here we treat the empty set as a $G$-set (with one and unique group action), therefore $\Omega^{+}(G)$ has zero element $[\emptyset]$ (the other way is to formally add the zero to $\Omega^{+}(G)$ - this is just technical thing).\\ \\
+Define by $\Omega(G)=K(\Omega^{+}(G))$ the Grothendieck group of $(\Omega^{+}(G),+)$. If $A$ is an abelian semigroup and $f:A\times A\rightarrow A$ is a bilinear map, then it can be uniquely extended to a bilinear map $K(f):K(A)\times K(A)\rightarrow K(A)$, therefore $\Omega(G)$ can be uniquely turned into a ring from $\Omega^{+}(G)$. This ring is called \textit{the Burnside ring} of $G$.\\ \\
+Some properties:\\ \\
+$\mathrm{(0)}$ each element of $\Omega(G)$ can be expressed as a formal diffrence $[X]-[Y]$;\\ \\
+$\mathrm{(1)}$ $\Omega(G)$ is a commutative, unital ring, where $[G/G]$ is the unity of $\Omega(G)$;\\ \\
+$\mathrm{(2)}$ $\Omega$ can be turned into a contravariant functor from the category of finite groups to the category of commutative, unital rings;\\ \\
+$\mathrm{(3)}$ $(\Omega^{+}(G),+)$ is a cancellative semigroup, therefore it embedds into $\Omega(G)$;\\ \\
+$\mathrm{(4)}$ for the trivial group $E$ there is a ring isomorphism $\Omega(E)\simeq\mathbb{Z}$;\\ \\
+$\mathrm{(5)}$ for any group $G$ there is a ring monomorphism $\varphi:\Omega(G)\rightarrow\bigoplus_{i=1}^{n}\mathbb{Z}$ for some natural number $n\in\mathbb{N}$; this is called the characteristic embedding;\\ \\
+$\mathrm{(6)}$ for any two groups $G,H$ we have: if $\Omega(G)$ and $\Omega(H)$ are isomorphic (as a rings), then $|G|=|H|$; generally $G$ need not be isomorphic to $H$.
+%%%%%
+%%%%%
+\end{document}

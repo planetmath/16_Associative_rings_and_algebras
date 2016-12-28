@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UpperNilradical}
+\pmcreated{2013-03-22 17:29:06}
+\pmmodified{2013-03-22 17:29:06}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{upper nilradical}
+\pmrecord{4}{39872}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N40}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+The \emph{upper nilradical} $\operatorname{Nil}^*(R)$ of $R$ is the \PMlinkname{sum}{SumOfIdeals} of all (two-sided) nil ideals in $R$.  In other words, $a\in Nil^* R$ iff $a$ can be expressed as a (finite) sum of nilpotent elements.
+
+It is not hard to see that $\operatorname{Nil}^*(R)$ is the largest nil ideal in $R$.  Furthermore, we have that  $\operatorname{Nil}_*(R)\subseteq \operatorname{Nil}^*(R)\subseteq J(R)$, where $\operatorname{Nil}_*(R)$ is the lower radical or prime radical of $R$, and $J(R)$ is the Jacobson radical of $R$.
+
+\textbf{Remarks}.  
+\begin{itemize}
+\item
+If $R$ is commutative, then $\operatorname{Nil}_*(R)=\operatorname{Nil}^*(R)=\operatorname{Nil}(R)$, the nilradical of $R$, consisting of all nilpotent elements.
+\item
+If $R$ is left (or right) artinian, then $\operatorname{Nil}_*(R)=\operatorname{Nil}^*(R)=J(R)$.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

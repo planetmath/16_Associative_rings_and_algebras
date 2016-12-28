@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FaithfulGroupAction}
+\pmcreated{2013-03-22 14:02:23}
+\pmmodified{2013-03-22 14:02:23}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{faithful group action}
+\pmrecord{8}{35259}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W22}
+\pmclassification{msc}{20M30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $A$ be a $G$-set, that is, a set acted upon by a group $G$ with action
+$\psi:G\times A\to A$.  Then for any $g\in G$, the map $m_g\colon A\to A$ defined by
+\[m_g(x)= \psi(g,x)\]
+is a permutation of $A$ (in other words, a bijective function from $A$ to itself) and so an element of $S_A$.
+We can even get an homomorphism from $G$ to $S_A$ by the rule $g\mapsto m_g$.
+
+If for any pair $g,h\in G$  $g\neq h$ we have
+$m_g\neq m_h$, in other words, the homomorphism $g\to m_g$ being injective, we say that the action is faithful.
+%%%%%
+%%%%%
+\end{document}

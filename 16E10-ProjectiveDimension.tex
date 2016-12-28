@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProjectiveDimension}
+\pmcreated{2013-03-22 14:50:56}
+\pmmodified{2013-03-22 14:50:56}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{projective dimension}
+\pmrecord{7}{36519}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E10}
+\pmclassification{msc}{13D05}
+\pmclassification{msc}{18G20}
+\pmdefines{injective dimension}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $\mathcal{A}$ be an abelian category and $M\in\operatorname{Ob}(\mathcal{A})$ such that a projective resolution of $M$ exists:
+$$\xymatrix{{\ldots}\ar[r]&P_n\ar[r]&{\ldots}\ar[r]&P_1\ar[r]&P_0\ar[r]&M\ar[r]&0}.$$
+Among all the projective resolutions of $M$, consider the subset consisting of those projective resolutions that contain only a finite number of non-zero projective objects (there exists a non-negative integer $n$ such that $P_i=0$ for all $i\geq n$).  If such a subset is non-empty, then the \emph{projective dimension} of $M$ is defined to be the smallest number $d$ such that 
+$$\xymatrix{0\ar[r]&P_d\ar[r]&{\ldots}\ar[r]&P_1\ar[r]&P_0\ar[r]&M\ar[r]&0}.$$
+We denote this by $\operatorname{pd}(M)=d$.  If this subset is empty, then we define $\operatorname{pd}(M)=\infty$.
+
+\textbf{Remarks}.
+\begin{enumerate}
+\item In an abelian category having enough projectives, the projective dimension of an object always exists (whether it is finite or not).
+\item If $\operatorname{pd}(M)=d$ and 
+$$\xymatrix{0\ar[r]&P_d\ar[r]&{\ldots}\ar[r]&P_1\ar[r]&P_0\ar[r]&M\ar[r]&0}.$$
+Then $P_i\neq0$ for all $0\leq i\leq d$.
+\item $\operatorname{pd}(M)=0$ iff $M$ is a projective object.
+\item In the (abelian) category of left (right) $R$-modules, the projective dimension of a left (right) $R$-module $M$ is denoted by $\operatorname{pd}_R(M)$.
+\end{enumerate}
+
+Likewise, given an abelian category and a object $N$ having at least one injective resolution.  Then the \emph{injective dimension}, denoted by $\operatorname{id}(N)$ is the minimum number $d$ such that 
+$$\xymatrix{0\ar[r]&N\ar[r]&I_0\ar[r]&I_1\ar[r]&{\ldots}\ar[r]&I_d\ar[r]&0},$$
+if such an injective resolution exists.  Otherwise, set $\operatorname{id}(N)=\infty$.  This is the dual notion of projective dimension.
+%%%%%
+%%%%%
+\end{document}

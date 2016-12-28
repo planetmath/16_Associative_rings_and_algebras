@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheCharacteristicEmbeddingOfTheBurnsideRing}
+\pmcreated{2013-03-22 18:08:09}
+\pmmodified{2013-03-22 18:08:09}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{the characteristic embedding of the Burnside ring}
+\pmrecord{7}{40688}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $G$ be a finite group, $H$ its subgroup and $X$ a finite $G$-set. By the $H$\textit{-fixed point subset} of $X$ we understand the set $$X^{H}=\{x\in X;\ \forall_{h\in H}\ hx=x\}.$$
+Denote by $\vert X\vert$ the cardinality of a set $X$.\\ \\
+It is easy to see that for any $G$-sets $X,Y$ we have:
+$$\vert (X\sqcup Y)^{H}\vert =\vert X^{H}\vert +\vert Y^{H}\vert ;$$
+$$\vert (X\times Y)^{H}\vert =\vert X^{H}\vert\cdot\vert Y^{H}\vert.$$
+Denote by $\mathrm{Sub}(G)=\{H\subseteq G;\ H\ \mathrm{is}\ \mathrm{a}\ \mathrm{subgroup}\ \mathrm{of}\ G\}$. Recall that any $H,K\in\mathrm{Sub}(G)$ are said to be conjugate iff there exists $g\in G$ such that $H=gKg^{-1}$. Conjugation is an equivalence relation. Denote by $\mathrm{Con}(G)$ the quotient set.\\ \\
+One can check that for any $H,K\in\mathrm{Sub}(G)$ such that $H$ is conjugate to $K$ and for any finite $G$-set $X$ we have
+$$\vert X^{H}\vert = \vert X^{K}\vert.$$
+Thus we have a well defined ring homomorphism:
+$$\varphi:\Omega(G)\rightarrow\bigoplus_{(H)\in\mathrm{Con}(G)}\mathbb{Z};$$
+$$\varphi([X]-[Y])=(\vert X^{H}\vert - \vert Y^{H}\vert)_{(H)\in\mathrm{Con}(G)}.$$
+This homomorphism is known as the characteristic embedding, since it is monomorphism (see \cite{T} for proof).\\[20pt]
+\begin{thebibliography}{1}
+\bibitem{T} T. tom Dieck, {\it Transformation groups and representation theory}, Lecture Notes in Math. 766, Springer-Verlag, Berlin, 1979.
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

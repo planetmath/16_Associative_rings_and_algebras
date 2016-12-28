@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InjectiveModule}
+\pmcreated{2013-03-22 12:02:26}
+\pmmodified{2013-03-22 12:02:26}
+\pmowner{antizeus}{11}
+\pmmodifier{antizeus}{11}
+\pmtitle{injective module}
+\pmrecord{8}{31083}
+\pmprivacy{1}
+\pmauthor{antizeus}{11}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D50}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+A module $Q$ is an {\it injective module}
+if it satisfies the following equivalent conditions:
+
+(a) Every short exact sequence
+of the form $0 \to Q \to B \to C \to 0$ 
+is \PMlinkname{split}{SplitShortExactSequence};
+
+(b) The functor ${\rm Hom}(-, Q)$ 
+is \PMlinkname{exact}{ExactFunctor};
+
+(c) If $f : X \to Y$ is a monomorphism
+and there exists a homomorphism $g : X \to Q$,
+then there exists a homomorphism $h : Y \to Q$
+such that $hf = g$.
+$$
+\xymatrix{
+  0
+        \ar[r]
+  &
+  X
+        \ar[d]_g
+        \ar[r]^f
+  &
+  Y
+        \ar@{-->}[dl]^h
+  \\
+  &
+  Q
+}
+$$
+%%%%%
+%%%%%
+%%%%%
+\end{document}

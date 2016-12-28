@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PairwiseComaximalIdealsProperty}
+\pmcreated{2013-03-22 16:53:34}
+\pmmodified{2013-03-22 16:53:34}
+\pmowner{polarbear}{3475}
+\pmmodifier{polarbear}{3475}
+\pmtitle{pairwise comaximal ideals property}
+\pmrecord{9}{39149}
+\pmprivacy{1}
+\pmauthor{polarbear}{3475}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{prop}{Proposition}
+
+\begin{document}
+\begin{prop} Let $R$ be a commutative ring with unity. For every pairwise comaximal ideals $I_1, I_2, ... , I_n$, the following holds:\begin{equation}
+I_1 \cap I_2 \cap ... \cap I_n = I_1I_2 ... I_n.\end{equation}\end{prop}\begin{proof} We prove by induction on $n$. For $n=2$, $I_1+I_2 = R$ implies:\begin{equation}
+I_1\cap I_2 = R(I_1\cap I_2) = (I_1 + I_2)(I_1 \cap I_2) \subseteq I_1I_2. \end{equation}
+ The converse inclusion is trivial. Assume now that the equality holds for $n \ge 2$: $J:= I_1 \cap I_2 \cap ... \cap I_n = I_1I_2 ... I_n$. Since $ I_{n+1}+I_j = R$, for every $j \neq {n+1}$, there exist the elements $a_j\in I_j$ and $b_j\in I_{n+1}$ such that $a_j + b_j =1$. The product $c:= \prod_{j=1}^n a_j = \prod_{j=1}^n(1-b_j)\in 1 + I_{n+1}$. Also $c\in J$, then $1\in J+I_{n+1}$ or $J+I_{n+1} =R$.\newline
+ Applying the case $2$, the induction step is satisfied:\begin{equation} I_1I_2 ... I_{n+1} = J I_{n+1} = J\cap I_{n+1} = I_1\cap I_2 \cap ... \cap I_n \cap I_{n+1}. \end{equation} \end{proof}
+%%%%%
+%%%%%
+\end{document}

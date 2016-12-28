@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MonoidBialgebra}
+\pmcreated{2013-03-22 18:58:48}
+\pmmodified{2013-03-22 18:58:48}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{monoid bialgebra}
+\pmrecord{4}{41844}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $G$ be a monoid and $k$ a field. Consider the vector space $kG$ over $k$ with basis $G$. More precisely,
+$$kG=\{f:G\to k\ |\ f(g)=0 \mbox{ for almost all }g\in G\}.$$
+We identify $g\in G$ with a function $f_g:G\to k$ such that $f_g(g)=1$ and $f_g(h)=0$ for $h\neq g$. Thus, every element in $kG$ is of the form 
+$$\sum_{g\in G}\lambda_g g,$$
+for $\lambda_g\in k$. The vector space $kG$ can be turned into a $k$-algebra, if we define multiplication as follows:
+$$g\cdot h=gh,$$
+where on the right side we have a multiplication in the monoid $G$. This definition extends linearly to entire $kG$ and defines an algebra structure on $kG$, where neutral element of $G$ is the identity in $kG$.
+
+Furthermore, we can turn $kG$ into a coalgebra as follows: comultiplication $\Delta:kG\to kG\otimes kG$ is defined by $\Delta(g)=g\otimes g$ and counit $\varepsilon:kG\to k$ is defined by $\varepsilon(g)=1$. One can easily check that this defines coalgebra structure on $kG$.
+
+The vector space $kG$ is a bialgebra with with these algebra and coalgebra structures and it is called a \textit{monoid bialgebra}.
+%%%%%
+%%%%%
+\end{document}

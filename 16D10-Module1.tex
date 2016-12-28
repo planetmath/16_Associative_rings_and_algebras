@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Module1}
+\pmcreated{2013-03-22 12:01:51}
+\pmmodified{2013-03-22 12:01:51}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{module}
+\pmrecord{12}{31022}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmsynonym{module action}{Module1}
+\pmsynonym{left module action}{Module1}
+\pmsynonym{right module action}{Module1}
+\pmsynonym{unital module}{Module1}
+\pmrelated{Module}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\PMlinkescapeword{terms}
+
+(This is a definition of modules in terms of ring homomorphisms. You may prefer to read \PMlinkname{the other definition}{Module} instead.)
+
+Let $R$ be a ring, 
+and let $M$ be an abelian group.
+
+We say that $M$ is a {\it left $R$-module}
+if there exists a ring homomorphism $\phi\colon R \to {\rm End}_{\Bbb{Z}}(M)$ 
+from $R$ to the ring of abelian group endomorphisms on $M$
+(in which multiplication of endomorphisms is composition,
+using left function notation).
+We typically denote this function using a multiplication notation:
+$$[\phi(r)](m) = r \cdot m = rm.$$
+
+This ring homomorphism defines 
+what is called a {\PMlinkescapetext {\it left module action}}
+of $R$ upon $M$.
+
+If $R$ is a unital ring 
+(i.e. a ring with identity),
+then we typically demand
+that the ring homomorphism
+map the unit $1 \in R$
+to the identity endomorphism on $M$,
+so that $1 \cdot m = m$ for all $m \in M$.
+In this case we may say 
+that the module is \emph{unital}.
+
+Typically the abelian group structure on $M$
+is expressed in additive terms,
+i.e. with operator $+$, 
+identity element $0_M$ (or just $0$),
+and inverses written in 
+the form $-m$ for $m \in M$.
+
+%The fact that $\phi$ is a ring homomorphism implies the following:
+
+%(a) $(r_1 + r_2) \cdot m = r_1 \cdot m + r_2 \cdot m$
+%for all $r_1$ and $r_2$ in $R$, and $m$ in $M$;
+%
+%(b) $(r_1 \cdot r_2) \cdot m = r_1 \cdot (r_2 \cdot m)$
+%for all $r_1$ and $r_2$ in $R$, and $m$ in $M$;
+%
+%(c) $0 \cdot m = 0_M$ for all $m$ in $M$;
+%
+%(d) $(-r) \cdot m = -(r \cdot m)$
+%for all $r$ in $R$, and $m$ in $M$;
+%
+%(e) $1 \cdot m = m$ for all $m$ in $M$, if $R$ and $M$ are unital.
+%
+%The fact that elements of $R$ map to endomorphisms on $M$
+%implies the following:
+%
+%(a) $r \cdot (m_1 + m_2) = r \cdot m_1 + r \cdot m_2$
+%for all $r$ in $R$, and $m_1$ and $m_2$ in $M$;
+%
+%(b) $r \cdot 0_M = 0_M$ for all $r$ in $R$;
+%
+%(c) $r \cdot (-m) = -(r \cdot m)$ for all $r$ in $R$, and $m$ in $M$;
+%
+%One often defines a module action in terms of lists of properties as above
+%instead of appealing to the existence of the ring homomorphism $\phi$.
+
+Right module actions are defined similarly,
+only with the elements of $R$ being written
+on the right sides of elements of $M$.
+In this case we either need to use 
+an anti-homomorphism $R \to \operatorname{End}_{\mathbb{Z}}(M)$,
+or switch to right notation for writing functions.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

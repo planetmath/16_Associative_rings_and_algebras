@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AdditiveInverseOfOneElementTimesAnotherElementIsTheAdditiveInverseOfTheirProduct}
+\pmcreated{2013-03-22 15:43:40}
+\pmmodified{2013-03-22 15:43:40}
+\pmowner{cvalente}{11260}
+\pmmodifier{cvalente}{11260}
+\pmtitle{additive inverse of one element times another element is the additive inverse of their product}
+\pmrecord{8}{37677}
+\pmprivacy{1}
+\pmauthor{cvalente}{11260}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{20-00}
+\pmclassification{msc}{13-00}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $R$ be a ring. For all $x,y \in R$
+
+$(-x)\cdot y = x\cdot (-y) = -(x\cdot y)$
+
+All we need to prove is that $(-x)\cdot y + x\cdot y = x\cdot (-y) + x\cdot y = 0$
+
+Now: $(-x)\cdot y + x\cdot y = ((-x) + x)\cdot y$ by distributivity.
+
+Since $(-x)+x=0$ by definition and for all $y$, $0\cdot y=0$
+ we get:
+
+$(-x)\cdot y + x\cdot y = 0\cdot y = 0$ and thus $(-x)\cdot y = - (x\cdot y)$
+
+
+For $x\cdot (-y)$, use the previous properties of rings to show that
+
+$x\cdot (-y) + x\cdot y = x\cdot ((-y) +y) = x\cdot 0 = 0$
+
+and thus $x \cdot (-y) = - (x\cdot y)$
+%%%%%
+%%%%%
+\end{document}

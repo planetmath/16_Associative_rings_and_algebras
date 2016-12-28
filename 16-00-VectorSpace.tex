@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{VectorSpace}
+\pmcreated{2013-03-22 11:49:10}
+\pmmodified{2013-03-22 11:49:10}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{vector space}
+\pmrecord{17}{30364}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{20-00}
+\pmclassification{msc}{15-00}
+\pmclassification{msc}{70B15}
+\pmsynonym{linear space}{VectorSpace}
+\pmrelated{Module}
+\pmrelated{Vector2}
+\pmrelated{Vector}
+\pmrelated{VectorSubspace}
+\pmdefines{zero vector}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\renewcommand{\u}{\mathbf{u}}
+\renewcommand{\v}{\mathbf{v}}
+\newcommand{\w}{\mathbf{w}}
+\newcommand{\0}{\mathbf{0}}
+\begin{document}
+Let $F$ be a field (or, more generally, a division ring). A \emph{vector space} $V$ over $F$ is a set with two operations, $+: V \times V \longrightarrow V$ and $\cdot: F \times V \longrightarrow V$, such that
+\begin{enumerate}
+\item $(\u+\v)+\w = \u+(\v+\w)$ for all $\u,\v,\w \in V$
+\item $\u+\v=\v+\u$ for all $\u,\v\in V$
+\item There exists an element $\0 \in V$ such that $\u+\0=\u$ for all $\u \in V$
+\item For any $\u \in V$, there exists an element $\v \in V$ such that $\u+\v=\0$
+\item $a \cdot (b \cdot \u) = (a \cdot b) \cdot \u$ for all $a,b \in F$ and $\u \in V$
+\item $1 \cdot \u = \u$ for all $\u \in V$
+\item $a \cdot (\u+\v) = (a \cdot \u) + (a \cdot \v)$ for all $a \in F$ and $\u,\v \in V$
+\item $(a+b) \cdot \u = (a \cdot \u) + (b \cdot \u)$ for all $a,b \in F$ and $\u \in V$
+\end{enumerate}
+
+Equivalently, a vector space is a module $V$ over a ring $F$ which is a field (or, more generally, a division ring).
+
+The elements of $V$ are called \emph{vectors}, and the element $\0 \in V$ is called the \emph{zero vector} of $V$.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

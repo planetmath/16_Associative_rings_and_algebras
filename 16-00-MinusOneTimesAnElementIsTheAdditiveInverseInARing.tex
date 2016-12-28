@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MinusOneTimesAnElementIsTheAdditiveInverseInARing}
+\pmcreated{2013-03-22 14:14:00}
+\pmmodified{2013-03-22 14:14:00}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{minus one times an element is the additive inverse in a ring}
+\pmrecord{9}{35674}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmclassification{msc}{13-00}
+\pmclassification{msc}{20-00}
+\pmsynonym{$(-1)\cdot a= -a$}{MinusOneTimesAnElementIsTheAdditiveInverseInARing}
+\pmrelated{0cdotA0}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+\begin{lemma}
+Let $R$ be a ring (with unity $1$) and let $a$ be an element of $R$. Then 
+$$(-1)\cdot a = -a$$
+where $-1$ is the additive inverse of $1$ and $-a$ is the additive inverse of $a$.
+\end{lemma}
+\begin{proof}
+Note that for any $a$ in $R$ there exists a unique ``$-a$'' by the uniqueness of additive inverse in a ring. We check that $(-1)\cdot a$ equals the additive inverse of $a$.
+\begin{eqnarray*}
+a+(-1)\cdot a &=& 1\cdot a + (-1)\cdot a, \quad \text{ by the definition of }1\\
+&=& (1+ (-1))\cdot a, \quad \text{ by the distributive law}\\
+&=& 0\cdot a,\quad \text{ by the definition of }-1\\
+&=& 0, \quad \text{ as a result of the properties of zero} 
+\end{eqnarray*}
+Hence $(-1)\cdot a$ is ``an'' additive inverse for $a$, and by uniqueness $(-1)\cdot a = -a$, {\it the} additive inverse of $a$. Analogously, we can prove that $a\cdot (-1) = -a$ as well.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

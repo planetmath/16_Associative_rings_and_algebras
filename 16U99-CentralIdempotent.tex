@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CentralIdempotent}
+\pmcreated{2013-03-22 19:13:07}
+\pmmodified{2013-03-22 19:13:07}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{central idempotent}
+\pmrecord{5}{42139}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U99}
+\pmclassification{msc}{20M99}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Let $R$ be a ring.  An element $e\in R$ is called a \emph{central idempotent} if it is an idempotent and is in the center $Z(R)$ of $R$.
+
+It is well-known that if $e\in R$ is an idempotent, then $eRe$ has the structure of a ring with unity, with $e$ being the unity.  Thus, if $e$ is central, $eRe=eR=Re$ is a ring with unity $e$.
+
+It is easy to see that the operation of ring multiplication preserves central idempotency: if $e,f$ are central idempotents, so is $ef$.  In addition, if $R$ has a multiplicative identity $1$, then $f:=1-e$ is also a central idempotent.  Furthermore, we may characterize central idempotency in a ring with $1$ as follows:
+
+\begin{prop} An idempotent $e$ in a ring $R$ with $1$ is central iff $eRf=fRe=0$, where $f=1-e$. \end{prop}
+\begin{proof}  If $e$ is central, then clearly $eRf=fRe=0$.  Conversely, for any $r\in R$, we have $er = er-erf = er(1-f) = ere = (1-f)re = re-fre = re$.
+\end{proof}
+
+Another interesting fact about central idempotents in a ring with unity is the following:
+
+\begin{prop} The set $C$ of all central idempotents of a ring $R$ with $1$ has the structure of a Boolean ring. \end{prop}
+\begin{proof}  First, note that $0,1\in C$.  Next, for $e,f\in C$, we define addition $\oplus$ and multiplication $\odot$ on $C$ as follows:
+$$ e \oplus f := e+f - ef \qquad \mbox{and} \qquad e\odot f: = ef.$$
+As discussed above, $\oplus$ and $\odot$ are well-defined (as $C$ is closed under these operations).  In addition, for any $e,f,g\in C$, we have
+\begin{enumerate}
+\item $(C,1,\odot)$ is a commutative monoid, in which every element is an idempotent (with respect to $\odot$).  This fact is clear.
+\item $\oplus$ is commutative, since $C \subseteq Z(R)$.
+\item $\oplus$ is associative: 
+\begin{eqnarray*}
+e \oplus (f\oplus g) &=&  e + (f+g - fg) - e(f+g-fg) \\ &=& 
+e + f + g - ef - fg - eg + efg \\ &=& (e+f-ef)+g -(e+f-ef)g  \\ &=& (e \oplus f)\oplus g.
+\end{eqnarray*}
+\item $\odot$ distributes over $\oplus$: we only need to show left distributivity (since $\odot$ is commutative by $1$ above): 
+\begin{eqnarray*}
+e \odot (f\oplus g) &=&  e(f+g-fg) = ef+eg-efg \\ &=& ef+eg-eefg = ef+eg-efeg \\ &=& ef \oplus eg = (e\odot f) \oplus (e\odot g).
+\end{eqnarray*}
+\end{enumerate}
+This shows that $(C,0,1,\oplus,\odot)$ is a Boolean ring.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

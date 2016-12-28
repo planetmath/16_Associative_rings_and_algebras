@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniformDimension}
+\pmcreated{2013-03-22 14:02:59}
+\pmmodified{2013-03-22 14:02:59}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{uniform dimension}
+\pmrecord{7}{35401}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16P60}
+\pmrelated{GoldieRing}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\udim}{\operatorname{u-dim}}
+\begin{document}
+Let $M$ be a module over a ring $R$, and suppose that $M$ contains no infinite direct sums of non-zero submodules. (This is the same as saying that $M$ is a module of finite rank.)
+
+Then there exists an integer $n$ such that $M$ contains an essential submodule $N$ where $$N = U_1 \oplus U_2 \oplus \dots \oplus U_n$$
+is a direct sum of $n$ uniform submodules.
+
+This number $n$ does not depend on the choice of $N$ or the decomposition into uniform submodules.
+
+We call $n$ the \emph{uniform dimension} of $M$.  Sometimes this is written $\udim M = n$.
+
+If $R$ is a field $K$, and $M$ is a finite-dimensional vector space over $K$, then $\udim M = \dim_KM$.
+
+$\udim M = 0$ if and only if $M = 0$.
+%%%%%
+%%%%%
+\end{document}

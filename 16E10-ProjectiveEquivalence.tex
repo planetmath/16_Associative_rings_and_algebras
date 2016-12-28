@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProjectiveEquivalence}
+\pmcreated{2013-03-22 14:50:13}
+\pmmodified{2013-03-22 14:50:13}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{projective equivalence}
+\pmrecord{5}{36505}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E10}
+\pmclassification{msc}{18G20}
+\pmclassification{msc}{18G10}
+\pmdefines{projectively equivalent}
+\pmdefines{Schanuel's Lemma}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $R$ be a ring with 1.  Two $R$-modules $A$ and $B$ are said to be \emph{projectively equivalent} $A\sim B$ if there exist 
+two projective $R$-modules $P$ and $Q$ such that $$A\oplus P\cong B\oplus Q.$$
+\par
+\textbf{Remarks.} 
+\begin{enumerate}
+\item Projective equivalence is an equivalence relation.
+\item Any projective module is projectively equivalent to the zero module.
+\item \textbf{(Schanuel's Lemma)}.  Given two short exact sequences:
+\begin{center}
+$\xymatrix{0\ar[r]&B_1\ar[r]&P\ar[r]&A_1\ar[r]&0}$
+\end{center}
+\begin{center}
+$\xymatrix{0\ar[r]&B_2\ar[r]&Q\ar[r]&A_2\ar[r]&0}$
+\end{center}
+with $A_1\sim A_2$, then $B_1\sim B_2$.
+\item Schanuel's Lemma can be generalized.  Given two projective resolutions:
+\begin{center}
+$\xymatrix{\ldots\ar[r]^{p_3}&P_2\ar[r]^{p_2}&P_1\ar[r]^{p_1}&P_0\ar[r]^{p_0}&A_1\ar[r]&0}$
+\end{center}
+\begin{center}
+$\xymatrix{\ldots\ar[r]^{q_3}&Q_2\ar[r]^{q_2}&Q_1\ar[r]^{q_1}&Q_0\ar[r]^{q_0}&A_2\ar[r]&0}$
+\end{center}
+with $A_1\sim A_2$, then $\operatorname{Ker}(p_n)\sim\operatorname{Ker}(q_n)$ for all $n\geq0$
+\item The concept of projective equivalence between two modules can be generalized to any abelian categories having enough projectives.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

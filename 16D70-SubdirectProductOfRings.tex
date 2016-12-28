@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubdirectProductOfRings}
+\pmcreated{2013-03-22 14:19:11}
+\pmmodified{2013-03-22 14:19:11}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{subdirect product of rings}
+\pmrecord{15}{35786}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D70}
+\pmclassification{msc}{16S60}
+\pmsynonym{subdirect sum}{SubdirectProductOfRings}
+\pmdefines{trivial subdirect product}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A ring $R$ is said to be (represented as) a \emph{subdirect product} of a family of rings $\lbrace R_i: i \in I \rbrace$ if:
+\begin{enumerate}
+\item
+there is a monomorphism $\varepsilon: R \longrightarrow \prod R_i$, and
+\item
+given 1., $\pi_i \circ \varepsilon: R \longrightarrow R_i$ is surjective for each $i \in I$, where $\pi_i:\prod R_i \longrightarrow R_i$ is the canonical projection map.
+\end{enumerate}
+
+A \emph{subdirect product} (\PMlinkescapetext{representation}) of $R$ is said to be \emph{trivial} if one of the $\pi_i \circ \varepsilon: R \longrightarrow R_i$ is an isomorphism.
+
+Direct products and direct sums of rings are all examples of subdirect products of rings.  $\mathbb{Z}$ does not have non-trivial direct product nor non-trivial direct sum \PMlinkescapetext{representations} of rings.  However, $\mathbb{Z}$ can be represented as a non-trivial subdirect product of $\mathbb{Z}/({p_i}^{n_i})$.
+
+As an application of subdirect products, it can be shown that any ring can be represented as a subdirect product of subdirectly irreducible rings.  Since a subdirectly \PMlinkescapetext{irreducible} commutative reduced ring is a field, a Boolean ring $B$ can be represented as a subdirect product of $\mathbb{Z}_2$.  Furthermore, if this Boolean ring $B$ is finite, the subdirect product \PMlinkescapetext{representation} becomes a direct product \PMlinkescapetext{representation}.  Consequently, $B$ has $2^n$ elements, where $n$ is the number of copies of $\mathbb{Z}_2$.
+%%%%%
+%%%%%
+\end{document}

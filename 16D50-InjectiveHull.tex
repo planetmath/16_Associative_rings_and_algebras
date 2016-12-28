@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InjectiveHull}
+\pmcreated{2013-03-22 12:10:05}
+\pmmodified{2013-03-22 12:10:05}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{injective hull}
+\pmrecord{7}{31378}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D50}
+\pmsynonym{injective envelope}{InjectiveHull}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+Let $X$ and $Q$ be modules.
+We say that $Q$ is an {\it injective hull} or {\it injective envelope} of $X$
+if $Q$ is both an injective module and an essential extension of $X$.
+
+Equivalently, $Q$ is an injective hull of $X$
+if $Q$ is injective,
+and $X$ is a submodule of $Q$,
+and if $g : X \to Q'$ is a monomorphism
+from $X$ to an injective module $Q'$,
+then there exists a monomorphism $h : Q \to Q'$
+such that $h(x) = g(x)$ for all $x \in X$.
+$$
+\xymatrix{
+  &
+  0
+        \ar[d]
+  \\
+  0
+        \ar[r]
+  &
+  X
+        \ar[r]^i
+        \ar[d]_g
+  &
+  Q
+        \ar@{-->}[dl]^h
+  \\
+  &
+  Q'
+}
+$$
+
+Every module $X$ has an injective hull, which is unique up to isomorphism.  The injective hull of $X$ is sometimes denoted $E(X)$.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

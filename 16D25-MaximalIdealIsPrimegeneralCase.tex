@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MaximalIdealIsPrimegeneralCase}
+\pmcreated{2013-03-22 17:38:02}
+\pmmodified{2013-03-22 17:38:02}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{maximal ideal is prime (general case)}
+\pmrecord{8}{40055}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmrelated{MaximalIdealIsPrime}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{prime}
+\textbf{Theorem.} In a ring (not necessarily commutative) with unity, any maximal ideal is a prime ideal.
+
+{\em Proof.}\, Let $\mathfrak{m}$ be a maximal ideal of such a ring $R$
+and suppose $R$ has ideals $\mathfrak{a}$
+and $\mathfrak{b}$ with $\mathfrak{a}\mathfrak{b} \subseteq \mathfrak{m}$,
+but $\mathfrak{a} \nsubseteq \mathfrak{m}$.
+Since $\mathfrak{m}$ is maximal, we must have $\mathfrak{a} + \mathfrak{m} = R$.
+Then,
+$$\mathfrak{b} = R\mathfrak{b} = (\mathfrak{a} + \mathfrak{m})\mathfrak{b}
+= \mathfrak{a}\mathfrak{b} + \mathfrak{m}\mathfrak{b} \subseteq \mathfrak{m} + \mathfrak{m}
+= \mathfrak{m}.$$
+Thus, either $\mathfrak{a} \subseteq \mathfrak{m}$ or $\mathfrak{b} \subseteq \mathfrak{m}$.  This demonstrates that $\mathfrak{m}$ is prime.
+
+Note that the condition that $R$ has an identity element is essential.  For otherwise, we may take $R$ to be a finite zero ring.  Such rings contain no proper prime ideals.  As long as the number of elements of $R$ is not prime, $R$ will have a non-zero maximal ideal. 
+
+
+%%%%%
+%%%%%
+\end{document}

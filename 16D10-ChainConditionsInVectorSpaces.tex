@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ChainConditionsInVectorSpaces}
+\pmcreated{2013-03-22 19:11:55}
+\pmmodified{2013-03-22 19:11:55}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{chain conditions in vector spaces}
+\pmrecord{4}{42112}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+%\pmkeywords{Noetherian}
+%\pmkeywords{Artinian}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BZ}{\mathbb{Z}}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newcommand{\smm}{\mathfrak{m}}
+\begin{document}
+\PMlinkescapeword{parent}
+From the theorem in the parent article - that an $A$-module $M$ has a composition series if and only if it satisfies both chain conditions - it is easy to see that
+\begin{thm} Let $k$ be a field, $V$ a $k$-vector space. Then the following are equivalent:
+\begin{enumerate}
+\item $V$ is finite-dimensional;
+\item $V$ has a composition series;
+\item $V$ satisfies the ascending chain condition (acc);
+\item $V$ satisfies the descending chain condition (dcc).
+\end{enumerate}
+\end{thm}
+\begin{proof}
+Clearly (1) $\Rightarrow$ (2), since submodules are just subspaces. (2) $\Rightarrow$ (3) and (2) $\Rightarrow$ (4) from the parent article. So it remains to see that (3) $\Rightarrow$ (1) and (4) $\Rightarrow$ (1). But if $V$ is infinite-dimensional, we can choose a sequence $\{x_i\}_{i\ge 1}$ of linearly independent elements. Let $U_n$ be the subspace spanned by $x_1,\dotsc,x_n$ and $V_n$ the subspace spanned by $x_{n+1},x_{n+2},\dots$. Then the $U_i$ form a strictly ascending infinite family of subspaces, so $V$ does not satisfy the ascending chain condition; the $V_i$ form a strictly descending infinite family of subspaces, so $V$ does not satisfy the descending chain condition.
+\end{proof}
+
+This easily implies the following:
+\begin{cor} Let $A$ be a ring in which $(0) = \smm_1\dots\smm_n$ where the $\smm_i$ are (not necessarily distinct) maximal ideals. Then $A$ is Noetherian if and only if $A$ is Artinian.
+\end{cor}
+\begin{proof} We have the sequence of ideals
+\[
+  A \supset \smm_1 \supset \smm_1\smm_2 \supset\dots\supset \smm_1\dots\smm_n = 0
+\]
+Each factor $\smm_1\dots\smm_{i-1}/\smm_1\dots\smm_i$ is a vector space over the field $A/\smm_i$. By the above theorem, each quotient satisfies the acc if and only if it satisfies the dcc. But by repeatedly applying the fact that in a short exact sequence, the middle term satisfies the acc (dcc) if and only if both ends do, we see that $A$ satisfies the acc if and only if it satisfies the dcc.
+\end{proof}
+\begin{thebibliography}{10}
+\bibitem{bib:am}
+M.F.~Atiyah, I.G.~MacDonald, \emph{Introduction to Commutative Algebra}, Addison-Wesley 1969.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

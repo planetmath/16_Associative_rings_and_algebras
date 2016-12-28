@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IBN}
+\pmcreated{2013-03-22 14:51:45}
+\pmmodified{2013-03-22 14:51:45}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{IBN}
+\pmrecord{12}{36537}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16P99}
+\pmsynonym{invariant basis number}{IBN}
+\pmsynonym{invariant dimension property}{IBN}
+\pmrelated{ExampleOfFreeModuleWithBasesOfDiffrentCardinality}
+\pmdefines{basis of a module}
+\pmdefines{finite rank}
+\pmdefines{rank of a module}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\subsection*{Bases of a Module}
+Like a vector space over a field, one can define a basis of a module $M$ over a general ring $R$ with 1.  To simplify matter, suppose $R$ is commutative with $1$ and $M$ is unital.  A basis of $M$ is a subset $B=\lbrace b_i\mid i\in I\rbrace$ of $M$, where $I$ is some ordered index set, such that every element $m\in M$ can be uniquely written as a linear combination of elements from $B$:
+$$m=\sum_{i\in I}r_ib_i$$
+such that all but a finite number of $r_i=0$.
+
+As the above example shows, the commutativity of $R$ is not required, and $M$ can be assumed either as a left or right module of $R$ (in the example above, we could take $M$ to be the left $R$-module).
+
+However, unlike a vector space, a module may not have a basis.  If it does, it is a called a \emph{free module}.  Vector spaces are examples of free modules over fields or division rings.  If a free module $M$ (over $R$) has a finite basis with cardinality $n$, we often write $R^n$ as an isomorphic copy of $M$.
+
+Suppose that we are given a free module $M$ over $R$, and two bases $B_1\neq B_2$ for $M$, is $$|B_1| = |B_2|?$$  We know that this is true if $R$ is a field or even a division ring.  But in general, the equality fails.  Nevertheless, it is a fact that if $B_1$ is finite, so is $B_2$.  So the finiteness of basis in a free module $M$ over $R$ is preserved when we go from one basis to another.  When $M$ has a finite basis, we say that $M$ has \emph{finite rank} (without saying what rank is!).  
+
+Now, even if $M$ has finite rank, the cardinality of one basis may still be different from the cardinality of another.  In other words, $R^m$ may be isomorphic to $R^n$ without $m$ and $n$ being equal.
+
+\subsection*{Invariant Basis Number}
+A ring $R$ is said to have \emph{IBN}, or \emph{invariant basis number} if whenever $R^m \cong R^n$ where $m,n<\infty$, $m=n$.  The positive integer $n$ in this case is called the \emph{rank} of module $M$.  To rephrase, when $F$ is a free $R$-module of finite rank, then $R$ has IBN iff $F$ has unique finite rank.  Also, $R$ has IBN iff all finite dimensional invertible matrices over $R$ are square matrices.
+
+\textbf{Examples}
+\begin{enumerate}
+\item If $R$ is commutative, then $R$ has IBN.
+\item If $R$ is a division ring, then $R$ has IBN.
+\item An example of a ring $R$ not having IBN can be found as follows: let $V$ be a countably infinite dimensional vector space over a field.  Let $R$ be the endomorphism ring over $V$.  Then $R=R\oplus R$ and thus $R^m=R^n$ for any pairs of $(m,n)$.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Bimodule}
+\pmcreated{2013-03-22 12:01:18}
+\pmmodified{2013-03-22 12:01:18}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{bimodule}
+\pmrecord{9}{30987}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D20}
+\pmsynonym{sub-bimodule}{Bimodule}
+\pmdefines{subbimodule}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\opposite}[1]{{#1}^{\,\mathrm{op}}}
+\newcommand{\fm}[1]{{\it #1}}
+\begin{document}
+Let \fm{R} and \fm{S} be rings.  An \emph{(\fm{R},\fm{S})-bimodule} is
+an abelian group \fm{M} which is a left module over \fm{R} and a right
+module over \fm{S} such that the \fm{r}(\fm{ms})=(\fm{rm})\fm{s} holds
+for each \fm{r} in \fm{R}, \fm{m} in \fm{M}, and \fm{s} in \fm{S}.
+Equivalently, \fm{M} is an (\fm{R},\fm{S})-bimodule if it is a left
+module over $R\otimes\opposite{S}$ or a right module over
+$\opposite{R}\otimes S$.
+
+When \fm{M} is an (\fm{R},\fm{S})-bimodule, we sometimes indicate this
+by writing the module as ${}_RM_S$.
+
+If \fm{P} is a subgroup of \fm{M} which is also an
+(\fm{R},\fm{S})-bimodule, then \fm{P} is an
+\emph{(\fm{R},\fm{S})-subbimodule} of \fm{M}.
+
+%%%%%
+%%%%%
+%%%%%
+\end{document}

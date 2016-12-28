@@ -1,0 +1,204 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CounterexamplesForProductsAndCoproduct}
+\pmcreated{2013-03-22 15:52:31}
+\pmmodified{2013-03-22 15:52:31}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{counterexamples for products and coproduct}
+\pmrecord{16}{37872}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16B50}
+%\pmkeywords{product}
+%\pmkeywords{coproduct}
+%\pmkeywords{direct sum}
+%\pmkeywords{direct product}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+\begin{document}
+\PMlinkescapephrase{direct sum}
+\PMlinkescapeword{order}
+
+\section{Direct sum is not always a coproduct}
+
+For groups the notion of a \PMlinkname{direct sum}{DirectProductAndRestrictedDirectProductOfGroups} is in conflict with the categorical direct  sum.  For this reason a categorical direct sum is often called a coproduct instead.  The following example illustrates the difference.
+
+Let $\sqcup$ denote the disjoint union of sets.
+
+The direct product of a family of groups $\{G_i~:i\in I\}$ is the set of all functions $f:I\rightarrow \sqcup_{i\in I} G_i$ such that $f(i)\in G_i$.  We usually denote this by
+    \[\prod_{i\in I} G_i.\]
+This is a product in the category of all groups.  This is a group under pointwise operations: $(fg)(i)=f(i)g(i)$ and all the group properties follow.
+
+The direct sum is a subgroup of $\prod_{i\in I} G_i$ consisting of all $f:I\rightarrow \sqcup_{i\in I} G_i$ with the added property that
+   \[Supp~f=\{i\in I: f(i)\neq 1\}\]
+is a finite set, that is, $f$ has finite support.  The notation for direct
+sums is experiencing a shift from the historical sigma notation to the modern
+circled plus; thus it is common to see any of the following two notations
+  \[\sum_{i\in I} G_i\textnormal{ or } \bigoplus_{i\in I} G_i.\]
+
+\begin{prop}\label{prop:eq}
+The direct sum and direct product are equal whenever $I$ is a finite set.
+That is, for any family $\{G_i:i\in I\}$ with $I$ finite, then
+\[\prod_{i\in I} G_i=\bigoplus_{i\in I} G_i.\]
+\end{prop}
+\begin{remark}
+The `$=$' here means an honest set equality even more than naturally isomorphic.
+\end{remark}
+\begin{proof}
+Certainly $Supp~f$ is a subset of $I$ and so $Supp~f$ is finite.
+\end{proof}
+
+\textbf{Claim:} The direct sum is \emph{not} a coproduct in the category of all groups.
+
+\noindent\textbf{Example.}
+Let $G_1=S_3$ and $G_2=\mathbb{Z}_2$.  We observe that $S_3\oplus \mathbb{Z}_2$ and is a group of \PMlinkname{order}{OrderGroup} 12.  Now suppose that $\oplus$ is a coproduct for the category of groups.  The canonical inclussion maps are 
+\[\iota_1:S_3\rightarrow S_3\oplus \mathbb{Z}_2: \sigma\mapsto (\sigma,0)\]
+and 
+\[\iota_2:\mathbb{Z}_2\rightarrow S_3\times \mathbb{Z}_2:n\mapsto (1,n).\]
+
+Take the homomorphisms $f_1:S_3\rightarrow S_4$ -- the
+natural inclusion map of $S_3=\langle (123),(12)\rangle$ treated as permutations on 4 letters fixing 4 -- and $f_2:\mathbb{Z}_2\rightarrow S_4$
+given by $1\mapsto (14)$.
+
+If indeed $\oplus$ is a coproduct in the category of groups then their exists
+a unique homomorphism $f:S_3\oplus \mathbb{Z}_2\rightarrow S_4$ such that
+$f_i=f\iota_i$, $i=1,2$.  This means that
+\[(123)=f_1((123))=f(\iota_1(123))=f((123),0),
+\quad
+(14)=f_2(1)=f(\iota_2(1))=f(1,1).\]
+Notice then that the image of $f$ in $S_4$ is all of $S_4$ since $\langle(123),(14)\rangle=S_4$.  But this is impossible since $|S_4|=24$ and
+$|S_3\oplus \mathbb{Z}_2|=12$.  Hence there cannot exist such a homomorphism
+$f$ and so $\oplus$ is not a categorical coproduct.
+$\Box$
+
+\section{Infinite products and coproducts}
+
+In an abelian category, for example the category of abelian groups or a category of modules, the direct sum is the categorical coproduct.  Thus a common 
+misreading of Proposition \ref{prop:eq} is to declare
+\begin{quote}
+`` In an abelian category the product and coproduct are equivalent. ''
+\end{quote}
+Indeed, this is true only if the index set $I$ of the family of objects is finite.  A simple cardinality test demonstrates the flaw.
+
+\textbf{Example.}  Suppose that $I=\mathbb{N}$ and $G_i=\mathbb{Z}_2$.
+Then the product of $\prod_{i\in \mathbb{N}} \mathbb{Z}_2$ can be equated
+with the set of all functions $f:\mathbb{N}\rightarrow \mathbb{Z}_2$ -- that is, all infinite sequences of binary digits.  This has cardinality $2^{\aleph_0}$ which is uncountable.
+
+On the other hand, the direct sum (coproduct in this context) of this family is the set of all finite binary strings, which is countable.  Therefore these two objects cannot be isomorphic in the category. $\Box$
+
+\section{Common categories without (co)products}
+
+Let \textsf{FinGrp} be the category of all finite groups.  This category does not inherit the standard products and coproduct of the category of all groups \textsf{Grp}.  For example, 
+\[\prod_{\mathbb{N}} \mathbb{Z}_2\textnormal{ and }\coprod_{\mathbb{N}} \mathbb{Z}_2\]
+are both infinite groups and so they do not lie in the category \textsf{FinGrp}.
+Indeed, this example could be done with the category of finite sets \textsf{FinSet} inside the category of all sets \textsf{Set}, and many other such categories.
+
+However, we have not yet demonstrated that no alternate product and/or coproduct for the category \texttt{FinGrp}, \texttt{FinSet}, etc does not exist.
+
+
+\section{Common subcategories with different (co)products}
+
+Consider once again the category of all groups \textsf{Grp}.  Inside this
+category lies the category of all abelian groups \textsf{AbGrp}.  However, the coproduct for groups is the free product $(*)$ but the coproduct for abelian groups is direct sum $(\oplus)$.  These are inequivelent.  
+
+\textbf{Example.} $\mathbb{Z}*\mathbb{Z}$ is the free group on two elements -- and so non-abelian -- while $\mathbb{Z}\oplus\mathbb{Z}$ is abelian. $\Box$
+%%%%%
+%%%%%
+\end{document}

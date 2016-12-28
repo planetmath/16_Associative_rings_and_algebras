@@ -1,0 +1,183 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HopfAlgebra}
+\pmcreated{2013-03-22 13:06:08}
+\pmmodified{2013-03-22 13:06:08}
+\pmowner{mhale}{572}
+\pmmodifier{mhale}{572}
+\pmtitle{Hopf algebra}
+\pmrecord{12}{33524}
+\pmprivacy{1}
+\pmauthor{mhale}{572}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+\pmrelated{GroupoidAndGroupRepresentationsRelatedToQuantumSymmetries}
+\pmrelated{QuantumGroups}
+\pmrelated{QuantumGroupoids2}
+\pmrelated{WeakHopfCAlgebra2}
+\pmrelated{WeakHopfCAlgebra}
+\pmrelated{LocallyCompactQuantumGroupsUniformContinuity}
+\pmrelated{FiniteQuantumGroup}
+\pmdefines{antipode}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% making logically defined graphics
+\usepackage[all]{xy}
+
+% my maths package
+
+\newcommand*{\Nset}{\mathbb{N}}
+\newcommand*{\Zset}{\mathbb{Z}}
+\newcommand*{\Qset}{\mathbb{Q}}
+\newcommand*{\Rset}{\mathbb{R}}
+\newcommand*{\Cset}{\mathbb{C}}
+\newcommand*{\Hset}{\mathbb{H}}
+\newcommand*{\Oset}{\mathbb{O}}
+\newcommand*{\Bset}{\mathbb{B}}
+\newcommand*{\Kset}{\mathbb{K}}
+\newcommand*{\Sset}{\mathbb{S}}
+\newcommand*{\Tset}{\mathbb{T}}
+\newcommand*{\GLgrp}{\mathrm{GL}}
+\newcommand*{\SLgrp}{\mathrm{SL}}
+\newcommand*{\Ogrp}{\mathrm{O}}
+\newcommand*{\SOgrp}{\mathrm{SO}}
+\newcommand*{\Ugrp}{\mathrm{U}}
+\newcommand*{\SUgrp}{\mathrm{SU}}
+\newcommand*{\e}{\mathop{\mathrm{e}}\nolimits}
+\newcommand*{\im}{\mathord{\mathrm{i}}}
+\newcommand*{\identity}{\mathord{\mathrm{1\!\!\!\:I}}}
+\newcommand*{\tr}{\mathop{\mathrm{tr}}}
+\newcommand*{\Tr}{\mathop{\mathrm{Tr}}}
+\renewcommand*{\d}{\mathrm{d}}
+\newcommand*{\deriv}[2]{\frac{\d #1}{\d #2}}
+\newcommand*{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand*{\fderiv}[2]{\frac{\delta #1}{\delta #2}}
+
+% my noncommutative geometry package
+
+\newcommand*{\algebra}[1][A]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbert}[1][H]{\mathord{\mathcal{#1}}}
+\newcommand*{\hilbmod}[1][E]{\mathord{\mathcal{#1}}}
+\newcommand*{\Matrix}[2]{\mathord{\mathrm{M}_{#1}(#2)}}
+\newcommand*{\dixmier}{\mathop{\mathrm{Tr}_\omega}}
+\newcommand*{\Res}{\mathop{\mathrm{Res}}}
+\newcommand*{\Wres}{\mathop{\mathrm{Wres}}}
+\newcommand*{\Aut}{\mathop{\mathrm{Aut}}\nolimits}
+\newcommand*{\Inn}{\mathop{\mathrm{Inn}}\nolimits}
+\newcommand*{\Out}{\mathop{\mathrm{Out}}\nolimits}
+\newcommand*{\Diff}{\mathop{\mathrm{Diff}}\nolimits}
+\newcommand*{\Ker}{\mathop{\mathrm{Ker}}\nolimits}
+\newcommand*{\Coker}{\mathop{\mathrm{Coker}}\nolimits}
+\newcommand*{\Img}{\mathop{\mathrm{Im}}\nolimits}
+\newcommand*{\End}{\mathop{\mathrm{End}}\nolimits}
+\newcommand*{\spin}{\mathop{\mathrm{spin}}\nolimits}
+\newcommand*{\Ind}{\mathop{\mathrm{Ind}}\nolimits}
+\newcommand*{\KK}{\mathit{KK}}
+\newcommand*{\HH}{\mathit{HH}}
+\newcommand*{\HC}{\mathit{HC}}
+\newcommand*{\ch}{\mathop{\mathrm{ch}}\nolimits}
+
+% my category theory package
+
+\newcommand*{\mathcat}[1]{\mathord{\mathbf{#1}}}
+\newcommand*{\id}{\mathrm{id}}
+\newcommand*{\op}{\mathrm{op}}
+\newcommand*{\boxprod}{\mathbin{\square}}
+
+% my environments
+
+\newtheoremstyle{inlinedefn}{}{0pt}{}{}{\bfseries}{.}{0.5em}{}
+\theoremstyle{inlinedefn}
+\newtheorem{definition}{Definition}
+
+\newtheoremstyle{break}{\baselineskip}{\baselineskip}{\itshape}{}{\bfseries}{}{\newline}{}
+\theoremstyle{break}
+\newtheorem{example}{Example}
+
+% misc commands
+
+\newcommand*{\defn}[1]{\textbf{#1}}
+\begin{document}
+A \textbf{Hopf algebra} is a bialgebra $A$ over a field $\Kset$ with a $\Kset$-linear map $S : A \to A$,
+called the \textbf{antipode}, such that
+\begin{equation}
+m\circ(S\otimes\id)\circ\Delta = \eta\circ\varepsilon = m\circ(\id\otimes S)\circ\Delta,
+\end{equation}
+where $m : A\otimes A \to A$ is the multiplication map $m(a\otimes b) = ab$ and $\eta : \Kset \to A$ is the unit map $\eta(k) = k\identity$.
+
+In \PMlinkescapetext{terms} of a commutative diagram:
+\[\begin{xy}
+\xymatrix@R=20pt@C=70pt{
+& *+<10pt>\txt{$A$} \ar_{\Delta}[dl] \ar_{\varepsilon}[dd] \ar^{\Delta}[dr] & \\
+*+<10pt>\txt{$A\otimes A$} \ar_{S\otimes\id}[dd] & & *+<10pt>\txt{$A\otimes A$} \ar^{\id\otimes S}[dd] \\
+& *+<10pt>\txt{$\Kset$} \ar_{\eta}[dd] & \\
+*+<10pt>\txt{$A\otimes A$} \ar_{m}[dr] & & *+<10pt>\txt{$A\otimes A$} \ar^{m}[dl] \\
+& *+<10pt>\txt{$A$} &
+}\end{xy}\]
+
+The category of commutative Hopf algebras is anti-equivalent to the category of affine group schemes.
+The prime spectrum of a commutative Hopf algebra is an affine group scheme of multiplicative units.
+And going in the opposite direction, the algebra of natural transformations from an affine group scheme
+to its \PMlinkname{affine 1-space}{AffineSpace} is a commutative Hopf algebra,
+with coalgebra structure given by dualising the group structure of the affine group scheme.
+Further, a commutative Hopf algebra is a cogroup object in the category of commutative algebras.
+
+% Examples
+
+\begin{example}[Algebra of functions on a finite group]
+Let $A = C(G)$ be the algebra of complex-valued functions on a finite group $G$
+and identify $C(G\times G)$ with $A \otimes A$.
+Then, $A$ is a Hopf algebra with comultiplication $(\Delta(f))(x,y) = f(xy)$,
+counit $\varepsilon(f) = f(e)$,
+and antipode $(S(f))(x) = f(x^{-1})$.
+\end{example}
+
+\begin{example}[Group algebra of a finite group]
+Let $A = \Cset G$ be the complex group algebra of a finite group $G$.
+Then, $A$ is a Hopf algebra with comultiplication $\Delta(g) = g \otimes g$,
+counit $\varepsilon(g) = 1$,
+and antipode $S(g) = g^{-1}$.
+\end{example}
+
+The above two examples are dual to one another.
+Define a bilinear form $C(G) \otimes \Cset G \to \Cset$ by
+$\langle f,x \rangle = f(x)$.
+Then,
+\begin{eqnarray*}
+\langle fg, x \rangle & = & \langle f \otimes g, \Delta(x) \rangle, \\
+\langle 1, x \rangle & = & \varepsilon(x), \\
+\langle \Delta(f), x \otimes y \rangle & = & \langle f, xy \rangle, \\
+\varepsilon(f) & = & \langle f, e \rangle, \\
+\langle S(f), x \rangle & = & \langle f, S(x) \rangle, \\
+\langle f^*, x \rangle & = & \overline{\langle f, S(x)^* \rangle}.
+\end{eqnarray*}
+
+\begin{example}[Polynomial functions on a Lie group]
+Let $A = \mathrm{Poly}(G)$ be the algebra of complex-valued polynomial functions on a complex Lie group $G$ and identify $\mathrm{Poly}(G\times G)$ with $A \otimes A$.
+Then, $A$ is a Hopf algebra with comultiplication $(\Delta(f))(x,y) = f(xy)$,
+counit $\varepsilon(f) = f(e)$,
+and antipode $(S(f))(x) = f(x^{-1})$.
+\end{example}
+
+\begin{example}[Universal enveloping algebra of a Lie algebra]
+Let $A = \mathcal{U}(\mathfrak{g})$ be the universal enveloping algebra of a complex Lie algebra $\mathfrak{g}$.
+Then, $A$ is a Hopf algebra with comultiplication $\Delta(X) = X\otimes1+1\otimes X$,
+counit $\varepsilon(X) = 0$,
+and antipode $S(X) = -X$.
+\end{example}
+
+The above two examples are dual to one another (if $\mathfrak{g}$ is the Lie algebra of $G$).
+Define a bilinear form $\mathrm{Poly}(G) \otimes \mathcal{U}(\mathfrak{g}) \to \Cset$ by
+$\langle f,X \rangle = \deriv{}{t}\big|_{t=0} f(\exp(tX))$.
+%%%%%
+%%%%%
+\end{document}

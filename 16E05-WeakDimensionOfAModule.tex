@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WeakDimensionOfAModule}
+\pmcreated{2013-03-22 19:18:40}
+\pmmodified{2013-03-22 19:18:40}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{weak dimension of a module}
+\pmrecord{4}{42248}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Assume that $R$ is a ring. We will consider right $R$-modules.
+
+\textbf{Definition 1.} We will say that an $R$-module $M$ is of \textbf{weak dimension} at most $n\in\mathbb{N}$ iff there exists a short exact sequence
+$$\xymatrix{
+0\ar[r] & F_n\ar[r] & F_{n-1}\ar[r] & \cdots\ar[r] & F_1\ar[r] & F_0\ar[r] & M\ar[r] & 0
+}$$
+such that each $F_i$ is a flat module. In this case we write $\mathrm{wd}_{R}M\leqslant n$ (also we say that $M$ is of finite weak dimension). If such short exact sequence does not exist, then the weak dimension is defined as infinity, $\mathrm{wd}_R M=\infty$.
+
+\textbf{Definition 2.} We will say that an $R$-module $M$ is of weak dimension $n\in\mathbb{N}$ iff $\mathrm{wd}_{R}M\leqslant n$ but $\mathrm{wd}_R M\not\leqslant n-1$.
+
+The weak dimension measures how far an $R$-module is from being flat. Let as gather some known facts about the weak dimension:
+
+\textbf{Proposition 1.} Assume that $M$ is a right $R$-module. Then $\mathrm{wd}_RM=n$ for some $n\in\mathbb{N}$ if and only if for any left $R$-module $N$ we have
+$$\mathrm{Tor}_{n+1}^R(M,N)=0$$
+and there exists a left $R$-module $N'$ such that
+$$\mathrm{Tor}_{n}^R(M,N')\neq 0,$$
+where $\mathrm{Tor}$ denotes the Tor functor.
+
+Since every projective module is flat, then we can state simple observation:
+
+\textbf{Proposition 2.} Assume that $M$ is a right $R$-module. Then
+$$\mathrm{wd}_RM\leqslant\mathrm{pd}_RM,$$
+where $\mathrm{pd}_RM$ denotes the projective dimension of $M$.
+
+Generally these two dimension may differ.
+%%%%%
+%%%%%
+\end{document}

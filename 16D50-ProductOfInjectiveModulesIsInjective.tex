@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProductOfInjectiveModulesIsInjective}
+\pmcreated{2013-03-22 18:50:17}
+\pmmodified{2013-03-22 18:50:17}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{product of injective modules is injective}
+\pmrecord{5}{41643}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D50}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Proposition.} Let $R$ be a ring and $\{Q_i\}_{i\in I}$ a family of injective $R$-modules. Then the product $$Q=\prod_{i\in I}\ Q_i$$ is injective.
+
+\textit{Proof.} Let $B$ be an arbitrary $R$-module, $A\subseteq B$ a submodule and $f:A\to Q$ a homomorphism. It is enough to show that $f$ can be extended to $B$. For $i\in I$ denote by $\pi_i:Q\to Q_i$ the projection. Since $Q_i$ is injective for any $i$, then the homomorphism $\pi_i \circ f:A\to Q_i$ can be extended to $f'_i:B\to Q_i$. Then we have $$f':B\to Q;$$
+$$f'(b)=\big( f'_i (b)\big)_{i\in I}.$$
+It is easy to check, that if $a\in A$, then $f'(a)=f(a)$, so $f'$ is an extension of $f$. Thus $Q$ is injective. $\square$
+
+\textbf{Remark.} Unfortunetly direct sum of injective modules need not be injective. Indeed, there is a theorem which states that direct sums of injective modules are injective if and only if ring $R$ is Noetherian. Note that the proof presented above cannot be used for direct sums, because $f'(b)$ need not be an element of the direct sum, more precisely, it is possible that $f'_i(b)\neq 0$ for infinetly many $i\in I$. Nevertheless products are always injective.
+%%%%%
+%%%%%
+\end{document}

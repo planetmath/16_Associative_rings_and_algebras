@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExistenceOfMaximalIdeals}
+\pmcreated{2013-03-22 13:56:57}
+\pmmodified{2013-03-22 13:56:57}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{existence of maximal ideals}
+\pmrecord{22}{34713}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmclassification{msc}{13A15}
+\pmsynonym{existence of maximal ideals}{ExistenceOfMaximalIdeals}
+%\pmkeywords{maximal ideal}
+%\pmkeywords{commutative ring}
+%\pmkeywords{identity}
+%\pmkeywords{axiom of choice}
+\pmrelated{ZornsLemma}
+\pmrelated{AxiomOfChoice}
+\pmrelated{MaximalIdeal}
+\pmrelated{ExistenceOfMaximalSubgroups}
+\pmrelated{DefinitionOfPrimeIdealByKrull}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{defn*}{Definition}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{cor*}{Corollary}
+
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+\PMlinkescapeword{chain}
+\PMlinkescapeword{equivalent}
+\PMlinkescapeword{identity}
+\PMlinkescapeword{necessary}
+\PMlinkescapeword{order}
+\PMlinkescapeword{property}
+\PMlinkescapeword{simple}
+\PMlinkescapeword{unity}
+
+\begin{thm*}
+Let $\mathcal{R}$ be a unital ring.
+Every proper ideal of $\mathcal{R}$ lies in a maximal ideal of $\mathcal{R}$.
+\end{thm*}
+
+Applying this theorem to the zero ideal gives the following corollary:
+
+\begin{cor*}
+Every unital ring $\mathcal{R}\neq 0$ has a maximal ideal.
+\end{cor*}
+
+{\it Proof of theorem}.
+This proof is a straightforward application of Zorn's Lemma.
+Readers are encouraged to attempt the proof themselves
+before reading the details below.
+
+Let $\mathcal{I}$ be a proper ideal of $\mathcal{R}$,
+and let $\Sigma$ be the partially ordered set
+$$\Sigma=\{ \mathcal{A} \mid \mathcal{A} \hbox{ is an ideal of }
+\mathcal{R},\hbox{ and }
+\mathcal{I}\subseteq\mathcal{A}\neq \mathcal{R}\}$$
+ordered by inclusion.
+
+Note that $\mathcal{I}\in\Sigma$, so $\Sigma$ is non-empty.
+
+In order to apply Zorn's Lemma
+we need to prove that every non-empty \PMlinkname{chain}{TotalOrder}
+in $\Sigma$ has an upper bound in $\Sigma$.
+Let $\{\mathcal{A}_{\alpha}\}$ be a non-empty chain of ideals in $\Sigma$,
+so for all indices $\alpha,\beta$ we have
+$$\mathcal{A}_{\alpha}\subseteq \mathcal{A}_{\beta}\quad \text{ or }\quad \mathcal{A}_{\beta}\subseteq
+\mathcal{A}_{\alpha}.$$
+We claim that $\mathcal{B}$ defined by
+$$\mathcal{B}=\bigcup_{\alpha}\mathcal{A}_{\alpha}$$
+is a suitable upper bound.
+\begin{itemize}
+\item $\mathcal{B}$ is an ideal. Indeed, let $a,b\in\mathcal{B}$,
+so there exist $\alpha,\beta$ such that $a\in
+\mathcal{A}_{\alpha}$, $b\in\mathcal{A}_{\beta}$. Since these two
+ideals are in a totally ordered chain we have
+$$\mathcal{A}_{\alpha}\subseteq \mathcal{A}_{\beta}\quad \text{ or }\quad \mathcal{A}_{\beta}\subseteq
+\mathcal{A}_{\alpha}$$ Without loss of generality, we assume
+$\mathcal{A}_{\alpha}\subseteq \mathcal{A}_{\beta}$. Then both
+$a,b\in \mathcal{A}_{\beta}$, and $\mathcal{A}_{\beta}$ is an
+ideal of the ring $\mathcal{R}$. Thus $a+b\in
+\mathcal{A}_{\beta}\subseteq \mathcal{B}$.
+
+Similarly, let $r\in \mathcal{R}$ and $b\in \mathcal{B}$. As
+above, there exists $\beta$ such that $b\in \mathcal{A}_{\beta}$.
+Since $\mathcal{A}_{\beta}$ is an ideal we have
+$$r\cdot b \in \mathcal{A}_{\beta}\subseteq\mathcal{B}$$
+and
+$$b\cdot r \in \mathcal{A}_{\beta}\subseteq\mathcal{B}.$$
+Therefore, $\mathcal{B}$ is an ideal.
+
+\item $\mathcal{B}\neq \mathcal{R}$, otherwise $1$ would belong to
+$\mathcal{B}$, so there would be an $\alpha$ such that $1\in
+\mathcal{A}_{\alpha}$ so $\mathcal{A}_{\alpha}=\mathcal{R}$. But
+this is impossible because we assumed $\mathcal{A}_{\alpha}\in
+\Sigma$ for all indices $\alpha$.
+
+\item $\mathcal{I}\subseteq\mathcal{B}$.
+Indeed, the chain is non-empty, 
+so there is some $\mathcal{A}_\alpha$ in the chain,
+and we have $\mathcal{I}\subseteq\mathcal{A}_\alpha\subseteq\mathcal{B}$.
+\end{itemize}
+Therefore $\mathcal{B}\in\Sigma$. Hence every chain in $\Sigma$
+has an upper bound in $\Sigma$ and we can apply Zorn's Lemma to
+deduce the existence of $\mathcal{M}$, a maximal element (with
+respect to inclusion) in $\Sigma$.
+By definition of the set $\Sigma$,
+this $\mathcal{M}$ must be a maximal ideal of $\mathcal{R}$
+containing $\mathcal{I}$. QED
+
+Note that the above proof never makes use of 
+the associativity of ring multiplication,
+and the result therefore holds also in non-associative rings.
+The result cannot, however, be generalized to rings without unity.
+
+Note also that the use of the Axiom of Choice (in the form of Zorn's Lemma)
+is necessary,
+as there are models of ZF in which the above theorem and corollary fail.
+%%%%%
+%%%%%
+\end{document}

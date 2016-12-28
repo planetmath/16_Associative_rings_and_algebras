@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompleteSetOfPrimitiveOrthogonalIdempotents}
+\pmcreated{2013-03-22 19:17:38}
+\pmmodified{2013-03-22 19:17:38}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{complete set of primitive orthogonal idempotents}
+\pmrecord{4}{42228}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+\pmclassification{msc}{20C99}
+\pmclassification{msc}{13B99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $A$ be a unital algebra over a field $k$. Recall that $e\in A$ is an idempotent iff $e^2=e$. If $e_1,e_2\in A$ are idempotents, then we will say that they are \textbf{orthogonal} iff $e_1e_2=e_2e_1=0$. Furthermore an idempotent $e\in A$ is called \textbf{primitive} iff $e$ cannot be written as a sum $e=e_1+e_2$ where both $e_1,e_2\in A$ are nonzero idempotents. An idempotent is called \textbf{trivial} iff it is either $0$ or $1$.
+
+Now assume that $A$ is an algebra such that
+$$A=M_1\oplus M_2$$
+as right modules and $1=m_1+m_2$ for some $m_1\in M_1$, $m_2\in M_2$. Then $m_1$, $m_2$ are orthogonal idempotents in $A$ and $M_1=m_1A$, $M_2=m_2A$. Furthermore $M_i$ is indecomposable (as a right module) if and only if $m_i$ is primitive. This can be easily generalized to any number (but finite) of summands.
+
+If $A$ is additionally finite-dimensional, then
+$$A=P_1\oplus\cdots\oplus P_n$$
+for some (unique up to isomorphism) right (ideals) indecomposable modules $P_i$. It follows from the preceding that
+$$P_i=e_iA$$
+for some $e_i\in A$ and $\{e_1,\ldots,e_n\}$ is a set of pairwise orthogonal, primitive idempotents. This set is called \textbf{the complete set of primitive orthogonal idempotents of $A$}.
+%%%%%
+%%%%%
+\end{document}

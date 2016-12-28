@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ValuationDomain}
+\pmcreated{2013-03-22 13:47:31}
+\pmmodified{2013-03-22 13:47:31}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{valuation domain}
+\pmrecord{7}{34506}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16U10}
+\pmclassification{msc}{13G05}
+\pmclassification{msc}{13F30}
+%\pmkeywords{Prufer domain}
+\pmrelated{PruferDomain}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+An integral domain $R$ is a \emph{valuation domain} if for all $a,b\in R$, either $a|b$ or $b|a$.  Equivalently, an integral domain is a valuation domain if for any $x$ in the field of fractions of $R$, $x\notin R\implies x^{-1}\in R$.
+
+Some properties:
+\begin{itemize}
+\item A valuation domain is a discrete valuation ring (DVR) if and only if it is a principal ideal domain (PID) if and only if it is Noetherian.
+\item Every valuation domain is a Bezout domain, though the converse is not true.  For a partial converse, any local Bezout domain is a valuation domain.
+\item Valuation domains are integrally closed.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PropertiesOfNilAndNilpotentIdeals}
+\pmcreated{2013-03-22 14:12:54}
+\pmmodified{2013-03-22 14:12:54}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{properties of nil and nilpotent ideals}
+\pmrecord{6}{35650}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N40}
+\pmrelated{KoetheConjecture}
+\pmrelated{NilIsARadicalProperty}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+
+\newtheorem{lemma}{Lemma}
+\newcommand{\famf}{\mathcal{F}}
+\begin{document}
+\PMlinkescapeword{lemma}
+
+\begin{lemma}
+Let $A \subset B$ be ideals of a ring $R$.  If $A$ is nil and $B/A$ is nil, then $B$ is nil.  If $A$ is nilpotent and $B/A$ is nilpotent, then $B$ is nilpotent.
+\end{lemma}
+
+\begin{proof}
+Suppose that $A$ and $B/A$ are nil.  Let $x \in B$.  Then $x^n \in A$ for some $n$, since $B/A$ is nil.  But $A$ is nil, so there is an $m$ such that $x^{nm} = (x^n)^m = 0$.  Thus $B$ is nil.
+
+Suppose that $A$ and $B/A$ are nilpotent.  Then there are natural numbers $n$ and $m$ such that $A^m  = 0$ and $B^n \subseteq A$.  Therefore, $B^{nm} = 0$.
+\end{proof}
+
+
+\begin{lemma}
+The sum of an arbitrary family of nil ideals is nil.
+\end{lemma}
+
+\begin{proof}
+Let $R$ be a ring, and let $\famf$ be a family of nil ideals of $R$.  Let $S = \sum_{I \in \famf} I$.  We must show that there is an $n$ with $x^n = 0$ for every $x \in S$.  Now, any such $x$ is actually in a sum of only finitely many of the ideals in $\famf$.  So it suffices to prove the lemma in the case that $\famf$ is finite.  By induction, it is enough to show that the sum of two nil ideals is nil.
+
+Let $A$ and $B$ be nil ideals of a ring $R$.  Then $A \subset A + B$, and $A+B/A \cong B/(A \cap B)$, which is nil.  So by the first lemma, $A + B$ is nil.
+\end{proof}
+
+\begin{lemma}
+The sum of a finite family of nilpotent left or right ideals is nilpotent.
+\end{lemma}
+
+\begin{proof}
+We prove this for right ideals.  Again, by induction, it suffices to prove it for the case of two right ideals.
+
+Let $A$ and $B$ be nilpotent right ideals of a ring $R$.  Then there are natural numbers $n$ and $m$ such that $A^n = 0$ and $b^m = 0$.
+
+Let $k = n + m -1$.  Let $z_1, z_2, \dots, z_k$ be elements of $A + B$.  We may write $z_i = a_i + b_i$ for each $i$, with $a_i \in A$ and $b_i \in B$.  If we expand the product $z_1z_2 \dotsm z_k$ we get a sum of terms of the form
+$x_1x_2 \dots x_k$ where each $x_i \in \{ a_i, b_i \}$.
+
+Consider one of these terms $x_1x_2 \dotsm x_k$.  Then by our choice of $k$, it must contain at least $n$ of the $a_i$'s or at least $m$ of the $b_i$'s.  Without loss of generality, assume the former.
+So there are indices $i_1 < i_2 < \dots < i_n$ with $x_{i_j} \in A$ for each $j$.
+For $1 \le j \le n-1$, define $y_j = x_{i_j} x_{i_j+1} \dotsm x_{i_{j+1}-1}$,
+and define $y_n = x_{i_n}x_{i_n+1} \dotsm x_k$.
+Since $A$ is a right ideal, $y_j \in A$.
+
+Then $x_1x_2 \dotsm x_k = x_1 x_2 \dotsm x_{i_1-1} y_1 y_2 \dotsm y_n \in x_1 x_2 \dotsm x_{i_1-1} A^n = 0$.
+
+This is true for all choices of the $x_i$, and so $z_1 z_2 \dotsm z_k = 0$.  But this says that $(A+B)^k = 0$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

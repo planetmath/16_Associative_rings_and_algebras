@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MaximalIdealIsPrime}
+\pmcreated{2013-03-22 17:37:59}
+\pmmodified{2013-03-22 17:37:59}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{maximal ideal is prime}
+\pmrecord{8}{40054}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D25}
+\pmclassification{msc}{13A15}
+\pmrelated{SumOfIdeals}
+\pmrelated{MaximumIdealIsPrimeGeneralCase}
+\pmrelated{CriterionForMaximalIdeal}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}  In a commutative ring with non-zero unity, any maximal ideal is a prime ideal.
+
+{\em Proof.}\, Let $\mathfrak{m}$ be a maximal ideal of such a ring $R$ and let the ring product $rs$ belong to $\mathfrak{m}$ but e.g. \,$r \notin \mathfrak{m}$.  The maximality of $\mathfrak{m}$ implies that\, 
+$\mathfrak{m}\!+\!(r) = R = (1)$.\, Thus there exists an element \,$m \in \mathfrak{m}$\, and an element\, $x \in R$\, such that\, $m\!+\!xr = 1$.\, Now $m$ and $rs$ belong to $\mathfrak{m}$, whence
+       $$s = 1s = (m\!+\!xr)s = sm\!+\!x(rs) \in \mathfrak{m}.$$ 
+So we can say that along with $rs$, at least one of its \PMlinkname{factors}{Product} belongs to $\mathfrak{m}$, and therefore $\mathfrak{m}$ is a prime ideal of $R$.
+%%%%%
+%%%%%
+\end{document}

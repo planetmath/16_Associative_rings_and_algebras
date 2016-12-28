@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NilIsARadicalProperty}
+\pmcreated{2013-03-22 14:12:58}
+\pmmodified{2013-03-22 14:12:58}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{nil is a radical property}
+\pmrecord{5}{35651}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N40}
+\pmrelated{PropertiesOfNilAndNilpotentIdeals}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\nilrad}{\mathcal{N}}
+\begin{document}
+We must show that the nil property, $\nilrad$, is a radical property, that is that it satisfies the following conditions:
+
+\begin{enumerate}
+\item The class of $\nilrad$-rings is closed under homomorphic images.
+\item Every ring $R$ has a largest $\nilrad$-ideal, which contains all other $\nilrad$-ideals of $R$. This ideal is written $\nilrad(R)$.
+\item $\nilrad(R/\nilrad(R)) = 0$.
+\end{enumerate}
+
+
+It is easy to see that the homomorphic image of a nil ring is nil, for if $f \colon R \to S$ is a homomorphism and $x^n = 0$, then $f(x)^n = f(x^n) = 0$.
+
+The sum of all nil ideals is nil (see proof \PMlinkid{here}{5650}), so this sum is the largest nil ideal in the ring.
+
+Finally, if $N$ is the largest nil ideal in $R$, and $I$ is an ideal of $R$ containing $N$ such that $I/N$ is nil, then $I$ is also nil (see proof \PMlinkid{here}{5650}).  So $I \subseteq N$ by definition of $N$.  Thus $R/N$ contains no nil ideals.
+%%%%%
+%%%%%
+\end{document}

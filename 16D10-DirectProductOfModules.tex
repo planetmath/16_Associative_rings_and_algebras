@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirectProductOfModules}
+\pmcreated{2013-03-22 12:09:34}
+\pmmodified{2013-03-22 12:09:34}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{direct product of modules}
+\pmrecord{10}{31357}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D10}
+\pmsynonym{strong direct sum}{DirectProductOfModules}
+\pmsynonym{complete direct sum}{DirectProductOfModules}
+\pmrelated{CategoricalDirectProduct}
+\pmdefines{direct product}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+Let $\{ X_i : i \in I \}$ be a collection of modules
+in some category of modules.
+Then the {\it direct product} $\prod_{i \in I} X_i$
+of that collection is the module
+whose underlying set is the Cartesian product of the $X_i$
+with componentwise addition and scalar multiplication.
+For example, in a category of left modules:
+$$(x_i) + (y_i) = (x_i + y_i),$$
+$$r (x_i) = (r x_i).$$
+
+For each $j \in I$ we have
+a {\it projection} $p_j : \prod_{i \in I} X_i \to X_j$
+defined by $(x_i) \mapsto x_j$,
+and
+an {\it injection} $\lambda_j : X_j \to \prod_{i \in I} X_i$
+where an element $x_j$ of $X_j$
+maps to the element of $\prod_{i \in I} X_i$
+whose $j$th term is $x_j$ and every other term is zero.
+
+The direct product $\prod_{i \in I} X_i$
+satisfies a certain universal property.
+Namely, if $Y$ is a module
+and there exist homomorphisms $f_i : X_i \to Y$
+for all $i \in I$,
+then there exists a unique homomorphism
+$\phi : Y \to \prod_{i \in I} X_i$
+satisfying $\phi \lambda_i = f_i$ for all $i \in I$.
+$$
+\xymatrix{
+  X_i
+        \ar[dr]_{\lambda_i}
+        \ar[rr]^{f_i}
+  &
+  &
+  Y
+        \ar@{-->}[dl]^{\phi}
+  \\
+  &
+  \prod_{i \in I} X_i
+}
+$$
+
+The direct product is often referred to
+as the {\it complete direct sum},
+or the {\it strong direct sum},
+or simply the {\PMlinkescapetext {\it product}}.
+
+Compare this to the direct sum of modules.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

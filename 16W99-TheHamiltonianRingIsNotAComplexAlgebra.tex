@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheHamiltonianRingIsNotAComplexAlgebra}
+\pmcreated{2013-03-22 16:01:57}
+\pmmodified{2013-03-22 16:01:57}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{The Hamiltonian ring is not a complex algebra}
+\pmrecord{10}{38076}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W99}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+The \PMlinkname{Hamiltonian algebra}{QuaternionAlgebra2} $\mathbb{H}$ contains isomorphic copies of the real $\mathbb{R}$ and complex $\mathbb{C}$ numbers.  However, the reals are a central subalgebra of $\mathbb{H}$ which makes $\mathbb{H}$ into a real algebra.  This makes identifying $\mathbb{R}$ in $\mathbb{H}$ canonical: $1\in \mathbb{H}$ determines a unique embedding $\mathbb{R}\rightarrow \mathbb{H}:r\mapsto r1$.  Yet $\mathbb{H}$ is not a complex algebra.  The goal presently is to outline some of the incongruities of $\mathbb{C}=\langle 1,i\rangle$ and $\mathbb{H}=\langle 1,\hat{\imath},\hat{\jmath},\hat{k}\rangle$ which may be obscured by the notational overlap of the letter $i$.
+
+\begin{prop}
+There are no proper finite dimensional division rings over algebraically closed fields.
+\end{prop}
+\begin{proof}
+Let $D$ be a finite dimensional division ring over an algebraically closed field $K$.  This means that $K$ is a central subalgebra of $D$.  Let $a\in D$ and consider
+$K(a)$.  Since $K$ is central in $D$, $K(a)$ is commutative, and so $K(a)$ is a field extension of $K$.  But as $D$ is a finite dimensional $K$ space, so is $K(a)$.  As any finite dimensional extension of $K$ is algebraic, $K(a)$ is an algebraic extension.  Yet $K$ is algebraically closed so $K(a)=K$.  Thus $a\in K$ so in fact $D=K$.
+\end{proof}
+\begin{itemize}
+\item In particular, this proposition proves $\mathbb{H}$ is not a complex algebra.
+\item
+Alternatively, from the Wedderburn-Artin theorem we know the only semisimple complex algebra of dimension 2 is $\mathbb{C}\oplus\mathbb{C}$.  This has proper ideals and so it cannot be the division ring $\mathbb{H}$.
+\item
+It is also evident that the usual, notationally driven, embedding of $\mathbb{C}$ into $\mathbb{H}$ is non-central.  That is, $\mathbb{C}$ embeds as $a+bi\mapsto a+b\hat{i}$, into $\mathbb{H}=\langle 1, \hat{\imath},\hat{\jmath},\hat{k}\rangle$.  This is not central:
+\[(1+\hat{\imath})\hat{\jmath}=\hat{\jmath}+\hat{k}\neq \hat{\jmath}(1+\hat{\imath})=\hat{\jmath}-\hat{k}.\]
+\item
+Further evidence of the incompatiblity of $\mathbb{H}$ and $\mathbb{C}$ comes from considering polynomials.  If $x^2+1$ is considered as a polynomial over $\mathbb{C}[x]$ then it has exactly two roots $i, -i$ as expected.  However, if it is considered as a polynomial over $\mathbb{H}[x]$ we arrive at 6 obvious roots: $\{\hat{\imath},-\hat{\imath},\hat{\jmath},-\hat{\jmath},\hat{k},-\hat{k}\}$.  But indeed, given any $q\in\mathbb{H}$, $q\neq 0$, then $q\hat{\imath}q^{-1}$ is also a root.  Thus there are an infinite number of roots to $x^2+1$.  Therefore declaring  $\hat{\imath}=\sqrt{-1}$ can be greatly misleading.  Such a conflict does not arise for polynomials with real roots since $\mathbb{R}$ is a central subalgebra.
+\end{itemize}
+
+%%%%%
+%%%%%
+\end{document}

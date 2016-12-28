@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CornerOfARing}
+\pmcreated{2013-03-22 15:43:56}
+\pmmodified{2013-03-22 15:43:56}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{corner of a ring}
+\pmrecord{9}{37682}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+\pmrelated{UnityOfSubring}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% define commands here
+\begin{document}
+Does there exist a subset $S$ of a ring $R$ which is a ring with a multiplicative identity, but not a subring of $R$?
+
+Let $R$ be a ring without the assumption that $R$ has a multiplicative identity.  Further, assume that $e$ is an idempotent of $R$.  Then the subset of the form $eRe$ is called a \emph{corner} of the ring $R$.
+
+It's not hard to see that $eRe$ is a ring with $e$ as its multiplicative identity:
+\begin{enumerate}
+\item $eae+ebe=e(a+b)e\in eRe$,
+\item $0=e0e\in eRe$,
+\item $e(-a)e$ is the additive inverse of $eae$ in $eRe$,
+\item $(eae)(ebe)=e(aeb)e\in eRe$, and 
+\item $e=ee=eee\in eRe$, with $e(eae)=eae=(eae)e$, for any $eae\in eRe$.
+\end{enumerate}
+
+If $R$ has no multiplicative identity, then any corner of $R$ is a proper subset of $R$ which is a ring and not a subring of $R$.  If $R$ has 1 as its multiplicative identity and if $e\neq 1$ is an idempotent, then the $eRe$ is not a subring of $R$ as they don't share the same multiplicative identity.  In this case, the corner $eRe$ is said to be \emph{proper}.  If we set $f=1-e$, then $fRf$ is also a proper corner of $R$.
+
+\textbf{Remark.}  If $R$ has 1 with $e\neq 1$ an idempotent.  Then corners $S=eRe$ and $T=fRf$, where $f=1-e$, are direct summands (as modules over $\mathbb{Z}$) of $R$ via a Peirce decomposition.
+
+\begin{thebibliography}{9}
+\bibitem{edwards} I. Kaplansky, \emph{Rings of Operators}, W. A. Benjamin, Inc., New York, 1968.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{partialTiltingModule}
+\pmcreated{2013-12-11 16:01:05}
+\pmmodified{2013-12-11 16:01:05}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{(partial) tilting module}
+\pmrecord{8}{42245}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+\pmclassification{msc}{20C99}
+\pmclassification{msc}{13B99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $A$ be an associative, finite-dimensional algebra over a field $k$. Throughout all modules are finite-dimensional.
+
+A right $A$-module $T$ is called a \textbf{partial tilting module} if the projective dimension of $T$ is at most $1$ ($\mathrm{pd}T\leqslant 1$) and $\mathrm{Ext}^1_A(T,T)=0$.
+
+Recall that if $M$ is an $A$-module, then by $\mathrm{add}M$ we denote the class of all $A$-modules which are direct sums of direct summands of $M$. Since Krull-Schmidt Theorem holds in the category of finite-dimensional $A$-modules, then this means, that if
+$$M=E_1\oplus\cdots\oplus E_n$$
+for some indecomposable modules $E_i$, then $\mathrm{add}M$ consists of all modules which are isomorphic to
+$$E_1^{a_1}\oplus\cdots\oplus E_n^{a_n}$$
+for some nonnegative integers $a_1,\ldots, a_n$.
+
+A partial tiliting module $T$ is called a \textbf{tilting module} if there exists a short exact sequence
+$$
+0 \rightarrow A \rightarrow T' \rightarrow T'' \rightarrow 0
+$$
+such that both $T',T''\in\mathrm{add}T$. Here we treat the algebra $A$ is a right module via multiplication.
+
+Note that every projective module is partial tilting. Also a projective module $P$ is tilting if and only if every indecomposable direct summand of $A$ is a direct summand of $P$.
+%%%%%
+%%%%%
+\end{document}

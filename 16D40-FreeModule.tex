@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FreeModule}
+\pmcreated{2013-03-22 12:10:10}
+\pmmodified{2013-03-22 12:10:10}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{free module}
+\pmrecord{9}{31381}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D40}
+\pmrelated{FreeGroup}
+\pmdefines{free module}
+\pmdefines{free abelian group}
+\pmdefines{free basis}
+\pmdefines{rank of a free module}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+Let $R$ be a commutative ring with unity.  A {\it free module} over $R$ 
+is a (unital) module isomorphic to a direct sum of copies of $R$.  In particular, as every abelian group is a $\mathbb{Z}$-module, a {\it free abelian group} is a direct sum of copies of $\Bbb{Z}$.  This is equivalent to saying that the module has a {\it free basis},
+i.e. a set of elements with the \PMlinkescapetext{property} that every element of the module can be uniquely expressed as an linear combination over $R$
+of elements of the free basis.  In the case that a free module over $R$ is a sum of finitely many copies of $R$, then the number of copies is called the {\it rank} of the free module.
+
+An alternative definition of a free module is via its universal property:  Given a set $X$, the free $R$-module $F(X)$ on the set $X$ is equipped with a function $i:X\rightarrow F(X)$ satisfying the property that for any other $R$-module $A$ and any function $f:X\rightarrow A$, there exists a unique $R$-module map $h:F(X)\rightarrow A$ such that $(h\circ i)=f$.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

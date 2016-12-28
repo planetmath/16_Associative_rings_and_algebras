@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RadicalTheory}
+\pmcreated{2013-03-22 13:13:02}
+\pmmodified{2013-03-22 13:13:02}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{radical theory}
+\pmrecord{10}{33682}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16N80}
+\pmrelated{JacobsonRadical}
+\pmdefines{radical}
+\pmdefines{radical property}
+\pmdefines{semisimple}
+\pmdefines{hereditary}
+\pmdefines{hereditary radical}
+\pmdefines{supernilpotent}
+\pmdefines{supernilpotent radical}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\xrad}{\mathcal{X}}
+\begin{document}
+\PMlinkescapeword{satisfies}
+\PMlinkescapeword{independent}
+\PMlinkescapeword{closed}
+\PMlinkescapeword{theory}
+\PMlinkescapeword{extensions}
+\PMlinkescapeword{images}
+
+Let $\xrad$ represent a property which a ring may or may not have.  This property may be anything at all: what is important is that for any ring $R$, the statement ``$R$ has property $\xrad$'' is either true or false.
+
+We say that a ring which has the property $\xrad$ is an $\xrad$-ring.  An ideal $I$ of a ring $R$ is called an $\xrad$-ideal if, as a ring, it is an $\xrad$-ring.  (Note that this definition only makes sense if rings are not required to have identity elements; otherwise and ideal is not, in general, a ring.  Rings are not required to have an identity element in radical theory.)
+
+The property $\xrad$ is a \emph{radical property} if it satisfies:
+\begin{enumerate}
+\item The class of $\xrad$-rings is closed under homomorphic images.
+\item Every ring $R$ has a largest $\xrad$-ideal, which contains all other $\xrad$-ideals of $R$.  This ideal is written $\xrad(R)$.
+\item $\xrad(R/\xrad(R)) = 0$.
+\end{enumerate}
+
+The ideal $\xrad(R)$ is called the \emph{$\xrad$-radical} of $R$.  A ring is called \emph{$\xrad$-radical} if $\xrad(R) = R$, and is called \emph{$\xrad$-semisimple} if $\xrad(R) = 0$.
+
+If $\xrad$ is a radical property, then the class of $\xrad$-rings is also called the class of \emph{$\xrad$-radical rings}.
+
+The class of $\xrad$-radical rings is closed under ideal extensions.  That is, if $A$ is an ideal of $R$, and $A$ and $R/A$ are $\xrad$-radical, then so is $R$.
+
+\emph{Radical theory} is the study of radical properties and their interrelations.  There are several well-known radicals which are of independent interest in ring theory (See examples -- to follow).
+
+The class of all radicals is however very large.  Indeed, it is possible to show that any partition of the class of simple rings into two classes $\mathcal{R}$ and $\mathcal{S}$ such that isomorphic simple rings are in the same class,  gives rise to a radical $\xrad$ with the property that all rings in $\mathcal{R}$ are $\xrad$-radical and all rings in $\mathcal{S}$ are $\xrad$-semisimple.  In fact, there are at least two distinct radicals for each such partition.
+
+A radical $\xrad$ is \emph{hereditary} if every ideal of an $\xrad$-radical ring is also $\xrad$-radical.
+
+A radical $\xrad$ is \emph{supernilpotent} if the class of $\xrad$-rings contains all nilpotent rings.
+
+\section{Examples}
+
+Nil is a radical property.  This property defines the nil radical, $\mathcal{N}$.
+
+Nilpotency is not a radical property.
+
+Quasi-regularity is a radical property.  The associated radical is the Jacobson radical, $\mathcal{J}$.
+%%%%%
+%%%%%
+\end{document}

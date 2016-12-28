@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PeirceDecomposition}
+\pmcreated{2013-03-22 14:39:17}
+\pmmodified{2013-03-22 14:39:17}
+\pmowner{mclase}{549}
+\pmmodifier{mclase}{549}
+\pmtitle{Peirce decomposition}
+\pmrecord{7}{36246}
+\pmprivacy{1}
+\pmauthor{mclase}{549}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16S99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\isom}{\cong}
+\begin{document}
+Let $e$ be an idempotent of a ring $R$, not necessarily with an identity.
+For any subset $X$ of $R$, we introduce the notations:
+
+$$(1-e)X = \{ x - ex \mid x \in X\}$$
+
+and
+
+$$X(1-e) = \{x - xe \mid x \in X\}.$$
+
+If it happens that $R$ has an identity element, then $1-e$ is a legitimate element of
+$R$, and this notation agrees with the usual product of an element and a set.
+
+It is easy to see that $Xe \cap X(1-e) = 0 = eX \cap (1-e)X$ for any set $X$ which contains $0$.
+
+Applying this first on the right with $X = R$ and then on the left with $X = Re$ and $X = R(1-e)$,
+we obtain:
+
+$$R = eRe \oplus eR(1-e) \oplus (1-e)Re \oplus (1-e)R(1-e).$$
+
+This is called the {\em Peirce Decompostion} of $R$ with respect to $e$.
+
+Note that $eRe$ and $(1-e)R(1-e)$ are subrings, $eR(1-e)$ is an $eRe$-$(1-e)R(1-e)$-bimodule,
+and $(1-e)Re$ is a $(1-e)R(1-e)$-$eRe$-bimodule.
+
+This is an example of a generalized matrix ring:
+
+$$R \isom
+  \begin{pmatrix}
+    eRe & eR(1-e) \\
+    (1-e)Re & (1-e)R(1-e) \\
+  \end{pmatrix}
+$$
+
+More generally, if $R$ has an identity element,
+and $e_1, e_2, \dots, e_n$ is a complete set of orthogonal idempotents,
+then
+
+$$R \isom
+  \begin{pmatrix}
+    e_1Re_1 & e_1Re_2 & \dots & e_1Re_n \\
+    e_2Re_1 & e_2Re_2 & \dots & e_2Re_n \\
+    \vdots & \vdots & \ddots & \vdots \\
+    e_nRe_1 & e_nRe_2 & \dots & e_nRe_n
+  \end{pmatrix}
+$$
+
+is a generalized matrix ring.
+%%%%%
+%%%%%
+\end{document}

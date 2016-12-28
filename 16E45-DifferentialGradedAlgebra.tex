@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DifferentialGradedAlgebra}
+\pmcreated{2013-03-22 15:34:43}
+\pmmodified{2013-03-22 15:34:43}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{differential graded algebra}
+\pmrecord{8}{37488}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16E45}
+\pmsynonym{DG Algebra}{DifferentialGradedAlgebra}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\del}{\ensuremath{\partial}}
+\begin{document}
+Let $R$ be a commutative ring.  A \emph{differential graded algebra} (or \emph{DG algebra}) over $R$ is a complex $(A,\del^A)$ of $R$-modules with an element $1 \in A$ (the unit) and a degree zero chain map
+$$A \otimes_R A \to A$$
+that is unitary: $a1 = a = 1a$, and is associative: $a(bc) = (ab)c$.  We also will stipulate that a DG algebra is graded commutative; that is for each $x,y \in A$, we have
+$$xy = (-1)^{|x||y|}yx$$
+where $|x|$ means the degree of $x$.  Also, we assume that $A_i = 0$ for $i < 0$.    Without these final assumptions, we will say that $A$ is an \emph{associative} DG algebra.
+
+The fact that the product is a chain map of degree zero is best described by the Leibniz Rule; that is, for each $x,y \in A$, we have
+$$\del^A(xy) = \del^A(x)y + (-1)^{|x|}x\del^A(y).$$
+%%%%%
+%%%%%
+\end{document}

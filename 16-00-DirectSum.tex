@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirectSum}
+\pmcreated{2013-03-22 12:09:37}
+\pmmodified{2013-03-22 12:09:37}
+\pmowner{antizeus}{11}
+\pmmodifier{antizeus}{11}
+\pmtitle{direct sum}
+\pmrecord{10}{31360}
+\pmprivacy{1}
+\pmauthor{antizeus}{11}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16-00}
+\pmsynonym{weak direct sum}{DirectSum}
+\pmrelated{CategoricalDirectSum}
+\pmrelated{DirectSummand}
+\pmrelated{DirectSumOfMatrices}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+Let $\{ X_i : i \in I \}$ be a collection of modules 
+in some category of modules.
+Then the {\it direct sum} $\coprod_{i \in I} X_i$
+of that collection is the submodule
+of the \PMlinkname{direct product}{DirectProduct} of the $X_i$
+consisting of all elements $(x_i)$
+such that all but a finite number
+of the $x_i$ are zero.
+
+For each $j \in I$ we have
+a {\it projection} $p_j : \coprod_{i \in I} X_i \to X_j$
+defined by $(x_i) \mapsto x_j$,
+and
+an {\it injection} $\lambda_j : X_j \to \coprod_{i \in I} X_i$
+where an element $x_j$ of $X_j$
+maps to the element of $\coprod_{i \in I} X_i$
+whose $j$th term is $x_j$ and every other term is zero.
+
+The direct sum $\coprod_{i \in I} X_i$
+satisfies a certain universal property.
+Namely, if $Y$ is a module
+and there exist homomorphisms $f_i : Y \to X_i$
+for all $i \in I$,
+then there exists a unique homomorphism
+$\phi : \coprod_{i \in I} X_i \to Y$
+satisfying $p_i \phi = f_i$ for all $i \in I$.
+$$
+\xymatrix{
+  X_i
+  &
+  &
+  Y
+        \ar[ll]_{f_i}
+  \\
+  &
+  \coprod_{i \in I} X_i
+        \ar[ul]^{p_i}
+        \ar@{-->}[ur]_{\phi}
+}
+$$
+
+The direct sum is often referred to
+as the {\it weak direct sum}
+or simply the {\it sum}.
+
+Compare this to the direct product of modules.
+
+Often an internal direct sum is written as $\bigoplus_{i \in I} X_i$.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

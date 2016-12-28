@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SemisimpleRing}
+\pmcreated{2013-03-22 14:19:05}
+\pmmodified{2013-03-22 14:19:05}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{semisimple ring}
+\pmrecord{11}{35784}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D60}
+\pmrelated{SemiprimitiveRing}
+\pmdefines{semisimple}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A ring $R$ is (left) \emph{semisimple} if it \PMlinkescapetext{satisfies} one of the following \PMlinkescapetext{equivalent} statements:
+\begin{enumerate}
+\item
+All left $R$-modules are semisimple.
+\item
+All \PMlinkname{finitely-generated}{FinitelyGeneratedRModule} left $R$-modules are semisimple.
+\item
+All cyclic left $R$-modules are semisimple.
+\item
+The left regular $R$-module $_RR$ is semisimple.
+\item
+All short exact sequences of left $R$-modules \PMlinkname{split}{SplitShortExactSequence}.
+\end{enumerate}
+
+The last \PMlinkescapetext{equivalent} condition offers another homological characterization of a \emph{semisimple} ring:
+
+\begin{itemize}
+\item
+A ring $R$ is (left) semisimple iff all of its left modules are \PMlinkname{projective}{ProjectiveModule}.
+\end{itemize}
+
+A more ring-theorectic characterization of a (left) semisimple ring is:
+
+\begin{itemize}
+\item
+A ring is left semisimple iff it is semiprimitive and left artinian.
+\end{itemize}
+
+In some literature, a (left) semisimple ring is defined to be a ring that is semiprimitive without necessarily being (left) artinian.  Such a ring (semiprimitive) is called Jacobson semisimple, or J-semisimple, to remind us of the fact that its Jacobson radical is (0).
+
+Relating to von Neumann regular rings, one has:
+
+\begin{itemize}
+\item
+A ring is left semisimple iff it is von Neumann regular and left noetherian.
+\end{itemize}
+
+The famous Wedderburn-Artin Theorem \PMlinkescapetext{states} that a (left) semisimple ring is isomorphic to a finite direct product of matrix rings over division rings.
+
+The theorem implies that a left semisimplicity is synonymous with right semisimplicity, so that it is safe to drop the word left or right when referring to semisimple rings.
+%%%%%
+%%%%%
+\end{document}

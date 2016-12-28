@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Semiring}
+\pmcreated{2013-03-22 12:27:46}
+\pmmodified{2013-03-22 12:27:46}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{semiring}
+\pmrecord{11}{32617}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16Y60}
+%\pmkeywords{partial order}
+%\pmkeywords{poset}
+\pmrelated{Ring}
+\pmrelated{KleeneAlgebra}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{algebra}
+\PMlinkescapeword{constants}
+\PMlinkescapephrase{right annihilator}
+\PMlinkescapeword{cycle}
+
+%A \emph{semiring} is an algebra $(A, \cdot, +, 0, 1)$ over a set $A$, 
+%where 0 and 1 are constants, $(A, \cdot, 1)$ is a monoid, $(A, +, 0)$ is a %commutative monoid, $\cdot$ \PMlinkname{distributes}{Distributivity} over $+$ %from the left and right, and 0 is both a left and right annihilator ($0a = a0 = %0$).
+%Often $a\cdot b$ is written simply as $ab$, and the semiring $(A, \cdot, +, 0, %1)$ as simply $A$.
+
+A \emph{semiring} is a set $A$ with two operations, $+$ and $\cdot$, such that
+$0\in A$ makes $(A,+)$ into a commutative monoid, $1\in A$ makes $(A,\cdot)$
+into a monoid, the operation $\cdot$ \PMlinkname{distributes}{Distributivity}
+over $+$, and for any $a\in A$, $0\cdot a=a\cdot 0=0$.  Usually, $a\cdot b$
+is instead written $ab$.
+
+A ring $(R,+,\cdot)$, can be described as a semiring for which $(R,+)$ is
+required to be a group.  Thus every ring is a semiring.  
+The natural numbers
+$\mathbb{N}$ form a semiring, but not a ring, with the usual multiplication and addition.
+
+Every semiring $A$ has a quasiorder $\preceq$ 
+given by $a\preceq b$ if and only if there exists some $c\in A$ such that $a+c=b$.  Any element $a\in A$ with an additive inverse is smaller than
+any other element.  Thus if $A$ has a nonzero element $a$ with an additive 
+inverse, then the elements $-a$, $0$, $a$ form a cycle with respect to $\preceq$.
+If $+$ is an \PMlinkname{idempotent}{Idempotency} operation,
+then $\preceq$ is a partial order.
+Addition and (left and right) multiplication are 
+\PMlinkname{order-preserving operators}{Poset}.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CoalgebraIsomorphismsAndIsomorphicCoalgebras}
+\pmcreated{2013-03-22 18:49:28}
+\pmmodified{2013-03-22 18:49:28}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{coalgebra isomorphisms and isomorphic coalgebras}
+\pmrecord{4}{41627}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16W30}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $(C,\Delta,\varepsilon)$ and $(D,\Delta',\varepsilon')$ be coalgebras.
+
+\textbf{Definition.} We will say that coalgebra homomorphism $f:C\to D$ is a \textit{coalgebra isomorphism}, if there exists a coalgebra homomorphism $g:D\to C$ such that $f\circ g=\mathrm{id}_{D}$ and $g\circ f=\mathrm{id}_{C}$.
+
+\textbf{Remark.} Of course every coalgebra isomorphism is a linear isomorphism, thus it is ,,one-to-one'' and ,,onto''. One can show that the converse also holds, i.e. if $f:C\to D$ is a coalgebra homomorphism such that $f$ is ,,one-to-one'' and ,,onto'', then $f$ is a coalgebra isomorphism.
+
+\textbf{Definition.} We will say that coalgebras $(C,\Delta,\varepsilon)$ and $(D,\Delta',\varepsilon')$ are \textit{isomorphic} if there exists coalgebra isomorphism $f:C\to D$. In this case we often write $(C,\Delta,\varepsilon)\simeq (D,\Delta',\varepsilon')$ or simply $C\simeq D$ if structure maps are known from the context.
+
+\textbf{Remarks.} Of course the relation ,,$\simeq$'' is an equivalence relation. Furthermore, (from the coalgebraic point of view) isomorphic coalgebras are the same, i.e. they share all coalgebraic properties.
+%%%%%
+%%%%%
+\end{document}

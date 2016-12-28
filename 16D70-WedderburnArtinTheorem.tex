@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WedderburnArtinTheorem}
+\pmcreated{2013-03-22 14:19:08}
+\pmmodified{2013-03-22 14:19:08}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Wedderburn-Artin theorem}
+\pmrecord{14}{35785}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D70}
+\pmsynonym{structure theorem on semisimple rings}{WedderburnArtinTheorem}
+\pmsynonym{Artin-Wedderburn theorem}{WedderburnArtinTheorem}
+\pmrelated{SemiprimitiveRing}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+If $R$ is a left semisimple ring, then
+$$R \cong \mathbb{M}_{n_1}(D_1) \times \cdot\cdot\cdot \times \mathbb{M}_{n_r}(D_r)$$
+where each $D_i$ is a division ring and $\mathbb{M}_{n_i}(D_i)$ is the matrix ring over $D_i$, $i = 1, 2, \ldots, r$.  The positive integer $r$ is unique, and so are the division rings (up to permutation).
+
+Some immediate consequences of this theorem:
+\begin{itemize}
+\item
+A \PMlinkname{simple}{SimpleRing} Artinian ring is isomorphic to a matrix ring over a division ring.
+\item
+A commutative semisimple ring is a finite direct product of fields.
+\end{itemize}
+
+This theorem is a special case of the more general \PMlinkescapetext{structure} theorem on semiprimitive rings.
+%%%%%
+%%%%%
+\end{document}

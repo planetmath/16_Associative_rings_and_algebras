@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfReducibleAndIrreducibleGmodules}
+\pmcreated{2013-03-22 16:37:50}
+\pmmodified{2013-03-22 16:37:50}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{example of reducible and irreducible $G$-modules}
+\pmrecord{6}{38831}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{16D60}
+\pmdefines{augmentation}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{stable}
+Let $G=S_r$, the permutation group on $r$ elements, and $N=k^r$ where $k$ is an arbitrary field. Consider the permutation representation of $G$ on $N$ given by
+\[\sigma(a_1,\ldots,a_r)=(a_{\sigma(1)},\ldots,a_{\sigma(r)}),\ \sigma\in S_r, a_i\in k\]
+
+If $r>1$, we can define two submodules of $N$, called the \emph{trace} and \emph{augmentation}, as
+\begin{gather*}
+N'=\{(a,a,\ldots,a)\}\\
+N''=\{(a_1,a_2,\ldots,a_r)\ \bigl\rvert\ \sum a_i=0 \bigr .\}
+\end{gather*}
+Clearly both $N'$ and $N''$ are stable under the action of $G$ and thus in fact form submodules of $N$.
+
+If the characteristic of $k$ divides $r$, then obviously $N''\supset N'$. Otherwise, $N''$ is a simple (irreducible) $G$-module. For suppose $N''$ has a nontrivial submodule $M$, and choose a nonzero $u\in M$. Then some pair of coordinates of $u$ are unequal, for if not, then $u=(a,\ldots,a)$ and then $u\not\in N''$ because of the restriction on the characteristic of $k$ forces $ra\neq 0$. So apply a suitable element of $G$ to get another element of $M$, $v=(b_1,b_2,\ldots,b_r)$ where $b_1\neq b_2$ (note here that we use the fact that $M$ is a submodule and thus is stable under the action of $G$).
+
+But now $(1 2)v - ev = (b_1-b_2,b_2-b_1,0,\ldots,0)$ is also in $M$, so $w=(1,-1,0,\ldots,0)\in M$. It is obvious that by multiplying $w$ by elements of $k$ and by permuting, we can obtain any element of $N''$ and thus $M=N''$. Thus $N''$ is simple.
+
+It is also obvious that $N=N'\oplus N''$.
+%%%%%
+%%%%%
+\end{document}
