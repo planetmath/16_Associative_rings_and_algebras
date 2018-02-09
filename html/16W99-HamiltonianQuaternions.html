@@ -1,0 +1,343 @@
+<!DOCTYPE html><html>
+<head>
+<title>Hamiltonian quaternions</title>
+<!--Generated on Fri Feb  9 18:45:56 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Hamiltonian quaternions</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Definition of <math id="p2.m1" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi mathvariant="normal">H</mi></math></span></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">We define a unital associative algebra <math id="p3.m1" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math> over <math id="p3.m2" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>, of dimension 4,
+by the basis <math id="p3.m3" class="ltx_Math" alttext="\{\mathbf{1},\mathbf{i},\mathbf{j},\mathbf{k}\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>𝟏</mn><mo>,</mo><mi>𝐢</mi><mo>,</mo><mi>𝐣</mi><mo>,</mo><mi>𝐤</mi><mo stretchy="false">}</mo></mrow></math> and
+the multiplication table</p>
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_right"><math id="p3.m4" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m5" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m6" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m7" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_right"><math id="p3.m8" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m9" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m10" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m11" class="ltx_Math" alttext="-j" display="inline"><mrow><mo>-</mo><mi>j</mi></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_right"><math id="p3.m12" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m13" class="ltx_Math" alttext="-k" display="inline"><mrow><mo>-</mo><mi>k</mi></mrow></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m14" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m15" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_right"><math id="p3.m16" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m17" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m18" class="ltx_Math" alttext="-i" display="inline"><mrow><mo>-</mo><mi>i</mi></mrow></math></td>
+<td class="ltx_td ltx_align_right"><math id="p3.m19" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">(where the element in row <math id="p3.m20" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and column <math id="p3.m21" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> is <math id="p3.m22" class="ltx_Math" alttext="xy" display="inline"><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></math>, not <math id="p3.m23" class="ltx_Math" alttext="yx" display="inline"><mrow><mi>y</mi><mo>⁢</mo><mi>x</mi></mrow></math>).
+Thus an arbitrary element of <math id="p3.m24" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math> is of the form</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="a\mathbf{1}+b\mathbf{i}+c\mathbf{j}+d\mathbf{k},\qquad a,b,c,d\in\mathbb{R}" display="block"><mrow><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝐢</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>𝐣</mi></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>𝐤</mi></mrow></mrow><mo rspace="22.5pt">,</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(sometimes denoted by <math id="p3.m25" class="ltx_Math" alttext="\left&lt;a,b,c,d\right&gt;" display="inline"><mrow><mo>⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>⟩</mo></mrow></math>
+or by <math id="p3.m26" class="ltx_Math" alttext="a+\left&lt;b,c,d\right&gt;" display="inline"><mrow><mi>a</mi><mo>+</mo><mrow><mo>⟨</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>⟩</mo></mrow></mrow></math>) and the product of two elements
+<math id="p3.m27" class="ltx_Math" alttext="\left&lt;a,b,c,d\right&gt;" display="inline"><mrow><mo>⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>⟩</mo></mrow></math> and <math id="p3.m28" class="ltx_Math" alttext="\left&lt;\alpha,\beta,\gamma,\delta\right&gt;" display="inline"><mrow><mo>⟨</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi>γ</mi><mo>,</mo><mi>δ</mi><mo>⟩</mo></mrow></math> (order matters)
+is <math id="p3.m29" class="ltx_Math" alttext="\left&lt;w,x,y,z\right&gt;" display="inline"><mrow><mo>⟨</mo><mi>w</mi><mo>,</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>⟩</mo></mrow></math> where</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tr id="S0.Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\displaystyle w" display="inline"><mi>w</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex2.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex2.m3" class="ltx_Math" alttext="\displaystyle a\alpha-b\beta-c\gamma-d\delta" display="inline"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>α</mi></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mi>β</mi></mrow><mo>-</mo><mrow><mi>c</mi><mo>⁢</mo><mi>γ</mi></mrow><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>δ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex3.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex3.m3" class="ltx_Math" alttext="\displaystyle a\beta+b\alpha+c\delta-d\gamma" display="inline"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>β</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>α</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>δ</mi></mrow></mrow><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>γ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex4.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex4.m3" class="ltx_Math" alttext="\displaystyle a\gamma-b\delta+c\alpha+d\beta" display="inline"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>γ</mi></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mi>δ</mi></mrow></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>α</mi></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>β</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\displaystyle z" display="inline"><mi>z</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex5.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m3" class="ltx_Math" alttext="\displaystyle a\delta+b\gamma-c\beta+d\alpha" display="inline"><mrow><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>δ</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>γ</mi></mrow></mrow><mo>-</mo><mrow><mi>c</mi><mo>⁢</mo><mi>β</mi></mrow></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>α</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The elements of <math id="p3.m30" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math> are known as <em class="ltx_emph ltx_font_italic">Hamiltonian quaternions</em>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Clearly the subspaces of <math id="p4.m1" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math> generated by <math id="p4.m2" class="ltx_Math" alttext="\{\mathbf{1}\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>𝟏</mn><mo stretchy="false">}</mo></mrow></math>
+and by <math id="p4.m3" class="ltx_Math" alttext="\{\mathbf{1},\mathbf{i}\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>𝟏</mn><mo>,</mo><mi>𝐢</mi><mo stretchy="false">}</mo></mrow></math> are subalgebras isomorphic
+to <math id="p4.m4" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math> and <math id="p4.m5" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi>ℂ</mi></math> respectively. <math id="p4.m6" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math> is customarily identified with
+the corresponding subalgebra of <math id="p4.m7" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math>.
+(We shall see in a moment that there are other and less obvious
+embeddings of <math id="p4.m8" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi>ℂ</mi></math> in <math id="p4.m9" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math>.)
+The real numbers commute with all the elements of <math id="p4.m10" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math>, and we have</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\lambda\cdot\left&lt;a,b,c,d\right&gt;=\left&lt;\lambda a,\lambda b,\lambda c,\lambda d\right&gt;" display="block"><mrow><mrow><mi>λ</mi><mo>⋅</mo><mrow><mo>⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>⟩</mo></mrow></mrow><mo>=</mo><mrow><mo>⟨</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>a</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>c</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>d</mi></mrow><mo>⟩</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for <math id="p4.m11" class="ltx_Math" alttext="\lambda\in\mathbb{R}" display="inline"><mrow><mi>λ</mi><mo>∈</mo><mi>ℝ</mi></mrow></math> and <math id="p4.m12" class="ltx_Math" alttext="\left&lt;a,b,c,d\right&gt;\in\mathbb{H}" display="inline"><mrow><mrow><mo>⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>⟩</mo></mrow><mo>∈</mo><mi>ℍ</mi></mrow></math>.</p>
+</div>
+<div id="p5" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Norm, conjugate, and inverse of a quaternion</span></p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Like the complex numbers (<math id="p6.m1" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi>ℂ</mi></math>), the quaternions have a
+natural involution called the quaternion conjugate. If <math id="p6.m2" class="ltx_Math" alttext="q=a\mathbf{1}+b\mathbf{i}+c\mathbf{j}+d\mathbf{k}" display="inline"><mrow><mi>q</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝐢</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>𝐣</mi></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>𝐤</mi></mrow></mrow></mrow></math>, then the quaternion
+conjugate of <math id="p6.m3" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math>, denoted <math id="p6.m4" class="ltx_Math" alttext="\overline{q}" display="inline"><mover accent="true"><mi>q</mi><mo>¯</mo></mover></math>, is simply <math id="p6.m5" class="ltx_Math" alttext="\overline{q}=a\mathbf{1}-b\mathbf{i}-c\mathbf{j}-d\mathbf{k}" display="inline"><mrow><mover accent="true"><mi>q</mi><mo>¯</mo></mover><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝐢</mi></mrow><mo>-</mo><mrow><mi>c</mi><mo>⁢</mo><mi>𝐣</mi></mrow><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>𝐤</mi></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">One can readily verify that if
+<math id="p7.m1" class="ltx_Math" alttext="q=a\mathbf{1}+b\mathbf{i}+c\mathbf{j}+d\mathbf{k}" display="inline"><mrow><mi>q</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mn>𝟏</mn></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝐢</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>𝐣</mi></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>𝐤</mi></mrow></mrow></mrow></math>,
+then <math id="p7.m2" class="ltx_Math" alttext="q\overline{q}=(a^{2}+b^{2}+c^{2}+d^{2})\mathbf{1}" display="inline"><mrow><mrow><mi>q</mi><mo>⁢</mo><mover accent="true"><mi>q</mi><mo>¯</mo></mover></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><msup><mi>d</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mn>𝟏</mn></mrow></mrow></math>.
+(See Euler four-square identity.)
+This product is used to form a norm <math id="p7.m3" class="ltx_Math" alttext="\|\cdot\|" display="inline"><mrow><mo>∥</mo><mo>⋅</mo><mo>∥</mo></mrow></math> on the algebra
+(or the ring) <math id="p7.m4" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math>: We define <math id="p7.m5" class="ltx_Math" alttext="\|q\|=\sqrt{s}" display="inline"><mrow><mrow><mo>∥</mo><mi>q</mi><mo>∥</mo></mrow><mo>=</mo><msqrt><mi>s</mi></msqrt></mrow></math> where
+<math id="p7.m6" class="ltx_Math" alttext="q\overline{q}=s\mathbf{1}" display="inline"><mrow><mrow><mi>q</mi><mo>⁢</mo><mover accent="true"><mi>q</mi><mo>¯</mo></mover></mrow><mo>=</mo><mrow><mi>s</mi><mo>⁢</mo><mn>𝟏</mn></mrow></mrow></math>.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">If <math id="p8.m1" class="ltx_Math" alttext="v,w\in\mathbb{H}" display="inline"><mrow><mrow><mi>v</mi><mo>,</mo><mi>w</mi></mrow><mo>∈</mo><mi>ℍ</mi></mrow></math> and <math id="p8.m2" class="ltx_Math" alttext="\lambda\in\mathbb{R}" display="inline"><mrow><mi>λ</mi><mo>∈</mo><mi>ℝ</mi></mrow></math>, then</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\|v\|\geq 0" display="inline"><mrow><mrow><mo>∥</mo><mi>v</mi><mo>∥</mo></mrow><mo>≥</mo><mn>0</mn></mrow></math> with equality only if <math id="I1.i1.p1.m2" class="ltx_Math" alttext="v=\left&lt;0,0,0,0\right&gt;=0" display="inline"><mrow><mi>v</mi><mo>=</mo><mrow><mo>⟨</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>⟩</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\|\lambda v\|=|\lambda|\|v\|" display="inline"><mrow><mrow><mo>∥</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>v</mi></mrow><mo>∥</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>λ</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo>∥</mo><mi>v</mi><mo>∥</mo></mrow></mrow></mrow></math></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">3.</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\|v+w\|\leq\|v\|+\|w\|" display="inline"><mrow><mrow><mo>∥</mo><mrow><mi>v</mi><mo>+</mo><mi>w</mi></mrow><mo>∥</mo></mrow><mo>≤</mo><mrow><mrow><mo>∥</mo><mi>v</mi><mo>∥</mo></mrow><mo>+</mo><mrow><mo>∥</mo><mi>w</mi><mo>∥</mo></mrow></mrow></mrow></math></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">4.</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\|v\cdot w\|=\|v\|\cdot\|w\|" display="inline"><mrow><mrow><mo>∥</mo><mrow><mi>v</mi><mo>⋅</mo><mi>w</mi></mrow><mo>∥</mo></mrow><mo>=</mo><mrow><mrow><mo>∥</mo><mi>v</mi><mo>∥</mo></mrow><mo>⋅</mo><mrow><mo>∥</mo><mi>w</mi><mo>∥</mo></mrow></mrow></mrow></math></p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">which means that <math id="p8.m3" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math> qualifies as a normed algebra when we give it the
+norm <math id="p8.m4" class="ltx_Math" alttext="\|\cdot\|" display="inline"><mrow><mo>∥</mo><mo>⋅</mo><mo>∥</mo></mrow></math>.
+</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Because the norm of any nonzero quaternion <math id="p9.m1" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> is real and nonzero,
+we have</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\frac{q\overline{q}}{\|q\|^{2}}=\frac{\overline{q}q}{\|q\|^{2}}=\left&lt;1,0,0,0\right&gt;" display="block"><mrow><mfrac><mrow><mi>q</mi><mo>⁢</mo><mover accent="true"><mi>q</mi><mo>¯</mo></mover></mrow><msup><mrow><mo>∥</mo><mi>q</mi><mo>∥</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mover accent="true"><mi>q</mi><mo>¯</mo></mover><mo>⁢</mo><mi>q</mi></mrow><msup><mrow><mo>∥</mo><mi>q</mi><mo>∥</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mrow><mo>⟨</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>⟩</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which shows that any nonzero quaternion has an inverse:</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="q^{-1}=\frac{\overline{q}}{\|q\|^{2}}\;." display="block"><mrow><mrow><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mpadded width="+2.8pt"><mfrac><mover accent="true"><mi>q</mi><mo>¯</mo></mover><msup><mrow><mo>∥</mo><mi>q</mi><mo>∥</mo></mrow><mn>2</mn></msup></mfrac></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p10" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Other embeddings of <math id="p10.m1" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi mathvariant="normal">C</mi></math> into <math id="p10.m2" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi mathvariant="normal">H</mi></math></span></p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">One can use any non-zero <math id="p11.m1" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> to define an embedding of
+<math id="p11.m2" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi>ℂ</mi></math> into <math id="p11.m3" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math>. If <math id="p11.m4" class="ltx_Math" alttext="\mathbf{n}(z)" display="inline"><mrow><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+is a natural embedding of <math id="p11.m5" class="ltx_Math" alttext="z\in\mathbb{C}" display="inline"><mrow><mi>z</mi><mo>∈</mo><mi>ℂ</mi></mrow></math>
+into <math id="p11.m6" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math>, then the embedding:</p>
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="z\rightarrow q\mathbf{n}(z)q^{-1}" display="block"><mrow><mi>z</mi><mo>→</mo><mrow><mi>q</mi><mo>⁢</mo><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">is also an embedding into <math id="p11.m7" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math>.
+Because <math id="p11.m8" class="ltx_Math" alttext="\mathbb{H}" display="inline"><mi>ℍ</mi></math> is an associative algebra, it is obvious
+that:</p>
+<table id="S0.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex10.m1" class="ltx_Math" alttext="(q\mathbf{n}(a)q^{-1})(q\mathbf{n}(b)q^{-1})=q(\mathbf{n}(a)\mathbf{n}(b))q^{-1}" display="block"><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>⁢</mo><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>⁢</mo><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and with the distributive laws, it is easy to check that</p>
+<table id="S0.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex11.m1" class="ltx_Math" alttext="(q\mathbf{n}(a)q^{-1})+(q\mathbf{n}(b)q^{-1})=q(\mathbf{n}(a)+\mathbf{n}(b))q^%
+{-1}" display="block"><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>⁢</mo><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>⁢</mo><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>𝐧</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>q</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p12" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Rotations in 3-space</span></p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">Let us write</p>
+<table id="S0.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex12.m1" class="ltx_Math" alttext="U=\{q\in\mathbb{H}:||q||=1\}" display="block"><mrow><mi>U</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>q</mi><mo>∈</mo><mi>ℍ</mi></mrow><mo>:</mo><mrow><mrow><mo fence="true">||</mo><mi>q</mi><mo fence="true">||</mo></mrow><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">With multiplication, <math id="p13.m1" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> is a group.
+Let us briefly sketch the relation between <math id="p13.m2" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> and the group
+<math id="p13.m3" class="ltx_Math" alttext="SO(3)" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></math> of rotations (about the origin) in 3-space.</p>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">An arbitrary element <math id="p14.m1" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> of <math id="p14.m2" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> can be expressed
+<math id="p14.m3" class="ltx_Math" alttext="\cos\frac{\theta}{2}+\sin\frac{\theta}{2}(a\mathbf{i}+b\mathbf{j}+c\mathbf{k})" display="inline"><mrow><mrow><mi>cos</mi><mo>⁡</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac></mrow><mo>+</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>𝐢</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝐣</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>𝐤</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>,
+for some real numbers <math id="p14.m4" class="ltx_Math" alttext="\theta,a,b,c" display="inline"><mrow><mi>θ</mi><mo>,</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></math> such that <math id="p14.m5" class="ltx_Math" alttext="a^{2}+b^{2}+c^{2}=1" display="inline"><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow></math>.
+The permutation <math id="p14.m6" class="ltx_Math" alttext="v\mapsto qv" display="inline"><mrow><mi>v</mi><mo>↦</mo><mrow><mi>q</mi><mo>⁢</mo><mi>v</mi></mrow></mrow></math> of <math id="p14.m7" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> thus gives rise to a permutation
+of the real sphere. It turns out that that permutation is a rotation.
+Its axis is the line through <math id="p14.m8" class="ltx_Math" alttext="(0,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> and <math id="p14.m9" class="ltx_Math" alttext="(a,b,c)" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math>, and the angle
+through which it rotates the sphere is <math id="p14.m10" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>.
+If rotations <math id="p14.m11" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> and <math id="p14.m12" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> correspond to quaternions <math id="p14.m13" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> and <math id="p14.m14" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>
+respectively, then clearly the permutation <math id="p14.m15" class="ltx_Math" alttext="v\mapsto qrv" display="inline"><mrow><mi>v</mi><mo>↦</mo><mrow><mi>q</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>v</mi></mrow></mrow></math> corresponds
+to the composite rotation <math id="p14.m16" class="ltx_Math" alttext="F\circ G" display="inline"><mrow><mi>F</mi><mo>∘</mo><mi>G</mi></mrow></math>.
+Thus this mapping of <math id="p14.m17" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> onto <math id="p14.m18" class="ltx_Math" alttext="SO(3)" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></math> is a group homomorphism.
+Its kernel is the subset <math id="p14.m19" class="ltx_Math" alttext="\{1,-1\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></math> of <math id="p14.m20" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>, and thus it comprises
+a double cover of <math id="p14.m21" class="ltx_Math" alttext="SO(3)" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></math>. The kernel has a geometric interpretation
+as well: two unit vectors in opposite directions determine the same
+axis of rotation.</p>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">On the algebraic side, the quaternions provide an example of a division ring that is not a field.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Hamiltonian quaternions</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HamiltonianQuaternions</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:35:42</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:35:42</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">mathcam (2727)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">mathcam (2727)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">mathcam (2727)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16W99</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">quaternion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">EulerFourSquareIdentity</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">QuaternionGroup</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HyperkahlerManifold</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">MathematicalBiology</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">quaternion algebra</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:45:56 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

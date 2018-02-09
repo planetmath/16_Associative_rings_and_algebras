@@ -1,0 +1,144 @@
+<!DOCTYPE html><html>
+<head>
+<title>Krull-Schmidt theorem</title>
+<!--Generated on Fri Feb  9 18:42:14 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Krull-Schmidt theorem</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">A group <math id="p2.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is said to satisfy the <em class="ltx_emph ltx_font_italic">ascending chain condition</em> (or ACC) on normal subgroups if there is no infinite ascending proper chain
+<math id="p2.m2" class="ltx_Math" alttext="G_{1}\subsetneq G_{2}\subsetneq G_{3}\cdots" display="inline"><mrow><msub><mi>G</mi><mn>1</mn></msub><mo>⊊</mo><msub><mi>G</mi><mn>2</mn></msub><mo>⊊</mo><mrow><msub><mi>G</mi><mn>3</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></math> with each <math id="p2.m3" class="ltx_Math" alttext="G_{i}" display="inline"><msub><mi>G</mi><mi>i</mi></msub></math> a normal subgroup of <math id="p2.m4" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Similarly, <math id="p3.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is said to satisfy the <em class="ltx_emph ltx_font_italic">descending chain condition</em> (or DCC) on normal subgroups if there is no infinite descending proper chain of normal subgroups of <math id="p3.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">One can show that if a nontrivial group satisfies either the ACC or the DCC on normal subgroups, then that group can be expressed as the internal direct product of finitely many indecomposable subgroups. If <em class="ltx_emph ltx_font_italic">both</em> the ACC and DCC are satisfied, the Krull-Schmidt theorem guarantees that this “decomposition into indecomposables” is essentially unique. (Note that every finite group satisfies both the ACC and DCC on normal subgroups.)</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Krull-Schmidt theorem:</span> Let <math id="p5.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> be a nontrivial group satisfying both the ACC and DCC on its normal subgroups. Suppose <math id="p5.m2" class="ltx_Math" alttext="G=G_{1}\times\cdots\times G_{n}" display="inline"><mrow><mi>G</mi><mo>=</mo><mrow><msub><mi>G</mi><mn>1</mn></msub><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><msub><mi>G</mi><mi>n</mi></msub></mrow></mrow></math> and <math id="p5.m3" class="ltx_Math" alttext="G=H_{1}\times\cdots\times H_{m}" display="inline"><mrow><mi>G</mi><mo>=</mo><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><msub><mi>H</mi><mi>m</mi></msub></mrow></mrow></math> (internal direct products) where each <math id="p5.m4" class="ltx_Math" alttext="G_{i}" display="inline"><msub><mi>G</mi><mi>i</mi></msub></math> and <math id="p5.m5" class="ltx_Math" alttext="H_{i}" display="inline"><msub><mi>H</mi><mi>i</mi></msub></math> is indecomposable. Then <math id="p5.m6" class="ltx_Math" alttext="n=m" display="inline"><mrow><mi>n</mi><mo>=</mo><mi>m</mi></mrow></math> and, after reindexing, <math id="p5.m7" class="ltx_Math" alttext="G_{i}\cong H_{i}" display="inline"><mrow><msub><mi>G</mi><mi>i</mi></msub><mo>≅</mo><msub><mi>H</mi><mi>i</mi></msub></mrow></math> for each <math id="p5.m8" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math>. Moreover, for all <math id="p5.m9" class="ltx_Math" alttext="k&lt;n" display="inline"><mrow><mi>k</mi><mo>&lt;</mo><mi>n</mi></mrow></math>, <math id="p5.m10" class="ltx_Math" alttext="G=G_{1}\times\cdots\times G_{k}\times H_{k+1}\times\cdots\times H_{n}" display="inline"><mrow><mi>G</mi><mo>=</mo><mrow><msub><mi>G</mi><mn>1</mn></msub><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><msub><mi>G</mi><mi>k</mi></msub><mo>×</mo><msub><mi>H</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><msub><mi>H</mi><mi>n</mi></msub></mrow></mrow></math>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">For proof, see Hungerford’s <em class="ltx_emph ltx_font_italic">Algebra</em>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Noetherian [resp. artinian] modules satisfy the ACC [resp. DCC] on submodules. Indeed the Krull-Schmidt theorem also appears in the context of module theory. (Sometimes, as in Lang’s <em class="ltx_emph ltx_font_italic">Algebra</em>, this result is called the Krull-Remak-Schmidt theorem.)</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Krull-Schmidt theorem (for modules):</span> A nonzero module that is both noetherian and artinian can be expressed as the direct sum of finitely many indecomposable modules. These indecomposable summands are uniquely determined up to isomorphism and permutation.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">References.</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Hungerford, T., <em class="ltx_emph ltx_font_italic">Algebra</em>. New York: Springer, 1974.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Lang, S., <em class="ltx_emph ltx_font_italic">Algebra</em>. (3d ed.), New York: Springer, 2002.</p>
+</div>
+</li>
+</ul>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Krull-Schmidt theorem</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">KrullSchmidtTheorem</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:24:00</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:24:00</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">24</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Theorem</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16P40</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16P20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16D70</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 20E34</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 20-00</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Krull-Remak-Schmidt theorem</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">IndecomposableGroup</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ascending chain condition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">descending chain condition</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:42:14 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

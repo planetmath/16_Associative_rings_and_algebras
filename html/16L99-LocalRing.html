@@ -1,0 +1,162 @@
+<!DOCTYPE html><html>
+<head>
+<title>local ring</title>
+<!--Generated on Fri Feb  9 18:40:59 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">local ring</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S0.SSx1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Commutative case</h2>
+
+<div id="S0.SSx1.p1" class="ltx_para">
+<p class="ltx_p">A commutative ring with multiplicative identity is called <span class="ltx_text ltx_font_italic">local</span> if it has exactly one maximal ideal.
+This is the case if and only if <math id="S0.SSx1.p1.m1" class="ltx_Math" alttext="1\not=0" display="inline"><mrow><mn>1</mn><mo>≠</mo><mn>0</mn></mrow></math> and the sum of any two non-units (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/unit</span>) in the ring is again a non-unit; the unique maximal ideal consists precisely of the non-units.</p>
+</div>
+<div id="S0.SSx1.p2" class="ltx_para">
+<p class="ltx_p">The name comes from the fact that these rings are important in the study of the local behavior of varieties (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/variety</span>) and manifolds: the ring of function germs at a point is always local. (The reason is simple: a germ <math id="S0.SSx1.p2.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is invertible in the ring of germs at <math id="S0.SSx1.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> if and only if <math id="S0.SSx1.p2.m3" class="ltx_Math" alttext="f(x)\not=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math>, which implies that the sum of two non-invertible elements is again non-invertible.)
+This is also why schemes, the generalizations of varieties, are defined as certain locally ringed spaces. Other examples of local rings include:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">All fields are local. The unique maximal ideal is <math id="I1.i1.p1.m1" class="ltx_Math" alttext="(0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Rings of formal power series over a field are local, even in several variables. The unique maximal ideal consists of those  without .</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">if <math id="I1.i3.p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is a commutative ring with multiplicative identity, and <math id="I1.i3.p1.m2" class="ltx_Math" alttext="\mathfrak{p}" display="inline"><mi>𝔭</mi></math> is a prime ideal in <math id="I1.i3.p1.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, then the localization of <math id="I1.i3.p1.m4" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> at <math id="I1.i3.p1.m5" class="ltx_Math" alttext="\mathfrak{p}" display="inline"><mi>𝔭</mi></math>, written as <math id="I1.i3.p1.m6" class="ltx_Math" alttext="R_{\mathfrak{p}}" display="inline"><msub><mi>R</mi><mi>𝔭</mi></msub></math>, is always local. The unique maximal ideal in this ring is <math id="I1.i3.p1.m7" class="ltx_Math" alttext="\mathfrak{p}R_{\mathfrak{p}}" display="inline"><mrow><mi>𝔭</mi><mo>⁢</mo><msub><mi>R</mi><mi>𝔭</mi></msub></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">All discrete valuation rings are local.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S0.SSx1.p3" class="ltx_para">
+<p class="ltx_p">A local ring <math id="S0.SSx1.p3.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> with maximal ideal <math id="S0.SSx1.p3.m2" class="ltx_Math" alttext="\mathfrak{m}" display="inline"><mi>𝔪</mi></math> is also written as <math id="S0.SSx1.p3.m3" class="ltx_Math" alttext="(R,\mathfrak{m})" display="inline"><mrow><mo stretchy="false">(</mo><mi>R</mi><mo>,</mo><mi>𝔪</mi><mo stretchy="false">)</mo></mrow></math>.
+</p>
+</div>
+<div id="S0.SSx1.p4" class="ltx_para">
+<p class="ltx_p">Every local ring <math id="S0.SSx1.p4.m1" class="ltx_Math" alttext="(R,\mathfrak{m})" display="inline"><mrow><mo stretchy="false">(</mo><mi>R</mi><mo>,</mo><mi>𝔪</mi><mo stretchy="false">)</mo></mrow></math> is a topological ring in a natural way, taking the powers of <math id="S0.SSx1.p4.m2" class="ltx_Math" alttext="\mathfrak{m}" display="inline"><mi>𝔪</mi></math> as a neighborhood base of 0.</p>
+</div>
+<div id="S0.SSx1.p5" class="ltx_para">
+<p class="ltx_p">Given two local rings <math id="S0.SSx1.p5.m1" class="ltx_Math" alttext="(R,\mathfrak{m})" display="inline"><mrow><mo stretchy="false">(</mo><mi>R</mi><mo>,</mo><mi>𝔪</mi><mo stretchy="false">)</mo></mrow></math> and <math id="S0.SSx1.p5.m2" class="ltx_Math" alttext="(S,\mathfrak{n})" display="inline"><mrow><mo stretchy="false">(</mo><mi>S</mi><mo>,</mo><mi>𝔫</mi><mo stretchy="false">)</mo></mrow></math>, a <em class="ltx_emph ltx_font_italic">local ring homomorphism</em> from <math id="S0.SSx1.p5.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> to <math id="S0.SSx1.p5.m4" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> is a ring homomorphism <math id="S0.SSx1.p5.m5" class="ltx_Math" alttext="f:R\to S" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>R</mi><mo>→</mo><mi>S</mi></mrow></mrow></math> (respecting the multiplicative identities) with <math id="S0.SSx1.p5.m6" class="ltx_Math" alttext="f(\mathfrak{m})\subseteq\mathfrak{n}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝔪</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mi>𝔫</mi></mrow></math>. These are precisely the ring homomorphisms that are continuous with respect to the given topologies on <math id="S0.SSx1.p5.m7" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and <math id="S0.SSx1.p5.m8" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>.</p>
+</div>
+<div id="S0.SSx1.p6" class="ltx_para">
+<p class="ltx_p">The <span class="ltx_text ltx_font_italic">residue field</span> of the local ring <math id="S0.SSx1.p6.m1" class="ltx_Math" alttext="(R,\mathfrak{m})" display="inline"><mrow><mo stretchy="false">(</mo><mi>R</mi><mo>,</mo><mi>𝔪</mi><mo stretchy="false">)</mo></mrow></math> is the field <math id="S0.SSx1.p6.m2" class="ltx_Math" alttext="R/\mathfrak{m}" display="inline"><mrow><mi>R</mi><mo>/</mo><mi>𝔪</mi></mrow></math>.</p>
+</div>
+</section>
+<section id="S0.SSx2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">General case</h2>
+
+<div id="S0.SSx2.p1" class="ltx_para">
+<p class="ltx_p">One also considers non-commutative local rings. A ring (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/ring</span>) with multiplicative identity is called <em class="ltx_emph ltx_font_italic">local</em> if it has a unique maximal left ideal. In that case, the ring also has a unique maximal right ideal, and the two  coincide with the ring’s Jacobson radical, which in this case consists precisely of the non-units in the ring.</p>
+</div>
+<div id="S0.SSx2.p2" class="ltx_para">
+<p class="ltx_p">A ring <math id="S0.SSx2.p2.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is local if and only if the following condition holds: we have <math id="S0.SSx2.p2.m2" class="ltx_Math" alttext="1\not=0" display="inline"><mrow><mn>1</mn><mo>≠</mo><mn>0</mn></mrow></math>, and whenever <math id="S0.SSx2.p2.m3" class="ltx_Math" alttext="x\in R" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>R</mi></mrow></math> is not invertible, then <math id="S0.SSx2.p2.m4" class="ltx_Math" alttext="1-x" display="inline"><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></math> is invertible.</p>
+</div>
+<div id="S0.SSx2.p3" class="ltx_para">
+<p class="ltx_p">All skew fields are local rings. More interesting examples are given by endomorphism rings: a finite-length module over some ring is indecomposable if and only if its endomorphism ring is local, a consequence of Fitting’s lemma.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">local ring</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">LocalRing</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:37:44</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:37:44</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16L99</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 13H99</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16L30</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">DiscreteValuationRing</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">LocallyRingedSpace</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">SemiLocalRing</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">local ring homomorphism</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:40:59 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

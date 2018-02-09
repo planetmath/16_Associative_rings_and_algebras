@@ -1,0 +1,238 @@
+<!DOCTYPE html><html>
+<head>
+<title>hollow matrix rings</title>
+<!--Generated on Fri Feb  9 18:41:57 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">hollow matrix rings</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Definition</h2>
+
+<div id="Thmthm1" class="ltx_theorem ltx_theorem_defn">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Definition 1</span>.</h6>
+<div id="Thmthm1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose that <math id="Thmthm1.p1.m1" class="ltx_Math" alttext="R\subseteq S" display="inline"><mrow><mi>R</mi><mo mathvariant="normal">⊆</mo><mi>S</mi></mrow></math> are both rings. The <em class="ltx_emph ltx_font_upright">hollow matrix ring</em> of <math id="Thmthm1.p1.m2" class="ltx_Math" alttext="(R,S)" display="inline"><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>R</mi><mo mathvariant="normal">,</mo><mi>S</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></math>
+is the ring of matrices:</span></p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="\begin{bmatrix}S&amp;S\\
+0&amp;R\end{bmatrix}:=\left\{\begin{bmatrix}s&amp;t\\
+0&amp;r\end{bmatrix}:s,t\in S,r\in R\right\}." display="block"><mrow><mrow><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>S</mi></mtd><mtd columnalign="center"><mi>S</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>R</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>:=</mo><mrow><mo>{</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>s</mi></mtd><mtd columnalign="center"><mi>t</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>r</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>:</mo><mrow><mrow><mrow><mi>s</mi><mo>,</mo><mi>t</mi></mrow><mo>∈</mo><mi>S</mi></mrow><mo>,</mo><mrow><mi>r</mi><mo>∈</mo><mi>R</mi></mrow></mrow><mo>}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">It is easy to check that this forms a ring under the usual matrix addition and
+multiplication.
+This definition is slightly simplified from the obvious higher dimensional examples
+and the transpose of these matrices will also qualify as a hollow matrix ring.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">The hollow matrix rings are highly counter-intuitive despite their simple definition.
+In particular, they can be used to prove that in general a ring’s left ideal
+structure need not relate to its right ideal structure. We highlight a few
+examples of this.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Left/Right Artinian and Noetherian</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">We specialize to an example with the fields <math id="S2.p1.m1" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math> and <math id="S2.p1.m2" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>, though
+the same argument can be made in much more general settings.</p>
+<table id="S2.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.E1.m1" class="ltx_Math" alttext="R:=\begin{bmatrix}\mathbb{R}&amp;\mathbb{R}\\
+0&amp;\mathbb{Q}\end{bmatrix}=\left\{\begin{bmatrix}a&amp;b\\
+0&amp;c\end{bmatrix}:a,b\in\mathbb{R},c\in\mathbb{Q}\right\}." display="block"><mrow><mrow><mi>R</mi><mo>:=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>ℝ</mi></mtd><mtd columnalign="center"><mi>ℝ</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>ℚ</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>c</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>:</mo><mrow><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><mo>,</mo><mrow><mi>c</mi><mo>∈</mo><mi>ℚ</mi></mrow></mrow><mo>}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+</div>
+<div id="Thmthm2" class="ltx_theorem ltx_theorem_claim">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Claim 2</span>.</h6>
+<div id="Thmthm2.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmthm2.p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math><span class="ltx_text ltx_font_italic"> is left Artinian and left Noetherian.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">Let <math id="S2.p2.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> be a left ideal of <math id="S2.p2.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and suppose
+that <math id="S2.p2.m3" class="ltx_Math" alttext="r:=\begin{bmatrix}x&amp;y\\
+0&amp;z\end{bmatrix}\in I" display="inline"><mrow><mi>r</mi><mo>:=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>x</mi></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>∈</mo><mi>I</mi></mrow></math> for some
+<math id="S2.p2.m4" class="ltx_Math" alttext="x,y\in\mathbb{R}" display="inline"><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow></math> and <math id="S2.p2.m5" class="ltx_Math" alttext="z\in\mathbb{Q}" display="inline"><mrow><mi>z</mi><mo>∈</mo><mi>ℚ</mi></mrow></math>.</p>
+</div>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">Suppose that <math id="S2.p3.m1" class="ltx_Math" alttext="z\neq 0" display="inline"><mrow><mi>z</mi><mo>≠</mo><mn>0</mn></mrow></math>. Hence, <math id="S2.p3.m2" class="ltx_Math" alttext="s_{q}:=\begin{bmatrix}0&amp;0\\
+0&amp;q/z\end{bmatrix}\in R" display="inline"><mrow><msub><mi>s</mi><mi>q</mi></msub><mo>:=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>q</mi><mo>/</mo><mi>z</mi></mrow></mtd></mtr></mtable><mo>]</mo></mrow><mo>∈</mo><mi>R</mi></mrow></math>
+for each <math id="S2.p3.m3" class="ltx_Math" alttext="q\in\mathbb{Q}" display="inline"><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow></math>
+and so <math id="S2.p3.m4" class="ltx_Math" alttext="s_{q}r=\begin{bmatrix}0&amp;0\\
+0&amp;q\end{bmatrix}\in I" display="inline"><mrow><mrow><msub><mi>s</mi><mi>q</mi></msub><mo>⁢</mo><mi>r</mi></mrow><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>q</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>∈</mo><mi>I</mi></mrow></math> for all <math id="S2.p3.m5" class="ltx_Math" alttext="q\in\mathbb{Q}" display="inline"><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow></math>. In particular,
+<math id="S2.p3.m6" class="ltx_Math" alttext="\begin{bmatrix}x&amp;y\\
+0&amp;0\end{bmatrix}=r-s_{1}r\in I" display="inline"><mrow><mrow><mo>[</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>x</mi></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>]</mo></mrow><mo>=</mo><mrow><mi>r</mi><mo>-</mo><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><mi>r</mi></mrow></mrow><mo>∈</mo><mi>I</mi></mrow></math>. So in all cases it follows that
+<math id="S2.p3.m7" class="ltx_Math" alttext="\begin{bmatrix}x&amp;y\\
+0&amp;0\end{bmatrix}\in I" display="inline"><mrow><mrow><mo>[</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>x</mi></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>]</mo></mrow><mo>∈</mo><mi>I</mi></mrow></math>. So now we take
+<math id="S2.p3.m8" class="ltx_Math" alttext="r=\begin{bmatrix}x&amp;y\\
+0&amp;0\end{bmatrix}" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>x</mi></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>]</mo></mrow></mrow></math> and assume that <math id="S2.p3.m9" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> does not contain any <math id="S2.p3.m10" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> with <math id="S2.p3.m11" class="ltx_Math" alttext="z\neq 0" display="inline"><mrow><mi>z</mi><mo>≠</mo><mn>0</mn></mrow></math>.
+By observing matrix multiplication it follows that <math id="S2.p3.m12" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is now a left <math id="S2.p3.m13" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>-vector space, and so any
+chain of left <math id="S2.p3.m14" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>-modules is a chain of subspaces. As <math id="S2.p3.m15" class="ltx_Math" alttext="\dim_{\mathbb{R}}I\leq 2" display="inline"><mrow><mrow><msub><mo>dim</mo><mi>ℝ</mi></msub><mo>⁡</mo><mi>I</mi></mrow><mo>≤</mo><mn>2</mn></mrow></math>,
+it follows that such chains are finite.</p>
+</div>
+<div id="S2.p4" class="ltx_para">
+<p class="ltx_p">Hence, there can be no infinite descending chain of distinct left ideals
+and so <math id="S2.p4.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is left Artinian and Noetherian.
+∎</p>
+</div>
+</div>
+<div id="Thmthm3" class="ltx_theorem ltx_theorem_claim">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Claim 3</span>.</h6>
+<div id="Thmthm3.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmthm3.p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math><span class="ltx_text ltx_font_italic"> is not right Artinian nor right Noetherian.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="S2.p5" class="ltx_para">
+<p class="ltx_p">Using <math id="S2.p5.m1" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> (the usual <math id="S2.p5.m2" class="ltx_Math" alttext="3.14\dots" display="inline"><mrow><mn>3.14</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></math>), or any other transcendental number, we define</p>
+<table id="S2.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.E2.m1" class="ltx_Math" alttext="I_{n}:=\begin{bmatrix}0&amp;\mathbb{Q}[\pi;n]\\
+0&amp;0\end{bmatrix}," display="block"><mrow><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>:=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>π</mi><mo>;</mo><mi>n</mi><mo stretchy="false">]</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="S2.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.E3.m1" class="ltx_Math" alttext="\mathbb{Q}[\pi;n]:=\{q(\pi)\pi^{n}:q(x)\in\mathbb{Q}[x]\}." display="block"><mrow><mrow><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>π</mi><mo>;</mo><mi>n</mi><mo stretchy="false">]</mo></mrow></mrow><mo>:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>π</mi><mi>n</mi></msup></mrow><mo>:</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="S2.p5.m3" class="ltx_Math" alttext="\mathbb{Q}[\pi;n]" display="inline"><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>π</mi><mo>;</mo><mi>n</mi><mo stretchy="false">]</mo></mrow></mrow></math> properly contains <math id="S2.p5.m4" class="ltx_Math" alttext="\mathbb{Q}[\pi;n+1]" display="inline"><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>π</mi><mo>;</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></math> for all
+<math id="S2.p5.m5" class="ltx_Math" alttext="n\in\mathbb{Z}" display="inline"><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow></math>, it follows that <math id="S2.p5.m6" class="ltx_Math" alttext="\{I_{n}:n\in\mathbb{Z}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi>I</mi><mi>n</mi></msub><mo>:</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">}</mo></mrow></math> is an infinite proper
+ascending and descending chain of right ideals. Therefore, <math id="S2.p5.m7" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is neither right Artinian
+nor right Noetherian.
+∎</p>
+</div>
+</div>
+<div id="Thmthm4" class="ltx_theorem ltx_theorem_coro">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Corollary 4</span>.</h6>
+<div id="Thmthm4.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmthm4.p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math><span class="ltx_text ltx_font_italic"> does not have a ring anti-isomorphism. Thus <math id="Thmthm4.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is not an
+involutory ring.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="S2.p6" class="ltx_para">
+<p class="ltx_p">If <math id="S2.p6.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is a ring with an anti-isomorphism, then the set of left ideals
+is mapped to the set of right ideals, bijectively and order preserving.
+This is not possible with <math id="S2.p6.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>.
+∎</p>
+</div>
+</div>
+<div id="S2.p7" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">hollow matrix rings</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">HollowMatrixRings</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:42:21</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:42:21</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Algeboy (12884)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Algeboy (12884)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Algeboy (12884)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Example</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16P20</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16W10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">InvolutaryRing</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Artinian</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">Noetherian2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:41:57 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

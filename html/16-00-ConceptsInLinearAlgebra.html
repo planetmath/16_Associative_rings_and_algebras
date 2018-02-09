@@ -1,0 +1,198 @@
+<!DOCTYPE html><html>
+<head>
+<title>concepts in linear algebra</title>
+<!--Generated on Fri Feb  9 18:34:48 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">concepts in linear algebra</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">The aim of this entry is to present a list of the key
+objects and operators used in linear algebra. Each entry in the
+list links (or will link in the future) to the corresponding PlanetMath
+entry where the object is presented in greater detail. For convenience,
+this list also presents the encouraged notation to use (at PlanetMath)
+for these objects.
+</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Some of this notation is simply an example of more general notation, either notation in set theory or notation for functions. Some notation is also standard from category theory.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Suppose <math id="p3.m1" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> is a vector space over a field <math id="p3.m2" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math>. Where the field <math id="p3.m3" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math> is clear from context it is sometimes eliminated from the notation. Let <math id="p3.m4" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> be a linear operator, or linear transformation, from <math id="p3.m5" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> to <math id="p3.m6" class="ltx_Math" alttext="W" display="inline"><mi>W</mi></math>, and <math id="p3.m7" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> be an endomorphism of <math id="p3.m8" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>.</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\mathscr{L}(V,W)" display="inline"><mrow><mi class="ltx_font_mathscript">ℒ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo>,</mo><mi>W</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the set of linear transformations between vector spaces <math id="I1.i1.p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> and <math id="I1.i1.p1.m3" class="ltx_Math" alttext="W" display="inline"><mi>W</mi></math> (also <math id="I1.i1.p1.m4" class="ltx_Math" alttext="\operatorname{Hom}_{K}(V,W)" display="inline"><mrow><msub><mi>Hom</mi><mi>K</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo>,</mo><mi>W</mi><mo stretchy="false">)</mo></mrow></mrow></math>),
+</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">basis of a vector space and the matrix associated with the basis,</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\dim_{K}V" display="inline"><mrow><msub><mo>dim</mo><mi>K</mi></msub><mo>⁡</mo><mi>V</mi></mrow></math>, dimension (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Dimension2</span>) of <math id="I1.i3.p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>,</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\operatorname{span}\{e_{1},\ldots,e_{n}\}" display="inline"><mrow><mi>span</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></mrow></math> vector space spanned by vectors <math id="I1.i4.p1.m2" class="ltx_Math" alttext="\{e_{i}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow></math> (note that the list of vectors need not be finite). Some other notations are <math id="I1.i4.p1.m3" class="ltx_Math" alttext="(e_{1},e_{2},\ldots,e_{n})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><msub><mi>e</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></math> or <math id="I1.i4.p1.m4" class="ltx_Math" alttext="\langle e_{1},e_{2},\ldots,e_{n}\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><msub><mi>e</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">⟩</mo></mrow></math> (do not confuse last one with similar inner product notation),</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="\det E" display="inline"><mrow><mo>det</mo><mo>⁡</mo><mi>E</mi></mrow></math>, determinant of a linear operator,</p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i6.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i6.p1.m1" class="ltx_Math" alttext="\operatorname{tr}E" display="inline"><mrow><mi>tr</mi><mo>⁡</mo><mi>E</mi></mrow></math>, trace of a linear operator (also <math id="I1.i6.p1.m2" class="ltx_Math" alttext="\operatorname{trace}E" display="inline"><mrow><mi>trace</mi><mo>⁡</mo><mi>E</mi></mrow></math>),</p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i7.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i7.p1.m1" class="ltx_Math" alttext="\operatorname{im}L" display="inline"><mrow><mi>im</mi><mo>⁡</mo><mi>L</mi></mrow></math>, image of a linear operator (also <math id="I1.i7.p1.m2" class="ltx_Math" alttext="\operatorname{img}L" display="inline"><mrow><mi>img</mi><mo>⁡</mo><mi>L</mi></mrow></math> and <math id="I1.i7.p1.m3" class="ltx_Math" alttext="L(V)" display="inline"><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow></math>),</p>
+</div>
+</li>
+<li id="I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i8.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i8.p1.m1" class="ltx_Math" alttext="\operatorname{ker}L" display="inline"><mrow><mi>ker</mi><mo>⁡</mo><mi>L</mi></mrow></math>, kernel of a linear operator,</p>
+</div>
+</li>
+<li id="I1.i9" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i9.p1" class="ltx_para">
+<p class="ltx_p">for sets <math id="I1.i9.p1.m1" class="ltx_Math" alttext="A,B" display="inline"><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></math> and a point <math id="I1.i9.p1.m2" class="ltx_Math" alttext="x\in V" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>V</mi></mrow></math>, the expressions <math id="I1.i9.p1.m3" class="ltx_Math" alttext="A+B" display="inline"><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow></math>, <math id="I1.i9.p1.m4" class="ltx_Math" alttext="A-B" display="inline"><mrow><mi>A</mi><mo>-</mo><mi>B</mi></mrow></math>, <math id="I1.i9.p1.m5" class="ltx_Math" alttext="A+x" display="inline"><mrow><mi>A</mi><mo>+</mo><mi>x</mi></mrow></math>
+are the Minkowski sums (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/MinkowskiSum2</span>) (not especially if <math id="I1.i9.p1.m6" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="I1.i9.p1.m7" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> are subspaces, then their sum is a subspace, but the result may not be a direct sum),</p>
+</div>
+</li>
+<li id="I1.i10" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i10.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i10.p1.m1" class="ltx_Math" alttext="V^{\ast}" display="inline"><msup><mi>V</mi><mo>∗</mo></msup></math>, dual space of a vector space <math id="I1.i10.p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> (also <math id="I1.i10.p1.m3" class="ltx_Math" alttext="V^{\vee}" display="inline"><msup><mi>V</mi><mo>∨</mo></msup></math> or <math id="I1.i10.p1.m4" class="ltx_Math" alttext="\operatorname{Hom}_{K}(V,K)" display="inline"><mrow><msub><mi>Hom</mi><mi>K</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo>,</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow></math>),</p>
+</div>
+</li>
+<li id="I1.i11" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i11.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i11.p1.m1" class="ltx_Math" alttext="A^{\ast}" display="inline"><msup><mi>A</mi><mo>∗</mo></msup></math>, adjoint operator of a linear operator,</p>
+</div>
+</li>
+<li id="I1.i12" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i12.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i12.p1.m1" class="ltx_Math" alttext="V\oplus W" display="inline"><mrow><mi>V</mi><mo>⊕</mo><mi>W</mi></mrow></math>, direct sum of vector spaces <math id="I1.i12.p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> and <math id="I1.i12.p1.m3" class="ltx_Math" alttext="W" display="inline"><mi>W</mi></math> (both internal end external),</p>
+</div>
+</li>
+<li id="I1.i13" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i13.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i13.p1.m1" class="ltx_Math" alttext="V\otimes_{K}W" display="inline"><mrow><mi>V</mi><msub><mo>⊗</mo><mi>K</mi></msub><mi>W</mi></mrow></math>, tensor product of <math id="I1.i13.p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> and <math id="I1.i13.p1.m3" class="ltx_Math" alttext="W" display="inline"><mi>W</mi></math>, and</p>
+</div>
+</li>
+<li id="I1.i14" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i14.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i14.p1.m1" class="ltx_Math" alttext="V\wedge W" display="inline"><mrow><mi>V</mi><mo>∧</mo><mi>W</mi></mrow></math>, antisymmetrized tensor product (also called the wedge product),</p>
+</div>
+</li>
+<li id="I1.i15" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i15.p1" class="ltx_para">
+<p class="ltx_p">bilinear forms and quadratic forms</p>
+</div>
+</li>
+<li id="I1.i16" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i16.p1" class="ltx_para">
+<p class="ltx_p">generalizations of vector spaces over a field to vector spaces over a division ring to modules over a ring.</p>
+</div>
+</li>
+</ul>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">concepts in linear algebra</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ConceptsInLinearAlgebra</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:13:30</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:13:30</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">matte (1858)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">matte (1858)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">matte (1858)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 13-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 20-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 15-00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:34:48 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html><html>
+<head>
+<title>multiplicative sets in rings and prime ideals</title>
+<!--Generated on Fri Feb  9 18:43:44 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">multiplicative sets in rings and prime ideals</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Proposition.</span> Let <math id="p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> be a commutative ring, <math id="p1.m2" class="ltx_Math" alttext="S\subseteq R" display="inline"><mrow><mi>S</mi><mo>⊆</mo><mi>R</mi></mrow></math> a mutliplicative subset of <math id="p1.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> such that <math id="p1.m4" class="ltx_Math" alttext="0\not\in S" display="inline"><mrow><mn>0</mn><mo>∉</mo><mi>S</mi></mrow></math>. Then there exists prime ideal <math id="p1.m5" class="ltx_Math" alttext="P\subseteq R" display="inline"><mrow><mi>P</mi><mo>⊆</mo><mi>R</mi></mrow></math> such that <math id="p1.m6" class="ltx_Math" alttext="P\cap S=\emptyset" display="inline"><mrow><mrow><mi>P</mi><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Proof.</span> Consider the family <math id="p2.m1" class="ltx_Math" alttext="\mathcal{A}=\{I\subseteq R\ |\ I\mbox{ is an ideal and }I\cap S=\emptyset\}" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>I</mi><mo>⊆</mo><mpadded width="+5pt"><mi>R</mi></mpadded></mrow><mo rspace="7.5pt" stretchy="false">|</mo><mrow><mrow><mrow><mi>I</mi><mo>⁢</mo><mtext> is an ideal and </mtext><mo>⁢</mo><mi>I</mi></mrow><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></math>. Of course <math id="p2.m2" class="ltx_Math" alttext="\mathcal{A}\neq\emptyset" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>≠</mo><mi mathvariant="normal">∅</mi></mrow></math>, because the zero ideal <math id="p2.m3" class="ltx_Math" alttext="0\in\mathcal{A}" display="inline"><mrow><mn>0</mn><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></math>. We will show, that <math id="p2.m4" class="ltx_Math" alttext="\mathcal{A}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒜</mi></math> is inductive (i.e. satisfies Zorn’s Lemma’s assumptions) with respect to inclusion.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Let <math id="p3.m1" class="ltx_Math" alttext="\{I_{k}\}_{k\in K}" display="inline"><msub><mrow><mo stretchy="false">{</mo><msub><mi>I</mi><mi>k</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>k</mi><mo>∈</mo><mi>K</mi></mrow></msub></math> be a chain in <math id="p3.m2" class="ltx_Math" alttext="\mathcal{A}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒜</mi></math> (i.e. for any <math id="p3.m3" class="ltx_Math" alttext="a,b\in K" display="inline"><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>K</mi></mrow></math> either <math id="p3.m4" class="ltx_Math" alttext="I_{a}\subseteq I_{b}" display="inline"><mrow><msub><mi>I</mi><mi>a</mi></msub><mo>⊆</mo><msub><mi>I</mi><mi>b</mi></msub></mrow></math> or <math id="p3.m5" class="ltx_Math" alttext="I_{b}\subseteq I_{a}" display="inline"><mrow><msub><mi>I</mi><mi>b</mi></msub><mo>⊆</mo><msub><mi>I</mi><mi>a</mi></msub></mrow></math>). Consider <math id="p3.m6" class="ltx_Math" alttext="I=\bigcup_{k\in K}I_{k}" display="inline"><mrow><mi>I</mi><mo>=</mo><mrow><msub><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>k</mi><mo>∈</mo><mi>K</mi></mrow></msub><msub><mi>I</mi><mi>k</mi></msub></mrow></mrow></math>. Obviously <math id="p3.m7" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is an ideal. Furthermore, if <math id="p3.m8" class="ltx_Math" alttext="x\in I\cap S" display="inline"><mrow><mi>x</mi><mo>∈</mo><mrow><mi>I</mi><mo>∩</mo><mi>S</mi></mrow></mrow></math>, then there is <math id="p3.m9" class="ltx_Math" alttext="k\in K" display="inline"><mrow><mi>k</mi><mo>∈</mo><mi>K</mi></mrow></math> such that <math id="p3.m10" class="ltx_Math" alttext="x\in I_{k}\cap S=\emptyset" display="inline"><mrow><mi>x</mi><mo>∈</mo><mrow><msub><mi>I</mi><mi>k</mi></msub><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>. Thus <math id="p3.m11" class="ltx_Math" alttext="I\cap S=\emptyset" display="inline"><mrow><mrow><mi>I</mi><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>, so <math id="p3.m12" class="ltx_Math" alttext="I\in\mathcal{A}" display="inline"><mrow><mi>I</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></math>. Lastely each <math id="p3.m13" class="ltx_Math" alttext="I_{k}\subseteq I" display="inline"><mrow><msub><mi>I</mi><mi>k</mi></msub><mo>⊆</mo><mi>I</mi></mrow></math>, which completes this part of proof.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">By Zorn’s Lemma there is a maximal element <math id="p4.m1" class="ltx_Math" alttext="P\in\mathcal{A}" display="inline"><mrow><mi>P</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></math>. We will show that this ideal is prime. Let <math id="p4.m2" class="ltx_Math" alttext="x,y\in R" display="inline"><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>R</mi></mrow></math> be such that <math id="p4.m3" class="ltx_Math" alttext="xy\in P" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>∈</mo><mi>P</mi></mrow></math>. Assume that neither <math id="p4.m4" class="ltx_Math" alttext="x\not\in P" display="inline"><mrow><mi>x</mi><mo>∉</mo><mi>P</mi></mrow></math> nor <math id="p4.m5" class="ltx_Math" alttext="y\not\in P" display="inline"><mrow><mi>y</mi><mo>∉</mo><mi>P</mi></mrow></math>. Then <math id="p4.m6" class="ltx_Math" alttext="P\subset P+(x)" display="inline"><mrow><mi>P</mi><mo>⊂</mo><mrow><mi>P</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="p4.m7" class="ltx_Math" alttext="P\subset P+(y)" display="inline"><mrow><mi>P</mi><mo>⊂</mo><mrow><mi>P</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and these inclusions are proper. Therefore both <math id="p4.m8" class="ltx_Math" alttext="P+(x)" display="inline"><mrow><mi>P</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="p4.m9" class="ltx_Math" alttext="P+(y)" display="inline"><mrow><mi>P</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math> do not belong to <math id="p4.m10" class="ltx_Math" alttext="\mathcal{A}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒜</mi></math> (because <math id="p4.m11" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> is maximal). This implies that there exist <math id="p4.m12" class="ltx_Math" alttext="a\in(P+(x))\cap S" display="inline"><mrow><mi>a</mi><mo>∈</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>∩</mo><mi>S</mi></mrow></mrow></math> and <math id="p4.m13" class="ltx_Math" alttext="b\in(P+(y))\cap S" display="inline"><mrow><mi>b</mi><mo>∈</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>∩</mo><mi>S</mi></mrow></mrow></math>. Thus</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="a=m_{1}+r_{1}x\in S;\ \ \ \ b=m_{2}+r_{2}y\in S;" display="block"><mrow><mrow><mrow><mi>a</mi><mo>=</mo><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>∈</mo><mi>S</mi></mrow><mo rspace="22.5pt">;</mo><mrow><mi>b</mi><mo>=</mo><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>+</mo><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>∈</mo><mi>S</mi></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p4.m14" class="ltx_Math" alttext="m_{1},m_{2}\in P" display="inline"><mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>,</mo><msub><mi>m</mi><mn>2</mn></msub></mrow><mo>∈</mo><mi>P</mi></mrow></math> and <math id="p4.m15" class="ltx_Math" alttext="r_{1},r_{2}\in R" display="inline"><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><mo>∈</mo><mi>R</mi></mrow></math>. Note that <math id="p4.m16" class="ltx_Math" alttext="ab\in S" display="inline"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>∈</mo><mi>S</mi></mrow></math>. We calculate</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="ab=(m_{1}+r_{1}x)(m_{2}+r_{2}y)=m_{1}m_{2}+m_{2}r_{1}x+m_{1}r_{2}y+xyr_{1}r_{2}." display="block"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>+</mo><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>m</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>2</mn></msub><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>2</mn></msub></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Of course <math id="p4.m17" class="ltx_Math" alttext="m_{1}m_{2},m_{2}r_{1}x,m_{1}r_{2}y\in P" display="inline"><mrow><mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>m</mi><mn>2</mn></msub></mrow><mo>,</mo><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>2</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>∈</mo><mi>P</mi></mrow></math>, because <math id="p4.m18" class="ltx_Math" alttext="m_{1},m_{2}\in P" display="inline"><mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>,</mo><msub><mi>m</mi><mn>2</mn></msub></mrow><mo>∈</mo><mi>P</mi></mrow></math> and <math id="p4.m19" class="ltx_Math" alttext="xyr_{1}r_{2}\in P" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><mo>∈</mo><mi>P</mi></mrow></math> by our assumption that <math id="p4.m20" class="ltx_Math" alttext="xy\in P" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>∈</mo><mi>P</mi></mrow></math>. This shows, that <math id="p4.m21" class="ltx_Math" alttext="ab\in P" display="inline"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>∈</mo><mi>P</mi></mrow></math>. But <math id="p4.m22" class="ltx_Math" alttext="ab\in S" display="inline"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>∈</mo><mi>S</mi></mrow></math> and <math id="p4.m23" class="ltx_Math" alttext="P\in\mathcal{A}" display="inline"><mrow><mi>P</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></math>. Contradiction. <math id="p4.m24" class="ltx_Math" alttext="\square" display="inline"><mi mathvariant="normal">□</mi></math></p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Corollary.</span> Let <math id="p5.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> be a commutative ring, <math id="p5.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> an ideal in <math id="p5.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and <math id="p5.m4" class="ltx_Math" alttext="S\subseteq R" display="inline"><mrow><mi>S</mi><mo>⊆</mo><mi>R</mi></mrow></math> a multiplicative subset such that <math id="p5.m5" class="ltx_Math" alttext="I\cap S=\emptyset" display="inline"><mrow><mrow><mi>I</mi><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>. Then there exists prime ideal <math id="p5.m6" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> in <math id="p5.m7" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> such that <math id="p5.m8" class="ltx_Math" alttext="I\subseteq P" display="inline"><mrow><mi>I</mi><mo>⊆</mo><mi>P</mi></mrow></math> and <math id="p5.m9" class="ltx_Math" alttext="P\cap S=\emptyset" display="inline"><mrow><mrow><mi>P</mi><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Proof.</span> Let <math id="p6.m1" class="ltx_Math" alttext="\pi:R\to R/I" display="inline"><mrow><mi>π</mi><mo>:</mo><mrow><mi>R</mi><mo>→</mo><mrow><mi>R</mi><mo>/</mo><mi>I</mi></mrow></mrow></mrow></math> be the projection. Then <math id="p6.m2" class="ltx_Math" alttext="\pi(S)\subseteq R/I" display="inline"><mrow><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mrow><mi>R</mi><mo>/</mo><mi>I</mi></mrow></mrow></math> is a multiplicative subset in <math id="p6.m3" class="ltx_Math" alttext="R/I" display="inline"><mrow><mi>R</mi><mo>/</mo><mi>I</mi></mrow></math> such that <math id="p6.m4" class="ltx_Math" alttext="0+I\not\in\pi(S)" display="inline"><mrow><mrow><mn>0</mn><mo>+</mo><mi>I</mi></mrow><mo>∉</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> (because <math id="p6.m5" class="ltx_Math" alttext="I\cap S=\emptyset" display="inline"><mrow><mrow><mi>I</mi><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>). Thus, by proposition, there exists a prime ideal <math id="p6.m6" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> in <math id="p6.m7" class="ltx_Math" alttext="R/I" display="inline"><mrow><mi>R</mi><mo>/</mo><mi>I</mi></mrow></math> such that <math id="p6.m8" class="ltx_Math" alttext="P\cap\pi(S)=\emptyset" display="inline"><mrow><mrow><mi>P</mi><mo>∩</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>. Of course the preimage of a prime ideal is again a prime ideal. Furthermore <math id="p6.m9" class="ltx_Math" alttext="I\subseteq\pi^{-1}(P)" display="inline"><mrow><mi>I</mi><mo>⊆</mo><mrow><msup><mi>π</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Finaly <math id="p6.m10" class="ltx_Math" alttext="\pi^{-1}(P)\cap S=\emptyset" display="inline"><mrow><mrow><mrow><msup><mi>π</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><mi>S</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>, because <math id="p6.m11" class="ltx_Math" alttext="P\cap\pi(S)=\emptyset" display="inline"><mrow><mrow><mi>P</mi><mo>∩</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>. This completes the proof.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">multiplicative sets in rings and prime ideals</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">MultiplicativeSetsInRingsAndPrimeIdeals</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 19:03:58</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 19:03:58</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">5</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Theorem</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16U20</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 13B30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:43:44 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

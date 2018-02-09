@@ -1,0 +1,220 @@
+<!DOCTYPE html><html>
+<head>
+<title>graded module</title>
+<!--Generated on Fri Feb  9 18:45:45 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">graded module</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">It is a well-known fact that a polynomial (over, say, <math id="p1.m1" class="ltx_Math" alttext="\mathbb{Z}" display="inline"><mi>ℤ</mi></math>) can be written as a sum of monomials in a unique way. A monomial is a special kind of a polynomial. Unlike polynomials, the monomials can be partitioned so that the sum of any two monomial within a partition, and the product of any two monomials, are again monomials. As one may have guessed, one would partition the monomials by their degree. The above notion can be generalized, and the general notion is that of a graded ring (and a graded module).</p>
+</div>
+<section id="S0.SS0.SSSx1" class="ltx_subsubsection">
+<h2 class="ltx_title ltx_title_subsubsection">Definition</h2>
+
+<div id="S0.SS0.SSSx1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S0.SS0.SSSx1.p1.m1" class="ltx_Math" alttext="R=R_{0}\oplus R_{1}\oplus\cdots" display="inline"><mrow><mi>R</mi><mo>=</mo><mrow><msub><mi>R</mi><mn>0</mn></msub><mo>⊕</mo><msub><mi>R</mi><mn>1</mn></msub><mo>⊕</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></math> be a graded ring. A module <math id="S0.SS0.SSSx1.p1.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> over <math id="S0.SS0.SSSx1.p1.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is said to be a <em class="ltx_emph ltx_font_italic">graded module</em> if</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="M=M_{0}\oplus M_{1}\oplus\cdots" display="block"><mrow><mi>M</mi><mo>=</mo><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>⊕</mo><msub><mi>M</mi><mn>1</mn></msub><mo>⊕</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.SS0.SSSx1.p1.m4" class="ltx_Math" alttext="M_{i}" display="inline"><msub><mi>M</mi><mi>i</mi></msub></math> are abelian subgroups of <math id="S0.SS0.SSSx1.p1.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>, such that <math id="S0.SS0.SSSx1.p1.m6" class="ltx_Math" alttext="R_{i}M_{j}\subseteq M_{i+j}" display="inline"><mrow><mrow><msub><mi>R</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>M</mi><mi>j</mi></msub></mrow><mo>⊆</mo><msub><mi>M</mi><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msub></mrow></math> for all <math id="S0.SS0.SSSx1.p1.m7" class="ltx_Math" alttext="i,j" display="inline"><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></math>. An element of <math id="S0.SS0.SSSx1.p1.m8" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is said to be <em class="ltx_emph ltx_font_italic">homogeneous of degree</em> <math id="S0.SS0.SSSx1.p1.m9" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> if it is in <math id="S0.SS0.SSSx1.p1.m10" class="ltx_Math" alttext="M_{i}" display="inline"><msub><mi>M</mi><mi>i</mi></msub></math>. The set of <math id="S0.SS0.SSSx1.p1.m11" class="ltx_Math" alttext="M_{i}" display="inline"><msub><mi>M</mi><mi>i</mi></msub></math> is called a <em class="ltx_emph ltx_font_italic">grading</em> of <math id="S0.SS0.SSSx1.p1.m12" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.</p>
+</div>
+<div id="S0.SS0.SSSx1.p2" class="ltx_para">
+<p class="ltx_p">Whenever we speak of a graded module, the module is always assumed to be over a graded ring. As any ring <math id="S0.SS0.SSSx1.p2.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is trivially a graded ring (where <math id="S0.SS0.SSSx1.p2.m2" class="ltx_Math" alttext="R_{i}=R" display="inline"><mrow><msub><mi>R</mi><mi>i</mi></msub><mo>=</mo><mi>R</mi></mrow></math> if <math id="S0.SS0.SSSx1.p2.m3" class="ltx_Math" alttext="i=0" display="inline"><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S0.SS0.SSSx1.p2.m4" class="ltx_Math" alttext="R_{i}=0" display="inline"><mrow><msub><mi>R</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow></math> otherwise), every module <math id="S0.SS0.SSSx1.p2.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is trivially a graded module with <math id="S0.SS0.SSSx1.p2.m6" class="ltx_Math" alttext="M_{i}=M" display="inline"><mrow><msub><mi>M</mi><mi>i</mi></msub><mo>=</mo><mi>M</mi></mrow></math> if <math id="S0.SS0.SSSx1.p2.m7" class="ltx_Math" alttext="i=0" display="inline"><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S0.SS0.SSSx1.p2.m8" class="ltx_Math" alttext="M_{i}=0" display="inline"><mrow><msub><mi>M</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow></math> otherwise. However, it is customary to regard a graded module (or a graded ring) non-trivially.</p>
+</div>
+<div id="S0.SS0.SSSx1.p3" class="ltx_para">
+<p class="ltx_p">If <math id="S0.SS0.SSSx1.p3.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is a graded ring, then clearly it is a graded module over itself, by setting <math id="S0.SS0.SSSx1.p3.m2" class="ltx_Math" alttext="M_{i}=R_{i}" display="inline"><mrow><msub><mi>M</mi><mi>i</mi></msub><mo>=</mo><msub><mi>R</mi><mi>i</mi></msub></mrow></math> (<math id="S0.SS0.SSSx1.p3.m3" class="ltx_Math" alttext="M=R" display="inline"><mrow><mi>M</mi><mo>=</mo><mi>R</mi></mrow></math> in this case). Furthermore, if <math id="S0.SS0.SSSx1.p3.m4" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is graded over <math id="S0.SS0.SSSx1.p3.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, then so is <math id="S0.SS0.SSSx1.p3.m6" class="ltx_Math" alttext="Mz" display="inline"><mrow><mi>M</mi><mo>⁢</mo><mi>z</mi></mrow></math> for any indeterminate <math id="S0.SS0.SSSx1.p3.m7" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>.</p>
+</div>
+<div id="S0.SS0.SSSx1.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Example</span>. To see a concrete example of a graded module, let us first construct a graded ring. For convenience, take any ring <math id="S0.SS0.SSSx1.p4.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, the polynomial ring <math id="S0.SS0.SSSx1.p4.m2" class="ltx_Math" alttext="S=R[x]" display="inline"><mrow><mi>S</mi><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></math> is a graded ring, as</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="S=S_{0}\oplus S_{1}\oplus S_{2}\oplus\cdots\oplus S_{n}\oplus\cdots," display="block"><mrow><mrow><mi>S</mi><mo>=</mo><mrow><msub><mi>S</mi><mn>0</mn></msub><mo>⊕</mo><msub><mi>S</mi><mn>1</mn></msub><mo>⊕</mo><msub><mi>S</mi><mn>2</mn></msub><mo>⊕</mo><mi mathvariant="normal">⋯</mi><mo>⊕</mo><msub><mi>S</mi><mi>n</mi></msub><mo>⊕</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">with <math id="S0.SS0.SSSx1.p4.m3" class="ltx_Math" alttext="S_{i}:=Rx^{i}" display="inline"><mrow><msub><mi>S</mi><mi>i</mi></msub><mo>:=</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math>. Then <math id="S0.SS0.SSSx1.p4.m4" class="ltx_Math" alttext="S_{i}S_{j}=(Rx^{m})(Rx^{n})\subseteq Rx^{m+n}=S_{i+j}" display="inline"><mrow><mrow><msub><mi>S</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>S</mi><mi>j</mi></msub></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>m</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow><mo>=</mo><msub><mi>S</mi><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msub></mrow></math>.</p>
+</div>
+<div id="S0.SS0.SSSx1.p5" class="ltx_para">
+<p class="ltx_p">Therefore, <math id="S0.SS0.SSSx1.p5.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> is a graded module over <math id="S0.SS0.SSSx1.p5.m2" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>. Similarly, the submodules <math id="S0.SS0.SSSx1.p5.m3" class="ltx_Math" alttext="Sx^{i}" display="inline"><mrow><mi>S</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></math> of <math id="S0.SS0.SSSx1.p5.m4" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> are also graded over <math id="S0.SS0.SSSx1.p5.m5" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>.</p>
+</div>
+<div id="S0.SS0.SSSx1.p6" class="ltx_para">
+<p class="ltx_p">It is possible for a module over a graded ring to be graded in more than one way. Let <math id="S0.SS0.SSSx1.p6.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> be defined as in the example above. Then <math id="S0.SS0.SSSx1.p6.m2" class="ltx_Math" alttext="S[y]" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></math> is graded over <math id="S0.SS0.SSSx1.p6.m3" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>. One way to grade <math id="S0.SS0.SSSx1.p6.m4" class="ltx_Math" alttext="S[y]" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></math> is the following:
+</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="S[y]=\bigoplus_{k=0}^{\infty}A_{k},\quad\textrm{ where }A_{k}=R[y]x^{k}," display="block"><mrow><mrow><mrow><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⊕</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>k</mi></msub></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mtext> where </mtext><mo>⁢</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>k</mi></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">since <math id="S0.SS0.SSSx1.p6.m5" class="ltx_Math" alttext="S_{p}A_{q}=(Rx^{p})(R[y]x^{q})\subseteq R[y]x^{p+q}=A_{p+q}" display="inline"><mrow><mrow><msub><mi>S</mi><mi>p</mi></msub><mo>⁢</mo><msub><mi>A</mi><mi>q</mi></msub></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>p</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>q</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow></msup></mrow><mo>=</mo><msub><mi>A</mi><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow></msub></mrow></math>. Another way to grade <math id="S0.SS0.SSSx1.p6.m6" class="ltx_Math" alttext="S[y]" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></math> is:</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="S[y]=\bigoplus_{k=0}^{\infty}B_{k},\quad\textrm{ where }B_{k}=\sum_{i+j=k}Rx^{%
+i}y^{j}," display="block"><mrow><mrow><mrow><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⊕</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>B</mi><mi>k</mi></msub></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mtext> where </mtext><mo>⁢</mo><msub><mi>B</mi><mi>k</mi></msub></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow><mo>=</mo><mi>k</mi></mrow></munder><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup><mo>⁢</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">since</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="S_{p}B_{q}=(Rx^{p})(\sum_{i+j=q}Rx^{i}y^{j})=\sum_{i+j=q}Rx^{i+p}y^{j}%
+\subseteq\sum_{i+j=p+q}Rx^{i}y^{j}=B_{p+q}." display="block"><mrow><mrow><mrow><msub><mi>S</mi><mi>p</mi></msub><mo>⁢</mo><msub><mi>B</mi><mi>q</mi></msub></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>p</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow><mo>=</mo><mi>q</mi></mrow></munder><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup><mo>⁢</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow><mo>=</mo><mi>q</mi></mrow></munder><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>i</mi><mo>+</mo><mi>p</mi></mrow></msup><mo>⁢</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mrow><mo>⊆</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow><mo>=</mo><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow></mrow></munder><mrow><mi>R</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup><mo>⁢</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mrow><mo>=</mo><msub><mi>B</mi><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow></msub></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S0.SS0.SSSx2" class="ltx_subsubsection">
+<h2 class="ltx_title ltx_title_subsubsection">Graded homomorphisms and graded submodules</h2>
+
+<div id="S0.SS0.SSSx2.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S0.SS0.SSSx2.p1.m1" class="ltx_Math" alttext="M,N" display="inline"><mrow><mi>M</mi><mo>,</mo><mi>N</mi></mrow></math> be graded modules over a (graded) ring <math id="S0.SS0.SSSx2.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>. A module homomorphism <math id="S0.SS0.SSSx2.p1.m3" class="ltx_Math" alttext="f:M\to N" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>N</mi></mrow></mrow></math> is said to be <em class="ltx_emph ltx_font_italic">graded</em> if <math id="S0.SS0.SSSx2.p1.m4" class="ltx_Math" alttext="f(M_{i})\subseteq N_{i}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>M</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><msub><mi>N</mi><mi>i</mi></msub></mrow></math>. <math id="S0.SS0.SSSx2.p1.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is a <em class="ltx_emph ltx_font_italic">graded isomorphism</em> if it is a graded module homomorphism and an isomorphism. If <math id="S0.SS0.SSSx2.p1.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is a graded isomorphism <math id="S0.SS0.SSSx2.p1.m7" class="ltx_Math" alttext="M\to N" display="inline"><mrow><mi>M</mi><mo>→</mo><mi>N</mi></mrow></math>, then</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="f(M_{i})=N_{i}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>M</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>N</mi><mi>i</mi></msub></mrow></math>. Suppose <math id="I1.i1.p1.m2" class="ltx_Math" alttext="a\in N_{i}" display="inline"><mrow><mi>a</mi><mo>∈</mo><msub><mi>N</mi><mi>i</mi></msub></mrow></math> and <math id="I1.i1.p1.m3" class="ltx_Math" alttext="f(b)=a" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>a</mi></mrow></math>. Write <math id="I1.i1.p1.m4" class="ltx_Math" alttext="b=\sum b_{j}" display="inline"><mrow><mi>b</mi><mo>=</mo><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>b</mi><mi>j</mi></msub></mrow></mrow></math> where <math id="I1.i1.p1.m5" class="ltx_Math" alttext="b_{j}\in M_{i}" display="inline"><mrow><msub><mi>b</mi><mi>j</mi></msub><mo>∈</mo><msub><mi>M</mi><mi>i</mi></msub></mrow></math>, and <math id="I1.i1.p1.m6" class="ltx_Math" alttext="b_{j}=0" display="inline"><mrow><msub><mi>b</mi><mi>j</mi></msub><mo>=</mo><mn>0</mn></mrow></math> for all but finitely many <math id="I1.i1.p1.m7" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math>. Then each <math id="I1.i1.p1.m8" class="ltx_Math" alttext="f(b_{j})\in N_{j}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>b</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msub><mi>N</mi><mi>j</mi></msub></mrow></math>. Since <math id="I1.i1.p1.m9" class="ltx_Math" alttext="N_{j}\cap N_{i}=0" display="inline"><mrow><mrow><msub><mi>N</mi><mi>j</mi></msub><mo>∩</mo><msub><mi>N</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></math> if <math id="I1.i1.p1.m10" class="ltx_Math" alttext="i\neq j" display="inline"><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></math>, <math id="I1.i1.p1.m11" class="ltx_Math" alttext="f(b_{j})=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>b</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> if <math id="I1.i1.p1.m12" class="ltx_Math" alttext="j\neq i" display="inline"><mrow><mi>j</mi><mo>≠</mo><mi>i</mi></mrow></math>. Therefore <math id="I1.i1.p1.m13" class="ltx_Math" alttext="b=b_{i}\in N_{i}" display="inline"><mrow><mi>b</mi><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub><mo>∈</mo><msub><mi>N</mi><mi>i</mi></msub></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="f^{-1}" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> is graded. If <math id="I1.i2.p1.m2" class="ltx_Math" alttext="a\in f^{-1}(N_{i})" display="inline"><mrow><mi>a</mi><mo>∈</mo><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>N</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, then <math id="I1.i2.p1.m3" class="ltx_Math" alttext="f(a)\in N_{i}=f(M_{i})" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msub><mi>N</mi><mi>i</mi></msub><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>M</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math> by the previous fact. Then <math id="I1.i2.p1.m4" class="ltx_Math" alttext="f(a)=f(c)" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for some <math id="I1.i2.p1.m5" class="ltx_Math" alttext="c\in M_{i}" display="inline"><mrow><mi>c</mi><mo>∈</mo><msub><mi>M</mi><mi>i</mi></msub></mrow></math>, so <math id="I1.i2.p1.m6" class="ltx_Math" alttext="a=c\in M_{i}" display="inline"><mrow><mi>a</mi><mo>=</mo><mi>c</mi><mo>∈</mo><msub><mi>M</mi><mi>i</mi></msub></mrow></math> since <math id="I1.i2.p1.m7" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is one-to-one.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Suppose a graded module <math id="S0.SS0.SSSx2.p1.m8" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> has two gradings: <math id="S0.SS0.SSSx2.p1.m9" class="ltx_Math" alttext="M=\oplus A_{i}=\oplus B_{i}" display="inline"><mrow><mi>M</mi><mo>=</mo><mrow><mo>⊕</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo>=</mo><mrow><mo>⊕</mo><msub><mi>B</mi><mi>i</mi></msub></mrow></mrow></math>. The two gradings on <math id="S0.SS0.SSSx2.p1.m10" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> are said to be <em class="ltx_emph ltx_font_italic">isomorphic</em> if there is a graded isomorphism <math id="S0.SS0.SSSx2.p1.m11" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> on <math id="S0.SS0.SSSx2.p1.m12" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> with <math id="S0.SS0.SSSx2.p1.m13" class="ltx_Math" alttext="f(A_{j})=B_{j}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>B</mi><mi>j</mi></msub></mrow></math>. In the example above, we see that the two gradings of <math id="S0.SS0.SSSx2.p1.m14" class="ltx_Math" alttext="S[j]" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>j</mi><mo stretchy="false">]</mo></mrow></mrow></math> are non-isomorphic.</p>
+</div>
+<div id="S0.SS0.SSSx2.p2" class="ltx_para">
+<p class="ltx_p">Let <math id="S0.SS0.SSSx2.p2.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> be a submodule of a graded module <math id="S0.SS0.SSSx2.p2.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> (over <math id="S0.SS0.SSSx2.p2.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>). We can turn <math id="S0.SS0.SSSx2.p2.m4" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> into a graded module by defining <math id="S0.SS0.SSSx2.p2.m5" class="ltx_Math" alttext="N_{i}=N\cap M_{i}" display="inline"><mrow><msub><mi>N</mi><mi>i</mi></msub><mo>=</mo><mrow><mi>N</mi><mo>∩</mo><msub><mi>M</mi><mi>i</mi></msub></mrow></mrow></math>. Of course, <math id="S0.SS0.SSSx2.p2.m6" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> may already be a graded module in the first place. But the two gradings on <math id="S0.SS0.SSSx2.p2.m7" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> may not be isomorphic. A submodule <math id="S0.SS0.SSSx2.p2.m8" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> of a graded module <math id="S0.SS0.SSSx2.p2.m9" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> (over <math id="S0.SS0.SSSx2.p2.m10" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>) is said to be a <em class="ltx_emph ltx_font_italic">graded submodule</em> of <math id="S0.SS0.SSSx2.p2.m11" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> if its grading is defined by <math id="S0.SS0.SSSx2.p2.m12" class="ltx_Math" alttext="N_{i}=N\cap M_{i}" display="inline"><mrow><msub><mi>N</mi><mi>i</mi></msub><mo>=</mo><mrow><mi>N</mi><mo>∩</mo><msub><mi>M</mi><mi>i</mi></msub></mrow></mrow></math>. If <math id="S0.SS0.SSSx2.p2.m13" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> is a graded submodule of <math id="S0.SS0.SSSx2.p2.m14" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>, then the injection <math id="S0.SS0.SSSx2.p2.m15" class="ltx_Math" alttext="N\mapsto M" display="inline"><mrow><mi>N</mi><mo>↦</mo><mi>M</mi></mrow></math> is a graded homomorphism.</p>
+</div>
+</section>
+<section id="S0.SS0.SSSx3" class="ltx_subsubsection">
+<h2 class="ltx_title ltx_title_subsubsection">Generalization</h2>
+
+<div id="S0.SS0.SSSx3.p1" class="ltx_para">
+<p class="ltx_p">The above definition can be generalized, and the generalization comes from the subscripts. The set of subscripts in the definition above is just the set of all non-negative integers (sometimes denoted <math id="S0.SS0.SSSx3.p1.m1" class="ltx_Math" alttext="\mathbb{N}" display="inline"><mi>ℕ</mi></math>) with a binary operation <math id="S0.SS0.SSSx3.p1.m2" class="ltx_Math" alttext="+" display="inline"><mo>+</mo></math>. It is reasonable to extend the set of subscripts from <math id="S0.SS0.SSSx3.p1.m3" class="ltx_Math" alttext="\mathbb{N}" display="inline"><mi>ℕ</mi></math> to an arbitrary set <math id="S0.SS0.SSSx3.p1.m4" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> with a binary operation <math id="S0.SS0.SSSx3.p1.m5" class="ltx_Math" alttext="*" display="inline"><mo>*</mo></math>. Normally, we require that <math id="S0.SS0.SSSx3.p1.m6" class="ltx_Math" alttext="*" display="inline"><mo>*</mo></math> is associative so that <math id="S0.SS0.SSSx3.p1.m7" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> is a semigroup. An <math id="S0.SS0.SSSx3.p1.m8" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>-module <math id="S0.SS0.SSSx3.p1.m9" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is said to be <math id="S0.SS0.SSSx3.p1.m10" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>-graded if</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="M=\bigoplus_{s\in S}M_{s}\textrm{ such that }R_{s}M_{t}\subseteq M_{s*t}." display="block"><mrow><mrow><mi>M</mi><mo>=</mo><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⊕</mo><mrow><mi>s</mi><mo>∈</mo><mi>S</mi></mrow></munder><mrow><msub><mi>M</mi><mi>s</mi></msub><mo>⁢</mo><mtext> such that </mtext><mo>⁢</mo><msub><mi>R</mi><mi>s</mi></msub><mo>⁢</mo><msub><mi>M</mi><mi>t</mi></msub></mrow></mrow><mo>⊆</mo><msub><mi>M</mi><mrow><mi>s</mi><mo>*</mo><mi>t</mi></mrow></msub></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Examples of <math id="S0.SS0.SSSx3.p1.m11" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>-graded modules are mainly found in modules over a semigroup ring <math id="S0.SS0.SSSx3.p1.m12" class="ltx_Math" alttext="R[S]" display="inline"><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>S</mi><mo stretchy="false">]</mo></mrow></mrow></math>.</p>
+</div>
+<div id="S0.SS0.SSSx3.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Remark</span>. Graded modules, and in general the concept of grading in algebra, are an essential tool in the study of homological algebraic aspect of rings.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">graded module</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">GradedModule</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 11:45:05</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 11:45:05</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">18</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16W50</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 74R99</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">graded homomorphism</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">homogeneous submodule</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">GradedAlgebra</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">graded module homomorphism</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">homogeneous of degree</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">graded submodule</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">grading</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:45:45 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

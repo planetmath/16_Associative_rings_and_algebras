@@ -1,0 +1,171 @@
+<!DOCTYPE html><html>
+<head>
+<title>Jacobson radical of a module category and its power</title>
+<!--Generated on Fri Feb  9 18:41:07 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Jacobson radical of a module category and its power</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Assume that <math id="p1.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is a field and <math id="p1.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is a <math id="p1.m3" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-algebra. The category of (left) <math id="p1.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-modules will be denoted by <math id="p1.m5" class="ltx_Math" alttext="\mathrm{Mod}(A)" display="inline"><mrow><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="p1.m6" class="ltx_Math" alttext="\mathrm{Hom}_{A}(X,Y)" display="inline"><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> will denote the set of all <math id="p1.m7" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-homomorphisms between <math id="p1.m8" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-modules <math id="p1.m9" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p1.m10" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>. Of course <math id="p1.m11" class="ltx_Math" alttext="\mathrm{Hom}_{A}(X,Y)" display="inline"><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> is an <math id="p1.m12" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-module itself and <math id="p1.m13" class="ltx_Math" alttext="\mathrm{End}_{A}(X)=\mathrm{Hom}_{A}(X,X)" display="inline"><mrow><mrow><msub><mi>End</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is a <math id="p1.m14" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-algebra (even <math id="p1.m15" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-algebra) with composition as a multiplication.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Let <math id="p2.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p2.m2" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> be <math id="p2.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-modules. Define</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\mathrm{rad}_{A}(X,Y)=\{f\in\mathrm{Hom}_{A}(X,Y)\ |\ \forall_{g\in\mathrm{Hom%
+}_{A}(Y,X)}\ 1_{X}-gf\mbox{ is invertible in }\mathrm{End}_{A}(X)\}." display="block"><mrow><mrow><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>f</mi><mo>∈</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="7.5pt" stretchy="false">|</mo><mrow><mrow><msub><mo>∀</mo><mrow><mi>g</mi><mo>∈</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>,</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></msub><msub><mn> 1</mn><mi>X</mi></msub></mrow><mo>-</mo><mrow><mi>g</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mtext> is invertible in </mtext><mo>⁢</mo><msub><mi>End</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Definition.</span> <span class="ltx_text ltx_font_italic">The Jacobson radical</span> of a category <math id="p2.m4" class="ltx_Math" alttext="\mathrm{Mod}(A)" display="inline"><mrow><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></math> is defined as a class</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\mathrm{rad}\ \mathrm{Mod}(A)=\bigcup_{X,Y\in\mathrm{Mod}(A)}\ \mathrm{rad}_{A%
+}(X,Y).\square" display="block"><mrow><mrow><mrow><mpadded width="+5pt"><mi>rad</mi></mpadded><mo>⁢</mo><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="+5pt"><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mrow><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><mo>∈</mo><mrow><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></munder></mpadded><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo><mi mathvariant="normal">□</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Properties.</span> <math id="p3.m1" class="ltx_Math" alttext="1)" display="inline"><mrow><mn>1</mn><mo stretchy="false">)</mo></mrow></math> The Jacobson radical is an ideal in <math id="p3.m2" class="ltx_Math" alttext="\mathrm{Mod}(A)" display="inline"><mrow><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></math>, i.e. for any <math id="p3.m3" class="ltx_Math" alttext="X,Y,Z\in\mathrm{Mod}(A)" display="inline"><mrow><mrow><mi>X</mi><mo>,</mo><mi>Y</mi><mo>,</mo><mi>Z</mi></mrow><mo>∈</mo><mrow><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, for any <math id="p3.m4" class="ltx_Math" alttext="f\in\mathrm{rad}_{A}(X,Y)" display="inline"><mrow><mi>f</mi><mo>∈</mo><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, any <math id="p3.m5" class="ltx_Math" alttext="h\in\mathrm{Hom}_{A}(Y,Z)" display="inline"><mrow><mi>h</mi><mo>∈</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>,</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and any <math id="p3.m6" class="ltx_Math" alttext="g\in\mathrm{Hom}_{A}(Z,X)" display="inline"><mrow><mi>g</mi><mo>∈</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo>,</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> we have <math id="p3.m7" class="ltx_Math" alttext="hf\in\mathrm{rad}_{A}(X,Z)" display="inline"><mrow><mrow><mi>h</mi><mo>⁢</mo><mi>f</mi></mrow><mo>∈</mo><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="p3.m8" class="ltx_Math" alttext="fg\in\mathrm{rad}_{A}(Z,X)" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mi>g</mi></mrow><mo>∈</mo><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo>,</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Additionaly <math id="p3.m9" class="ltx_Math" alttext="\mathrm{rad}_{A}(X,Y)" display="inline"><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> is an <math id="p3.m10" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-submodule of <math id="p3.m11" class="ltx_Math" alttext="\mathrm{Hom}_{A}(X,Y)" display="inline"><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><math id="p4.m1" class="ltx_Math" alttext="2)" display="inline"><mrow><mn>2</mn><mo stretchy="false">)</mo></mrow></math> For any <math id="p4.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-module <math id="p4.m3" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> we have <math id="p4.m4" class="ltx_Math" alttext="\mathrm{rad}_{A}(X,X)=\mathrm{rad}(\mathrm{End}_{A}(X))" display="inline"><mrow><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>rad</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>End</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, where on the right side we have the classical Jacobson radical.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><math id="p5.m1" class="ltx_Math" alttext="3)" display="inline"><mrow><mn>3</mn><mo stretchy="false">)</mo></mrow></math> If <math id="p5.m2" class="ltx_Math" alttext="X,Y" display="inline"><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow></math> are both indecomposable <math id="p5.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-modules such that both <math id="p5.m4" class="ltx_Math" alttext="\mathrm{End}_{A}(X)" display="inline"><mrow><msub><mi>End</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="p5.m5" class="ltx_Math" alttext="\mathrm{End}_{A}(Y)" display="inline"><mrow><msub><mi>End</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> are local algebras (in particular, if <math id="p5.m6" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p5.m7" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> are finite dimensional), then</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\mathrm{rad}_{A}(X,Y)=\{f\in\mathrm{Hom}_{A}(X,Y)\ |\ f\mbox{ is not an %
+isomorphism}\}." display="block"><mrow><mrow><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>f</mi><mo>∈</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="7.5pt" stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mtext> is not an isomorphism</mtext></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">In particular, if <math id="p5.m8" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p5.m9" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> are not isomorphic, then <math id="p5.m10" class="ltx_Math" alttext="\mathrm{rad}_{A}(X,Y)=\mathrm{Hom}_{A}(X,Y)" display="inline"><mrow><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. <math id="p5.m11" class="ltx_Math" alttext="\square" display="inline"><mi mathvariant="normal">□</mi></math></p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Let <math id="p6.m1" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></math> and let <math id="p6.m2" class="ltx_Math" alttext="f\in\mathrm{Hom}_{A}(X,Y)" display="inline"><mrow><mi>f</mi><mo>∈</mo><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Assume there is a sequence of <math id="p6.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-modules <math id="p6.m4" class="ltx_Math" alttext="X=X_{0},X_{1},\ldots,X_{n-1},X_{n}=Y" display="inline"><mrow><mrow><mi>X</mi><mo>=</mo><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>,</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></mrow><mo>,</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mi>Y</mi></mrow></mrow></math> and for any <math id="p6.m5" class="ltx_Math" alttext="0\leq i\leq n-1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mrow></math> we have an <math id="p6.m6" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-homomorphism <math id="p6.m7" class="ltx_Math" alttext="f_{i}\in\mathrm{rad}_{A}(X_{i},X_{i+1})" display="inline"><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>∈</mo><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>,</mo><msub><mi>X</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math> such that <math id="p6.m8" class="ltx_Math" alttext="f=f_{n-1}f_{n-2}\cdots f_{1}f_{0}" display="inline"><mrow><mi>f</mi><mo>=</mo><mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>f</mi><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>f</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>f</mi><mn>0</mn></msub></mrow></mrow></math>. Then we will say that <math id="p6.m9" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is <math id="p6.m10" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math><span class="ltx_text ltx_font_italic">-factorizable through Jacobson radical</span>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Definition.</span> <span class="ltx_text ltx_font_italic">The <math id="p7.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-th power of a Jacobson radical</span> of a category <math id="p7.m2" class="ltx_Math" alttext="\mathrm{Mod}(A)" display="inline"><mrow><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></math> is defined as a class</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\mathrm{rad}^{n}\ \mathrm{Mod}(A)=\bigcup_{X,Y\in\mathrm{Mod}(A)}\ \mathrm{rad%
+}^{n}_{A}(X,Y)," display="block"><mrow><mrow><mrow><mpadded width="+5pt"><msup><mi>rad</mi><mi>n</mi></msup></mpadded><mo>⁢</mo><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="+5pt"><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mrow><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><mo>∈</mo><mrow><mi>Mod</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></munder></mpadded><mrow><msubsup><mi>rad</mi><mi>A</mi><mi>n</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p7.m3" class="ltx_Math" alttext="\mathrm{rad}^{n}_{A}(X,Y)" display="inline"><mrow><msubsup><mi>rad</mi><mi>A</mi><mi>n</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> is an <math id="p7.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-submodule of <math id="p7.m5" class="ltx_Math" alttext="\mathrm{Hom}_{A}(X,Y)" display="inline"><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> generated by all homomorphisms <math id="p7.m6" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-factorizable through Jacobson radical. Additionaly define</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\mathrm{rad}^{\infty}_{A}(X,Y)=\bigcap_{n=1}^{\infty}\mathrm{rad}^{n}_{A}(X,Y)\ \square" display="block"><mrow><mrow><msubsup><mi>rad</mi><mi>A</mi><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋂</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msubsup><mi>rad</mi><mi>A</mi><mi>n</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">□</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Properties.</span> <math id="p8.m1" class="ltx_Math" alttext="0)" display="inline"><mrow><mn>0</mn><mo stretchy="false">)</mo></mrow></math> Obviously <math id="p8.m2" class="ltx_Math" alttext="\mathrm{rad}_{A}(X,Y)=\mathrm{rad}^{1}_{A}(X,Y)" display="inline"><mrow><mrow><msub><mi>rad</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mi>rad</mi><mi>A</mi><mn>1</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and for any <math id="p8.m3" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></math> we have</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\mathrm{rad}_{A}^{n}(X,Y)\supseteq\mathrm{rad}_{A}^{\infty}(X,Y)." display="block"><mrow><mrow><mrow><msubsup><mi>rad</mi><mi>A</mi><mi>n</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mrow><msubsup><mi>rad</mi><mi>A</mi><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><math id="p8.m4" class="ltx_Math" alttext="1)" display="inline"><mrow><mn>1</mn><mo stretchy="false">)</mo></mrow></math> Of course each <math id="p8.m5" class="ltx_Math" alttext="\mathrm{rad}^{n}_{A}(X,Y)" display="inline"><mrow><msubsup><mi>rad</mi><mi>A</mi><mi>n</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> is an <math id="p8.m6" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>-submodule of <math id="p8.m7" class="ltx_Math" alttext="\mathrm{Hom}_{A}(X,Y)" display="inline"><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> and we have following sequence of inclusions:</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\mathrm{Hom}_{A}(X,Y)\supseteq\mathrm{rad}^{1}_{A}(X,Y)\supseteq\mathrm{rad}^{%
+2}_{A}(X,Y)\supseteq\mathrm{rad}^{3}_{A}(X,Y)\supseteq\cdots" display="block"><mrow><mrow><msub><mi>Hom</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mrow><msubsup><mi>rad</mi><mi>A</mi><mn>1</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mrow><msubsup><mi>rad</mi><mi>A</mi><mn>2</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mrow><msubsup><mi>rad</mi><mi>A</mi><mn>3</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mi mathvariant="normal">⋯</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><math id="p8.m8" class="ltx_Math" alttext="2)" display="inline"><mrow><mn>2</mn><mo stretchy="false">)</mo></mrow></math> If both <math id="p8.m9" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p8.m10" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> are finite dimensional, then there exists <math id="p8.m11" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></math> such that</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\mathrm{rad}^{\infty}_{A}(X,Y)=\mathrm{rad}^{n}_{A}(X,Y)." display="block"><mrow><mrow><mrow><msubsup><mi>rad</mi><mi>A</mi><mi mathvariant="normal">∞</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mi>rad</mi><mi>A</mi><mi>n</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p9" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Jacobson radical of a module category and its power</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">JacobsonRadicalOfAModuleCategoryAndItsPower</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 19:02:23</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 19:02:23</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">6</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 16N20</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:41:07 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

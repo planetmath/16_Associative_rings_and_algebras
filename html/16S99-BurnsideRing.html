@@ -1,0 +1,131 @@
+<!DOCTYPE html><html>
+<head>
+<title>Burnside ring</title>
+<!--Generated on Fri Feb  9 18:43:03 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Burnside ring</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Let <math id="p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> be a finite group. Recall that by <math id="p1.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math><span class="ltx_text ltx_font_italic">-set</span> we understand a pair <math id="p1.m3" class="ltx_Math" alttext="(X,\circ)" display="inline"><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mo>∘</mo><mo stretchy="false">)</mo></mrow></math>, where <math id="p1.m4" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is a set and <math id="p1.m5" class="ltx_Math" alttext="\circ:G\times X\rightarrow X" display="inline"><mrow><mo>∘</mo><mo>:</mo><mi>G</mi><mo>×</mo><mi>X</mi><mo>→</mo><mi>X</mi></mrow></math> is a group action of <math id="p1.m6" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> on <math id="p1.m7" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. For short notation the pair notation will be omitted and <math id="p1.m8" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-sets will be simply denoted by capital letters.
+<br class="ltx_break">
+<br class="ltx_break">Recall that for each subgroup <math id="p1.m9" class="ltx_Math" alttext="H\subseteq G" display="inline"><mrow><mi>H</mi><mo>⊆</mo><mi>G</mi></mrow></math> we have canonical <math id="p1.m10" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-set <math id="p1.m11" class="ltx_Math" alttext="G/H=\{gH;\ g\in G\}" display="inline"><mrow><mi>G</mi><mo>/</mo><mi>H</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>g</mi><mi>H</mi><mo rspace="7.5pt">;</mo><mi>g</mi><mo>∈</mo><mi>G</mi><mo stretchy="false">}</mo></mrow></mrow></math> where group action is defined as follows: for any <math id="p1.m12" class="ltx_Math" alttext="g,k\in G" display="inline"><mrow><mrow><mi>g</mi><mo>,</mo><mi>k</mi></mrow><mo>∈</mo><mi>G</mi></mrow></math> we have <math id="p1.m13" class="ltx_Math" alttext="(g,kH)\longmapsto gkH" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi>g</mi><mo>,</mo><mrow><mi>k</mi><mo>⁢</mo><mi>H</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⟼</mo><mrow><mi>g</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>H</mi></mrow></mrow></math>.
+<br class="ltx_break">
+<br class="ltx_break">Let <math id="p1.m14" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p1.m15" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> be <math id="p1.m16" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-sets. Recall that by <math id="p1.m17" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math><span class="ltx_text ltx_font_italic">-map</span> from <math id="p1.m18" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> to <math id="p1.m19" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> we understand any function <math id="p1.m20" class="ltx_Math" alttext="F:X\rightarrow Y" display="inline"><mrow><mi>F</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></math> such that for any <math id="p1.m21" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math> and <math id="p1.m22" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math> we have <math id="p1.m23" class="ltx_Math" alttext="F(gx)=gF(x)" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+<br class="ltx_break">
+<br class="ltx_break">It is easy to see that family of all <math id="p1.m24" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-sets and <math id="p1.m25" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-maps forms a category (with standard comoposition). We shall denote this category by <math id="p1.m26" class="ltx_Math" alttext="G-\mathbb{S}" display="inline"><mrow><mi>G</mi><mo>-</mo><mi>𝕊</mi></mrow></math>. Moreover, by <math id="p1.m27" class="ltx_Math" alttext="G-\mathbb{S}_{0}" display="inline"><mrow><mi>G</mi><mo>-</mo><msub><mi>𝕊</mi><mn>0</mn></msub></mrow></math> we shall denote full subcategory of <math id="p1.m28" class="ltx_Math" alttext="G-\mathbb{S}" display="inline"><mrow><mi>G</mi><mo>-</mo><mi>𝕊</mi></mrow></math> whose objects are all finite <math id="p1.m29" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-sets.
+<br class="ltx_break">
+<br class="ltx_break">From <math id="p1.m30" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-sets <math id="p1.m31" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p1.m32" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> one can construct another <math id="p1.m33" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-set in two interesting (from our point of view) ways, i.e. by taking disjoint union <math id="p1.m34" class="ltx_Math" alttext="X\sqcup Y" display="inline"><mrow><mi>X</mi><mo>⊔</mo><mi>Y</mi></mrow></math> with obvious group action and by taking product <math id="p1.m35" class="ltx_Math" alttext="X\times Y" display="inline"><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></math> with group action as follows: <math id="p1.m36" class="ltx_Math" alttext="(g,(x,y))\longmapsto(gx,gy)." display="inline"><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>g</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>⟼</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>.</mo></mrow></math> Moreover it is clear that when <math id="p1.m37" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p1.m38" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> are finite, so are <math id="p1.m39" class="ltx_Math" alttext="X\sqcup Y" display="inline"><mrow><mi>X</mi><mo>⊔</mo><mi>Y</mi></mrow></math> and <math id="p1.m40" class="ltx_Math" alttext="X\times Y" display="inline"><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></math>.
+<br class="ltx_break">
+<br class="ltx_break">Consider a finite <math id="p1.m41" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-set <math id="p1.m42" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. Then there exist a natural number <math id="p1.m43" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></math>, finite family <math id="p1.m44" class="ltx_Math" alttext="\{H_{i}\}_{i=1}^{n}" display="inline"><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>H</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></math> of subgroups of <math id="p1.m45" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> and an isomorphism (in <math id="p1.m46" class="ltx_Math" alttext="G-\mathbb{S}_{0}" display="inline"><mrow><mi>G</mi><mo>-</mo><msub><mi>𝕊</mi><mn>0</mn></msub></mrow></math> category)</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="X\simeq\coprod_{i=1}^{n}G/H_{i}." display="block"><mrow><mrow><mi>X</mi><mo>≃</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∐</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>G</mi><mo>/</mo><msub><mi>H</mi><mi>i</mi></msub></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Therefore (since <math id="p1.m47" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is finite) family of isomorphism classes of <math id="p1.m48" class="ltx_Math" alttext="G-\mathbb{S}_{0}" display="inline"><mrow><mi>G</mi><mo>-</mo><msub><mi>𝕊</mi><mn>0</mn></msub></mrow></math> forms a countable set.
+<br class="ltx_break">
+<br class="ltx_break">Denote by <math id="p1.m49" class="ltx_Math" alttext="\Omega^{+}(G)=\{[X];\ X\in G-\mathbb{S}_{0}\}" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow><mo rspace="7.5pt">;</mo><mi>X</mi><mo>∈</mo><mi>G</mi><mo>-</mo><msub><mi>𝕊</mi><mn>0</mn></msub><mo stretchy="false">}</mo></mrow></mrow></math> the set of isomorphism classes of category <math id="p1.m50" class="ltx_Math" alttext="G-\mathbb{S}_{0}" display="inline"><mrow><mi>G</mi><mo>-</mo><msub><mi>𝕊</mi><mn>0</mn></msub></mrow></math>. Then one can turn <math id="p1.m51" class="ltx_Math" alttext="\Omega^{+}(G)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> into a semiring as follows: for any finite <math id="p1.m52" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-sets <math id="p1.m53" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="p1.m54" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> define</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="[X]+[Y]=[X\sqcup Y];" display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>⊔</mo><mi>Y</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="[X][Y]=[X\times Y]." display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Note that here we treat the empty set as a <math id="p1.m55" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>-set (with one and unique group action), therefore <math id="p1.m56" class="ltx_Math" alttext="\Omega^{+}(G)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> has zero element <math id="p1.m57" class="ltx_Math" alttext="[\emptyset]" display="inline"><mrow><mo stretchy="false">[</mo><mi mathvariant="normal">∅</mi><mo stretchy="false">]</mo></mrow></math> (the other way is to formally add the zero to <math id="p1.m58" class="ltx_Math" alttext="\Omega^{+}(G)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> - this is just technical thing).
+<br class="ltx_break">
+<br class="ltx_break">Define by <math id="p1.m59" class="ltx_Math" alttext="\Omega(G)=K(\Omega^{+}(G))" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> the Grothendieck group of <math id="p1.m60" class="ltx_Math" alttext="(\Omega^{+}(G),+)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow></math>. If <math id="p1.m61" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is an abelian semigroup and <math id="p1.m62" class="ltx_Math" alttext="f:A\times A\rightarrow A" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mi>A</mi><mo>×</mo><mi>A</mi></mrow><mo>→</mo><mi>A</mi></mrow></mrow></math> is a bilinear map, then it can be uniquely extended to a bilinear map <math id="p1.m63" class="ltx_Math" alttext="K(f):K(A)\times K(A)\rightarrow K(A)" display="inline"><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:</mo><mrow><mrow><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>×</mo><mi>K</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, therefore <math id="p1.m64" class="ltx_Math" alttext="\Omega(G)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> can be uniquely turned into a ring from <math id="p1.m65" class="ltx_Math" alttext="\Omega^{+}(G)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math>. This ring is called <span class="ltx_text ltx_font_italic">the Burnside ring</span> of <math id="p1.m66" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.
+<br class="ltx_break">
+<br class="ltx_break">Some properties:
+<br class="ltx_break">
+<br class="ltx_break"><math id="p1.m67" class="ltx_Math" alttext="\mathrm{(0)}" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> each element of <math id="p1.m68" class="ltx_Math" alttext="\Omega(G)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> can be expressed as a formal diffrence <math id="p1.m69" class="ltx_Math" alttext="[X]-[Y]" display="inline"><mrow><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow><mo>-</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow></math>;
+<br class="ltx_break">
+<br class="ltx_break"><math id="p1.m70" class="ltx_Math" alttext="\mathrm{(1)}" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> <math id="p1.m71" class="ltx_Math" alttext="\Omega(G)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a commutative, unital ring, where <math id="p1.m72" class="ltx_Math" alttext="[G/G]" display="inline"><mrow><mo stretchy="false">[</mo><mrow><mi>G</mi><mo>/</mo><mi>G</mi></mrow><mo stretchy="false">]</mo></mrow></math> is the unity of <math id="p1.m73" class="ltx_Math" alttext="\Omega(G)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math>;
+<br class="ltx_break">
+<br class="ltx_break"><math id="p1.m74" class="ltx_Math" alttext="\mathrm{(2)}" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math> <math id="p1.m75" class="ltx_Math" alttext="\Omega" display="inline"><mi mathvariant="normal">Ω</mi></math> can be turned into a contravariant functor from the category of finite groups to the category of commutative, unital rings;
+<br class="ltx_break">
+<br class="ltx_break"><math id="p1.m76" class="ltx_Math" alttext="\mathrm{(3)}" display="inline"><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math> <math id="p1.m77" class="ltx_Math" alttext="(\Omega^{+}(G),+)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow></math> is a cancellative semigroup, therefore it embedds into <math id="p1.m78" class="ltx_Math" alttext="\Omega(G)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math>;
+<br class="ltx_break">
+<br class="ltx_break"><math id="p1.m79" class="ltx_Math" alttext="\mathrm{(4)}" display="inline"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math> for the trivial group <math id="p1.m80" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> there is a ring isomorphism <math id="p1.m81" class="ltx_Math" alttext="\Omega(E)\simeq\mathbb{Z}" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mi>ℤ</mi></mrow></math>;
+<br class="ltx_break">
+<br class="ltx_break"><math id="p1.m82" class="ltx_Math" alttext="\mathrm{(5)}" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></math> for any group <math id="p1.m83" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> there is a ring monomorphism <math id="p1.m84" class="ltx_Math" alttext="\varphi:\Omega(G)\rightarrow\bigoplus_{i=1}^{n}\mathbb{Z}" display="inline"><mrow><mi>φ</mi><mo>:</mo><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⊕</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi>ℤ</mi></mrow></mrow></mrow></math> for some natural number <math id="p1.m85" class="ltx_Math" alttext="n\in\mathbb{N}" display="inline"><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></math>; this is called the characteristic embedding;
+<br class="ltx_break">
+<br class="ltx_break"><math id="p1.m86" class="ltx_Math" alttext="\mathrm{(6)}" display="inline"><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math> for any two groups <math id="p1.m87" class="ltx_Math" alttext="G,H" display="inline"><mrow><mi>G</mi><mo>,</mo><mi>H</mi></mrow></math> we have: if <math id="p1.m88" class="ltx_Math" alttext="\Omega(G)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="p1.m89" class="ltx_Math" alttext="\Omega(H)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>H</mi><mo stretchy="false">)</mo></mrow></mrow></math> are isomorphic (as a rings), then <math id="p1.m90" class="ltx_Math" alttext="|G|=|H|" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>G</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>H</mi><mo stretchy="false">|</mo></mrow></mrow></math>; generally <math id="p1.m91" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> need not be isomorphic to <math id="p1.m92" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math>.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Burnside ring</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">BurnsideRing</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:08:02</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:08:02</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">joking (16130)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 16S99</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:43:03 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

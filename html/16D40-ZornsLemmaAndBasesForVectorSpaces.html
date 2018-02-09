@@ -1,0 +1,132 @@
+<!DOCTYPE html><html>
+<head>
+<title>Zorn’s lemma and bases for vector spaces</title>
+<!--Generated on Fri Feb  9 18:38:59 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Zorn’s lemma and bases for vector spaces</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">In this entry, we illustrate how Zorn’s lemma can be applied in proving the existence of a basis for a vector space. Let <math id="p1.m1" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> be a vector space over a field <math id="p1.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>.</p>
+</div>
+<div id="Thmprop1" class="ltx_theorem ltx_theorem_prop">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Proposition 1</span>.</h6>
+<div id="Thmprop1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Every linearly independent subset of <math id="Thmprop1.p1.m1" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> can be extended to a basis for <math id="Thmprop1.p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>.</span></p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">This has already been proved in this entry (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/EveryVectorSpaceHasABasis</span>). We reprove it here for completion.
+</p>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Let <math id="p3.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> be a linearly independent subset of <math id="p3.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>. Let <math id="p3.m3" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math> be the collection of all linearly independent supersets of <math id="p3.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. First, <math id="p3.m5" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math> is non-empty since <math id="p3.m6" class="ltx_Math" alttext="A\in\mathcal{S}" display="inline"><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒮</mi></mrow></math>. In addition, if <math id="p3.m7" class="ltx_Math" alttext="A_{1}\subseteq A_{2}\subseteq\cdots" display="inline"><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⊆</mo><msub><mi>A</mi><mn>2</mn></msub><mo>⊆</mo><mi mathvariant="normal">⋯</mi></mrow></math> is a chain of linearly independent supersets of <math id="p3.m8" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, then their union is again a linearly independent superset of <math id="p3.m9" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> (for a proof of this, see here (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/PropertiesOfLinearIndependence</span>)). So by Zorn’s Lemma, <math id="p3.m10" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math> has a maximal element <math id="p3.m11" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>. Let <math id="p3.m12" class="ltx_Math" alttext="W=\operatorname{span}(B)" display="inline"><mrow><mi>W</mi><mo>=</mo><mrow><mi>span</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. If <math id="p3.m13" class="ltx_Math" alttext="W\neq V" display="inline"><mrow><mi>W</mi><mo>≠</mo><mi>V</mi></mrow></math>, pick <math id="p3.m14" class="ltx_Math" alttext="b\in V-W" display="inline"><mrow><mi>b</mi><mo>∈</mo><mrow><mi>V</mi><mo>-</mo><mi>W</mi></mrow></mrow></math>. If <math id="p3.m15" class="ltx_Math" alttext="0=rb+r_{1}b_{1}+\cdots+r_{n}b_{n}" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>r</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></mrow></math>, where <math id="p3.m16" class="ltx_Math" alttext="b_{i}\in B" display="inline"><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>∈</mo><mi>B</mi></mrow></math>, then <math id="p3.m17" class="ltx_Math" alttext="-rb=r_{1}b_{1}+\cdots+r_{n}b_{n}" display="inline"><mrow><mrow><mo>-</mo><mrow><mi>r</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>r</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></mrow></math>, so that <math id="p3.m18" class="ltx_Math" alttext="-rb\in\operatorname{span}(B)=W" display="inline"><mrow><mrow><mo>-</mo><mrow><mi>r</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>∈</mo><mrow><mi>span</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>W</mi></mrow></math>. But <math id="p3.m19" class="ltx_Math" alttext="b\notin W" display="inline"><mrow><mi>b</mi><mo>∉</mo><mi>W</mi></mrow></math>, so <math id="p3.m20" class="ltx_Math" alttext="b\neq 0" display="inline"><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></math>, which implies <math id="p3.m21" class="ltx_Math" alttext="r=0" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></math>. Consequently <math id="p3.m22" class="ltx_Math" alttext="r_{1}=\cdots=r_{n}=0" display="inline"><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mi mathvariant="normal">⋯</mi><mo>=</mo><msub><mi>r</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow></math> since <math id="p3.m23" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> is linearly independent. As a result, <math id="p3.m24" class="ltx_Math" alttext="B\cup\{b\}" display="inline"><mrow><mi>B</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo></mrow></mrow></math> is a linearly independent superset of <math id="p3.m25" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> in <math id="p3.m26" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math>, contradicting the maximality of <math id="p3.m27" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> in <math id="p3.m28" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmprop2" class="ltx_theorem ltx_theorem_prop">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Proposition 2</span>.</h6>
+<div id="Thmprop2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Every spanning set of <math id="Thmprop2.p1.m1" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> has a subset that is a basis for <math id="Thmprop2.p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Let <math id="p4.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> be a spanning set of <math id="p4.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>. Let <math id="p4.m3" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math> be the collection of all linearly independent subsets of <math id="p4.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. <math id="p4.m5" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math> is non-empty as <math id="p4.m6" class="ltx_Math" alttext="\varnothing\in\mathcal{S}" display="inline"><mrow><mi mathvariant="normal">∅</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒮</mi></mrow></math>. Let <math id="p4.m7" class="ltx_Math" alttext="A_{1}\subseteq A_{2}\subseteq\cdots" display="inline"><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⊆</mo><msub><mi>A</mi><mn>2</mn></msub><mo>⊆</mo><mi mathvariant="normal">⋯</mi></mrow></math> be a chain of linearly independent subsets of <math id="p4.m8" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. Then the union of these sets is again a linearly independent subset of <math id="p4.m9" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. Therefore, by Zorn’s lemma, <math id="p4.m10" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math> has a maximal element <math id="p4.m11" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>. In other words, <math id="p4.m12" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> is a linearly independent subset <math id="p4.m13" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. Let <math id="p4.m14" class="ltx_Math" alttext="W=\operatorname{span}(B)" display="inline"><mrow><mi>W</mi><mo>=</mo><mrow><mi>span</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Suppose <math id="p4.m15" class="ltx_Math" alttext="W\neq V" display="inline"><mrow><mi>W</mi><mo>≠</mo><mi>V</mi></mrow></math>. Since <math id="p4.m16" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> spans <math id="p4.m17" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>, there is an element <math id="p4.m18" class="ltx_Math" alttext="b\in A" display="inline"><mrow><mi>b</mi><mo>∈</mo><mi>A</mi></mrow></math> not in <math id="p4.m19" class="ltx_Math" alttext="W" display="inline"><mi>W</mi></math> (for otherwise the span of <math id="p4.m20" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> must lie in <math id="p4.m21" class="ltx_Math" alttext="W" display="inline"><mi>W</mi></math>, which would imply <math id="p4.m22" class="ltx_Math" alttext="W=V" display="inline"><mrow><mi>W</mi><mo>=</mo><mi>V</mi></mrow></math>). Then, using the same argument as in the previous proposition, <math id="p4.m23" class="ltx_Math" alttext="B\cup\{b\}" display="inline"><mrow><mi>B</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo></mrow></mrow></math> is linearly independent, which contradicts the maximality of <math id="p4.m24" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> in <math id="p4.m25" class="ltx_Math" alttext="\mathcal{S}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒮</mi></math>. Therefore, <math id="p4.m26" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> spans <math id="p4.m27" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> and thus a basis for <math id="p4.m28" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmcor1" class="ltx_theorem ltx_theorem_cor">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Corollary 1</span>.</h6>
+<div id="Thmcor1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Every vector space has a basis.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Either take <math id="p5.m1" class="ltx_Math" alttext="\varnothing" display="inline"><mi mathvariant="normal">∅</mi></math> to be the linearly independent subset of <math id="p5.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> and apply proposition 1, or take <math id="p5.m3" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> to be the spanning subset of <math id="p5.m4" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> and apply proposition 2. ∎</p>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Remark</span>. The two propositions above can be combined into one: If <math id="p6.m1" class="ltx_Math" alttext="A\subseteq C" display="inline"><mrow><mi>A</mi><mo>⊆</mo><mi>C</mi></mrow></math> are two subsets of a vector space <math id="p6.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> such that <math id="p6.m3" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is linearly independent and <math id="p6.m4" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> spans <math id="p6.m5" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>, then there exists a basis <math id="p6.m6" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> for <math id="p6.m7" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>, with <math id="p6.m8" class="ltx_Math" alttext="A\subseteq B\subseteq C" display="inline"><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi><mo>⊆</mo><mi>C</mi></mrow></math>. The proof again relies on Zorn’s Lemma and is left to the reader to try.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Zorn’s lemma and bases for vector spaces</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ZornsLemmaAndBasesForVectorSpaces</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:06:49</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:06:49</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">9</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Result</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16D40</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 13C05</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 15A03</td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p ltx_align_right"></p>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:38:59 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

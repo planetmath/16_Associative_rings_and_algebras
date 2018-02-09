@@ -1,0 +1,257 @@
+<!DOCTYPE html><html>
+<head>
+<title>example of a right noetherian ring that is not left noetherian</title>
+<!--Generated on Fri Feb  9 18:42:12 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">example of a right noetherian ring that is not left noetherian</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">This example, due to Lance Small, is briefly described in <em class="ltx_emph ltx_font_italic">Noncommutative Rings</em>, by I. N. Herstein, published by the Mathematical Association of America, 1968.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Let <math id="p3.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> be the ring of all <math id="p3.m2" class="ltx_Math" alttext="2\times 2" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></math> matrices
+<math id="p3.m3" class="ltx_Math" alttext="\begin{pmatrix}a&amp;b\\
+0&amp;c\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>c</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+such that <math id="p3.m4" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math> is an integer and <math id="p3.m5" class="ltx_Math" alttext="b,c" display="inline"><mrow><mi>b</mi><mo>,</mo><mi>c</mi></mrow></math> are rational. The claim is that <math id="p3.m6" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is right noetherian but not left noetherian.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">It is relatively straightforward to show that <math id="p4.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is not left noetherian. For each natural number <math id="p4.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>, let</p>
+</div>
+<div id="p5" class="ltx_para">
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="I_{n}=\{\begin{pmatrix}0&amp;\frac{m}{2^{n}}\\
+0&amp;0\end{pmatrix}\mid m\in\mathbb{Z}\}." display="block"><mrow><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mi>m</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mstyle></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow><mo>∣</mo><mrow><mi>m</mi><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Verify that each <math id="p6.m1" class="ltx_Math" alttext="I_{n}" display="inline"><msub><mi>I</mi><mi>n</mi></msub></math> is a left ideal in <math id="p6.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and that <math id="p6.m3" class="ltx_Math" alttext="I_{0}\subsetneq I_{1}\subsetneq I_{2}\subsetneq\cdots" display="inline"><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>⊊</mo><msub><mi>I</mi><mn>1</mn></msub><mo>⊊</mo><msub><mi>I</mi><mn>2</mn></msub><mo>⊊</mo><mi mathvariant="normal">⋯</mi></mrow></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">It is a bit harder to show that <math id="p7.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is right noetherian. The approach given here uses
+the fact that a ring is right noetherian if all of its right ideals are finitely generated.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Let <math id="p8.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> be a right ideal in <math id="p8.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>. We show that <math id="p8.m3" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is finitely generated by
+checking all possible cases. In the first case, we assume that every matrix in <math id="p8.m4" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has
+a zero in its upper left entry. In the second case, we assume that
+there is some matrix in <math id="p8.m5" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> that has a nonzero upper left entry. The second case splits
+into two subcases: either every matrix in <math id="p8.m6" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has a zero in its lower right entry or some matrix in <math id="p8.m7" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has a nonzero lower right entry.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">CASE 1: Suppose that for all matrices in <math id="p9.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>, the upper left entry is zero. Then every element of <math id="p9.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has the form</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\begin{pmatrix}0&amp;y\\
+0&amp;z\end{pmatrix}\text{ for some }y,z\in\mathbb{Q}." display="block"><mrow><mrow><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mtext> for some </mtext><mo>⁢</mo><mi>y</mi></mrow><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Note that for any <math id="p10.m1" class="ltx_Math" alttext="c\in\mathbb{Q}" display="inline"><mrow><mi>c</mi><mo>∈</mo><mi>ℚ</mi></mrow></math> and any
+<math id="p10.m2" class="ltx_Math" alttext="\begin{pmatrix}0&amp;y\\
+0&amp;z\end{pmatrix}\in I" display="inline"><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mi>I</mi></mrow></math>, we have
+<math id="p10.m3" class="ltx_Math" alttext="\begin{pmatrix}0&amp;cy\\
+0&amp;cz\end{pmatrix}\in I" display="inline"><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>c</mi><mo>⁢</mo><mi>y</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>c</mi><mo>⁢</mo><mi>z</mi></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mi>I</mi></mrow></math> since</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\begin{pmatrix}0&amp;y\\
+0&amp;z\end{pmatrix}\begin{pmatrix}0&amp;0\\
+0&amp;c\end{pmatrix}=\begin{pmatrix}0&amp;cy\\
+0&amp;cz\end{pmatrix}" display="block"><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>c</mi></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>c</mi><mo>⁢</mo><mi>y</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>c</mi><mo>⁢</mo><mi>z</mi></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and <math id="p10.m4" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is a right ideal in <math id="p10.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>. So <math id="p10.m6" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> looks like a rational vector space.</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Indeed, note that
+<math id="p11.m1" class="ltx_Math" alttext="V=\{(y,z)\in\mathbb{Q}^{2}\mid\begin{pmatrix}0&amp;y\\
+0&amp;z\end{pmatrix}\in I\}" display="inline"><mrow><mi>V</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℚ</mi><mn>2</mn></msup></mrow><mo>∣</mo><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mi>I</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></math>
+is a subspace of the two dimensional vector space <math id="p11.m2" class="ltx_Math" alttext="\mathbb{Q}^{2}" display="inline"><msup><mi>ℚ</mi><mn>2</mn></msup></math>. So in <math id="p11.m3" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> there exist two
+(not necessarily linearly independent) vectors <math id="p11.m4" class="ltx_Math" alttext="(y_{1},z_{1})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>z</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></math> and <math id="p11.m5" class="ltx_Math" alttext="(y_{2},z_{2})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></math>
+which span <math id="p11.m6" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>.</p>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Now, an arbitrary element
+<math id="p12.m1" class="ltx_Math" alttext="\begin{pmatrix}0&amp;y\\
+0&amp;z\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+in <math id="p12.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> corresponds to the vector <math id="p12.m3" class="ltx_Math" alttext="(y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></math> in <math id="p12.m4" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> and <math id="p12.m5" class="ltx_Math" alttext="(y,z)=(c_{1}y_{1}+c_{2}y_{2},c_{1}z_{1}+c_{2}z_{2})" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>y</mi><mn>2</mn></msub></mrow></mrow><mo>,</mo><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>z</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>z</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math> for some <math id="p12.m6" class="ltx_Math" alttext="c_{1},c_{2}\in\mathbb{Q}" display="inline"><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><msub><mi>c</mi><mn>2</mn></msub></mrow><mo>∈</mo><mi>ℚ</mi></mrow></math>. Thus</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\begin{pmatrix}0&amp;y\\
+0&amp;z\end{pmatrix}=\begin{pmatrix}0&amp;c_{1}y_{1}+c_{2}y_{2}\\
+0&amp;c_{1}z_{1}+c_{2}z_{2}\end{pmatrix}=\begin{pmatrix}0&amp;y_{1}\\
+0&amp;z_{1}\end{pmatrix}\begin{pmatrix}0&amp;0\\
+0&amp;c_{1}\end{pmatrix}+\begin{pmatrix}0&amp;y_{2}\\
+0&amp;z_{2}\end{pmatrix}\begin{pmatrix}0&amp;0\\
+0&amp;c_{2}\end{pmatrix}" display="block"><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>y</mi><mn>2</mn></msub></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>z</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>z</mi><mn>2</mn></msub></mrow></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>=</mo><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>1</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>c</mi><mn>1</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>2</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>2</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>c</mi><mn>2</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and it follows that <math id="p12.m7" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is finitely generated
+by the set
+<math id="p12.m8" class="ltx_Math" alttext="\{\begin{pmatrix}0&amp;y_{1}\\
+0&amp;z_{1}\end{pmatrix},\begin{pmatrix}0&amp;y_{2}\\
+0&amp;z_{2}\end{pmatrix}\}" display="inline"><mrow><mo stretchy="false">{</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>1</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>2</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>2</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo stretchy="false">}</mo></mrow></math>
+as a right ideal in <math id="p12.m9" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>.</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">CASE 2: Suppose that some matrix in <math id="p13.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has a nonzero upper left entry. Then there is a least positive
+integer <math id="p13.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> occurring as the upper left entry of a matrix in <math id="p13.m3" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>. It follows that every element
+of <math id="p13.m4" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> can be put into the form</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\begin{pmatrix}kn&amp;y\\
+0&amp;z\end{pmatrix}\text{ for some }k\in\mathbb{Z};\ y,z\in\mathbb{Q}." display="block"><mrow><mrow><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mtext> for some </mtext><mo>⁢</mo><mi>k</mi></mrow><mo>∈</mo><mrow><mi>ℤ</mi><mo rspace="7.5pt">;</mo><mi>y</mi></mrow></mrow><mo>,</mo><mrow><mi>z</mi><mo>∈</mo><mi>ℚ</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">By definition of <math id="p14.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>, there is a matrix of the form
+<math id="p14.m2" class="ltx_Math" alttext="\begin{pmatrix}n&amp;b\\
+0&amp;c\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>c</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+in <math id="p14.m3" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>. Since <math id="p14.m4" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is a right ideal in <math id="p14.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and since
+<math id="p14.m6" class="ltx_Math" alttext="\begin{pmatrix}n&amp;b\\
+0&amp;c\end{pmatrix}\begin{pmatrix}1&amp;0\\
+0&amp;0\end{pmatrix}=\begin{pmatrix}n&amp;0\\
+0&amp;0\end{pmatrix}," display="inline"><mrow><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>c</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>,</mo></mrow></math>
+it follows that
+<math id="p14.m7" class="ltx_Math" alttext="\begin{pmatrix}n&amp;0\\
+0&amp;0\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+is in <math id="p14.m8" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>. Now break off into two subcases.</p>
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">case</em> 2.1: Suppose that every matrix in <math id="p15.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has a zero in its lower right entry. Then
+an arbitrary element of <math id="p15.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has the form</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\begin{pmatrix}kn&amp;y\\
+0&amp;0\end{pmatrix}\text{ for some }k\in\mathbb{Z},y\in\mathbb{Q}." display="block"><mrow><mrow><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mtext> for some </mtext><mo>⁢</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><mo>,</mo><mrow><mi>y</mi><mo>∈</mo><mi>ℚ</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Note that
+<math id="p15.m3" class="ltx_Math" alttext="\begin{pmatrix}kn&amp;y\\
+0&amp;0\end{pmatrix}=\begin{pmatrix}n&amp;0\\
+0&amp;0\end{pmatrix}\begin{pmatrix}k&amp;\frac{y}{n}\\
+0&amp;0\end{pmatrix}" display="inline"><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>k</mi></mtd><mtd columnalign="center"><mfrac><mi>y</mi><mi>n</mi></mfrac></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></mrow></math>. Hence,
+<math id="p15.m4" class="ltx_Math" alttext="\begin{pmatrix}n&amp;0\\
+0&amp;0\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math> generates <math id="p15.m5" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> as a right ideal in <math id="p15.m6" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>.</p>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">case</em> 2.2: Suppose that some matrix in <math id="p16.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> has a nonzero lower right entry. That is, in <math id="p16.m2" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>
+we have a matrix</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\begin{pmatrix}mn&amp;y_{1}\\
+0&amp;z_{1}\end{pmatrix}\text{ for some }m\in\mathbb{Z};\ y_{1},z_{1}\in\mathbb{Q}%
+;\ z_{1}\neq 0." display="block"><mrow><mrow><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>1</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mtext> for some </mtext><mo>⁢</mo><mi>m</mi></mrow><mo>∈</mo><mrow><mi>ℤ</mi><mo rspace="7.5pt">;</mo><msub><mi>y</mi><mn>1</mn></msub></mrow></mrow><mo>,</mo><mrow><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>∈</mo><mi>ℚ</mi></mrow><mo rspace="7.5pt">;</mo><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>≠</mo><mn>0</mn></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since
+<math id="p16.m3" class="ltx_Math" alttext="\begin{pmatrix}n&amp;0\\
+0&amp;0\end{pmatrix}\in I," display="inline"><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mi>I</mi></mrow><mo>,</mo></mrow></math> it follows that
+<math id="p16.m4" class="ltx_Math" alttext="\begin{pmatrix}n&amp;y_{1}\\
+0&amp;z_{1}\end{pmatrix}\in I." display="inline"><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>1</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mi>I</mi></mrow><mo>.</mo></mrow></math>
+Let
+<math id="p16.m5" class="ltx_Math" alttext="\begin{pmatrix}kn&amp;y\\
+0&amp;z\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+be an arbitrary element of <math id="p16.m6" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>. Since
+<math id="p16.m7" class="ltx_Math" alttext="\begin{pmatrix}kn&amp;y\\
+0&amp;z\end{pmatrix}=\begin{pmatrix}n&amp;y_{1}\\
+0&amp;z_{1}\end{pmatrix}\begin{pmatrix}k&amp;\frac{1}{n}(y-\frac{y_{1}z}{z_{1}})\\
+0&amp;\frac{z}{z_{1}}\end{pmatrix}," display="inline"><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mtd><mtd columnalign="center"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>z</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>1</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>k</mi></mtd><mtd columnalign="center"><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>-</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>⁢</mo><mi>z</mi></mrow><msub><mi>z</mi><mn>1</mn></msub></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mfrac><mi>z</mi><msub><mi>z</mi><mn>1</mn></msub></mfrac></mtd></mtr></mtable><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math> it follows that
+<math id="p16.m8" class="ltx_Math" alttext="\begin{pmatrix}n&amp;y_{1}\\
+0&amp;z_{1}\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>n</mi></mtd><mtd columnalign="center"><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><msub><mi>z</mi><mn>1</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow></math>
+generates <math id="p16.m9" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> as a right ideal in <math id="p16.m10" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>.</p>
+</div>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">In all cases, <math id="p17.m1" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is a finitely generated.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">example of a right noetherian ring that is not left noetherian</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ExampleOfARightNoetherianRingThatIsNotLeftNoetherian</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:16:15</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:16:15</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">18</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Example</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 16P40</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:42:12 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

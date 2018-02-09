@@ -1,0 +1,184 @@
+<!DOCTYPE html><html>
+<head>
+<title>homogeneous polynomial</title>
+<!--Generated on Fri Feb  9 18:42:31 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">homogeneous polynomial</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Let <math id="p2.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> be an associative ring. A (multivariate) polynomial <math id="p2.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> over <math id="p2.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is said to be <em class="ltx_emph ltx_font_italic">homogeneous of degree</em> <math id="p2.m4" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> if it is expressible as an <math id="p2.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>-linear combination (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/LinearCombination</span>) of monomials of degree <math id="p2.m6" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>:</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="f(x_{1},\ldots,x_{n})=\sum_{i=1}^{m}a_{i}{x_{1}}^{r_{i1}}\cdots{x_{n}}^{r_{in}}," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></munderover><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>⁢</mo><mmultiscripts><mi>x</mi><mn>1</mn><none></none><none></none><msub><mi>r</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mmultiscripts><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mmultiscripts><mi>x</mi><mi>n</mi><none></none><none></none><msub><mi>r</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mmultiscripts></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p2.m7" class="ltx_Math" alttext="r=r_{i1}+\cdots+r_{in}" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><msub><mi>r</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>r</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow></mrow></math> for all <math id="p2.m8" class="ltx_Math" alttext="i\in\{1,\ldots,m\}" display="inline"><mrow><mi>i</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>m</mi><mo stretchy="false">}</mo></mrow></mrow></math> and <math id="p2.m9" class="ltx_Math" alttext="a_{i}\in R" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>∈</mo><mi>R</mi></mrow></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">A general homogeneous polynomial is also known sometimes as a <em class="ltx_emph ltx_font_italic">polynomial form</em>. A homogeneous polynomial of degree 1 is called a <em class="ltx_emph ltx_font_italic">linear form</em>; a homogeneous polynomial of degree 2 is called a <em class="ltx_emph ltx_font_italic">quadratic form</em>; and a homogeneous polynomial of degree 3 is called a <em class="ltx_emph ltx_font_italic">cubic form</em>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Remarks</span>.</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">If <math id="I1.i1.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is a homogeneous polynomial over a ring <math id="I1.i1.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> with <math id="I1.i1.p1.m3" class="ltx_Math" alttext="\operatorname{deg}(f)=r" display="inline"><mrow><mrow><mi>deg</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>r</mi></mrow></math>, then <math id="I1.i1.p1.m4" class="ltx_Math" alttext="f(tx_{1},\ldots,tx_{n})=t^{r}f(x_{1},\ldots,x_{n})" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>t</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>t</mi><mi>r</mi></msup><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. In fact, a homogeneous function that is also a polynomial is a homogeneous polynomial.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Every polynomial <math id="I1.i2.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> over <math id="I1.i2.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> can be expressed uniquely as a finite sum of homogeneous polynomials.
+The homogeneous polynomials that make up the polynomial <math id="I1.i2.p1.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> are called the <em class="ltx_emph ltx_font_italic">homogeneous components</em> of <math id="I1.i2.p1.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">3.</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">If <math id="I1.i3.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and <math id="I1.i3.p1.m2" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math> are homogeneous polynomials of degree <math id="I1.i3.p1.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> and <math id="I1.i3.p1.m4" class="ltx_Math" alttext="s" display="inline"><mi>s</mi></math> over a domain <math id="I1.i3.p1.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, then <math id="I1.i3.p1.m6" class="ltx_Math" alttext="fg" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mi>g</mi></mrow></math> is homogeneous of degree <math id="I1.i3.p1.m7" class="ltx_Math" alttext="r+s" display="inline"><mrow><mi>r</mi><mo>+</mo><mi>s</mi></mrow></math>. From this, one sees that given a domain <math id="I1.i3.p1.m8" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, the ring <math id="I1.i3.p1.m9" class="ltx_Math" alttext="R[\boldsymbol{X}]" display="inline"><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>𝑿</mi><mo stretchy="false">]</mo></mrow></mrow></math> is a graded ring, where <math id="I1.i3.p1.m10" class="ltx_Math" alttext="\boldsymbol{X}" display="inline"><mi>𝑿</mi></math> is a finite set of indeterminates. The condition that <math id="I1.i3.p1.m11" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> does not have any zero divisors is essential here. As a counterexample, in <math id="I1.i3.p1.m12" class="ltx_Math" alttext="\mathbb{Z}_{6}[x,y]" display="inline"><mrow><msub><mi>ℤ</mi><mn>6</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></math>, if <math id="I1.i3.p1.m13" class="ltx_Math" alttext="f(x,y)=2x+4y" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow></math> and <math id="I1.i3.p1.m14" class="ltx_Math" alttext="g(x,y)=3x+3y" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow></math>, then <math id="I1.i3.p1.m15" class="ltx_Math" alttext="f(x,y)g(x,y)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Examples</span></p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="f(x,y)=x^{2}+xy+yx+y^{2}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></math> is a homogeneous polynomial of degree 2. Notice the middle two monomials could be combined into the monomial 2xy if the variables are allowed to commute with one another.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="f(x)=x^{3}+1" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>1</mn></mrow></mrow></math> is not a homogeneous polynomial.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i3.p1" class="ltx_para">
+<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="f(x,y,z)=x^{3}+xyz+zyz+3xy^{2}+x^{2}-xy+y^{2}+zy+z^{2}+xz+y+2x+6" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>z</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>z</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>6</mn></mrow></mrow></math> is a polynomial that is the sum of four homogeneous
+polynomials: <math id="I2.i3.p1.m2" class="ltx_Math" alttext="x^{3}+xyz+zyz+3xy^{2}" display="inline"><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>z</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></math> (with degree 3), <math id="I2.i3.p1.m3" class="ltx_Math" alttext="x^{2}-xy+y^{2}+zy+z^{2}+xz" display="inline"><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>z</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></math> (degree = 2), <math id="I2.i3.p1.m4" class="ltx_Math" alttext="y+2x" display="inline"><mrow><mi>y</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></math> (degree = 1) and
+<math id="I2.i3.p1.m5" class="ltx_Math" alttext="6" display="inline"><mn>6</mn></math> (deg = 0).</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i4.p1" class="ltx_para">
+<p class="ltx_p">Every symmetric polynomial can be written as a sum of symmetric homogeneous polynomials.
+</p>
+</div>
+</li>
+</ul>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">homogeneous polynomial</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HomogeneousPolynomial1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:53:42</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:53:42</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">17</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16R99</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 13B25</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 16S36</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 11E76</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">polynomial form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HomogeneousIdeal</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HomogeneousFunction</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HomogeneousEquation</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">homogeneous component</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">cubic form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">linear form</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:42:31 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
